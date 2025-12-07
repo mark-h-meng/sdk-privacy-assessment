@@ -1,0 +1,263 @@
+[
+  {
+    "SecurityInfo": {},
+    "ComplianceInfo": {
+      "Android_ID": {
+        "550_api": {
+          "complianceCategoryDetail": "Android_ID",
+          "deobfApk": "",
+          "level": "high",
+          "name": "550_api",
+          "detail": "Android_ID",
+          "complianceCategory": "Android_ID",
+          "category": "ComplianceInfo",
+          "vulners": [
+            {
+              "details": {
+                "ConstValue": "android_id",
+                "position": "<com.adjust.sdk.AndroidIdUtil: java.lang.String getAndroidId(android.content.Context)>",
+                "url": "https://tosv.byted.org/obj/appscan-obj/aux/misc/393931393532363031323831363433550_api.html",
+                "target": [
+                  "<com.adjust.sdk.AndroidIdUtil: java.lang.String getAndroidId(android.content.Context)>",
+                  "<android.provider.Settings$Secure: java.lang.String getString(android.content.ContentResolver,java.lang.String)>",
+                  "android_id"
+                ]
+              },
+              "hash": "c770fdd16b534ff50698f94976bed7fc1c900421"
+            }
+          ]
+        }
+      },
+      "GAID": {
+        "515_api": {
+          "complianceCategoryDetail": "GAID",
+          "deobfApk": "",
+          "level": "high",
+          "name": "515_api",
+          "detail": "GAID",
+          "complianceCategory": "GAID",
+          "category": "ComplianceInfo",
+          "vulners": [
+            {
+              "details": {
+                "position": "<com.adjust.sdk.GooglePlayServicesClient: com.adjust.sdk.GooglePlayServicesClient$GooglePlayServicesInfo getGooglePlayServicesInfo(android.content.Context,long)>",
+                "url": "https://tosv.byted.org/obj/appscan-obj/aux/misc/393931393536313833363734393632515_api.html",
+                "target": [
+                  "<com.adjust.sdk.GooglePlayServicesClient: com.adjust.sdk.GooglePlayServicesClient$GooglePlayServicesInfo getGooglePlayServicesInfo(android.content.Context,long)>->@const_str:com.google.android.gms.ads.identifier.service.START",
+                  "specialinvoke $r5.<android.content.Intent: void <init>(java.lang.String)>(\"com.google.android.gms.ads.identifier.service.START\")"
+                ],
+                "entryMethod": "<com.adjust.sdk.GooglePlayServicesClient: com.adjust.sdk.GooglePlayServicesClient$GooglePlayServicesInfo getGooglePlayServicesInfo(android.content.Context,long)>",
+                "Source": [
+                  "specialinvoke $r5.<android.content.Intent: void <init>(java.lang.String)>(\"com.google.android.gms.ads.identifier.service.START\")"
+                ]
+              },
+              "hash": "2cdf245e1c210311db4c4a905c0a7731a57c4934"
+            }
+          ]
+        }
+      },
+      "applist": {
+        "374_api": {
+          "complianceCategoryDetail": "applist",
+          "deobfApk": "",
+          "level": "low",
+          "name": "374_api",
+          "detail": "可获取所有能够启动给定Intent的activity",
+          "complianceCategory": "applist",
+          "category": "ComplianceInfo",
+          "vulners": [
+            {
+              "details": {
+                "url": "https://tosv.byted.org/obj/appscan-obj/aux/misc/393931393530393932383939383538374_api.html",
+                "position": "<com.adjust.sdk.ActivityHandler: void launchDeeplinkMain(android.content.Intent,android.net.Uri)>",
+                "target": [
+                  "<com.adjust.sdk.ActivityHandler: void launchDeeplinkMain(android.content.Intent,android.net.Uri)>",
+                  "$r6 = virtualinvoke $r5.<android.content.pm.PackageManager: java.util.List queryIntentActivities(android.content.Intent,int)>($r1, 0)"
+                ]
+              },
+              "hash": "835be309a5945dd5db856befe77e7c2f8853e815"
+            }
+          ]
+        }
+      }
+    },
+    "DeepLinkInfo": {},
+    "JsBridgeInfo": {},
+    "UrlRegion": {
+      "filter": {
+        "N/A:N/A": {
+          "value": {
+            "境外": {
+              "api.ok.ru": {
+                "value": {
+                  "https://api.ok.ru/fb.do": {
+                    "classes.dex.ru.ok.android.sdk.util.OkRequestUtil$Request": "const-string v1, \"https://api.ok.ru/fb.do\"\n"
+                  }
+                },
+                "meta": {
+                  "A": {
+                    "108.160.162.109": "US"
+                  },
+                  "ICP": "ICP record undetected",
+                  "ISP": [
+                    "Dropbox, Inc."
+                  ],
+                  "locations": [
+                    "US"
+                  ],
+                  "plugins": [
+                    "DNS",
+                    "ICP"
+                  ]
+                }
+              },
+              "connect.ok.ru": {
+                "value": {
+                  "https://connect.ok.ru/dk?st.cmd=": {
+                    "classes.dex.ru.ok.android.sdk.AbstractWidgetActivity": "const-string v1, \"https://connect.ok.ru/dk?st.cmd=\"\n"
+                  }
+                },
+                "meta": {
+                  "A": {
+                    "199.59.149.203": "US"
+                  },
+                  "ICP": "ICP record undetected",
+                  "ISP": [
+                    "Twitter Inc."
+                  ],
+                  "locations": [
+                    "US"
+                  ],
+                  "plugins": [
+                    "DNS",
+                    "ICP"
+                  ]
+                }
+              }
+            }
+          },
+          "meta": {
+            "url": "N/A",
+            "description": "未查到组件信息",
+            "version": "N/A"
+          }
+        }
+      },
+      "full": {
+        "N/A:N/A": {
+          "value": {
+            "US": {
+              "api.ok.ru": {
+                "meta": {
+                  "A": {
+                    "108.160.162.109": "US"
+                  },
+                  "ICP": "ICP record undetected",
+                  "ISP": [
+                    "Dropbox, Inc."
+                  ],
+                  "locations": [
+                    "US"
+                  ],
+                  "plugins": [
+                    "DNS",
+                    "ICP"
+                  ]
+                },
+                "value": {
+                  "https://api.ok.ru/fb.do": {
+                    "classes.dex.ru.ok.android.sdk.util.OkRequestUtil$Request": "const-string v1, \"https://api.ok.ru/fb.do\"\n"
+                  }
+                }
+              },
+              "connect.ok.ru": {
+                "meta": {
+                  "A": {
+                    "199.59.149.203": "US"
+                  },
+                  "ICP": "ICP record undetected",
+                  "ISP": [
+                    "Twitter Inc."
+                  ],
+                  "locations": [
+                    "US"
+                  ],
+                  "plugins": [
+                    "DNS",
+                    "ICP"
+                  ]
+                },
+                "value": {
+                  "https://connect.ok.ru/dk?st.cmd=": {
+                    "classes.dex.ru.ok.android.sdk.AbstractWidgetActivity": "const-string v1, \"https://connect.ok.ru/dk?st.cmd=\"\n"
+                  }
+                }
+              }
+            }
+          },
+          "meta": {
+            "url": "N/A",
+            "description": "未查到组件信息",
+            "version": "N/A"
+          }
+        }
+      }
+    },
+    "profiler": "https://tosv.byted.org/obj/appscan-obj/aux/misc/393931393634373739343134303536profiler.json",
+    "HTTP_API": [],
+    "BasicInfo": {
+      "AppInfo": {
+        "name": "",
+        "size": "0.27MB",
+        "package": "com.adjust.sdk",
+        "versionName": null,
+        "versionCode": null,
+        "target_sdk": "33",
+        "min_sdk": "9",
+        "max_sdk": "",
+        "sha1": "ae0714f22383c06e4f296986eeb1ac5bd802753e"
+      },
+      "SignInfo": {
+        "Is signed v1": false,
+        "Is signed v2": false,
+        "Is signed v3": false,
+        "certs": [],
+        "pkeys": []
+      },
+      "ComponentsInfo": {},
+      "PermissionInfo": [
+        "com.google.android.gms.permission.AD_ID",
+        "android.permission.INTERNET"
+      ],
+      "DeobfApk": ""
+    },
+    "PermissionUsedDetails": {
+      "declaredPermissions": [
+        "com.google.android.gms.permission.AD_ID",
+        "android.permission.INTERNET"
+      ],
+      "usedPermissions": {
+        "android.permission.INTERNET": {
+          "level": "normal|instant",
+          "description": "Allows applications to open network sockets",
+          "positions": [
+            "Default"
+          ],
+          "details": [
+            {
+              "caller": "N/A",
+              "api": "N/A",
+              "url": "N/A"
+            }
+          ]
+        }
+      },
+      "declaredButNoUsed": {
+        "com.google.android.gms.permission.AD_ID": null
+      },
+      "usedButNotDeclared": {}
+    },
+    "SDKComplianceList": []
+  },
+  0
+]

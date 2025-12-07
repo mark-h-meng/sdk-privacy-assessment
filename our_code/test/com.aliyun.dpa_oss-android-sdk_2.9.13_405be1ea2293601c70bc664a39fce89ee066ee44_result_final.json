@@ -1,0 +1,196 @@
+[
+  {
+    "SecurityInfo": {},
+    "ComplianceInfo": {},
+    "DeepLinkInfo": {},
+    "JsBridgeInfo": {},
+    "UrlRegion": {
+      "filter": {
+        "N/A:N/A": {
+          "value": {
+            "境外": {
+              "api.ok.ru": {
+                "value": {
+                  "https://api.ok.ru/fb.do": {
+                    "classes.dex.ru.ok.android.sdk.util.OkRequestUtil$Request": "const-string v1, \"https://api.ok.ru/fb.do\"\n"
+                  }
+                },
+                "meta": {
+                  "A": {
+                    "108.160.162.109": "US"
+                  },
+                  "ICP": "ICP record undetected",
+                  "ISP": [
+                    "Dropbox, Inc."
+                  ],
+                  "locations": [
+                    "US"
+                  ],
+                  "plugins": [
+                    "DNS",
+                    "ICP"
+                  ]
+                }
+              },
+              "connect.ok.ru": {
+                "value": {
+                  "https://connect.ok.ru/dk?st.cmd=": {
+                    "classes.dex.ru.ok.android.sdk.AbstractWidgetActivity": "const-string v1, \"https://connect.ok.ru/dk?st.cmd=\"\n"
+                  }
+                },
+                "meta": {
+                  "A": {
+                    "199.59.149.203": "US"
+                  },
+                  "ICP": "ICP record undetected",
+                  "ISP": [
+                    "Twitter Inc."
+                  ],
+                  "locations": [
+                    "US"
+                  ],
+                  "plugins": [
+                    "DNS",
+                    "ICP"
+                  ]
+                }
+              }
+            }
+          },
+          "meta": {
+            "url": "N/A",
+            "description": "未查到组件信息",
+            "version": "N/A"
+          }
+        }
+      },
+      "full": {
+        "N/A:N/A": {
+          "value": {
+            "US": {
+              "api.ok.ru": {
+                "meta": {
+                  "A": {
+                    "108.160.162.109": "US"
+                  },
+                  "ICP": "ICP record undetected",
+                  "ISP": [
+                    "Dropbox, Inc."
+                  ],
+                  "locations": [
+                    "US"
+                  ],
+                  "plugins": [
+                    "DNS",
+                    "ICP"
+                  ]
+                },
+                "value": {
+                  "https://api.ok.ru/fb.do": {
+                    "classes.dex.ru.ok.android.sdk.util.OkRequestUtil$Request": "const-string v1, \"https://api.ok.ru/fb.do\"\n"
+                  }
+                }
+              },
+              "connect.ok.ru": {
+                "meta": {
+                  "A": {
+                    "199.59.149.203": "US"
+                  },
+                  "ICP": "ICP record undetected",
+                  "ISP": [
+                    "Twitter Inc."
+                  ],
+                  "locations": [
+                    "US"
+                  ],
+                  "plugins": [
+                    "DNS",
+                    "ICP"
+                  ]
+                },
+                "value": {
+                  "https://connect.ok.ru/dk?st.cmd=": {
+                    "classes.dex.ru.ok.android.sdk.AbstractWidgetActivity": "const-string v1, \"https://connect.ok.ru/dk?st.cmd=\"\n"
+                  }
+                }
+              }
+            }
+          },
+          "meta": {
+            "url": "N/A",
+            "description": "未查到组件信息",
+            "version": "N/A"
+          }
+        }
+      }
+    },
+    "profiler": "https://tosv.byted.org/obj/appscan-obj/aux/misc/393932373730373530353033333636profiler.json",
+    "HTTP_API": [],
+    "BasicInfo": {
+      "AppInfo": {
+        "name": "",
+        "size": "0.38MB",
+        "package": "com.alibaba.sdk.android.oss_android_sdk",
+        "versionName": "2.9.13",
+        "versionCode": "40",
+        "target_sdk": "29",
+        "min_sdk": "14",
+        "max_sdk": "",
+        "sha1": "405be1ea2293601c70bc664a39fce89ee066ee44"
+      },
+      "SignInfo": {
+        "Is signed v1": false,
+        "Is signed v2": false,
+        "Is signed v3": false,
+        "certs": [],
+        "pkeys": []
+      },
+      "ComponentsInfo": {},
+      "PermissionInfo": [
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.INTERNET"
+      ],
+      "DeobfApk": ""
+    },
+    "PermissionUsedDetails": {
+      "declaredPermissions": [
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.INTERNET"
+      ],
+      "usedPermissions": {
+        "android.permission.WRITE_EXTERNAL_STORAGE": {
+          "level": "dangerous",
+          "description": "Allows an application to write to external storage. Note: If both your minSdkVersion and targetSdkVersion values are set to 3 or lower, the system implicitly grants your app this permission. If you don't need this permission, be sure your targetSdkVersion is 4 or higher. Starting in API level 19, this permission is not required to read/write files in your application-specific directories returned by android.content.Context#getExternalFilesDir and android.content.Context#getExternalCacheDir. If this permission is not whitelisted for an app that targets an API level before android.os.Build.VERSION_CODES#Q this permission cannot be granted to apps",
+          "positions": [
+            "Default"
+          ],
+          "details": [
+            {
+              "caller": "N/A",
+              "api": "N/A",
+              "url": "N/A"
+            }
+          ]
+        },
+        "android.permission.INTERNET": {
+          "level": "normal|instant",
+          "description": "Allows applications to open network sockets",
+          "positions": [
+            "Default"
+          ],
+          "details": [
+            {
+              "caller": "N/A",
+              "api": "N/A",
+              "url": "N/A"
+            }
+          ]
+        }
+      },
+      "declaredButNoUsed": {},
+      "usedButNotDeclared": {}
+    },
+    "SDKComplianceList": []
+  },
+  0
+]

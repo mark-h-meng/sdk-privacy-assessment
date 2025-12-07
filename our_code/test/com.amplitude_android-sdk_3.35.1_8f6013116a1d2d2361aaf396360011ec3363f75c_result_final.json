@@ -1,0 +1,299 @@
+[
+  {
+    "SecurityInfo": {},
+    "ComplianceInfo": {
+      "location": {
+        "575_api": {
+          "complianceCategoryDetail": "location",
+          "deobfApk": "",
+          "level": "high",
+          "name": "575_api",
+          "detail": "纬度",
+          "complianceCategory": "location",
+          "category": "ComplianceInfo",
+          "vulners": [
+            {
+              "details": {
+                "url": "https://tosv.byted.org/obj/appscan-obj/aux/misc/393933333435363737383534333438575_api.html",
+                "position": "<com.amplitude.api.DeviceInfo$CachedInfo: java.lang.String getCountryFromLocation()>",
+                "target": [
+                  "<com.amplitude.api.DeviceInfo$CachedInfo: java.lang.String getCountryFromLocation()>",
+                  "$d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>()"
+                ]
+              },
+              "hash": "b99c907402c604e857b52e6c6b714eb1e5bcf26d"
+            },
+            {
+              "details": {
+                "url": "https://tosv.byted.org/obj/appscan-obj/aux/misc/393933333435383038383636363034575_api.html",
+                "position": "<com.amplitude.api.AmplitudeClient: long logEvent(java.lang.String,org.json.JSONObject,org.json.JSONObject,org.json.JSONObject,org.json.JSONObject,org.json.JSONObject,long,boolean,com.amplitude.api.MiddlewareExtra)>",
+                "target": [
+                  "<com.amplitude.api.AmplitudeClient: long logEvent(java.lang.String,org.json.JSONObject,org.json.JSONObject,org.json.JSONObject,org.json.JSONObject,org.json.JSONObject,long,boolean,com.amplitude.api.MiddlewareExtra)>",
+                  "$d0 = virtualinvoke $r21.<android.location.Location: double getLatitude()>()"
+                ]
+              },
+              "hash": "5ff5e98db460c8b1948a50b378a1985a527c8650"
+            }
+          ]
+        },
+        "576_api": {
+          "complianceCategoryDetail": "location",
+          "deobfApk": "",
+          "level": "high",
+          "name": "576_api",
+          "detail": "经度",
+          "complianceCategory": "location",
+          "category": "ComplianceInfo",
+          "vulners": [
+            {
+              "details": {
+                "url": "https://tosv.byted.org/obj/appscan-obj/aux/misc/393933333436303537323039303832576_api.html",
+                "position": "<com.amplitude.api.DeviceInfo$CachedInfo: java.lang.String getCountryFromLocation()>",
+                "target": [
+                  "<com.amplitude.api.DeviceInfo$CachedInfo: java.lang.String getCountryFromLocation()>",
+                  "$d1 = virtualinvoke $r2.<android.location.Location: double getLongitude()>()"
+                ]
+              },
+              "hash": "15075300510d05c5681e0462bcab4ff1bf70cd5e"
+            },
+            {
+              "details": {
+                "url": "https://tosv.byted.org/obj/appscan-obj/aux/misc/393933333436323235333037353337576_api.html",
+                "position": "<com.amplitude.api.AmplitudeClient: long logEvent(java.lang.String,org.json.JSONObject,org.json.JSONObject,org.json.JSONObject,org.json.JSONObject,org.json.JSONObject,long,boolean,com.amplitude.api.MiddlewareExtra)>",
+                "target": [
+                  "<com.amplitude.api.AmplitudeClient: long logEvent(java.lang.String,org.json.JSONObject,org.json.JSONObject,org.json.JSONObject,org.json.JSONObject,org.json.JSONObject,long,boolean,com.amplitude.api.MiddlewareExtra)>",
+                  "$d0_1 = virtualinvoke $r21.<android.location.Location: double getLongitude()>()"
+                ]
+              },
+              "hash": "17fe1a8577f2e5a437f2377192112121eeaa80bf"
+            }
+          ]
+        },
+        "280_api": {
+          "complianceCategoryDetail": "location",
+          "deobfApk": "",
+          "level": "high",
+          "name": "280_api",
+          "detail": "位置信息",
+          "complianceCategory": "location",
+          "category": "ComplianceInfo",
+          "vulners": [
+            {
+              "details": {
+                "url": "https://tosv.byted.org/obj/appscan-obj/aux/misc/393933333433383136333838383738280_api.html",
+                "position": "<com.amplitude.api.DeviceInfo: android.location.Location getMostRecentLocation()>",
+                "target": [
+                  "<com.amplitude.api.DeviceInfo: android.location.Location getMostRecentLocation()>",
+                  "$r12_1 = virtualinvoke r3.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>(r10_1)"
+                ]
+              },
+              "hash": "19a307869ad2f1dfd1087e91bccc370a3e3f6435"
+            }
+          ]
+        }
+      },
+      "clipboard data": {
+        "453_api": {
+          "complianceCategoryDetail": "clipboard data",
+          "deobfApk": "",
+          "level": "high",
+          "name": "453_api",
+          "detail": "剪贴板",
+          "complianceCategory": "clipboard data",
+          "category": "ComplianceInfo",
+          "vulners": [
+            {
+              "details": {
+                "url": "https://tosv.byted.org/obj/appscan-obj/aux/misc/393933333435313337383534383237453_api.html",
+                "position": "<com.amplitude.eventexplorer.EventExplorerInfoActivity: void copyText(android.content.Context,java.lang.String)>",
+                "target": [
+                  "<com.amplitude.eventexplorer.EventExplorerInfoActivity: void copyText(android.content.Context,java.lang.String)>",
+                  "virtualinvoke r4.<android.content.ClipboardManager: void setPrimaryClip(android.content.ClipData)>($r5)"
+                ]
+              },
+              "hash": "2ab5f0b6c3142f319d31e9641286bce104de0970"
+            }
+          ]
+        }
+      }
+    },
+    "DeepLinkInfo": {
+      "SmartRouterParameterList": [
+        "instanceName"
+      ]
+    },
+    "JsBridgeInfo": {},
+    "UrlRegion": {
+      "filter": {
+        "N/A:N/A": {
+          "value": {
+            "境外": {
+              "api.ok.ru": {
+                "value": {
+                  "https://api.ok.ru/fb.do": {
+                    "classes.dex.ru.ok.android.sdk.util.OkRequestUtil$Request": "const-string v1, \"https://api.ok.ru/fb.do\"\n"
+                  }
+                },
+                "meta": {
+                  "A": {
+                    "108.160.162.109": "US"
+                  },
+                  "ICP": "ICP record undetected",
+                  "ISP": [
+                    "Dropbox, Inc."
+                  ],
+                  "locations": [
+                    "US"
+                  ],
+                  "plugins": [
+                    "DNS",
+                    "ICP"
+                  ]
+                }
+              },
+              "connect.ok.ru": {
+                "value": {
+                  "https://connect.ok.ru/dk?st.cmd=": {
+                    "classes.dex.ru.ok.android.sdk.AbstractWidgetActivity": "const-string v1, \"https://connect.ok.ru/dk?st.cmd=\"\n"
+                  }
+                },
+                "meta": {
+                  "A": {
+                    "199.59.149.203": "US"
+                  },
+                  "ICP": "ICP record undetected",
+                  "ISP": [
+                    "Twitter Inc."
+                  ],
+                  "locations": [
+                    "US"
+                  ],
+                  "plugins": [
+                    "DNS",
+                    "ICP"
+                  ]
+                }
+              }
+            }
+          },
+          "meta": {
+            "url": "N/A",
+            "description": "未查到组件信息",
+            "version": "N/A"
+          }
+        }
+      },
+      "full": {
+        "N/A:N/A": {
+          "value": {
+            "US": {
+              "api.ok.ru": {
+                "meta": {
+                  "A": {
+                    "108.160.162.109": "US"
+                  },
+                  "ICP": "ICP record undetected",
+                  "ISP": [
+                    "Dropbox, Inc."
+                  ],
+                  "locations": [
+                    "US"
+                  ],
+                  "plugins": [
+                    "DNS",
+                    "ICP"
+                  ]
+                },
+                "value": {
+                  "https://api.ok.ru/fb.do": {
+                    "classes.dex.ru.ok.android.sdk.util.OkRequestUtil$Request": "const-string v1, \"https://api.ok.ru/fb.do\"\n"
+                  }
+                }
+              },
+              "connect.ok.ru": {
+                "meta": {
+                  "A": {
+                    "199.59.149.203": "US"
+                  },
+                  "ICP": "ICP record undetected",
+                  "ISP": [
+                    "Twitter Inc."
+                  ],
+                  "locations": [
+                    "US"
+                  ],
+                  "plugins": [
+                    "DNS",
+                    "ICP"
+                  ]
+                },
+                "value": {
+                  "https://connect.ok.ru/dk?st.cmd=": {
+                    "classes.dex.ru.ok.android.sdk.AbstractWidgetActivity": "const-string v1, \"https://connect.ok.ru/dk?st.cmd=\"\n"
+                  }
+                }
+              }
+            }
+          },
+          "meta": {
+            "url": "N/A",
+            "description": "未查到组件信息",
+            "version": "N/A"
+          }
+        }
+      }
+    },
+    "profiler": "https://tosv.byted.org/obj/appscan-obj/aux/misc/393933333439383135323734303839profiler.json",
+    "HTTP_API": [],
+    "BasicInfo": {
+      "AppInfo": {
+        "name": "",
+        "size": "0.19MB",
+        "package": "com.amplitude",
+        "versionName": null,
+        "versionCode": null,
+        "target_sdk": "28",
+        "min_sdk": "14",
+        "max_sdk": "",
+        "sha1": "8f6013116a1d2d2361aaf396360011ec3363f75c"
+      },
+      "SignInfo": {
+        "Is signed v1": false,
+        "Is signed v2": false,
+        "Is signed v3": false,
+        "certs": [],
+        "pkeys": []
+      },
+      "ComponentsInfo": {},
+      "PermissionInfo": [
+        "android.permission.INTERNET"
+      ],
+      "DeobfApk": ""
+    },
+    "PermissionUsedDetails": {
+      "declaredPermissions": [
+        "android.permission.INTERNET"
+      ],
+      "usedPermissions": {
+        "android.permission.INTERNET": {
+          "level": "normal|instant",
+          "description": "Allows applications to open network sockets",
+          "positions": [
+            "Default"
+          ],
+          "details": [
+            {
+              "caller": "N/A",
+              "api": "N/A",
+              "url": "N/A"
+            }
+          ]
+        }
+      },
+      "declaredButNoUsed": {},
+      "usedButNotDeclared": {}
+    },
+    "SDKComplianceList": []
+  },
+  0
+]

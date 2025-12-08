@@ -1,0 +1,12 @@
+Google Playstore Data Safety
+Jump to ContentHomePayment PageAPI ReferenceDiscussionsHomePayment PageAPI ReferenceChangelogDiscussionsHomePayment PageAPI ReferenceDiscussionsHomePayment PageAPI ReferenceChangelogDiscussionsSearchHyper SDKIntroductionUnderstanding the FlowMinimum RequirementsIntegrating the SDKGradle Plugin Migration GuideCross Platform FrameworksIntegrating the SDK [Deprecated]SDK Interface APIPrefetchInitiateProcessTerminatePayloadInitiate PayloadProcess PayloadMiscellaneousCode SnippetsError CodesTransaction Status CodesIntegration ChecklistMulti-activity IntegrationFAQsTrack payment statusSDK - Release NotesHyper SDK 1.0 (Legacy)IntroductionGoogle Playstore Data SafetySuggest EditsData Types
+The following table will help you with privacy declaration for data types:
+Does SDK encrypt data in transit?
+All analytics data is encrypted before transmission.
+Does SDK transfer data to other third parties, including other apps on the user’s device?
+HyperSDK does not share any data to any third party including other apps on the user’s device.Updated 9 months ago Table of Contents
+Data Types
+Does SDK encrypt data in transit?
+Does SDK transfer data to other third parties, including other apps on the user’s device?
+© JUSPAY / 2012 - 2022
+// form will be here

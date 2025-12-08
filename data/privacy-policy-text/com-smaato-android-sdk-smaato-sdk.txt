@@ -1,0 +1,120 @@
+Data Safety Guidance | Smaato
+Platform
+Monetize
+SPX Monetization Solution
+Integration Center
+Mediation Options
+Programmatic Deals
+Header Bidding Solutions
+Advertise
+SDX Marketer Solution
+Extend Your Reach
+Customer Data Platform (CDP)
+Consent Management Platform (CMP)
+Smaato Intelligence (SI)
+Prepackaged Deals
+Omnichannel Advertising
+Native Ads
+OTT/CTV Ads
+Video Ads
+Display Ads
+Market Quality
+Overview
+Ad Quality
+Traffic Quality
+Insights
+Case Studies
+Guides and Reports
+Videos & Webinars
+Whitepapers
+View All
+Company
+About
+Events
+Careers
+Our Values
+Management Team
+In the News
+Marketplace Overview
+Blog
+Docs
+Contact
+Log In
+Publishers: SPX
+Marketers: SDX
+Get Started
+Home | Data Safety Guidance
+Data Safety Guidance
+This page can help you complete the requirements for this data disclosure in regards to your usage of the Smaato NextGen SDK.
+Prepare for Google Play’s Data Disclosure Requirements
+In May 2021, Google Play announced the new Data safety section, which is a developer-provided disclosure for an app’s data collection, sharing, and security practices.
+This page can help you complete the requirements for this data disclosure in regards to your usage of Smaato’s NextGen SDK for Android. On this page, you can find information on whether and how our SDKs handle end-user data.
+We aim to be as transparent as possible in supporting you; however, as the app developer, you are solely responsible for deciding how to respond to Google Play’s Data safety section form regarding your app’s end-user data collection, sharing, and security practices.
+How to Use the Information on This Page
+This page lists the end-user data collected by only the latest version of Smaato’s NexGen SDK for Android.
+We provide information about data collected automatically versus data collected depending on your usage. Automatic collection means that the SDK collects specific data without you invoking any specific method or class in your app. However, in many cases, the data collected by the SDK depends on your app’s specific usage of the product, meaning your app’s configuration and how you invoke the SDK.
+To complete your data disclosure, you can use Android’sguide about data types to help you determine which data type best describes the collected data. In your data disclosure, make sure to also account for how your specific app shares and uses the collected data.
+Important: To help you ensure that your app’s disclosures are accurate, we recommend the following:
+Always use the latest SDK versions in your app. This page lists the data collected by only the latest version of Smaato’s NextGen SDK forAndroid.
+Review this page whenever you update your app’s SDK versions. Check that your data disclosures are accurate and up-to-date.
+Overview of Data Encryption, Data Sharing, and Data Deletion for Smaato’s NextGen SDK forAndroid
+Data Collected and Shared Automatically
+Data Collected and Shared Depending on Your Usage
+Data Handling
+Android Ad ID is collected by default. The Ad ID can be reset by users using Ad ID control. As the app developer, you can prevent the collection of Ad IDs by updating the app’s manifest file.
+Certain other features in the Smaato NextGen SDK forAndroid, such as the limit Ad tracking feature, may also disable transmission of the Ad ID and other data.
+Upload to Google Play Console
+To simplify the process of gathering the information in a standardized manner, we have put together a .csv file based on the official Google template, containing all of Smaato’s data handling practices for our NextGen SDK for Android. You can utilize this .csv file to merge it with your app’s and other vendors’ data handling practices and convert it into a master file, which can be uploaded directly to the Data Safety section of your app in the Google Play Console.
+DOWNLOAD CSV FILE
+MONETIZE
+SPX Monetization Solution
+Integration Center
+Mediation Options
+Programmatic Deals
+Unified Bidding
+Publisher Documentation
+ADVERTISE
+SDX Marketer Solution
+Extend Your Reach
+Customer Data Platform (CDP)
+Prepackaged Deals
+Marketer Documentation
+OMNICHANNEL ADVERTISING
+Native Ads
+OTT/CTV Ads
+Video Ads
+Display Ads
+MARKET QUALITY
+Market Quality
+Ad Quality
+Traffic Quality
+INSIGHTS
+Search
+Blog
+Case Studies
+Guides and Reports
+Videos and Webinars
+Subscribe to Newsletter
+LEGAL
+Terms of Service (SPX)
+Privacy Policy
+EU Applicant Privacy Policy
+CCPA Applicant Privacy Notice
+SG Applicant Privacy Policy
+CCPA Privacy Notice
+Publisher Policies
+Demand Policies
+Partner List
+Cookie Policy
+SDK License Agreement
+COMPANY
+About Smaato
+Events
+Management Team
+In the News
+Media Assets
+Jobs
+Contact Us
+© 2005-2023 Smaato, Inc. All Rights Reserved. Smaato® is a registered trademark of Smaato, Inc.
+×
+Search

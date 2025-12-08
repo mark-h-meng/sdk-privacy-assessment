@@ -1,0 +1,185 @@
+Google Play's data disclosure requirements  |  Android  |  Google Developers
+Google
+AdMob
+Mobile Ads SDK (Android)
+English
+Bahasa Indonesia
+Deutsch
+Español
+Español – América Latina
+Français
+Italiano
+Polski
+Português – Brasil
+Tiếng Việt
+Türkçe
+Русский
+עברית
+العربيّة
+فارسی
+हिंदी
+বাংলা
+ภาษาไทย
+中文 – 简体
+中文 – 繁體
+日本語
+한국어
+Sign in
+Guides
+User privacy
+Reference
+SDK
+Samples
+Support
+Google
+AdMob
+Mobile Ads SDK (Android)
+Guides
+User privacy
+Reference
+SDK
+Samples
+Support
+User messaging tools
+Get started
+GDPR IAB support
+Release notes
+Google User Messaging Platform
+Overview
+ConsentDebugSettings
+OverviewBuilderDebugGeography
+ConsentForm
+OverviewOnConsentFormDismissedListener
+ConsentInformation
+OverviewConsentStatusOnConsentInfoUpdateFailureListenerOnConsentInfoUpdateSuccessListener
+ConsentRequestParameters
+OverviewBuilder
+FormError
+OverviewErrorCode
+UserMessagingPlatform
+OverviewOnConsentFormLoadFailureListenerOnConsentFormLoadSuccessListener
+Regulatory solutions
+CCPA preparation
+Platform policies
+Google Play data disclosure
+Precise location data policy
+Share your feedback and help shape the Google Mobile Ads SDK roadmap. Take the Google Mobile Ads SDK Annual Survey for 2023 before it closes on May 5th, 2023.
+Home
+Products
+AdMob
+Mobile Ads SDK (Android)
+User privacy
+Google Play's data disclosure requirements
+Stay organized with collections
+Save and categorize content based on your preferences.
+In May 2021, Google Play announced the new Data safety
+section,
+which is a developer-provided disclosure for an app's data collection, sharing,
+and security practices.
+This page can help you complete the requirements for this data disclosure in
+regards to your usage of the Google Mobile Ads SDK. On this page, you
+can find information on whether and how our SDK handles end-user data, including any
+applicable settings or configurations you can control as the app developer.
+We aim to be as transparent as possible in supporting you; however, as the app
+developer, you are solely responsible for deciding how to respond to Google
+Play's Data safety section form regarding your app's end-user data collection,
+sharing, and security practices.
+How to use the information on this page
+This page lists the end-user data collected by only the latest version (version
+22.0.0) of the Google Mobile Ads SDK.
+If you are using a prior version of the Google Mobile Ads SDK, consider
+updating to the latest version to ensure your app's disclosures are accurate.
+The Google Mobile Ads SDK will continue to be updated over time. This
+article will reflect these changes, so make sure to check back and update your
+disclosures as necessary.
+To complete your data disclosure, you can use Android's guide about data
+types to help you
+determine which data
+types
+and
+purposes
+best describe the collected data. In your data disclosure, make sure to also
+account for how your specific app shares and uses the collected data.
+If you are also utilizing
+AdMob Privacy & messaging
+to collect and manage consent for
+GDPR, please refer to the
+User Messaging Platform SDK documentation on Google Play data disclosures.
+Data collected and shared automatically
+The Google Mobile Ads SDK collects and shares the following data types
+automatically for
+advertising, analytics, and fraud prevention purposes.
+All of the user data collected by Google Mobile Ads SDK is encrypted in
+transit using the Transport Layer Security (TLS) protocol.
+Data handling
+Android ad ID collection is optional. The ad ID can be reset or deleted by users
+using ad ID controls in the Android settings menu. As the app developer, you can
+prevent the collection of ad IDs by updating the app's manifest
+file.
+Certain other features in the Google Mobile Ads SDK, such as the
+Limited Ads
+feature, may also disable transmission of the ad ID and other data.
+Data collected and shared depending on your usage
+If you are using any optional product features that involve additional data
+(such as advance reporting) or participating in any tests of new product
+features that involve additional data, be sure to check if those features or
+tests require additional data disclosures.
+Other helpful resources
+Blog
+post
+announcing the Data safety form in Google Play Console.
+The Play Console's Data safety form is available on the App
+content page.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
+Last updated 2023-04-24 UTC.
+Connect
+Blog
+Facebook
+Medium
+Twitter
+YouTube
+Programs
+Women Techmakers
+Google Developer Groups
+Google Developers Experts
+Accelerators
+Google Developer Student Clubs
+Developer consoles
+Google API Console
+Google Cloud Platform Console
+Google Play Console
+Firebase Console
+Actions on Google Console
+Cast SDK Developer Console
+Chrome Web Store Dashboard
+Android
+Chrome
+Firebase
+Google Cloud Platform
+All products
+Terms
+Privacy
+Sign up for the Google for Developers newsletter
+Subscribe
+English
+Bahasa Indonesia
+Deutsch
+Español
+Español – América Latina
+Français
+Italiano
+Polski
+Português – Brasil
+Tiếng Việt
+Türkçe
+Русский
+עברית
+العربيّة
+فارسی
+हिंदी
+বাংলা
+ภาษาไทย
+中文 – 简体
+中文 – 繁體
+日本語
+한국어

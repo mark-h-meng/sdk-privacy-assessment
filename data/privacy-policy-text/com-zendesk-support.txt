@@ -1,0 +1,47 @@
+Zendesk SDKs and App Privacy Details – Zendesk help
+Community
+English (US)
+languages
+Deutsch
+Español
+Français
+Italiano
+日本語
+한국어
+Português do Brasil
+简体中文
+Current: English (US)
+Sign in
+Zendesk help
+Policies and programs
+Zendesk policies and agreements
+Zendesk help
+Policies and programs
+Zendesk policies and agreements
+Zendesk SDKs and App Privacy Details
+Mick O'Donnell
+Edited March 07, 2022 12:02
+Zendesk Product Manager
+From December 8, 2020, Apple is requiring information about apps' privacy practices, including the practices of third-party partners who can be integrated into apps like Zendesk. You can read more about Apple's official guidelines here.
+Below, Zendesk lists the details of the data each SDK collects, with a brief explanation of the purpose of that data collection. If you use a Zendesk SDK, you may choose to include some or all of this information when submitting a new app, or an app update, to Apple's App Store.
+Important: the list below shows only what Zendesk SDKs collect as an out-of-the-box solution. Nonetheless, our SDKs have features like custom fields, forms, location sharing etc., that can be configured by customers to collect additional  data. If you configure a SDK to collect additional data, you might need to review and update the items below to reflect the additional data objects. Zendesk, with the exception of visitor screen data that must be provided by you via an API, does not use any SDK data for tracking purposes, but you might use data captured with Zendesk SDKs for tracking purposes of your own, which may require the answers below be updated accordingly. The content of this article is for your general information and use only. The data collected by SDKs is subject to change and we may update this article from time to time with new information. To the fullest extent permitted by the applicable law of your region,  we expressly exclude liability for inaccuracies or errors in this article.  If you identify a discrepancy, please report it to us.
+Zendesk SDK for messaging
+Zendesk Answer Bot SDK
+Zendesk Support SDK (including Guide)
+Zendesk Chat SDK
+Zendesk Talk SDK
+Zendesk Sunshine Conversations SDK
+Yes
+0
+No
+Return to top
+0 Comments
+Please sign in to leave a comment.
+Related articles
+Schrems II: Frequently asked questions about Zendesk products
+Zendesk Service Data Deletion Policy
+How much notice does Zendesk give for feature removal?
+Configuring end user access and sign-in
+What's new in Zendesk: September 2022
+Zendesk989 Market St., San Francisco, CA 94103Privacy Policy | Terms & Conditions | Cookie Notice || System Status
+Powered by Zendesk

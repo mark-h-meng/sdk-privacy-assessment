@@ -1,0 +1,107 @@
+Google Play Data Privacy Information - Apptentive Customer Learning Center
+Apptentive Customer Learning Center
+Home
+Developer Guides
+[Legacy SDK] Android - Native
+Google Play Data Privacy Information
+Search For
+Search
+Contents
+OverviewTimeline & Deadline InformationData collection and security sectionData types sectionApptentive Core FunctionalityAny interactionsSurveyMessage CenterData usage and handling sectionApptentive Core FunctionalityAny InteractionsSurveyMessage CenterChecks by GoogleAttachmentsCSV if using Message CenterCSV if NOT using Message Center
+Help Topic Categories Product Guides
+Apptentive Overview
+Reporting
+Events & Custom Data
+Account Settings
+Targeting
+Apptentive for Web
+Apptentive Interactions
+Apptentive Use Cases
+Fan Signals
+Security
+Developer Guides
+[NEW!] Android SDK 6.0 – Native
+[Legacy SDK] Android – Native
+[NEW!] iOS SDK 6 – Native
+[Legacy SDK] iOS – Native
+Apptentive for Web
+Cordova
+Flutter
+mParticle
+React Native
+Xamarin
+Other Technical Resources
+Contact Us
+Popular Articles
+Getting Started with Apptentive
+How to Use Ratings Prompts
+Targeting: Video Walkthrough
+Google Play Data Privacy Information
+Contents
+OverviewTimeline & Deadline InformationData collection and security sectionData types sectionApptentive Core FunctionalityAny interactionsSurveyMessage CenterData usage and handling sectionApptentive Core FunctionalityAny InteractionsSurveyMessage CenterChecks by GoogleAttachmentsCSV if using Message CenterCSV if NOT using Message Center
+The information you provide will be shown on your store listing to help users better understand your app’s privacy, security, and data handling practices before they download it.
+Overview
+Google Play will soon require additional details in the Data Safety section on the Google Play store. Developers will be required to tell Google about their apps’ privacy and security practices by completing a form in Play Console. Starting in late April 2022, this information will be shown on your app’s store listing to help Google Play users understand how your app collects and shares user data before they download your app. The Data Safety section on Google Play is a simple way for you to help people understand what user data your app collects or shares, as well as showcase your app’s key privacy and security practices. This information helps users make more informed choices when deciding which apps to install.
+This document will help you know how to answer the Google Play Data safety questionnaire for the Apptentive SDK.
+Provide information for Google Play’s Data safety section – Play Console HelpReview how your app collects and shares user data  |  Android Developers
+To find the Data safety questionnaire:
+Go to your Play Console for your appClick App content in your sidebar menuClick Start under the Data safety section
+The Data safety questionnaire is divided into 5 parts:
+OverviewData collection and securityData typesData usage and handlingPreview
+We aim to be as transparent as possible in supporting you; however, as the app developer, you are solely responsible for deciding how to respond to Google Play’s Data safety section form regarding your app’s end-user data collection, sharing, and security practices.
+Important: To help you ensure that your app’s disclosures are accurate, we recommend the following:• Always use the latest SDK versions in your app. This page lists the data collected by only the latest version of each SDK.• Review this page whenever you update your app’s SDK versions. Check that your data disclosures are accurate and up-to-date.
+Default Apptentive SDK Guidelines OnlyThese guidelines are only for the most basic usage of the Apptentive SDK.They do not cover how an individual app uses their data or every way the SDK can be utilized.These are the data types you should be considering.• Disclose how your app is using those data types in the questionnaire.• Consider if your app is collecting any of those data types in your Apptentive engage events and disclose them in the questionnaire.• Consider if your app is collecting any of those data types in any custom data collection for Person and/or Device and disclose them in the questionnaire.• Consider if your app is collecting any of those data types for any additional reasons not listed below.
+Timeline & Deadline Information
+Google Play Data Privacy Timeline & Deadline Information
+Data collection and security section
+This is the second part of the Data questionnaire flow.
+Data types section
+This is the third part of the Data questionnaire flow. This will be broken up by the interactions that Apptentive provides.
+Apptentive Core Functionality
+Apptentive is designed to capture user data to provide insights. All features of Apptentive use this.
+Any interactions
+Every interaction of the Apptentive SDK uses this data type.
+Survey
+Apptentive surveys use this data type.
+Message Center
+Message Center uses these data types.
+Data usage and handling section
+This is the fourth part of the Data questionnaire flow.
+This is for basic usage and implementation of the Apptentive SDK. Consider what kind of information your app is collecting through engage events and CustomData .Also, consider how your company is ultimately using the data you collect and answer accordingly.
+Apptentive Core Functionality
+These are how you can answer the Data Safety questions if you are using any part of the Apptentive SDK.
+Questions part 1
+Questions part 2
+Any Interactions
+These are how you can answer the Data Safety questions if you are using any Apptentive Interactions
+Questions part 1
+Questions part 2
+Survey
+These are how you can answer the Data Safety questions if you are using any Apptentive Surveys
+Questions part 1
+Questions part 2
+Message Center
+These are how you can answer the Data Safety questions if you are using Apptentive Message Center
+Questions part 1
+Questions part 2
+Checks by Google
+Checks by Google
+Checks is a new privacy platform for mobile app developers that helps create a safer digital ecosystem by simplifying the path to privacy compliance for development teams and the apps they’re building.
+As of May 2022, Checks is in beta and requires joining a waitlist to enter early access
+Attachments
+Alerts about importing our CSVs• Answers already entered into the form will be overwritten• The question “Do you provide a way for users to request that their data is deleted?” is answered as Yes• Please review if your app provides that functionality.• These are for basic usage and implementation of the Apptentive SDK only.
+CSV if using Message Center
+data_safety_export-With_Message_CenterDownload
+CSV if NOT using Message Center
+data_safety_export-No_Message_CenterDownload
+Updated on June 14, 2022
+Was this article helpful?
+Yes
+No
+Related Articles
+Requesting Ratings on Google Play
+Troubleshooting the Apptentive Android SDK
+Migrating Apptentive Android Versions
+Android Quick Start
+Android SDK Release Notes
+Android Integration Reference

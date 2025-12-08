@@ -1,0 +1,492 @@
+Answers for Google Play Store Privacy Questions
+Skip to content
+Why Braze?
+Why Braze?
+Instantly get the right message to the right customers on any channel.
+See how we're different
+Product
+Product Overview
+Power more personalized messages across mobile, web, email, SMS, and more.
+See Braze in action
+Engineered for any scale
+Braze enables world-class customer engagement powered by flexible APIs, supported by enterprise-grade security and compliance.
+See how we do it
+Data & Analytics
+Live 360° customer profiles, actionable insights, data sharing and streaming
+Intuitive Tools for Marketers
+Dynamic segmentation, customer journey building, and personalization
+Optimization
+Behavior-based automation, predictive tools, and A/B testing
+Integrated Cross-Channel Delivery
+Mobile & Web Push
+In-App & In-Browser Messaging
+Content Cards
+Email
+SMS
+Solutions
+Industries
+Retail & eCommerce
+Media & Entertainment
+Financial Services
+Travel & Hospitality
+On Demand
+Use Cases
+Optimize Onboarding
+Increase Engagement
+Reduce Churn
+Improve Acquisition
+Customers
+Case Studies
+See how leading brands worldwide use Braze to drive results
+Partners
+Strategic partnerships
+Extend the value of Braze by connecting with a trusted Technology or Solutions partner.
+Learn more about Braze Alloys
+Technology Partners
+Solutions Partners
+Resources
+All Resources →
+Thought leadership, tips, and tricks for world-class customer engagement
+Using Braze
+Documentation & User Guides
+Braze User Community
+Braze Learning
+Glossary
+Customer Support & Services
+Content Library
+Articles
+Reports & Guides
+Webinars & Events
+Videos
+Benchmarks
+EN
+FR
+JP
+Company
+About Us
+Careers
+News
+Legal
+Contact Us
+Login
+Get Started
+Documentation
+User Guide
+Developer Guide
+API
+Technology Partners
+Help
+EN
+FR
+JP
+Developer Guide
+DocumentationUser GuideDeveloper GuideAPITechnology PartnersHelp
+Braze.com
+Home
+Platform Wide Features & Behaviors
+Platform Features
+App Group Configuration
+Analytics Overview
+Sending Test Messages
+TV and OTT Integrations
+Feature Flags
+About Feature Flags
+Creating Feature Flags
+Example Use Cases
+FAQ
+SDK Authentication
+Platform Integration Guides
+SDK Overview for Developers
+Android and FireOS
+Initial SDK Setup
+Android SDK Integration
+Test Your Basic Integration
+Other SDK Customizations
+Accessibility
+Google Advertising ID (Optional)
+Push Notifications
+Android
+Integration
+Standard Integration
+Huawei Integration
+Customization
+Inline Image Push
+HTML Push Notifications
+Advanced Settings
+Push Event Callback
+Silent Push Notifications
+Push Stories
+Conversation Push
+Android TV Push
+Advanced Implementation Guide (Optional)
+Troubleshooting
+FireOS
+Integration
+Customization
+Advanced Settings
+Silent Push Notifications
+Push Stories
+Testing
+Troubleshooting
+In-App Messaging
+Integration
+Customization
+Custom Styling
+Custom Listeners
+Message Dismissal
+Key-Value Pairs
+GIFs
+Youtube in HTML
+Google Play Review Prompt
+In-App Message Delivery
+OTT and TV Display
+Advanced Implementation Guide (Optional)
+Troubleshooting
+Content Cards
+Integration
+Customization
+Custom Styling
+Customizing Default Feed
+Handling Clicks Manually
+Key-Value Pairs
+Read & Unread Indicators
+Badges
+Card Dismissal
+GIFs
+Use Cases
+Carousel View
+Refreshing the Feed
+Multiple Feeds
+Advanced Implementation Guide (Optional)
+News Feed
+Integration
+Customization
+Custom Styling
+Handling Clicks Manually
+Key-Value Pairs
+Read & Unread Indicators
+Badges
+GIFs
+Defining a News Feed Category
+Refreshing the Feed
+Analytics
+Tracking Sessions
+Setting User IDs
+Tracking Custom Events
+Setting Custom Attributes
+Logging Purchases
+Location Tracking
+Uninstall Tracking
+Disabling SDK Tracking
+Advanced Use Cases
+Deep Linking
+Localization
+Beacon Integration
+Network Offline Mode
+Runtime Configuration
+Location & Geofences
+Font Customization
+Google Tag Manager for Android
+Braze JavaScript Interface
+Android 13 Upgrade Guide
+Google Play Privacy Questionnaire
+Storage
+Sample Apps
+Changelog
+Swift
+Initial SDK Setup
+Integration Overview
+Installation Methods
+Swift Package Manager
+CocoaPods
+Completing the Integration
+Other SDK Customizations
+Push Notifications
+Integration
+Customization
+Action Buttons
+Badges
+Custom Sounds
+Rich Notifications
+Ignoring Internal Push
+Push Settings
+Silent Push Notifications
+Push Stories
+Troubleshooting
+Advanced Implementation (Optional)
+In-App Messaging
+Integration
+In-App Message Delivery
+Customization
+In-App Message UI Delegate
+Custom On-Click Behavior
+Custom Triggering
+Modal Dismissal
+Example - App Store Review Prompt
+Troubleshooting
+Content Cards
+Integration
+Customization
+Custom Feed
+Handling Clicks Manually
+Read & Unread Indicators
+Badges
+Carousel View
+Multiple Feeds
+Advanced Implementation (Optional)
+Live Activities
+Live Activities
+FAQ
+Analytics
+Session Tracking
+Setting User IDs
+Tracking Custom Events
+Setting Custom Attributes
+Logging Purchases
+Location Tracking
+Uninstall Tracking
+Disabling iOS SDK Tracking
+Collecting IDFV
+Advanced Use Cases
+Deep Linking
+Fine Network Traffic Control
+Google Tag Manager
+Locations and Geofences
+Localization
+Storage
+Sample Apps
+Changelog
+Web
+Initial SDK Setup
+Push Notifications
+Integration
+Safari Mobile Web Push
+Soft Push Prompt
+Alternate Web Push Domain
+In-App Messages
+Integration
+Customization
+Custom Styling
+Message Dismissal
+Logging Impressions and Clicks
+Open Link in New Tab
+Key-Value Pairs
+In-App Message Delivery
+Troubleshooting
+Content Cards
+Integration
+Customization
+Custom UI
+Custom Styling
+Key-Value Pairs
+Read & Unread Indicators
+Badges
+Refreshing the Feed
+Multiple Feeds
+News Feed
+Integration
+Customization
+Custom Styling
+Key-Value Pairs
+Read and Unread Indicators
+Badges
+Defining a News Feed Category
+Analytics
+Tracking Sessions
+Setting User IDs
+Tracking Custom Events
+Setting Custom Attributes
+Logging Purchases
+Location Tracking
+Disabling Web SDK Tracking
+AMP Support
+Cookies and Storage
+Browser Extensions
+Google Tag Manager
+Smart TV Integrations
+Content Security Policy Headers
+Changelog
+Cordova
+Initial SDK Setup
+Android and FireOS
+iOS
+Integration
+Content Cards
+Changelog
+Flutter
+Initial SDK Setup
+Push Notifications
+Content Cards
+In-App Messages
+Analytics
+Changelog
+React Native
+Initial SDK Setup
+Push Notifications
+Content Cards
+In-App Messages
+Analytics
+Sample App
+Changelog
+Unity
+SDK Integration
+Android
+iOS
+Push Notifications
+Android
+iOS
+Amazon Device Messaging
+In-App Messaging
+Content Cards
+News Feed
+Analytics
+Setting User IDs
+Tracking Custom Events
+Setting Custom Attributes
+Logging Purchases
+Advanced Use Cases
+Troubleshooting
+Changelog
+Xamarin
+Initial SDK Setup
+Push Notifications
+In-App Messaging
+News Feed
+Analytics
+Content Cards
+Troubleshooting
+Changelog
+Roku
+Initial SDK Setup
+Analytics
+Setting User IDs
+Tracking Custom Events
+Logging Purchases
+Setting Custom Attributes
+In-App Messages
+Overview
+Integration
+Changelog
+Unreal Engine
+Initial SDK Setup
+SDK Changelogs
+iOS (legacy)
+Initial SDK Setup
+Overview
+Installation Methods
+Carthage
+CocoaPods
+Swift Package Manager
+Manual
+Completing the Integration
+Other SDK Customizations
+Collecting IDFV
+SDK Integration Guide (Optional)
+Push Notifications
+Integration
+Customization
+Action Buttons
+Custom Sounds
+Rich Notifications
+Badges
+Ignoring Internal Push
+Advanced Settings
+Silent Push Notifications
+Push Primer
+Push Stories
+Advanced Implementation (Optional)
+Testing
+Unit Tests (Optional)
+Troubleshooting
+In-App Messaging
+Overview
+Customization
+Setting Delegates
+Customizing Orientation
+Custom Display Handling
+Custom On Click Behavior
+Custom Triggering
+Custom View Controller
+Modal Dismissal
+Key-Value Pairs
+In-App Message Delivery
+Custom App Store review prompt
+Advanced Implementation (Optional)
+SharePlay
+Troubleshooting
+Content Cards
+Integration
+Customization
+Custom Styling
+Customizing Feed
+Handling Clicks Manually
+Read & Unread Indicators
+Badges
+Use Cases
+Carousel View
+Refreshing the Feed
+Multiple Feeds
+Advanced Implementation (Optional)
+News Feed
+Integration
+Customization
+Custom Styling
+Badges
+Defining a News Feed Category
+Refreshing the Feed
+Analytics
+Tracking Sessions
+Setting User IDs
+Tracking Custom Events
+Setting Custom Attributes
+Logging Purchases
+Location Tracking
+Uninstall Tracking
+Disabling iOS SDK Tracking
+Advanced Use Cases
+Deep Linking
+Fine Network Traffic Control
+Localization
+Beacon Integration
+Locations & Geofences
+Google Tag Manager
+iOS 16 Upgrade Guide
+Storage
+Sample Apps
+Changelog
+Swift
+Objective-C
+MacOS (legacy)
+Initial SDK Setup
+tvOS (legacy)
+Initial SDK Setup
+Content Cards
+In-App Messages
+News Feed
+Disclosures
+Security Vulnerability Disclosure
+Open Source Software Disclosure
+Security Qualifications
+Innovation Statement
+BRAZE SYSTEM STATUS
+Checking Braze Status
+Google Play privacy questionnaire
+As of April 2022, Android developers must complete Google Play’s Data safety form to disclose privacy and security practices. This guide provides instructions on how to fill out this new form with information on how Braze handles your app data.
+As the app developer, you are in control of what data you send to Braze. Data received by Braze is processed according to your instructions. This is what Google classifies as a service provider.
+important:
+This article provides information related to the data the Braze SDK processes as related to the Google safety section questionnaire. This article is not providing legal advice, so we recommend consulting with your legal team before submitting any information to Google.
+Questions
+For more information about handling user requests for their data and deletion, see Braze Data Retention Information.
+Data collection
+The data collected by Braze is determined by your specific integration and the user data you choose to collect. To learn more about what data Braze collects by default and how to disable certain attributes, see our SDK data collection options.
+To learn more about other device data that Braze collects which may fall outside the scope of Google Play’s data safety guidelines, see our Android storage overview and our SDK data collection options.
+Edit this page on GitHub
+WAS THIS PAGE HELPFUL?
+Yes
+No
+SUBMIT FEEDBACK
+© Braze. All Rights Reserved
+Privacy Policy
+Manage Cookies
+Edit this page on GitHub
+New Stuff!

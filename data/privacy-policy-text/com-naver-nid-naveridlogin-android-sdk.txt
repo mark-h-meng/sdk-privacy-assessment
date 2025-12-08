@@ -1,0 +1,204 @@
+Privacy Policy
+본문바로가기
+N
+네이버정책
+NAVER Terms & Privacy
+영어(English)
+영어(English)
+한국어(Korean)
+일본어(Japanese)
+Terms of Service
+Privacy Policy
+NAVER Privacy Policy Ver.11.2
+NAVER ranks the protection of personal information as top priority value among several managerial components.
+NAVER Corporation (“NAVER” or “Company”) strictly complies with all domestic laws and regulations, including the Personal Information Protection Act, in all stages from service planning to termination. Furthermore, NAVER provides services in compliance with international standards, including the OECD Privacy Guidelines.
+The contents of this Privacy Policy are provided as follows.This Policy contain compulsory matters of the privacy policy required by relevant laws and regulations and other details regarded as important by NAVER in protecting personal information.
+1.What Privacy Policy Means for Our Users
+2.Personal Information Collected (Required)
+3.Use of Collected Personal Information (Required)
+4.Provision & Entrustment of Personal Information (Required)
+5.Destruction of Personal Information (Required)
+6.Rights of Users & Legal Representatives and Exercising Those Rights (Required)
+7.Actions Taken to Protect Personal Information
+8.Chief Privacy Officer & Responsible Personnel (Required)
+9.Processing Personal Location Information (Required)
+10.Application of this Privacy Policy
+11.Obligation to Notify Prior to Amendment
+1. What Privacy Policy Means for Our Users
+NAVER has made efforts to describe the current status of processing personal information within NAVER as detailed and easy as possible, while creating this Privacy Policy based on the Personal information protection Act.This is because NAVER has adopted the “Plain Language Privacy Policy,” as its principle in writing Privacy Policy with concise and easy-to-understand terms.
+Go to Guidelines to Creating a Plain Language Privacy Policy (English)
+Privacy Policy has the following important implications.
+Privacy Policy provides transparent information in relation to the “life cycle of personal information,” such as the information collected by NAVER, how the collected information is used, with whom the information is shared when necessary, and when and how the information is destroyed once it fully serves its purpose.
+Privacy Policy informs users, the information subjects, their rights regarding their personal information as well as the methods and procedures to exercise such rights. Guidelines are also provided for the rights that legal representatives (including parents, etc.) may exercise to protect the personal information of minors under the age of 14.
+Where the privacy infringement takes place, Privacy Policy guides you who to contact and what kind of help you should expect in order to prevent further damage and restore the damage you have already sustained.
+Above all, it defines the rights and duties of NAVER and users in relation to personal information and a means to guarantee the Right to Informational Self-determination among users.
+2. Personal Information Collected
+Users may access the majority of NAVER services in a manner equivalent to members, such as information searches and viewing news articles without any need to subscribe as members.When a user subscribes to use personalized or membership services such as e-mail, calendar, cafe, blog, and more, NAVER collects the minimum amount of personal information needed for him/her to use such services.The personal information that NAVER collects from users at the time they sign up for membership is as follows.
+When signing up for membership, both the required items (including ID, password, name, date of birth, gender, and mobile phone number) and the optional item (an e-mail address for the identification process), are collected. However, when signing up for membership without a password, both the required items (including ID, name, date of birth, and mobile phone number) and the optional item (password) are collected. When children under the age of 14 want to sign up for membership, their legal representatives' information (name, date of birth, gender, duplication information (DI), and mobile phone number) is separately collected.
+When multiple users belonging to a group sign up for membership, both the required items (including the group ID, password, group name, e-mail address, and mobile phone number) and the optional item (the name of the group's representative) are collected.
+In countries other than Korea, users may join using their Facebook, LINE, or Apple ID. Personal information stated above will not be collected when users join using their social media ID. The following personal information will be collected when users join using social media ID: Facebook : (Required) Name, profile picture, (Optional) Email addressLINE : (Required) Name, profile picture, mobile phone number, list of friends, (Optional) Email addressApple : (Required) Name, (Optional) Email address
+Additional description on the personal information collected upon membership subscription 내용 더보기/닫기
+(1) Differences between required and optional items
+Required items refer to information necessary to perform the essential functionalities of the service, while optional items refer to additional information collected to provide additional value to users, although they do not affect the service use itself. The ID and password collected at the time of membership subscription are information necessary for login, while the name, date of birth, and gender are used to classify users according to the operation of the membership service. Mobile phone numbers authenticated for subscription are collected to apply restrictions on use, etc. when users attempt to sign up for illegal purposes, such as posting illegal advertisements. Users are not subject to any restriction on their membership subscription or service use even through the optional items are not entered, and if necessary, users may enter such information afterwards at ‘NAVER My Info > Member Info > Contact’.
+(2) Why the information of legal representatives are collected
+When collecting personal information of a minor under the age of 14, a company is required to obtain consent from his/her legal representatives (guardian of the minor such as his/her parents) in accordance with the Personal Information Protection Act. Therefore, at the time of collecting personal information of a minor under the age of 14, NAVER obtains consent from his/her legal representative, during which the name, DI, and mobile phone number (only for mobile authentication) of the legal representative are collected. The information of the legal representative collected is destroyed at the time the minor turns an adult.
+(3) Whether group information is recognized as personal information
+Personal information defined by the Personal Information Protection Act is 'information about a living individual'. Therefore, information about a corporation or group, such as the group name, business address and phone number, or the representative's name, is not, in principle, personal information. The majority of information collected upon subscription with a NAVER group ID does not fall within the scope of personal information. However, in the case of a sole proprietor, it is ambiguous to only handle them as group information, and the contact information of the manager or the person in charge is collected, and therefore, this Privacy Policy provides information on collecting group information to help users understand.
+Personal information collected from users during their service use is as follows.
+Your profile information (nickname, profile picture) can be set in your member information or individual services. When a nickname is not entered, the masked ID will be automatically entered as the nickname.
+Additional personal information may be collected only from users who access individual services within NAVER, participate in an event, or register for a giveaway event. In addition, when collecting additional personal information, the users are provided with further guidance regarding the ‘collected items of personal information, purposes of collecting and using personal information, and the retention period of personal information’ at the time of collecting such personal information and are asked to provide their consent.
+Cases where additional personal information is collected upon user consent Check Status on the Use of Personal Information (My Info)
+The IP address, cookies, service usage records, device information, and location information may be generated and collected during service use.In addition, images or voice data may also be collected from search services using images and voice data.
+To be specific, 1) information about users is generated in an automated manner or information that users entered is stored (collected) during their service use or 2) the unique device information of users is safely converted to prevent the original values from being identified and such converted information is then collected. Location information may be collected during the service use, and the location-based service provided by NAVER is regulated in details in the “Terms of Location-Based Service”The collected information may correspond to personal information or not, depending on whether it is linked to personal information.
+Additional description on collecting generated information내용 더보기/닫기
+What is IP (Internet Protocol)?
+The IP address is the online address information that Internet network operators assign to devices such as the users’ personal computers used to access the Internet. There are many different views about whether an IP address corresponds to personal information.
+What are service usage records?
+They mean the date and time of access to NAVER, the list of services used, all normal or abnormal logs created during service use, the email address recorded in the process of receiving and sending email, the mobile phone numbers entered to invite friends or send gifts, and conversation history between Smart Store sellers and buyers (NAVER Talk Talk and posts on the product Q&A board).
+What is device information?
+The device information specified in this Privacy Policy means all information assigned to the device during production and sales, as well as information identifiable through software used to run the device. It means the name of the computer that the user assigns to his/her personal computer during the OS (Windows, MAC OS, etc.) installation process, the serial number of the peripheral device installed on the personal computer, the unique identification value (IMEI, IMSI) required for smartphone communication, AAID or IDFA, set language and standard time for settings, and the code of USIM communication provider. However, if NAVER needs to collect unique identification values for devices such as IMEI, it encrypts the original values in an unrecognizable manner after removing the identifiability before collecting them.
+What are cookies?
+A cookie is a very small text file stored on user’s computer through his or her web browser when he or she accesses the website. If the user visits the website again afterwards, the website server reads the content of cookies stored on the user's computer to maintain the service environment established by the user, enabling convenient use of the Internet service. In addition, the website may analyze service information visited by a user, his/her service access duration and frequency, and information created or provided (entered) during his/her service use to provide services (including advertisements) that are specific to user's tastes and interests. The user has a choice regarding cookies, and thus, by setting options in his/her web browser, he/she may allow all cookies, go through a verification every time a cookie is saved, or refuse to save any cookies at all. However, if the user refuses to save cookies, he/she may experience some difficulty in using parts of the NAVER services that require login. Learn more about cookies (NAVER Privacy Center)
+NAVER collects personal information under the following methods.
+If the user agrees to the collection of personal information and enters his/her personal information while signing up for membership during service use, such personal information will be collected.
+Personal information of the user may be collected through websites, email, fax, phone, etc. during the consultation through the customer center.
+Personal information may be collected in writing from offline events, seminars, and the like.
+Personal information may be provided from outside companies or organizations partnered with NAVER, and in such cases, the partner is required to obtain consent from users to provide personal information under the Personal Information Protection Act before such information is provided to NAVER.
+Generated information such as device information may be automatically generated and collected during the use of PC web or mobile web/app.
+3. Use of Collected Personal Information
+Personal information is used only to manage members of NAVER and all other related services (including mobile web/app), develop, provide, and improve services, and establish a safe Internet environment.
+Personal information is used for member management, such as confirming members’ intention to subscribe, confirming the age, proceeding with obtaining consent from legal representatives, verifying the identity of users and their legal representatives, identifying users, and confirming their intention to unsubscribe.
+In addition to the purpose of providing existing services (including advertisements) such as contents, personal information is used to discover new service elements and improve existing services such as demographic analysis, analysis of visits to services and usage records, building user-to-user relationships based on personal information and interests, and providing tailor-made services based on acquaintances and interests.
+Personal information is used to protect users and operate services by means such as preventing and imposing sanctions against acts that interfere with the smooth operation of services, including measures restricting the use by members who breach the statutes and NAVER Terms of Service, preventing account theft and fraudulent transactions, sending out notices regarding a revision to the terms and conditions, preserving records for dispute mediation, and handling civil complaints.
+Personal information is used for personal authentication, purchases and payments for charges, and deliveries of products and services for the provision of paid services.
+Personal information is used for marketing and promotion purposes such as providing event information, opportunities for participation, and advertising information.
+Personal information is used for service usage records and access frequency analysis, statistics on service use, service analysis, and providing tailor-made services and advertising according to statistics.
+Personal information is used to establish a service environment that users feel safe to use in terms of security, privacy, and safety.
+After pseudonymizing the collected personal information to make it impossible to identify a particular individual, NAVER can process the information for purposes such as statistical, scientific research, and archiving for the public interest. At this time, the pseudonymized information shall be stored and managed separately from additional information to prevent re-identification, and necessary technical and managerial safeguards shall be taken.
+Status of pseudonym information processing
+4. Provision & Entrustment of Personal Information
+In principle, NAVER does not provide personal information to the outside without the consent of users.
+NAVER does not provide personal information to the outside without prior consent from users. However, personal information is provided in limited circumstances if a user personally agrees to provide his/her personal information in order to use the service of an outside partner, if NAVER becomes obliged to submit personal information under the relevant laws and regulations, or if an urgent risk to life or safety of users is identified.
+Cases where personal information is provided following user consent Check Status of Personal Information Use (My Info) Cases where personal information is provided under the law (NAVER Privacy Center)
+NAVER entrusts part of its work to the outside to provide convenient and better services.
+NAVER entrusts part of its work necessary to provide services to outside companies, stipulates the matters necessary for the entrusted party to safely process personal information, and carries out management or supervision to ensure such safe processing, in accordance with the Personal Information Protection Act. If a user does not use the service related to the work entrusted to the entrusted party, his/her personal information will not be provided to the said entrusted party.
+NAVER Cloud Corp., the entrusted company, stores personal information outside of Korea in the following way.
+NAVER safely stores data within and outside Korea to continue providing the company's services even in the event of natural disasters and catastrophes. 'NAVER Cloud Corp.' is an affiliate of NAVER, subject to the same data protection policy as NAVER. Furthermore, the company performs data management tasks under NAVER's strict control.
+Further description on the provision and entrustment of personal information 내용 더보기/닫기
+(1) Differences between provision and entrustment of personal information
+The provision of personal information to third parties means the personal information is provided for the business purpose and benefit of the recipient. After the personal information is provided, it is processed under the responsibility of the recipient. For this reason, in order to provide personal information to third parties, the users are notified in advance of the ‘parties to be provided with personal information, the purpose of using personal information by the parties to be provided with personal information, items of personal information provided, and the period during which personal information is retained and used by the parties to be provided with personal information’ and are asked to provide their consent. The entrusted processing of personal information means entrusting personal information to the outside to process the work of the provider. Even after personal information is provided, the party who has provided personal information, the entrusting party, remains responsible for the management/supervision of the entrusted party.
+(2) Entrusted work that requires user's consent and entrusted work that may be disclosed/notified in satisfaction of user's consent
+The entrusted processing of personal information necessary for performing contracts on service provision and promoting user convenience may be notified to users through email or other means or disclosed in the Privacy Policy in satisfaction of obtaining consent. In addition, in relation to the entrusted processing of personal information, the Entrusted Parties and Work must be notified to users and their consent must be obtained. NAVER discloses entrusted processing of personal information necessary for infrastructure operations, service development and testing, service operations, customer consultation, payment processing, and identify verification, in satisfaction of obtaining consent. However, if personal information is entrusted to the outside for service promotion, etc., the prior consent of users will be obtained.
+5. Destruction of Personal Information
+In principle, the company destroys users' personal information without any delay either when they withdraw from membership or the company achieves its purpose of use.
+However, if the Company has obtained separate consent from users regarding the retention period of personal information or if the laws and regulations impose duties to retain information for a certain period, personal information may be stored safely during the designated period.
+NAVER will obtain consent from users for the retention period of personal information at the time of their member or service subscription for the following purposes.
+To prevent any fraudulent subscription and useMobile phone number or duplicate information (DI) of fraudulent users for subscription verification (legal representative’s DI for users aged 14 or under) : Stored for 6 months from the date of withdrawalMobile phone number of users withdrawn from membership (one-way encryption that cannot be decrypted (via hashing)) : Stored for 6 months from the date of withdrawal
+Identification for the provision of NAVER's servicesInformation on the telecommunication company: The aforementioned information shall be kept for one year from the time of its collection
+To respond to QR code recovery requestQR code registration data : Stored for 6 months from the time of deletion
+To mediate Smart Place disputes and respond to customer inquiriesMobile phone number : Up to 1 year from the time of request for registration/modification/deletion
+To prevent duplicate receipt of benefits for the NAVER Plus membership service Encrypted DI (via hashing) : Stored for 6 months from the end date of the provided benefit
+For an application for re-subscription to NAVER EXPERT and to prevent any fraudulent useRegistered information for subscription to NAVER EXPERTservice and NAVER EXPERT Center : Stored for 6 months from the date of application (if registration has been rejected, 30 days from the date on which the intention to reject was expressed)
+Electronic Signature AuthenticationRecord of authentication certificate and tasks on authentication : Stored for 10 years from the date on which the certificate becomes invalid
+Relevant statutes, including the Act on the Consumer Protection, in Electronic Commerce, Etc., the Framework Act on Electronic Documents and Transactions, and the Protection of Communications Secrets Act, require NAVER to store the information for a certain period of time under the following circumstances. NAVER stores personal information during the set period under the provisions of the statutes and in no case will it ever store this information for any other purposes.
+Act on the Consumer Protection, in Electronic Commerce, Etc.Records on the contract or subscription withdrawal, etc. : Stored for 5 yearsRecords on the payment and supply of goods, etc. : Stored for 5 yearsRecords on the consumer complaints or dispute settlement : Stored for 3 years
+Framework Act on Electronic Documents and TransactionsRecords on the distribution of electronic documents through authorized electronic addresses : Stored for 10 years
+Protection of Communications Secrets ActLogin information : 3 months
+Personal information that fully serve its purpose of collection and use, by means such as membership cancellation, service termination, and/or expiration of the retention period of personal information approved by the user, is destroyed to an irreversible state.Information required to be retained under the statutes is also destroyed to an irreversible state without delay after the expiration of the relevant period.Personal information stored in electronic form is securely deleted by technical means to prevent its recovery or restoration, while written information is shredded or incinerated.Please note that NAVER separately stores and manages or deletes the personal information of members who have not used its service for at least one year in accordance with the Personal Information Validity Period Plan.
+6. Rights of Users & Legal Representatives and Exercising Those Rights
+Users can go to ‘NAVER My Info > Member Info’ to view or update their personal information and request access to their personal information at any time.
+Users are entitled to request a suspension of processing their personal information at any time, and NAVER may refuse the request for suspension of processing if special provisions in the statute provide otherwise.
+Users can go to ‘Membership Withdrawal’ to revoke their consent to the collection and use of their personal information at any time.
+If the user is under the age of 14, the child’s legal representative has the right to view and update the child’s personal information, and to revoke his/her consent to the collection and use of the child’s personal information.
+If a user requests the correction of errors in his/her personal information, the relevant personal information will not be used or provided until the correction is made. In addition, in the event where the incorrect personal information has already been provided to a third party, NAVER will notify the third party of the corrected information without delay to ensure that the necessary correction is made.
+Users and their legal representatives can go to ‘Member Info’ to personally handle their rights or go to ‘Inquire’ to send a request. The details provided to third parties according to the user's service use activities and consent details are available on the ‘Personal Information Usage Status’ where they may withdraw their consent.
+NAVER provides the page to ensure users' rights in accordance with the 'Online customized advertising privacy protection guideline'
+Go to 'NAVER Customized Advertising Guide'
+7.Actions Taken to Protect Personal Information
+NAVER makes every effort to securely manage users' personal information and protects personal information beyond the degree required by the Personal Information protection Act.
+NAVER has established and implemented an internal privacy management plan.
+NAVER has established an internal personal information management plan, containing matters in relation to the composition and operation of the privacy organization, such as the designation of privacy personnel, and inspect whether the internal management plan is implemented effectively each year.
+Actions are undertaken to control access to and restrict the right to access personal information.
+In order to prevent illegal access to personal information, NAVER has established the standards for granting, modifying, and canceling access rights to the personal information processing system, and runs an intrusion prevention system and intrusion detection system. Employees that handle personal information are kept to a minimum and Intranet is completely cut off from external Internet for the work computers of employees that are permitted to download personal information from the personal information processing system, thereby reducing the risk of personal information leakage.
+Personal information is being encrypted for safe storage and transmission.
+In addition to the passwords, unique identifiable information, account numbers, and credit card numbers that are encrypted for storage as required by law, email addresses and mobile phone numbers are also encrypted and stored. NAVER also safely sends and receives personal information over the network via encrypted communication.
+Actions are taken to store personal information access records and prevent any forgery and tampering.
+The personal information handler stores and manages access records for the personal information processing system, periodically inspects access records to prevent any misuse, abuse, loss, forgery, and tampering of personal information, and safely stores the relevant access records so that they are not forged, stolen, or lost.
+NAVER installs and renews security programs for personal information.
+NAVER frequently backs up data to offset risk of any damage to personal information, and uses the latest antivirus software to prevent leakage or damage of users' personal information.
+NAVER enforces physical actions to keep personal information safe.
+In order to prevent leakage or damage of members' personal information caused by hacking or computer viruses, NAVER installs systems in areas with restricted access from the outside, and establishes and operates access control procedures.
+NAVER operates a separate organization that only deals with the protection of personal information.
+In 2007, NAVER became the first company in Korea to create the Privacy Team. Even to this day, the Privacy Department continues to enforce technical/administrative protective measures at all times to ensure that all executive and employees of NAVER fully comply with their duties to protect the personal information of users.
+NAVER is the first company in Korea to run a blog and website entirely dedicated to the protection of personal information.
+NAVER has launched Korea's first blog entirely dedicated to the protection of personal information to communicate with users. NAVER also provides Privacy as a Service to protect the privacy of users through its NAVER Privacy Center.
+Go to NAVER Privacy Center > Protection Activities Go to NAVER blog for personal information protection
+NAVER audited by domestic and international certification authorities for its privacy activities.
+NAVER is regularly audited by external authorities for its information protection activities through the international information security standard ISO/IEC 27001 and the Korean information security standard ISMS-P·ISMS. NAVER is audited for the level of its internal service control under the auditing standards of the American Institute of Certified Public Accountants (AICPA) and the results are published in SOC reports.
+Go to Information Protection Certification Go to SOC Certification
+8. Chief Privacy Officer & Responsible Personnel
+NAVER has designated the following persons as the Chief Privacy Officer and Personal Information Manager to remain responsible for responding to user inquiries regarding personal information and resolving any related complaints.
+Chief Privacy Officer
+Name : Jinkyu Lee
+Affiliation : Data Protection&Privacy
+Position : CPO
+Phone : 1588-3820
+Email : Send an inquiry
+Personal Information Manager
+Name : Jaerim Lee
+Affiliation : Data Protection&Privacy
+Position : Leader
+Phone : 1588-3820
+Email : Send an inquiry
+If you need to report or consult on other privacy infringements, please contact the following institutions.
+Privacy Infringement Report Center (privacy.kisa.or.kr / Phone no. 118)
+Cyber Crime Investigation Unit, Supreme Prosecutor’s Office (www.spo.go.kr / Phone no. 1301)
+Cyber Bureau of Investigation, National Police Agency (police.go.kr / Phone no. 182)
+9. Processing personal location information
+NAVER safely manages users' personal location information in accordance with the Act on the Protection and Use of Location Information.
+Purpose of processing and period of use of personal location information
+NAVER destroys personal location information without delay after one-time or temporary use from most location-based services. However, when a user posts or stores personal location information along with posts and content on NAVER’s service, such as in the ‘GeoTagging’ service, the personal location information is stored together during the retention period of the posts and content.
+The purpose of processing personal location information to provide NAVER's location-based services is as follows.
+Additional description by category on the purpose of processing such information내용 더보기/닫기
+1. GeoTagging service: the location information of a subject of personal location information or mobile device included in a post or content saved by the user is stored with the post. The stored location information may be preserved without additional usage, or may be used to provide features that categorizes or searches for content based on location.
+2. Search result and content using location information: where there is a request for information search, or where the location information of the subject of personal location information or mobile device is provided, such location information is used to provide search result, result of nearby location search (popular restaurants, nearby businesses, means of transportation, etc.), and translation result.
+3. Advertisement using user location: in the process of using search result or other services, the location of the subject of personal location information or mobile device is used to present advertising materials;
+4. Protection of users and prevention of abuse: the location of the subject of personal location information or mobile device is used to prohibit any unauthorized individual from attempting to use services abnormally, etc.
+5. Provision of convenience services such as directions: optimal routes including traffic information, directions, etc. are offered on a map, and locating nearby facilities, news and weather information, emergency rescue service, automatic address completion and other convenience services shall be provided
+Grounds for and period of retaining data verifying the collection, usage and provision of location information
+In accordance with Article 16 (2) of the Act on the Protection and Use of Location Information, NAVER automatically records data verifying the collection, use, and provision of location information in a location information system, and preserves the data for 6 months or longer.
+Procedure and method for the destruction of personal location information
+When the purpose of processing personal location information has been attained, NAVER safely destroys personal location information in an unrecoverable way. Electronic files are destroyed using a technical method that cannot be recovered or regenerated, and documents are shredded or incinerated.
+Matters on providing personal location information to third parties and notification of such provision
+NAVER does not provide personal location information to a third party without prior consent from the user. In case NAVER provides personal location information to a third party designated by the user, NAVER immediately notifies the subject of personal location information of the designated recipient of such information, the date and time, and the purpose of such provision on each occasion.
+NAVER only provides personal location information to a third party when a user directly consents to the provision of personal location information in order to use the services of an outside partner, when NAVER is obligated to provide personal location information in accordance with relevant laws, and when an imminent risk to the life or safety of a user is confirmed and such risk needs to be addressed.
+Rights and responsibilities held by the legal guardian of children of eight years old or younger, etc., and how to exercise them
+Where the legal guardian of any of the following users (hereinafter referred to as "child of eight years old or younger, etc.") gives consent to the use or provision of personal location information regarding the child of eight years old or younger, etc. for the protection of their health or safety, NAVER deems that the user him/herself has given his/her consent.
+A child of eight years old or younger
+A person under adult guardianship
+A person with a mental disorder defined in Article 2 (2) 2 of the Act on Welfare of Persons with Disabilities, classified as a person with a severe disability defined in subparagraph 2 of Article 2 of the Act on the Employment Promotion and Vocational Rehabilitation of Persons with Disabilities (limited to those registered as disabled persons under Article 32 of the Act on Welfare of Persons with Disabilities).
+For the protection of the health or safety of a child of eight years old or younger, etc., the legal guardian who intends to consent to the use or provision of personal location information must submit a written consent to NAVER along with a document proving that he/she is the legal guardian.
+The legal guardian can exercise all of the rights of the subject of personal location information if he/she agrees to the use or provision of personal location information for a child of eight years old or younger, etc.
+Person responsible for managing location information
+The above person responsible for protecting personal information at NAVER is also in charge of managing location information.
+10. Application of this Privacy Policy
+This Privacy Policy is applied to the ‘NAVER(www.naver.com)’ website, a brand of NAVER, and other related services (including mobile web/app), whereas a separate privacy policy may be applicable to services provided under a different brand name.
+This Privacy Policy will not be applied to personal information collected from websites that are run by other companies through links to NAVER after such formation is provided under the consent of users.
+11. Obligation to Notify Prior to Amendment
+Users will be notified of any addition, deletion, and/or modification in this Privacy Policy through ‘Notice’ at least 7 days prior to the scheduled amendment.However, if an important modification is made to the rights of users, such as the modification to the collected items of personal information and the purposes of their use, the notification will be sent at least 30 days prior to any such modification, and if necessary, NAVER may obtain users’ consent again.
+Notification date : December 29, 2022
+Effective date : January 05, 2023
+top
+회사소개
+인재채용
+제휴제안
+이용약관
+개인정보처리방침
+청소년보호정책
+책임의 한계와 법적고지
+검색결과수집에 대한 정책
+이메일주소 무단수집 거부
+네이버 고객센터
+Copyright ⓒ
+NAVER Corp.
+All Rights Reserved.

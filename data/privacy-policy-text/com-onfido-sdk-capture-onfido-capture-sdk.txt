@@ -1,0 +1,187 @@
+Privacy | Onfido
+Try for free
+Take a tour
+Resources
+Support
+Sign in
+Our solutions
+▼
+Onfido Real Identity Platform
+Build trust using a flexible, end-to-end identity verification solution.
+Verification Suite
+Access a library of verifications and fraud signals.
+Onfido Studio
+Orchestrate verifications and signals into easy-to-manage workflows.
+Onfido Atlas™
+Get fair, fast, and accurate results with AI.
+Smart Capture SDK
+Integrate an exceptional capture experience.
+All products
+Product innovations
+Take an interactive tour
+Explore the full range of verifications and features, including a guided, clickable demo of the Studio orchestration tool.
+View all demos
+Challenges we solve▼
+Customer use cases
+Customer acquisitionDrive growth using automated onboarding.
+Global complianceNavigate regulatory compliance in each region.
+Cost of customer acquisitionAutomate processes to reduce the cost of customer acquisition.
+Fraud preventionPrevent fraud to protect your business and customers.
+KYCNavigate know your customer compliance.
+Identity verificationCreate confidence in user identity.
+Driver registrationMeet regulatory needs and protect your fleet.
+User onboardingAutomate onboarding and maximize conversion.
+Industries▼
+Industries we partner with
+Financial servicesAutomate onboarding, prevent fraud, and navigate KYC.
+GamingSeamlessly onboard players and meet KYC requirements.
+HealthcareKnow your patient using digital verification.
+Sharing economyProtect your platform, reputation, and users.
+Retail & eCommercePrevent account takeover and chargeback fraud.
+TelecommunicationsMeet regulatory requirements and stop fraud.
+TransportVerify renters, drivers, and riders.
+Our company▼
+Supported documents
+About Onfido
+Why Onfido?
+Partners
+Blog
+Press
+Careers
+For developers▼
+For developersEverything you need to get started with Onfido. Developer hub
+API reference
+Release notes
+Get in touch
+Onfido Privacy Policy
+Last updated: 9 SEPT. 2022
+Get in touch
+Users located in the US should also refer to Onfido’s Facial Scan Policy & Release, which prevails over the information below to the extent there is any inconsistency or ambiguity. If you are a California resident, you may have certain additional privacy rights and you should visit Onfido’s California Privacy Notice for more information.
+At Onfido, we’re simplifying digital identity for everyone. We help our clients enable their users to access services quickly, easily—and most important of all—securely. The information we collect and use helps us with that vision—and that’s it. No surprises.
+At Onfido, when we verify an identity, carry out checks related to an identity, or provide user authentication services (our “Identity Services”), we’re committed to protecting the privacy and security of that identity. This Privacy Policy is meant to help you understand how we use the information we collect to provide our Identity Services on behalf of our clients and build trust in our system.
+When we provide Identity Services to our clients, we are generally acting on their behalf as their service provider and processor. Our Identity Services provide check results to our clients who decide how to proceed with the user, this may be to proceed, to reject the user or to ask for further checks. For additional information about how your specific data is being collected and used, please review the privacy policy of our client who is using our Identity Services with you.
+For details about the information we collect on our websites and online platforms, including how we use cookies, please visit our Website Data Usage and Cookie Policy.
+We may need to update this Privacy Policy from time to time, so we recommend you check back periodically.
+The Information We Collect
+To provide our Identity Services, we collect certain information about you, our clients’ users. The exact information needed depends on the Identity Services being provided on behalf of our client. Where possible, we pseudonymize, de-identify and/or aggregate data, to protect users’ privacy and minimize security risks. Pseudonymized data is where we replace, transform  or remove information so that it no longer identifies an user without additional information.
+Document checks
+Onfido’s document checks verify documents from across the globe by analyzing an image or video of the document.  Our system then extracts the information from the image or, if possible, from the security chip embedded in the document. Our models analyze the document which may include machine-readable zones, barcodes, QR codes, and security chips to verify the document is genuine and detect fraud.
+Information collected: personal information extracted from your document, for example name, document number, date of birth, nationality, type of document, issuing country, expiration date, information embedded in barcodes, QR codes, security chips and features (which will vary depending on the type of document), and the image metadata associated with the image or video of the document.
+Important: If you are a user living in the Netherlands, please be advised that Onfido may automatically mask your BSN number on your ID in our back-end systems when required under Dutch law, and particularly the Dutch Prevention of Money Laundering and Terrorist Financing Act.
+Facial Biometric Checks and Authentication
+When providing biometric checks as part of our Identity Services, we’ll ask for a picture or video of a user’s face as well as the image or video of their identity document. By extracting and comparing numerical biometric data from facial scan data, Onfido assesses whether the person in the photo or video is likely to be the same person pictured in the identity document. We will also look for signs of fraud, for example, someone wearing a mask to impersonate another person or to conceal their own real identity, or by comparing the user with information about compromised identities that have been leaked or otherwise made publicly available.  Except as described in this Policy, when performing biometric checks we do not store the extracted biometric data once the check is complete.
+Where a client has asked us to provide our authentication service, we maintain a facial image for each of our client’s users.  This image is updated and improved with each authentication attempt within retention periods set by our clients and subject to any maximum retention periods specified in applicable laws. When authenticating a user, we will compare an image of the user with the image we have stored.  If the two images match, the authentication is confirmed and the stored image is updated.
+Information collected: images, videos and sound recordings of you and your identity document and the image metadata and biometric data, including facial scan data and numerical biometric data, extracted from such images and videos.
+Data Verification
+Onfido provides clients with data verification checks via a network of trusted Data Providers and our own internal checks.  These checks enable clients to verify their users, detect fraud and comply with anti money laundering (AML) and Know Your Client (KYC) requirements.  We do this by comparing personal information provided by the client or the user with information held by Data Providers or information extracted from documents, e.g. a utility bill for proof of address checks.  Our global network of data verification services varies depending on a user's location and includes voter and driving license registers, Social Security Administration and other government databases, police databases, consumer credit agencies, sanctions and Politically Exposed Persons (PEP) lists, adverse media sources, utility companies, mobile network providers and other trusted commercial sources.
+At the request of a client, these services may be provided on an ongoing basis, for example where a client’s regulatory obligations require ongoing monitoring against sanction and PEP lists.
+Information collected: the information collected will vary depending on the availability of checks in your location and the Identity Services selected by Onfido’s clients.  It may include contact details such as postal address, email address, telephone number, social security number or other national identity number, information extracted from a utility bill you upload or other information provided by the Data Provider e.g. your mobile network operator, publicly available information from media searches, sanctions and PEP lists.
+Fraud checks, including device integrity and fraud signals
+Onfido leverages a number of different fraud detection capabilities. Some of which depend on the scope of the Identity Services selected by Onfido’s clients, other fraud checks are applied across all of the above services.  For example, Onfido will analyze the metadata associated with the image or video of the document and user (such as whether any editing software can be detected) to assess the likelihood that the user is genuine.
+When using data to detect fraud, including when we develop and improve these services, we will seek to minimize personal information and protect users’ privacy by pseudonymizing, de-identifying and aggregating where possible.
+Onfido can help clients to determine whether a device, email address or phone number has previously been used in relation to suspected fraudulent activity, shows unusual usage patterns, has been manipulated or otherwise indicates that the user may not be genuine.  At a client’s request, Onfido and our Data Providers may collect ‘passive signals’ from the client (for example mobile number or email address) or a user’s device as they engage with the client’s website or app or Onfido’s Identity Services. Such information may include device identifiers, IP address, information about the device (for example the operating system used, whether the device is providing false randomized device and network information or has otherwise been compromised) and how the user interacts with it. Together this information helps Onfido and our Data Providers assess the likelihood of you being a genuine user, assign a risk score and infer certain information such as your broad geographical location from your IP address.
+In some cases, we may also further check whether we have previously verified a user on behalf of a specific client by comparing the information submitted as part of one of the above checks (including biometric checks) to a pseudonymized or de-identified version of information we have previously verified for that client.  This helps our client not only verify users’ identities but further protects them and their users from fraud by helping clients understand when a user may be generating multiple identities, editing and tampering with documents or manipulating device or network information.
+Information collected: the information collected will vary depending on the availability of checks in your location and the Identity Services selected by Onfido’s clients.  It may include mobile number, email address, IP address, device details including device identifiers and other information about your device and how you are interacting with our Identity Services (for example we may collect information about the upload time, which version of our software was used, the camera name and model used to capture any images and whether there are any indicators that the device has been tampered with or emulated). We may also analyze how you are interacting with your device to assess the likelihood of you being a genuine user and who you say you are, for example fraudsters will cut and paste large volumes of information from their clipboard, use this functionality multiple times and otherwise navigate between applications on their device very differently from a genuine user. Onfido and our Data Providers may also use such information to infer other information about you, for example your broad geographical location from your IP address, or to calculate an identity risk score to assist clients in determining whether you are a genuine user.
+Other Information we may Collect
+To enable Onfido and our clients to comply with global sanctions and the increasing number of biometric and privacy laws that apply to our Identity Services, we may collect your broad geographic location (e.g. country or city-level location), either directly from you or the client or by approximating this based on your device’s IP address.  This enables us to provide a localized service and collect any necessary biometric consents where required to meet our legal obligations. Where Onfido is processing this information to comply with its legal obligation (as opposed to our clients’) we do so as a data controller for the purpose of our legitimate interests in complying with applicable laws. We balance such interests with the rights and freedoms of end users, by only processing location data to a city level.
+We also keep logs of how our clients, users, and Data Providers interact with our Identity Services for complying with Onfido’s and our clients’ legal and regulatory obligations, to monitor the security and performance of and to improve the Identity Services. This might include timestamps of when the information was submitted to Onfido, the method used to upload information and information about the device used to submit that information.  We will pseudonymize, aggregate and/or de-identify information for statistical analysis and business insight reporting.
+Automated Decision Making and Onfido Reports
+When we verify an identity or carry out a check on behalf of a client, we provide an Onfido Report to that client. This Onfido Report details our recommendation and the reasoning behind it. The reasons are generated from the different machine learning models and/or human powered processes that are used to verify an identity or perform a check. As these machine learning models and human powered processes are under constant development, it is difficult to maintain a list of them in this Privacy Policy. But you can find an accurate and up to date list in our Technical Documentation, usually used by clients that have integrated or will be integrating with us.
+Below, we have provided a graphical representation of an Onfido Report:
+By providing our clients with these detailed Onfido Reports, our aim is to empower our clients to make informed decisions about users and to provide help to users that are having difficulty in passing an Onfido check.
+Passing an Onfido Check
+The Onfido Reports provide recommendations to our clients who decide how to proceed with the user, this may be to proceed, to reject the user or to ask for further checks. If we’re able to verify the identity of a user and the requested checks do not show signs of fraud or other anomalies, we notify the client that the checks are clear.
+Not Passing an Onfido Check
+If we’re unable to verify the identity of a user, the user isn’t able to pass all requested checks (for example the image of the document isn’t clear enough or there is a difference between the name on the application and the name on the document) or the checks show signs of fraud or other anomalies, we return a ‘Consider’, ‘Suspected’ ‘Rejected’ or Caution’ result. Clients will decide how to proceed based on the information we provide and their processes. They may reject the user, proceed anyway or  conduct additional checks before continuing with the onboarding process. We sometimes help with those additional checks too.
+Using Information for our Identity Services
+At Onfido, our vision is to simplify digital identity.  To do this, provided we have the permission of our clients and it is not prohibited by applicable law, we use the information we collect to improve and develop our Identity Services as a data controller.  This includes building and improving algorithms and developing and testing new checks, products and services to better verify an user’s identity and/or detect fraud.
+As part of this work, we train our computers to recognize specific patterns in information and make predictions about new sets of information based on those patterns. This is known as machine learning. We’ve gathered a substantial and unique set of images and fraud data from around the world, from which we can train our machine learning models to locate and extract the information in documents, to detect fraud, and to engage in facial verification.
+We also train our human analysts to perform those tasks so they can assist when our machine learning models aren’t best suited for the task or are still learning. Sometimes, we’ll also re-run and re-submit checks to ensure our Identity Services are working properly, particularly when testing a new feature or service for quality checks. Together, these developments help make Onfido’s Identity Services stronger and safer for all clients and users.
+Where we are acting as a data controller in using information to further develop our Identity Services, we do so on the basis that the processing is necessary for the legitimate interest of the client and Onfido and, where we use special category data, for reasons of substantial public interest.  Such interests include measuring and mitigating algorithmic bias with a view to providing fair and inclusive Identity Services, which effectively detect fraud, and are balanced against the rights and freedoms of users. To safeguard the rights and freedoms of users, Onfido has implemented specific measures, including pseudonymisation, where possible, impact assessments and strict security controls to safeguard the fundamental rights and the interests of the users.
+Sharing Information Outside Onfido
+As well as sharing information with clients, users, and Data Providers (as described above), Onfido shares information:
+With our group entities  for the purposes of providing the services and supporting the business;
+With external parties that are performing tasks on our behalf (including service providers for example data analytics providers that help us to analyze trends and provide market insights using the data that we and they hold, information technology and related infrastructure providers, audit and professional service providers and our business process outsourcing (BPOs) that provide support services suchas human analysts and quality checks );
+As part of a business transfer. Onfido may disclose your personal information to an actual or potential buyer, investor or partner (and its agents and advisers) in relation to any actual or proposed divestiture, merger, acquisition, joint venture, bankruptcy, dissolution, reorganization, or any other similar transaction or proceeding;
+To comply with laws. Onfido may disclose your personal information to any competent law enforcement body, regulatory, government agency, court or other third party where we believe disclosure is necessary (i) as a matter of applicable law or regulation, (ii) to exercise, establish or defend our legal rights, or (iii) to protect your vital interests or those of any other person; and
+To any other person where we have your consent to the disclosure, a legitimate legal reason for doing so or where we have been instructed to share the information on behalf of our clients. For example, if a client has configured the Identity Services to check whether an identity document has been previously identified as lost, stolen, fraudulent, or otherwise compromised by a government or other external party, Onfido may share that compromised identity document on behalf of that client, and the government or other external party may retain a copy to the extent they consider it necessary, proportionate, and lawful.  Under the instruction of clients and as permitted by applicable law, Onfido currently shares identity documents with the UK Metropolitan Police as part of their Amberhill Database for such purposes.
+Whenever legally possible, we seek to protect the information we share by imposing contractual privacy and security safeguards on the recipient of the information. This is particularly important in cases where the recipient is located in a country that has different or lesser privacy laws than those of the country where the information was originally collected. In some cases, however, it’s not possible for us to do so — for example, when we have a legal obligation to disclose information to a government authority and that government authority isn’t willing to enter into such contractual safeguards.
+Information Security
+Onfido takes appropriate administrative, physical, technical and organizational measures designed to help protect information about users from loss, theft, misuse and unauthorized access, disclosure, alteration and destruction. For more information about information security at Onfido, please visit the Guide to Security at Onfido. If you think you have identified a security vulnerability or bug in our Identity Services, please report it to the Onfido security team at security@onfido.com and as described in the Onfido Responsible Security Bug Disclosure Policy.
+Data Storage
+Onfido takes privacy seriously and is continually looking at ways to manage and mitigate data protection and security risks, including by minimizing the data we hold. Where possible we pseudonymize, aggregate and de-identify information to protect users’ privacy and reduce security risks.
+We perform our Identity Services on behalf of our clients for a variety of different reasons. Those reasons are identified by our clients, and we rely on them to tell us when they no longer need us to store the information we’ve collected on their behalf, subject to maximum retention periods imposed by applicable laws, defined by Data Providers or by Onfido.
+If you, as a user, would like to make a specific request to have your information deleted, please make that request directly to the client that carried out your related check. For more information about how to do this, please see below under “Your Rights”.
+Where we have a legitimate legal reason, we may also store information for longer than described above – for example, where we are under a binding legal order not to destroy information.
+Your Rights
+Depending on where you live and subject to applicable data protection law, you may have the following rights:
+the right to request access to and disclosure of information that we hold.
+the right to change and/or correct inaccurate information.
+the right to block or suppress the processing of your information. This enables you to request that Onfido suspends the processing of your information in certain circumstances.
+the right to object to our processing of your information where we are relying on a legitimate interest (or those of a third party) and you feel such processing impacts on your fundamental rights and freedoms. In some cases, we may demonstrate that we have compelling legitimate grounds to process your information which override your rights and freedoms.
+the right to request that we delete your personal information, subject to certain exceptions.
+the right to request portability of your personal information. We will provide to you, or a third party you have chosen, your personal data in a structured, commonly used, machine-readable format.
+the right to withdraw your consent, if applicable. Withdrawing your consent will not affect the lawfulness of any processing we conducted prior to your withdrawal, nor will it affect processing of your personal information conducted in reliance on lawful processing grounds other than consent.
+Residents of California may have certain additional privacy rights and you should visit California Privacy Policy for more information.
+If you exercise any of your data protection rights detailed in this section, we will not discriminate against you.
+If you would like to exercise any of the rights set out above, please contact the relevant client  that carried out your related check.  Alternatively, you may contact Onfido at privacyrequests@onfido.com, or the postal address below. Please be aware, for most requests Onfido may need to notify the relevant client (as described above in the Onfido Identity Lifecycle) so the client (and not Onfido) may fulfill the request. This is necessary where Onfido is acting on the client’s behalf.
+You may also have a right to lodge a complaint with your local data protection authority or regulator.
+If you have any questions or concerns about how we use your personal information, please do not hesitate to let us know.
+Government and Law Enforcement Requests
+As Onfido provides its Identity Services on behalf of its clients, Onfido will not disclose any information related to a specific check pursuant to a government or law enforcement request unless at the direction of a client or if there is a binding legal order to do so. This is necessary for us to comply with our legal obligations.  Any government or law enforcement body requesting information related to a specific check may contact us at privacyrequests@onfido.com, and we will seek to put you in contact with the relevant client.
+Contact Onfido, our Data Protection Officer or a Privacy Supervisory Authority
+If you would like more information about how Onfido collects and uses information, please contact Onfido at privacyrequests@onfido.com, or at:
+Attention: Privacy Office Onfido Limited 14-18 Finsbury Square, 3rd Floor, London EC2A 1AH United Kingdom
+If you would like to raise a concern with or otherwise communicate with our Data Protection Officer, you may contact them at privacyrequests@onfido.com, or at:
+Attention: Onfido Data Protection Officer Heward Mills 77 Farringdon Rd London EC1M 3JU UK
+Ready to get started?
+Our identity experts are available to talk through your requirements, answer questions, and set up a demo.
+Get in touch
+Try for free
+Onfido uses 256-bit SSL encryption 100% of the time on every device.
+Onfido is SOC 2 Type II compliant.
+Onfido has been certified by BSI to ISO 27001 under certificate number IS 660122.
+Our solutions
+Real Identity Platform
+Verification Suite
+Onfido Studio
+Onfido Atlas
+Smart Capture SDK
+Challenges we solve
+Compliance
+Customer acquisition
+Reducing cost of acquisition
+Fraud prevention
+Industries
+Financial services
+Gaming
+Healthcare
+Marketplaces & communities
+Retail & eCommerce
+Telecommunications
+Transport
+Our company
+Supported documents
+About Onfido
+Why Onfido?
+Onfido partners
+Press
+Contact us
+Resources
+Support
+Sign in
+For developers
+Developer hub
+API reference
+Release notes
+Follow us
+Back to top
+© Onfido, 2023.
+All rights reserved. Company registration number: 07479524.
+Service status
+Privacy
+Security and Compliance
+Onfido Website and Cookie Policy
+Terms of Use
+Anti Modern Slavery Statement
+Responsible Security Bug Disclosure Policy

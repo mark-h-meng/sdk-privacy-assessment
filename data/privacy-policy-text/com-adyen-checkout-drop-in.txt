@@ -1,0 +1,125 @@
+Privacy Statement - Adyen
+ProductsBusinesses we serveAboutDocumentation & resourcesPricing
+SearchLog in Contact us Policies and disclaimer
+Privacy Statement
+Please read this privacy statement if you would like to know more about the way Adyen and its group companies around the world (hereinafter referred to as “Adyen” or “we”) collect and further process your personal data.It is important to us that your personal data is treated with care and that you are well informed about the way we process your personal data. We have written this privacy statement to tell you which data we process, how, why and how long we do this for and to inform you about your rights.When you visit the Adyen website hosted by Adyen, correspond with us, are (or are in the process of becoming) one of our customers or partners, and where we process your transaction as an acquirer, we process personal data about you as a data controller.Version as of March 2023.Hi there!We have updated our Privacy Statement as of the 21st March 2023! We have made a few changes to comply with US state privacy obligations (in line with global privacy requirements), and also included additional information to capture Adyen’s financial products and services. To see the older (April 2022) version, please click here.
+Who is Adyen?
+Adyen is a payment technology company operating under a banking license. Which means that Adyen provides its customers with payments and financial services which include handling payments for its customers and platforms via credit card, bank transfer, and other payment methods, issuing cards, providing (merchant) bank account services, fraud detection services, and other services to its customers. Please note that Adyen N.V. is supervised by the Dutch Central Bank as a regulated bank under Dutch law. In addition, Adyen and its group companies are supervised by different regulators and authorities, where applicable, across the globe.
+Overview of how we process your data
+The chart below provides a summary of the categories of personal data that we collect and disclose to service providers and other third parties.
+Category of personal data Adyen collects
+Know Your Customer (“KYC”) information.
+Examples
+Name, date of birth, contact information, and bank account number.
+When and why does Adyen collect this information?
+When you sign-up for Adyen services. Adyen collects this information for the purpose of satisfying our legal obligations.
+What third parties we disclose to and for what business purposes
+Adyen discloses this information to identity and verification providers and screening partners including credit reference agencies, and may disclose this information to regulatory authorities upon request or for mandated reporting.
+Category of personal data Adyen collects
+Business information.
+Examples
+Your name, business email, phone number, company name, and website.
+When and why does Adyen collect this information?
+When you fill out our sales form and through our communications with you. Adyen collects this information for the purposes of marketing and providing our products and services.
+What third parties we disclose to and for what business purposes
+Adyen discloses this information with our customer relationship management (“CRM”) systems for the purpose of outreach for a future relationship.
+Category of personal data Adyen collects
+Customer or user financial information.
+Examples
+Bank account numbers and credit card numbers.
+When and why does Adyen collect this information?
+When you sign up for Adyen services. Adyen collects this information for the purpose of satisfying our legal obligations and to provide our products and services.
+What third parties we disclose to and for what business purposes
+Adyen discloses this information with card program providers in connection with our Issuing product and with law enforcement agencies pursuant to legal orders.
+Category of personal data Adyen collects
+Shopper transaction information.
+Examples
+Credit card details, debit card details, amount of transaction, date and time of transaction.
+When and why does Adyen collect this information?
+When you shop at an Adyen customer. Adyen collects this information for the purpose of providing our products and services.
+What third parties we disclose to and for what business purposes
+Adyen discloses this information to our customers in our Customer Area, to authorities pursuant to legal orders, and to the payment schemes such as Visa and Mastercard upon request.
+Category of personal data Adyen collects
+Internet or similar network activity.
+Examples
+Cookies
+When and why does Adyen collect this information?
+When you visit Adyen’s website. Adyen collects this information for marketing purposes.
+What third parties we disclose to and for what business purposes
+Adyen discloses this information to IT providers, CRM providers, and social media providers and advertising networks for its own advertising purposes.
+Category of personal data Adyen collects
+Sensitive personal information, as defined in United States privacy laws.
+Examples
+Social Security number, driver’s license or identification document, and passport.
+When and why does Adyen collect this information?
+When you sign-up for Adyen services. Adyen collects this information for the purpose of satisfying our legal obligations
+What third parties we disclose to and for what business purposes
+Adyen discloses this information to identity and verification providers, including credit reference agencies, to tax authorities as legally required, and regulatory authorities upon request or for mandated reporting. Adyen does not use or disclose sensitive personal information for any other purpose. As mentioned above, Adyen discloses your internet or similar network activity with third-party marketing agencies so they can facilitate advertising and marketing services, which may be considered “sales” or “sharing” under certain laws. You have the right to opt-out of Adyen’s sharing of your personal data. Click here to learn more and to exercise your right to opt-out. Adyen does not knowingly “sell” or “share” the personal data of individuals under 16 years of age. We reserve the right to use de-identified or aggregate data for any purpose without limitation, and we will not attempt to re-identify the information.We will only keep your data for as long as we reasonably need it for the purposes listed above or as otherwise required by law.
+When, why and how do we process your data?
+How long do we keep your information?
+We will only keep your data for as long as we reasonably need it for the purposes listed above.The retention terms above can be longer if we are required to keep data longer on the basis of applicable law or to administer our business. If we need to keep any information longer for our legitimate interest of protecting our legal rights, we will keep the necessary information for this purpose until the relevant claim(s) has/have been settled.
+Social media buttons
+We use plugins on our website from social media networks such as Facebook, LinkedIn and Twitter. You can recognize these plugins by their logos. We also use plugins for the embedded video players which can be found on our website. Our plugins will not collect personal data about you, unless you click on these logos or videos. If you click on them, these plugins are activated and automatically transmit data to the plugin provider.We do not have any influence over which data these providers collect from you and we are also not aware of the extent of their data processing. If you would like more information about their data processing, this can be found in the respective privacy policies on the websites of these providers.
+Cookies
+We use cookies and similar techniques, such as tags/beacons and javascripts, which are small text files stored on your device. Using cookies is a way for us to make sure that our website is continuously improved, meets your needs and can be used as a tool to optimize our marketing strategy. In order for us to do this, we place functional cookies to make the website function as well as marketing cookies which help us target the right people and show them advertisements. Some of these cookies track your use of our website and visits to other websites and allow us to show you advertisements when you browse other websites.Please view our Cookies Policy for more information on our use of cookies.
+Whom do we disclose this information to?
+We need the help of third parties to be able to offer you our website and our products and services. Where necessary we will disclose your information to our service providers and professional advisers (e.g. IT providers, KYC partners, CRM providers, marketing support providers (such as agencies which manage our social media accounts), social media providers such as LinkedIn, analysts, customer service providers, business development providers and legal service providers). We have concluded agreements with our service providers to protect your personal data.If our business is sold or integrated with another business, your details will be disclosed to our advisers and any prospective purchaser’s advisers and will be passed to the new owners of the business.We may disclose information to third parties in connection with legal claims or when we have a legal obligation to do so. We may also disclose information with your permission (for example if we wish to disclose your details with another group company for their recruitment purposes).
+How do we protect your data?
+We are committed securing your personal data and have taken steps in this regard. In order to prevent unauthorized people or parties from being able to access your data, we have put in place a range of technical and organizational measures to safeguard and secure the information we process from you.
+Where do we transfer this information?
+Some of the information you send us may be disclosed to other Adyen group companies outside of the European Economic Area ("EEA"), when this is necessary for the purposes mentioned above. These countries include the countries in which we have operations (you can find a list here). It also includes the countries in which some of our service providers are located, such as the United States.To protect your data when these are transferred to countries outside of the EEA, we have implemented appropriate safeguards. When we transfer data to our Adyen group companies, these transfers are protected by an intragroup agreement containing Standard Contractual Clauses (read more here). For United States service providers and other service providers located outside of the EEA, we rely on Standard Contractual Clauses. If you want to receive more information about these safeguards, you can contact us using the details below under (“Contacting us”).
+Your Rights
+You may have the following rights with respect to your personal data, subject to applicable exceptions:Right to access. You may be entitled to request that we disclose to you the specific pieces of your personal data that we have collected about you in a portable and, to the extent technically feasible, readily usable format.Right to know. You may have the right to confirm that we have collected personal data about you and know what personal data we have collected about you, including, as applicable, the categories of personal data we have collected, the sources from which we collected that personal data, the business or commercial purposes for which we collected, sold, and shared that personal data, the categories of personal data that we sold, shared, or disclosed to third parties for business purposes and the categories of third parties to whom we sold, shared or disclosed personal data. Where we process your data for our legitimate interests, you can contact us if you want more information about these.Right to deletion. You may be entitled to request that we delete the personal data that we have collected from you. We will use commercially reasonable efforts to honor your request, in compliance with applicable laws. Please note, however, that we may need or be required to keep such information, such as for our legitimate business purposes or to comply with applicable law.Right to opt-out of sales and sharing of personal data to third parties for cross-context behavioral advertising. You are entitled to opt out of sales of your personal data to third parties and to opt out of the sharing of your personal data to third parties for cross-context behavioral advertising, if applicable. You can opt out of sales and sharing of your personal data by visiting our Cookies Policy and disabling advertising, marketing and social media cookies, or by contacting us using one of the methods below. If you have enabled the Global Privacy Control mechanism on your browser, device, or platform, you will automatically be opted out of any “sharing” when you interact with our website. Adyen processes the Global Privacy Control (GPC) signal in a frictionless manner if enabled in your browser, device, or platform. Please go here to learn more about enabling the GPC.Right to object to processing of your personal data. You are entitled to object to us processing your personal data, including profiling. In some cases, you may object to the processing of your data and, where we have asked for your consent to process personal data, you can withdraw this consent at any time. Please note that Adyen maintains a record of withdrawals of consent to ensure that we do not contact you in the future.Right to correct your personal data. You may also have the right to update inaccurate information that we process about you.Right to exercise rights without discrimination. You have the right not to receive discriminatory treatment if you exercise the rights conferred to you by applicable privacy law.Please note that these rights may be limited under applicable laws and are subject to technical feasibility. For example, if we collect your personal data in our role as a service provider to a customer, you will need to contact that customer directly to exercise your rights.If you wish to exercise any of these rights, please contact us using the details below. Please note that we may require additional information from you to verify your identity and process your request. You can also submit a request via an authorized representative using the contact methods described below. If you use an authorized representative, we may request a copy of the representative’s signed permission to act, verify your identity directly, and ask that you confirm the representative’s authority.
+Contacting us, questions and complaints
+You can submit a data access or deletion request here.Questions, comments, requests or complaints concerning this privacy notice and the way we process your personal data are welcomed and can be addressed to our Data Protection Officer at dpo@adyen.com or lgpd@adyen.com (if you are located in Brazil) or Simon Carmiggeltstraat 5-60, 1011 DJ Amsterdam, the Netherlands. Adyen employees responsible for privacy issues will review and assess such complaints received in adherence with Adyen’s policies and procedures.If you would also like to know the contact details of third parties with which your personal data is sold or shared, the purpose of their data processing, and the manner in which data is processed, and how you can communicate with such third party to exercise your data privacy rights please contact dpo@adyen.com or lgpd@adyen.com (if you are located in Brazil).If you have a complaint about the way we handle your personal data, you also have the right to address this with the data protection authority of the country in which you live or work or the country in which we are located.
+About
+Our story
+Careers
+Press & media
+Investor Relations
+Partner with us
+Contact us
+Products
+Payments
+Risk management
+Authentication
+Issuing
+Pricing
+Resources
+Documentation
+Academy
+Blog
+Knowledge Hub
+Newsletter
+Platform
+Infrastructure
+Licenses
+Legal
+Terms & Conditions
+Responsible disclosure policy
+Privacy
+·
+Cookies
+·
+Disclaimer
+·
+© 2023 Adyen
+Language switcher
+Global (English)
+Global (English)
+Brasil (Português)
+中国 (简体中文)
+Česká republika (Čeština)
+Danmark (Dansk)
+Deutschland (Deutsch)
+España (Español)
+France (Français)
+Italia (Italiano)
+日本 (日本語)
+México (Español)
+Nederland (Nederlands)
+Norge (Norsk)
+Polska (Polski)
+Portugal (Português)
+Sverige (Svenska)
+United Kingdom (English)

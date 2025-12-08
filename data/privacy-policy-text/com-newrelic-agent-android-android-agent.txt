@@ -1,0 +1,268 @@
+New Relic Services Notices
+Skip to main content
+Learn what’s new and what’s next from New Relic at FutureStack NYC.
+Register free today
+Search toggle
+Log in
+Log in
+Main navigation menu, 6 items
+Search
+Submit
+Platform
+CAPABILITIES
+All-in-one monitoring, the way it was meant to be.
+Explore Capabilities
+Explore Capabilities
+Application Monitoring (APM)
+Detect anomalies and squash errors across your distributed system.
+Kubernetes Monitoring
+Deploy and manage containers with instant code-level insights.
+Mobile Monitoring
+Synthetic Monitoring
+Serverless Monitoring
+Model Performance Monitoring
+Infrastructure Monitoring
+See metrics in one place to pinpoint root causes.
+Log Management
+See all logs from everywhere, in context, in just a click.
+CodeStream
+Error Tracking
+Explorer
+AIOps
+Change Tracking
+Pathpoint
+Network Monitoring
+Automatically see network issues to troubleshoot faster.
+Browser Monitoring
+Track browser performance with the most deployed RUM tool.
+Vulnerability Management
+Dashboards
+Alerts
+OpenTelemetry
+Pricing
+Solutions
+SOLUTIONS
+Get enterprise monitoring for any business size.
+View Customer Stories
+View Customer Stories
+Use Cases
+DevOps
+Cloud Adoption
+Tool Consolidation
+Digital Customer Experience
+Open Source
+Industries
+Ecommerce & Retail
+Healthcare
+Media & Entertainment
+New Relic for Startups
+Nonprofit
+Public Sector
+Technologies
+Amazon Web Services
+Google Cloud Platform
+Microsoft Azure
+Pivotal Cloud Foundry
+Prometheus Monitoring
+SAP Monitoring
+Engineers
+ENGINEERS
+Understand what’s really happening with your software.
+Get Started
+Get Started
+Popular Docs
+Start Ingesting Data
+Create Custom Dashboards
+Examine NRQL Queries
+Forward Logs Using Infrastructure Agents
+View All Docs
+Popular Integrations
+Python
+Java
+PHP
+Ruby
+Install 500+ out-of-the-box quickstart integrations.
+View All
+View All
+Resources
+RESOURCES
+Find all the information you want and the support you need.
+Learning
+Resource Library
+Find eBooks, data sheets, reports, and white papers.
+Community Forum
+Chat and share knowledge with peers.
+New Relic University
+Choose from a library of training courses.
+‎ Support
+Support Center
+Submit a Ticket
+‎
+New Relic Blog
+Learn industry updates, tips, and best practices.
+Events & Webinars
+Join us for upcoming events and training.
+About
+About Us
+Investor Relations
+Leadership
+Careers
+Newsroom
+ESG
+Docs
+Search toggle
+Log in
+Log in
+Get Started Free
+Get Started Free
+Log in
+Log in
+Get Started Free
+Get Started Free
+New Relic Services Data Privacy Notice
+Download
+Download
+Last updated August 5, 2022*
+This New Relic Services Privacy Notice (“Services Privacy Notice”) covers our collection, use, and disclosure of the Customer Data (as defined below) and Systems Operations Data (as defined below) by the New Relic product services (together the “Services”), such as through New Relic APM, New Relic Browser, New Relic Mobile, New Relic Synthetics, New Relic Infrastructure, New Relic Insights, New Relic Logs, New Relic Serverless, New Relic One, and the New Relic Developer Program, that are licensed and used by New Relic’s customers and their users (collectively, “you,” “your,” or “customer”). For purposes of this Services Privacy Notice, “Personal Data” means any information relating to an identified or identifiable individual, including, for example, ‘personal information’ as defined under the California Consumer Privacy Act (“CCPA”), name, phone number, postal code or zip code, Device ID, User ID, IP address and email address.
+This Services Privacy Notice does not cover:
+Personal Data processed pursuant to the General Data Privacy Notice, such as Personal Data collected through: our websites, such as www.newrelic.com, status.newrelic.com, learn.newrelic.com, and any other New Relic website (together the “Sites”); product feedback or surveys; the sales and provisioning process; and in connection with New Relic events, sales and marketing activities.
+Personal Data processed pursuant to our Applicant Privacy Policy, when an individual applies for a role with New Relic through our Site or otherwise.
+Links to any other website or location are for convenience only and do not imply New Relic’s endorsement of such other website or location or its contents.
+We recommend that customers and users read the entire Services Privacy Notice.  If a customer or user has any questions about this Services Privacy Notice please contact us using the information in Section 6 (How to Contact Us.)
+Who We Are
+Information we collect as a Processor/Service Provider: Customer Data
+Information we collect as a Controller/Business Owner: Systems Operations Data
+International Data Transfers
+Communications and Notifications to Customers and Users
+How to Contact Us
+1. Who We Are
+New Relic, Inc. is a Delaware corporation headquartered at 188 Spear Street, Suite 1000, San Francisco, CA 94105. New Relic, Inc. has offices, subsidiaries and affiliated companies (“New Relic Group”) all around the world (collectively “New Relic”, “we”, “us”, “our”, and “ours”).  For more information about New Relic, please see the “About Us” section of our Site.
+2. Information we collect as a Processor/Service Provider: Customer Data
+a.    Collection of Customer Data (a.k.a. Performance Data). Customer may use the Services to send New Relic data, such as: (i) when our software (e.g. agents, software development kits (SDKs), etc.) is deployed in our customers' applications, websites, and infrastructure, (ii) from synthetic monitors (which simulate transactions and actions carried out by users) or cloud integration, or (iii) when sent to our data collection systems (e.g. application programming interface (API), which allows the transmission of data between applications) for processing, which is made available in customer’s account (“Customer Data”).
+Customer Data is subject to the restrictions set forth in the documentation and the underlying agreement between New Relic and its customer (“Customer Agreement”).  Any Personal Data written to file in a New Relic account is configured by the user of the software (agents, APIs, SDKs, queries, etc.) that New Relic makes available in connection with the Services, or as a result of the customer’s end system configurations.
+b.    Use of Customer Data.  Customer is the data controller/business owner of the Customer Data. New Relic is the processor/service provider of the Customer Data. New Relic only collects and processes Personal Data within Customer Data upon lawful documented instructions of its customer, including: (a) those set forth in the Customer Agreement, (b) an applicable executed data protection addendum, (c) customer’s use and configuration of the Services, or (d) as otherwise necessary to provide the Services (i.e. testing and applying new product and system versions, patches, updates, upgrades, and resolving bugs and other issues reported to New Relic) (together the “Business Purpose”).
+New Relic may aggregate or de-identify Customer Data across multiple accounts and use this data to improve or enhance engagement of our Services or to create and publish (subject to the confidentiality restrictions in the Customer Agreement) industry benchmarks or comparative application performance metrics.
+c.    Disclosure of Customer Data. To the extent New Relic provides third party  sub-processors with access to Customer Data in order to assist in the provision of the Services, such sub-processors shall be subject to the same data protection and security obligations as New Relic under the Customer Agreement or applicable executed Data Protection Addendum, as applicable.  Provided that a customer signs up for notifications at https://newrelic.com/NR-legal-signup-datasubprocessors, New Relic shall provide 21 days’ notice of any new third party core sub-processors within the New Relic platform.  After being notified, customer will have ten (10) business days to notify New Relic in writing of any reasonable objection it has to the new sub-processor(s).  Failure to notify New Relic within this time frame will be deemed approval of the new sub-processor(s). ​​Where the new third party sub-processor (non-core service provider) relates to an optional new feature or functionality that the customer is not currently using and where the use of such new feature or functionality (and the subsequent processing of Personal Data) could only be enabled by the customer’s deliberate configuration of the Services to include such sub-processor, New Relic shall provide notice of the appointment of the third party sub-processor simultaneously with the announcement of the new feature or functionality.
+Additionally, New Relic does not maintain an inventory of Customer Data that may contain Personal Information, as defined by the CCPA. New Relic obtains Service Provider (as defined by the CCPA) certifications from its vendors where appropriate.
+If another company acquires our company or our assets, that company will gain custody of the Customer Data collected by it and us and will assume the rights and obligations regarding the Customer Data as described in this Services Privacy Notice.  Except as provided in the preceding sentence, New Relic does not sell Personal Data submitted as Customer Data for processing pursuant to the Customer Agreement.
+d.   Retention of Personal Data within Customer Data.
+To the extent we process Personal Data within Customer Data, we retain Personal Data in accordance with the retention period in the Customer Agreement.
+e.    Data Subject Rights.
+If Personal Data pertaining to you as an individual has been submitted to the Services as part of Customer Data by or on behalf of a customer and you wish to exercise any data protection rights you may have in respect of that data under applicable law, including (as applicable) the right to access, portability, correct, amend, or delete such data, please inquire with the relevant customer directly.
+If a customer of New Relic needs assistance in responding to a data subject request relating to Personal Data contained in customer's Customer Data, please see our documentation on how to submit a request for assistance to New Relic.
+f.    Security and Confidentiality. New Relic has implemented and will maintain appropriate technical and organizational measures designed to prevent accidental or unlawful destruction, loss, alteration, unauthorized disclosure of, or access to Customer Data.  These measures, which are generally aligned with NIST 800-53 standard, govern all areas of security applicable to the Services, including physical access, system access, data access, transmission, input, security, oversight, and enforcement. Additionally, New Relic has obtained certifications from independent, third-party auditing organizations such as ISO27001 and HITRUST and provides security in accordance with industry accepted standards described here.
+Please be aware that should you choose to submit content on any of New Relic’s public forums (such as NR Public Issue Tracker, NR Explorer’s Hub, and NR Open Source Project process)  that content will be publicly visible by default on that forum which means that it will be visible to any visitor to the forum, even if they are not a New Relic customer or New Relic employee. Prior to submitting the content, you will want to ensure that you are not submitting any information that you do not want to be visible publicly. Some public forums may allow you to change your submission to ‘private’ which means that the submission will not be visible to the general public.
+These public fora may allow you to submit a screen-capture of your User Content which may contain Customer Data including Personal Data. If you choose to submit a screen capture to one of these public forums, the User Content, screen-capture and any Customer Data (including Personal Data contained therein) will be publicly visible. Before you post publicly, you may be asked to provide a specific consent and/or acknowledgment that you are submitting Personal Data or if you would like to make the submission private.  If you accidentally  submit content that contains Customer Data, confidential information, sensitive data, or content inadvertently submitted, the appropriate terms and documentation for that public forum will provide the process for you to submit a request to have that data deleted, anonymized, or otherwise removed from the forum.
+New Relic employees are required to maintain the confidentiality of Customer Data, employee’s obligations include written confidentiality agreements, regular training on information security and privacy, and compliance with New Relic policies concerning protection of confidential information.
+Additional details regarding the specific security measures that apply to the Services are available for review here.
+3. Information we collect as a Controller/Business Owner: Systems Operations Data
+a.   Types of Systems Operations Data We Receive.
+“Systems Operations Data”  is data that relates to the use and operation of our Services and the systems and networks these Services run on, and includes log files, event files, and other trace and diagnostic files, as well as statistical, aggregated data, and Personal Data (such as user name, user ID, etc.).
+We collect Systems Operations Data when a user provides it to us (e.g. by responding to in-Service messages), as well as automatically by the interaction of end-users of our Services with the New Relic systems, tools and networks used to monitor and deliver the Services to our customer base.  We use cookies and similar tracking technologies to collect Systems Operations Data. For more information about our use of cookies and other similar tracking technologies, please refer to the New Relic Cookie Policy. We may also pair Systems Operations Data with Personal Data that we collect online and offline pursuant to our General Privacy Notice.
+b. Use of Systems Operations Data.
+We collect Systems Operations Data for business and commercial purposes, such as the following:
+to help keep our Services secure, including for security monitoring, identity management, and to investigate and prevent potential fraud and illegal activities involving our Services, systems and networks;
+to administer our Service, including backup disaster recovery plans and policies;
+to confirm compliance with licensing and other terms of use;
+for research and development purposes, including to analyze, develop, improve and optimize our Services;
+to increase engagement and adoption of our Services (e.g. by providing in Service training and suggestions);
+to tailor how we present the Services to users; and
+to comply with applicable laws and regulations and to operate our business, including to comply with legally mandated reporting, disclosure or other legal requests; for mergers and acquisitions; finance and accounting; legal and business consulting; and in the context of dispute resolution.
+For Systems Operations Data that is subject to the GDPR or the UK GDPR (ie.either collected in the European Economic Area (EEA) or the United Kingdom (UK) and/or relating to persons located in the EEA or the UK), our legal basis of processing such information is our legitimate interest in performing, improving, maintaining, and securing our Services and operating our business in an efficient and appropriate manner.  Personal Data may also be processed to comply with legal obligations.
+c.    Sharing Systems Operations Data.
+We disclose Systems Operations Data to the following categories of recipients for our business purposes:
+to third-party services providers that support our business and operations
+to any competent law enforcement body, regulatory, government agency, court or other third party where we believe disclosure is necessary (i) as a matter of applicable law or regulation, (ii) to exercise, establish or defend our legal rights, or (iii) to protect vital interests of any other person
+to an actual or potential buyer (and its agents and advisers) in connection with any actual or proposed purchase, merger or acquisition of any part of our business, provided that we inform the buyer it must use such Personal Data only for the purposes disclosed in this Services Privacy Notice
+to any other person with appropriate consent to the disclosure or as allowed by applicable data protection law
+d.    Retention of Personal Data within Systems Operations Data.
+We retain Personal Data where we have an ongoing legitimate business need to do so (for example, to provide a user with a service that was requested or to comply with applicable legal, tax or accounting requirements).
+When we have no ongoing legitimate business need to process such Personal Data, we will either delete or anonymise it or, if this is not possible (for example, because the Personal Data has been stored in backup archives), then we will securely store such Personal Data and isolate it from any further processing until deletion is possible.
+If you have questions about or need further information concerning the retention of your Personal Data, please see Section 6 (How to Contact Us).
+e.    Your Choices and Data Protections Rights for Systems Operations Data.
+i.    User Choices. To the extent provided under applicable laws, users may request to access, correct, update or delete Personal Data contained within Systems Operations Data in certain cases, or otherwise exercise their choices with regards to such Personal Data by following the instructions provided in New Relic personal data requests.
+ii. Data Protection Rights. We apply certain data protection rights to all individuals, regardless of location.  Specifically, you may correct or update Personal Data contained in your account by editing your profile within the registration portion of our Sites or sending an email to Privacy@newrelic.com. You may also request we delete your account information, or remove your Personal Data from a Site testimonial or our blog by sending an email to Privacy@newrelic.com.
+When you reach out to us, we will endeavor to respond without delay in accordance with applicable data protection laws. We may need to ask you additional clarifying questions in order to accurately respond to your request and to verify you are making the request in respect of your own Personal Data.
+With respect to deletion requests, we may be required (by law or otherwise) to keep Personal Data and not remove it (or to keep this information for a certain time, in which case we will comply with your deletion request only after we have fulfilled such requirements). We will let you know if we are unable to comply with this request and the reasons why.
+In addition to the rights to  correct, update or request to delete Personal Data outlined above, persons located in the EEA or the United Kingdom have some additional data protection rights  under EEA and UK data protection laws.
+These rights include the right to find out if we use your Personal Data, or to access your Personal Data.
+Also, you can object to the processing of Personal Data we process on the basis of our legitimate business interests, ask us to restrict processing, or request portability of your Personal Data.
+Where we have collected and processed your Personal Data on the basis of consent, you can withdraw your consent at any time. You should note that withdrawing your consent will not affect the lawfulness of any processing we conducted prior to the withdrawal, nor will it affect the processing of your Personal Data where we relied on lawful bases other than consent.
+You have the right to complain to a data protection authority about our collection and use of your Personal Data.  For more information, please contact your local data protection authority.
+If you are an EEA or UK individual and would like to make any of these requests, please submit your request to Privacy@newrelic.com
+New Relic provides services to businesses and complies with the applicable provisions of the California Consumer Privacy Act. If you are a California resident you have some additional data protection rights.
+You can request that we disclose to you certain Personal Data we collect, disclose for a business purpose and sell about you.
+You can also obtain from us once a year, free of charge, certain information about the Personal Data (if any) we disclosed to third parties for direct marketing purposes in the preceding calendar year.  If applicable, this information would include a list of the categories of Personal Data that was shared and the names and addresses of all third parties with which we shared information in the immediately preceding calendar year.
+You have the right to opt out of the sale of your personal information.
+You have certain rights not to be discriminated against based on exercising your data protection rights, and we do not discriminate against any individual for doing so.
+If you are a California resident and would like to make any of these requests, please submit your request to Privacy@newrelic.com..
+If you are an Australian resident  and you are dissatisfied with our handling of a data subject right request or a complaint, you can always contact us at PersonalDataRequests@newrelic.com. If you disagree with the resolution proposed by us, you may make a complaint to the Office of the Australian Information Commissioner (“OAIC”) by contacting the OAIC using the methods listed on their website http://www.oaic.gov.au.
+New Relic does not sell any personal information in Customer Data or in Systems Operations Data.
+f. Disclosure of information to third parties
+The categories of personal information we disclose to the third parties and categories of to whom we share that personal information for a business purpose are as follows:
+We refer to third party business partners, such as resellers and/or distributors, as those companies that are involved in marketing, selling, and providing services to prospects or customers, to fulfill product and information requests and to provide prospects or customers with information about New Relic’s products and services. We may engage in joint sales or product promotions with select business partners. If you fill in a form on the New Relic site, e.g. if you sign up for a New Relic ebook or webinar, or if you purchase or specifically express an interest in a jointly-offered product, promotion or service, we may share relevant personal information with those designated partner(s) and you may be contacted by that designated New Relic partner for New Relic’s commercial purposes.
+We respond to all requests without delay and in accordance with applicable data protection laws.  We may need to ask you additional clarifying questions in order to accurately respond to your request and to verify you are making the request in respect of your own Personal Data.
+g.Security of Your Personal Data.
+New Relic is committed to protecting the security of Personal Data within Systems Operations Data.  We use appropriate technical and organizational measures to protect these Personal Data from unauthorized access, use, or disclosure.  Despite these measures, New Relic cannot fully eliminate security risks associated with these Personal Data and mistakes and security breaches may happen. If there are any questions about security on our Site or Services, please contact us using the details provided under Section 6 (How to Contact Us).
+4. International Data Transfers
+Your Personal Data may be transferred to, and processed in, countries other than the country in which you are located. These countries may have data protection laws that are different to the laws of your country.
+Specifically, if you are located in the EEA, Switzerland and/or the United Kingdom (UK) you should note that your Personal Data will be accessed by New Relic staff or suppliers, transferred, and/or stored outside the EEA,Switzerland and/or the United Kingdom, including to the US and other countries which have different data protection laws.
+However, we have taken appropriate safeguards to require that your Personal Data will remain protected in accordance with this Services Privacy Notice and as required by applicable data protection law. These include implementing an adequate method of transfer, such as the European Commission’s Standard Contractual Clauses, for transfers of Personal Data with our third party service providers and partners, further details of which can be provided upon request. Please note also that although the EU-US and Swiss-US Privacy Shield Frameworks were invalidated in 2020 as a data transfer mechanism, New Relic is still obliged by the US Federal Trade Commission to comply with the Privacy Shield obligations to maintain its existing Privacy Shield certification. Please click here to read our Privacy Shield Notice.
+5. Communications and Notifications to Customers and Users.
+a.    Legal Requirements. New Relic may access Customer Data and Personal Data contained in Systems Operations Data as required by law, such as to comply with a subpoena or other legal process, when we believe in good faith that disclosure is necessary to protect or defend our rights or property of New Relic or users of the Services, protect the safety of others, to investigate fraud, or respond to government requests, including public and government authorities outside a user’s country of residence, for national security and/or law enforcement purposes.
+b.    Changes to this Services Privacy Notice. This Services Privacy Notice is subject to occasional revision, and if we make any substantial changes in the way we use Personal Data, we will take appropriate measures to inform our customers, consistent with the significance of the changes we make.  We will obtain consent to any material Services Privacy Notice changes if and where this is required by applicable data protection laws.
+The date of the most recent update to this Services Privacy Notice can be found by checking the “last updated” date displayed at the top of this Services Privacy Notice.
+6.  How to Contact Us
+If you have questions about how your Personal Data is collected, stored, shared, used, or to exercise any data data rights, please contact our Data Protection Officer (“DPO”) as follows.
+Email inquiries may be addressed to: Privacy@newrelic.com.
+Written inquiries may be addressed to:
+Attn: Legal Data Subject Request
+New Relic, Inc.
+188 Spear Street
+Suite 1000
+San Francisco, CA 94510
+In addition, if you are an individual located inside Germany, Ireland, or the United Kingdom you can contact:
+Robert Niedermeier (our external DPO)
+Hauptstraße 4
+D-85579 Neubiberg / München
+Germany
+Requests that do not include confidential or sensitive content can also be sent by email to our external DPO at: newrelic@legislator.de.
+For any complaints regarding our compliance with our privacy and security practices, please contact New Relic first. New Relic will investigate and attempt to resolve any complaints and disputes regarding our privacy practices.
+The data controller/business owner of your Personal Data within Systems Operations Data for all countries that New Relic does business is New Relic, Inc., unless you have contracted directly with New Relic, K.K. in Japan, in which case New Relic, K.K. is the data controller/business owner.
+*Updated on August 5, 2022  to provide additional information on uses and disclosures of personal data.
+Prior Versions
+March 14, 2021
+April 27, 2020
+Company
+About Us
+Leadership
+Careers
+Social Impact
+Newsroom
+Customers
+Partner Program
+Investor Relations
+Suppliers Portal
+Security
+ESG
+Contact Us
+New Relic vs Datadog
+2022 Observability Forecast
+Follow Us
+Download the New Relic App
+Get it on Google Play
+Terms of Service
+DMCA Policy
+Privacy Policy
+Your Privacy Choices
+Cookie Policy
+UK Slavery Act of 2015
+English
+Deutsch
+English
+Español
+Français
+日本語
+한국어
+Português
+©2008-23 New Relic, Inc. All rights reserved

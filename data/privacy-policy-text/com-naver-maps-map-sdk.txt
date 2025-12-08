@@ -1,0 +1,178 @@
+NAVER Cloud Platform privacy policy
+NAVER Cloud Corporation (hereafter referred to as the "company") complies with personal information
+protection regulations stipulated in relevant laws and regulations that should be observed by information and
+communication service providers, such as the Personal Information Protection Act, Act on Promotion of
+Information and Communication Network Utilization and Information Protection, etc., Protection of
+Communications Secrets Act, and Telecommunications Business Act. The company also does its best to protect
+the rights and interests of customers by establishing the privacy policy based on the relevant laws and
+regulations. This privacy policy shall apply to the services provided by the company and includes following
+materials.
+Chapter 1. Personal information items to be collected and collection methods
+Article 1 (Personal information items to be collected)
+① NAVER collects the following minimum personal information as required items for membership, smooth
+customer consultation, and service provision.
+1. Individual member sign-up
+- Required information: Required information: E-mail address, password, name, mobile phone number,
+address, country of residence
+2. Business member sign-up
+- Required information: E-mail address, password, company name, name of person in charge, mobile phone
+number, address, country of residence
+- Optional items: (For residents in Korea) CEO name, business registration number, copy of the business
+license
+3. Signing-up with the NAVER ID
+- Required items: Name, mobile phone number, e-mail address
+4. Registering automatic payment methods
+­ Credit card: Date of birth (business registration number in case of the service provider), credit card number,
+credit card expiration date
+­ Account transfer (in case of service provider members in Korea): Bank name, date of birth (business
+registration number in case of the service provider), account number
+­ Documents related to the service provider (in case of service provider members in Korea): CEO name,
+business registration number, copy of the business license
+② The following information may be automatically generated or additionally collected while using the service or
+processing the service provision work.
+- IP address, cookie, access log, date and time of the visit, service use records, illegal use records, payment
+records
+③ The following information can be additionally collected from the specific service customer while using the service.
+1. If separate consent is obtained for personal information collection
+Type Personal information items to be collected
+General inquiry - Required: e-mail address, mobile phone number
+Sales inquiry - Required: e-mail address, mobile phone number,
+company name
+- Optional: Name
+Application for a cash receipt - Required: Mobile phone number or cash receipt
+card number
+Application for the newsletter - Required: Name, e-mail address
+- Optional: Company name
+Subscription to the Marketplace solution - Required: Name, e-mail address, mobile phone
+number
+Reporting copyright infringement and harmful posts
+- Required: Name, e-mail address, mobile phone
+umber, required documents (copy of the
+masked ID)
+One-time payments
+(Pay instantly, payment of certification test fees,
+payment for coins)
+<NAVER Pay payments>
+- Required: NAVER ID, password
+<Credit/debit card payments>
+- Required: card company name, card number
+<Bank transfers>
+- Required: bank name, account number
+<Cash receipt requests>
+- Required: mobile phone number or cash receipt
+card number,
+business registration number for businesses
+<PayPal payments>
+- Required: PayPal e-mail address, password
+Change of member's basic information
+<Individual>
+- Required: personal seal certificate of the requestor
+<Business>
+- Required: business seal certificate or proof of
+employment of the requestor
+Duplicate payment cancellation request <Individual>
+- Required: copy of masked ID card, account number
+Service name Personal information items to be collected
+User environment diagnostics tool
+<Measurement of service quality>
+- Required: client IP
+Simple & Easy Notification Service
+<Delegate information for proxy registration>
+- Required: Name, business registration number,
+address, mobile phone number
+Cloud Security Watcher <Service subscription>
+- Required: admin ID, name, e-mail address, IP,
+password
+Cloud Data Box
+<Service subscription>
+- Required: username, password, mobile phone
+number, e-mail address
+Data Box Frame
+<Service subscription>
+- Required: username, password
+Data Catalog
+<Service subscription>
+- Required: ID, password
+WORKPLACE
+<Service subscription>
+- Required: admin ID, password
+<Credit card company management feature in
+Expense service>
+- Required: credit card company ID, password
+<Clock-in/out records feature in Work management
+service>
+- Optional: location information
+<Integrating Accounting service with National Tax
+Service Hometax>
+- Required: certificate ID, password
+<Open market integration>
+- Required: open market ID, password, API key
+NAVER WORKS
+<Service subscription>
+- Required: admin ID, password, company name,
+business phone number
+<Sending location and specifying location for
+schedules>
+- Optional: location information
+<Free setup support service subscription>
+- Required: name, e-mail address, mobile phone
+number, company name
+RPA Service
+<Service subscription>
+- Required: e-mail address, password
+Hello
+<Service subscription>
+- Required: nickname
+MARKETPOT
+<Service subscription>
+- Required: ID, password, e-mail address
+<Market integration>
+- Required: seller ID, password
+Backup <Service subscription>
+- Required: ID, password
+Blockchain Service <Service subscription>
+- Required: ID, password
+Media Connect Center <Service subscription>
+- Required: admin ID, password
+Data Teleporter <Task creation>
+- Required: name, contacts, address
+ALIKE
+<Service subscription>
+- Required: admin ID, password, e-mail address,
+nickname
+Game Chat
+<Service subscription>
+- Required: admin ID, password
+Game Report
+<Service subscription>
+- Required: admin ID, password, name, phone
+number, company name
+- Optional: department name, job title
+Pinpoint Cloud
+<Service subscription and user information entry>
+- Required: admin ID, password, name
+- Optional: mobile phone number, e-mail address,
+department name
+Article 2 (Personal information collection methods)
+① The company shall collect the personal information using the following methods.
+1. Collection from the website, document, fax, phone, counseling bulletin board, offline collection (through
+events or seminars)
+2. Collection from partner companies
+3. Collection using generated information collection tools
+Chapter 2. Purpose of collecting and using the personal information
+Article 3 (Fulfilling the contract concerning service provision and fee payment for service provision)
+① The company shall collect the personal information for service-related purposes such as providing content and
+specific customized service, delivering goods or invoices, identity authentication, purchase and payment, and
+collection of fees.
+Article 4 (Member management)
+① The Company collects personal information for member management purposes to verify user identities for using
+member services, to confirm individual identification, to prevent illegal use and unauthorized use by inadequate
+members, to confirm account registrations, to prevent duplicate registrations, to validate identities of legal
+representatives, to archive records for dispute resolution, to process civil complaints, to provide notices, and to
+confirm member's decision to withdraw membership.
+Article 5 (Utilization for new service development and marketingadvertising)
+The company shall collect the personal information for the purposes related to new service development and
+marketing activities, such as developing a new service and providing a customized service, providing services and
+advertising according to statistical characteristics, checking the effectiveness of service, providing event and
+advertising information and a participation opportunity, understanding the access frequency, and compiling
+statistics on members’ service use. 

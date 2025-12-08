@@ -1,0 +1,265 @@
+Google Play Data safety | Privacy and security | Documentation MyTracker
+Docs
+Contact us
+Log in/Sign up
+EN
+EN
+RU
+中文
+Quick start
+Where to start
+Checklist
+Environment
+Account
+Project
+Application
+App publication
+Application verification
+Payment verification
+Entry points
+Web counter
+SKAdNetwork settings
+Protocol decryption
+Traffic redirection
+SDK integration
+iOS
+Android
+Unity
+Flutter
+Web
+Google Tag Manager
+Alternative CDN
+Tracking
+Campaigns
+Costs
+Tariffs
+Corrections
+Traffic types
+Tracking links
+Regular tracking link
+Smart tracking link
+Click and Impression URLs
+Tracking link macros
+Patterns for target URLs and deep links
+Postbacks
+Sending postbacks
+Postback macros
+Campaign parameters
+Deep links
+Deep link settings
+Attribution
+Attribution methods
+Attribution settings
+Reattribution
+Reattribution settings
+Pre-install tracking
+User tracking
+User identifying
+User analysis
+Web tracking
+DOOH tracking
+S2S tracking
+Revenue tracking
+Purchases
+Subscriptions
+Advertising
+Partners
+AdMob
+Apple Search Ads
+AppLovin
+BidCore
+Bigabid
+Buzzoola
+DoubleClick
+Facebook
+Google Ads
+Installs tracking
+Data import from Google Ads
+Sending conversions
+Hybrid
+ironSource
+Moloco
+Petal Ads
+Segmento
+TikTok For Business
+Twitter
+VK Ads + myTarget
+Ad accounts
+Ad monetization
+Yandex.Direct
+Реклама ВКонтакте
+New partner
+Reports
+Dashboard
+Builder
+Filters
+Settings
+Grouping
+Transposing
+Currency
+Timezone
+Retention indent
+Rolling Retention limit
+Filter by value
+Top N
+Comparing reports
+Templates
+Default templates
+User templates
+Subscription
+Segments
+Funnels
+Funnel building
+Funnel analysis
+Audiences
+Connecting Yandex.Direct to audiences
+Connecting myTarget to audiences
+Connecting ironSource to audiences
+Connecting Google Ads to audiences
+Calculated metrics
+Creating, editing, and deleting metrics
+Using calculated metrics
+Selectors
+Metric types
+Periods
+Traffic source
+Geo & Demography
+Custom events
+Device info
+Common metrics
+Device / User activity
+Finances
+SKAdNetwork
+Retention & Rolling Retention
+Churn rate
+Churn Prediction
+Sessions duration
+FPE
+LTV
+LTV Prediction
+Incompatible selectors
+Predictive analytics
+LTV prediction
+SKAN LTV prediction
+Churn prediction
+Assess prediction
+Personalize
+Connect MyTracker Personalize
+Personalize API
+Fraud Scanner
+Fraud metrics
+Fraud detection
+Fraud reconciliation with partner
+iOS & SKAdNetwork
+ATT
+SKAN attribution
+SKAN postbacks from Apple
+Conversion value
+SKAN reports
+SKAN partners
+SKAN guide for partners
+SKAN data protocol
+API
+Export API
+Access to API
+Authentication
+Quotas
+Raw data
+Create
+Get
+Cancel
+Segments
+Create
+Get
+Reports
+Create
+Get
+Data download
+Python library
+Dictionaries
+Selectors
+Report selectors
+Countries
+Events
+Timezones
+Currency
+Verification
+Attribution type
+Purchase types
+Rooted
+Comparison operators
+Report periods comparison
+Ad Mediators
+Geolocation providers
+S2S API
+Authentication
+API Requests
+Import events
+Import payments
+Privacy and security
+App privacy on the App Store
+Google Play Data safety
+Glossary
+Google Play Data safety
+According to Google’s data safety requirement,
+app developers need to inform users about collecting data.
+The table below shows the information MyTracker SDK collects. The data is given in the classification offered by Google and can be used in Data safety section on your behalf.
+Please note that this is describing MyTracker SDK in the default configuration, so before you transmit data to Google Play Console, make sure to compare the following default configuration to your specific SDK configuration.
+Nothing stated here is legal advice, and it is provided primarily for your convenience according to MyTracker understanding of the Google guidelines. We recommend that you work closely with legal to determine exactly how Google policies and any applicable laws apply to your application based on your practice and data use purposes.
+Data collection and security
+In this section, you need to give answer "Yes" or "No" to
+the following questions:
+Whether or not your app collects or shares any of the required data types.
+Whether or not all of the user data collected by your app is encrypted in transit.
+Whether or not you provide a way for users to request that their data is deleted.
+MyTracker serializes all data in transit that is transmitted through the SDK.
+MyTracker also provides app developers with the ability
+to delete user data by sending a request to support@tracker.my.com.
+Data types
+Data sharing
+MyTracker is the third-party system for
+product and marketing analytics for your application.
+When filling out the information in Google Play regarding
+the purposes of data collection, note that
+the Collected block relates to the purposes
+of data collection by the application,
+and the Shared block relates to the purposes of third-party collection.
+Ephemeral processing
+Ephemerally processing means accessing and using it while the data is only stored in memory and retained for no longer than necessary to service the specific request in real-time.
+Given the nature of the services provided by MyTracker,
+the processing of data cannot be treated as ephemeral.
+User control
+App developers have the ability to control data collection
+and request appropriate permissions from users.
+Fill the Data safety section following specific app configuration.
+Purposes
+Google proposes several categories of data use, select purposes that are more relevant to your practice:
+Business solutions
+Enterprises
+Games
+E-commerce
+Startups
+Subscriptions
+Agencies
+Our partners
+Our services
+Attribution and Marketing
+Product analytics
+Raw Data API
+Predictive analytics
+Personalize
+Fraud Scanner
+Revenue tracking
+iOS 14.5+ solutions
+Getting started
+Pricing
+Documentation
+Resources
+Blog
+Ebooks
+EN
+EN
+RU
+中文
+© 2023 My.com
+Privacy policy & Legal documents

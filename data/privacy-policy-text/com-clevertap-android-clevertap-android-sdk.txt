@@ -1,0 +1,55 @@
+Google Play Console - Data Safety
+Jump to ContentDeveloper DocumentationUser DocumentationPartner GuideWhat's NewDeveloper Documentationv1.0Developer DocumentationUser DocumentationPartner GuideWhat's NewRequest DemoSign InRequest DemoSign Inv1.0SearchGetting StartedCleverTap Overview for DevelopersUser ProfilesUpdate User Profile PropertiesEventsCampaignsReportsConfiguration Guide for CleverTap RegionsCleverTap IP RangesGo Live ChecklistClient SDKSDKsGDPR Compliance SDK UpdatesMulti-Instance SDK UpdateImproved InApp Notifications SDK UpdateSet CleverTap IDWebViewSDK EndpointsiOS SDKiOS SDK Quick Start GuideiOS User ProfilesiOS User EventsiOS Push NotificationsiOS Rich Push NotificationsiOS In App NotificationiOS App InboxiOS Native DisplayiOS Product ExperiencesiOS Geofence SDKiOS Custom Proxy DomainiOS Advanced FeaturesiOS ResourcesAndroid SDKAndroid SDK Quick Start GuideAndroid User ProfilesAndroid User EventsAndroid PushCleverTap Huawei Push IntegrationCleverTap Baidu Push IntegrationCleverTap Xiaomi Push IntegrationAndroid Push TemplatesAndroid In-AppAndroid App InboxAndroid Native DisplayAndroid Product ExperiencesMulti-Instance Support AndroidGeofence Android SDKAndroid Advanced FeaturesAndroid ResourcesCordova SDKCordova Quick Start GuideCordova User ProfilesCordova User EventsCordova PushCordova In-AppCordova App InboxCordova Advance FeaturesCordova ResourcesFlutter SDKFlutter Quick Start GuideFlutter User ProfilesFlutter User EventsFlutter PushFlutter In-AppFlutter App InboxFlutter Advanced FeaturesFlutter ResourcesGeofencingAndroid Geofence SDKiOS Geofence SDKReact NativeReact Native Quick Start GuideReact Native User ProfilesReact Native User EventsReact Native PushReact Native In-AppReact Native App InboxReact Native Advanced FeaturesReact Native ResourcesUnity SDKUnity SDK Quick Start GuideUnity User ProfilesUnity User EventsUnity Push NotificationsUnity In AppUnity App InboxUnity Advanced FeaturesUnity ResourcesXamarinWeb SDKWeb SDK Quick Start GuideWeb Pop-ups & Exit IntentWeb PushWeb Native DisplayWeb InboxAdvanced ConfigurationWeb ResourcesSender ID in Manifest FileKaiOS SDKKaiOS SDK QuickStart GuideKaiOS Identify UsersKaiOS Track User EventsKaiOS Push NotificationsKaiOS DebugKaiOS ResourcesGoogle Tag ManagerCleverTap GTM Android IntegrationCleverTap GTM iOS IntegrationCleverTap GTM Web IntegrationApp PersonalizationUninstall TrackingSigned Call SDKsSigned Call Android SDKSigned Call iOS SDKSigned Call Web SDKSigned Call Flutter SDKSigned Call React Native SDKPlatformsAttribution PlatformsAdjustAirbridgeAppsflyerBranchSingular (formerly known as Apsalar)Customer Data PlatformsmParticlemParticle Native Android IntegrationmParticle Native iOS IntegrationRudderStackRudderStack Native Android IntegrationRudderStack Native iOS IntegrationRudderStack React Native IntegrationSegmentSegment Native Android IntegrationSegment Native iOS IntegrationSegment Web IntegrationSegment (Action)Email PlatformsAmazon Simple Email ServiceSendGridPostmarkMandrillGmail/Google AppsGeneric SMTPHandling UnsubscribesOverride Link TrackingSMS PlatformsBulkSMSExotelMSG91NetcoreNimbus SMSPlivoSMSINDIAHUBTextLocalTwilioGeneric SMSRemarketing PlatformsAPIGetting StartedAPI OverviewAPI Quick Start GuideAPI AuthenticationAPI ErrorsAPI Request LimitWebhooksCleverTap Query LanguageCommon API ComponentsAPI FAQsAPI ReferenceBulletins APICampaign APIsCreate CampaignStop Scheduled CampaignGet Campaign ReportGet CampaignsCatalog APICustom List APIEvent APIsGet EventsUpload EventsGet Event CountProfile APIsGet User ProfilesUpload User ProfilesUpload Device TokensGet Profile CountDelete User ProfileDemerge User ProfileSubscribeDisassociate a Phone NumberReport APIsReal-Time CountsGet Message ReportsTop Property CountsTrendsSettings APIData ImportsData ImportsImport Historical DataImports via SFTPChangelogChangelogApril 2023March 2023February 2023January 20232022 and EarlierResourcesCleverTap Postman CollectionApp Store Connect - App PrivacyGoogle Play Console - Data SafetyTroubleshootingTroubleshooting Push NotificationsGoogle Play Console - Data SafetyUnderstand the impact of the new Data Safety section in Google Play ConsoleSuggest EditsOverview
+Developers will now have a transparent way to show users if and how they collect, share, and protect user data before installing an app.
+Google has introduced a new Data safety section in the Play Console. Any data shared with a third party must be declared on theGoogle Play Console using the newly-introduced data safety section.
+This data will be displayed on the Google Play Store by late April 2022 and help the users make a more informed choice before installing an application.
+For more information about the new declaration required in the Data safety section of the Play Console, refer to Google Play's Data safety help.
+📘NoteThis document is not legal advice. It is provided for your information and convenience. We strongly recommend that you must work closely with legal and other professional advisors to determine how you can comply with Google Play Console - Data Safety guidelines.
+Data Safety
+A user data type is any sensitive or personal information that can identify a user. Google will require app owners to display information about all the user data types collected in the app. You can pass the data types to CleverTap as either User Profile properties or Events.
+After you log in to Google Play Console, go to App Content > Data Safety and answer questions about your data sharing. These questions are categorized into three sub-sections as follows:
+Data Collection and Security
+This section contains questions about data collection, security, and handling practices.
+📘Third-party Data ShareCleverTap does not share data with any third parties.
+Data Types
+Through this section, the app owner can declare all the data types collected by the app.
+📘Data Shared with CleverTapCleverTap does not collect any of the data types by default. However, you can configure your app to share data types with CleverTap.
+The following table will help you with privacy declaration for data types:
+Data Usage and Handling
+Data types collected by an application may or may not be shared. Any data transmitted to CleverTap or any other third party by the app will be considered shared data. For example, if a user adds a phone number to the app and records this information, this is collected data. However, if the app shares the phone number with CleverTap or any other third party, then the phone number is considered collected and shared data.
+For every selected data type, declare if it is collected, shared, or both.
+If your app collects data, declare the following:
+Purpose of collecting the data type- Select the appropriate reasons for collecting this data, such as App functionality, Analytics, Developer Communications, and so on.
+Is the collected data type ephemeral - Is the data processed temporarily, or if it resides in the app permanently?
+User Permission - If the user can allow or disallow data collection.
+Data Collection
+If your app shares data with a third party, declare the purpose of sharing this data. Select the appropriate reasons for sharing this data.
+Data Shared
+If your app collects data and also shares data with a third party, declare the purpose of collecting and sharing this data.
+Data Collected and Shared
+After completion
+Until July 20, 2022, you can temporarily publish app updates regardless of whether Google finds issues with the information you have disclosed. If there are no issues, your app will be approved, and you need not do anything. If there are issues, revert your Data safety form's status to Draft in Play Console to publish your app update. Google will also send the developer account owner an email and an inbox message in Play Console and show this information on the Policy status (Policy > Policy status) page.
+After July 20, 2022, all apps will be required to have completed the Data safety form accurately to disclose their data collection and sharing practices (including apps that do not collect any user data).
+If you still need further information, please create a support ticket from the CleverTap dashboard. We would be happy to help you with any other queries.
+Privacy Links
+For more information about privacy links, refer to CleverTap's Privacy Policy.
+FAQs
+Q. What information does CleverTap Android SDK collect automatically?
+CleverTap tracks the following information:
+Device model
+Cellular provider
+Network carrier
+Country code and timezone
+Wi-Fi and Bluetooth information
+Device width, height, and name
+The CleverTap Android SDK is open-source, and all the device information captured is available in our Android Github Repository.Updated about 1 month ago Table of Contents
+Overview
+Data Safety
+Data Collection and Security
+Data Types
+Data Usage and Handling
+After completion
+Privacy Links
+FAQs
+Copyright (C) 2013 WizRocket Inc. (“CleverTap”). All rights reserved. |
+Privacy Policy

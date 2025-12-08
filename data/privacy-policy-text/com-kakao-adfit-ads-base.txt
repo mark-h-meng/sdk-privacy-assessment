@@ -1,0 +1,200 @@
+Privacy Policy | Kakao AD
+KakaoAD
+Privacy
+Policy
+언어지원 메뉴
+KOR 한국어로 보기
+선택됨ENG 영어로 보기
+Privacy Policy Content
+Kakao Corp (hereinafter “Kakao”) uses and provides the user’s personal information based
+on the user’s consent, and, actively guarantees the user’s right (the right to
+control one’s own personal
+information).
+Kakao complies with applicable laws, personal information protection regulations and guidelines of the
+Republic of Korea, which must be obeyed by information communication service providers.
+“Privacy Policy” refers to guidelines on protecting the user’s
+valuable personal information which Kakao is required to comply with, in order to ensure that users use its
+services with confidence.
+This Privacy Policy is applied to the Kakao advertisement platform and
+the Kakao advertising agency (hereinafter the Services”), which are Kakao’s advertisement services.
+1. Collection of Personal Information
+Kakao collects the minimum personal information to provide the Services.
+The following minimum personal information is collected upon the user’s agreement. If additional personal
+information is collected, Kakao will notify the fact to the user and obtain consent.
+Membership Sign-up
+Kakao Account, name, mobile phone number, alternate email address
+User Identification
+Name, date of birth, gender, mobile phone number, user identification value (CI, DI),
+Korean/foreigner, mobile service provider
+CTS Code Application
+Mobile phone number, email
+Payment Service
+[For refund processing]
+Bank name, account number, account holder’s name
+Consent to event and marketing
+Kakao Account, name, mobile phone number, alternate email address
+In addition, the following personal information may be collected automatically while the user uses the
+Service.
+IP address, cookies, date of visit, service usage record, improper usage record, device information
+1.Kakao does not collect sensitive
+information.
+Kakao does not collect any sensitive information (ethnicity, ideology or creed, political affiliation,
+criminal records, medical information, etc.) that may infringe on the user's valuable human rights.
+It will obtain the user’s consent in advance if such information must be collected inevitably in accordance
+with obligations required by the law.
+Kakao may collect the user’s personal information during the user’s service use, and through paper, fax,
+telephone and email, in addition to the user’s sign-up process.
+2. Purpose of Collection and Use of Personal Information
+Kakao uses the user’s personal information for the following purposes only, and will obtain
+the user’s consent if the purposes change.
+1.Member identification, confirmation of the user’s will to sign up, age
+verification, prevention of improper usage
+2.Provision of various services, inquiry and complaint handling, delivery of
+notifications
+3.Provision of services promised to the user, payment and tax receipt
+issuance for the purchase and use of a paid service
+4.Confirmation of participation in events; marketing and
+advertising purposes
+5.Statistics based on service usage record, frequency of visit and service
+use; development of service environment to protect privacy; development of customized services; service
+improvement.
+3. Entrustment of Personal Information Handling
+"Entrustment of personal information handling” means that Kakao outsources to contractors
+some of its tasks essential for providing various services to the user.
+Kakao entrusts some of its affairs to the following parties.
+This information is latest as of the current date. Should any change be made to entrusted parties or affairs,
+Kakao will notify the user of the fact. Kakao also supervises and monitors entrusted parties to the safe
+management of personal
+information as required by law.
+4. Provision of Personal Information
+"Provision of personal information” means that Kakao provides to third parties the user’s personal information
+in order to provide various services and improve service quality although the affairs may not be required for
+service provision.
+Kakaodoes not provide personal information to any third party without your consent or
+unless demanded by applicable laws, with the exception of the following:
+1.When required for payment processing for a paid service; or
+2.When required by the law or demanded by an investigative agency according
+to the procedures and methods prescribed by legislation with regard to investigations.
+5. Retention, User Period and Destruction Procedure of Personal Information
+Kakao uses the user’s personal information restrictively, only while it provides the
+Services to the user after the user signs up. The user’s personal information is destroyed immediately in the
+case that the user
+deregisters from the Service or withdraws his or her agreement to the collection and use of personal
+information, that the purpose of the collection and use of personal information is fulfilled, or that the
+retention and use period expires.
+In addition, Kakao retains the user’s information for a period specified by applicable
+laws. Details are as follows:
+Retention of member information in accordance with applicable laws
+Kakao retains personal information which must be kept by law for a period specified by
+applicable laws.
+1.Service visit records
+Applicable Law: Protection of Communications Secrets Act
+Retention Period: 3 months
+2.Records of marks and advertisement
+Applicable Law: Act on the Consumer Protection in Electronic Commerce, etc.
+Retention Period: 6 months
+3.Records of contract or withdrawal of
+subscription
+Applicable Law: Act on the Consumer Protection in Electronic Commerce, etc.
+Retention Period: 5 years
+4.Records of payment and supplying
+goods
+Applicable Law: Act on the Consumer Protection in Electronic Commerce, etc.
+Retention Period: 5 years
+5.Records of consumer’s complaint and the
+settlement of dispute
+Applicable Law: Act on the Consumer Protection in Electronic Commerce, etc.
+Retention Period: 3 years
+6.Books and supporting documents for all
+transactions specified by the Tax Act
+Applicable Law: Framework Act on National Taxes, Corporate Tax Act
+Retention Period: 5 years
+7.Records of electronic financial
+transactions
+Applicable Law: Electronic Financial Transactions Act
+Retention Period: 5 years
+Personal information which is stored separately will be kept safe and not be used for other
+purposes.
+In addition, the personal information of users who have not used the Services for one year
+will be stored separately or destroyed in accordance with the Expiration System of Personal information.
+In this case, personal information which is stored separately will be destroyed after four
+years.
+Personal information stored in electronic file formats is to be deleted using technical
+means which make the information unrecoverable. Personal information printed on paper records, printed matters
+and documents is to be
+destroyed through shredding or incineration.
+6. User’s Rights and Exercise of Rights
+Kakao protects the user’s rights as follows:
+1.The user may view and edit his or her personal information at any time.
+2.A user may at any time request to withdraw consent to the provision of
+personal information or to unregister from the Service.
+3.Kakao does not collect the personal information of children under the age
+of 14. However, it guarantees the rights of their legal representatives if demanded by one. (Access,
+correction, deletion and
+withdrawal of consent for the children's personal information.)
+4.If a user requests for the revision of personal information, the user's
+information is not to be used or provided until the revision is completed to ensure the accurate use and
+provision of personal
+information. If such information has already been provided to any third party, the recipient will be
+immediately notified of the change so that the information will be revised.
+7. Establishment, Operation and Rejection of Automatic Collection Device of Personal Data
+1.What is a cookie?
+A cookie is a small piece of text file usually set by the web server, sent from a website and stored in a
+user's computer hard disk while the user is browsing that website.
+2.Purpose of use of cookie
+Kakao uses cookies which save and retrieve user preferences in order to provide a faster web environment and
+improve the Services. With cookies, the user can use the Services provided by Kakao more easily.
+Kakao also examines the user’s preferences and areas of interest by analyzing the visit frequency, time of
+visit, participation history in various events, number of visits, etc. Based on the data, customized
+marketing information including
+advertisement is provided to the user.
+3.Rejecting a cookie
+A user has an option for setting a cookie. Hence, a user may allow all cookies by setting the option on the
+web browser; whenever a cookie is stored, the confirmation thereof shall be completed; or, otherwise, a user
+may reject the storage of
+all cookies. Provided, however, when a user rejects the storage of a cookie, then the user may have some
+difficulties in using a service requiring login.
+8. Technical and Managerial Measures for Personal Information Protection
+1.Encryption
+Kakao sends the user’s personal information through secured communication channels, and stores crucial
+information including passwords after encryption.
+2.Protection from hacking and computer
+virus
+Kakao’s systems are located in restricted areas to prevent the leakage or damage of the user’s personal
+information due to hacking or viruses. Around-the-clock monitoring is implemented using a system detecting
+and stopping hacking attacks.
+Vaccine programs have been installed to prevent malware or virus infections. In addition, we constantly
+conduct researches on new hacking tricks and security technology and apply them to the Services.
+3.Minimum access to personal information
+Only a minimum number of employees handle personal information. In addition, systematic criteria are in
+place for password creation and change for the database system used for storing personal information and the
+system used for processing
+personal information, as well as access rights to those systems. Constant audits are also conducted.
+4.Periodic training on protection of the User’s
+privacy for employees
+Periodic training and campaigns are provided to all employees and executives handling personal information
+regarding the duty to protect personal information and security.
+9. Contact Information for Privacy Protection Officer and Responsible Department
+The Company has designated the personal data management to protect user privacy and handle
+any complaint or inquiry you may have while using the Website. We will do our best to promptly and
+sufficiently reply to your report
+or inquiry.
+Privacy Protection Officer and Responsible Department
+Privacy Protection Officer: Sung Kang
+Tel: 82)1577-3321
+Responsible Department: Privacy Protection Part
+Questions: Inquiry
+Please make inquiries to the following organizations if you need to report or consult in
+regards to the violation of personal information.
+10. Amendments
+Kakao may amend its Privacy Policy to reflect any legal or service changes. Kakao will notify such amendment
+in advance, and the amended Privacy Policy will take effect seven days after the notification of the
+amendment.
+However, any major change in user rights, including personal information items to be
+collected and the purpose of collecting thereof, will be notified at least 30 days in advance
+Effective Date: September 05, 2018
+Announcement Date: August 03, 2018
+See Present Privacy
+Policy
+Copyright © Kakao Corp. All
+rights reserved.

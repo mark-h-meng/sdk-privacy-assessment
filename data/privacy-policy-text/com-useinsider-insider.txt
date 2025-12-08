@@ -1,0 +1,200 @@
+Insider product privacy policy
+Platform
+Connect
+Stitch every single customer data point to build unified profiles.
+Unified ProfilesSegmentationIntegrations
+Predict
+Predict future behavior and create high-performing segments with AI.
+Insights
+Purchase
+Custom Conversion
+Personalize
+Create one-to-one personalized experiences at scale and see faster time to value.
+OptimizeExperiment
+EngageJourney Orchestration
+Discover
+Channels
+Web
+App
+Web Push
+Email
+Messaging
+SMS
+WhatsApp
+InStory
+Eureka
+Industries
+Retail
+Deliver seamless omnichannel experiences, drive repeat purchases, and build lasting loyalty
+Automotive
+Drive 1:1 engagement, test drive applications, and leads with industry-tailored growth strategies
+Finance
+Build trust and deepen one-to-one loyalty with future-forward marketing channels
+Media
+Get visitors to subscribe, renew, and stay on your website longer with immersive experiences
+Travel
+Drive bookings and ancillary revenue throughout the customer lifecycle
+Telecom
+Increase your average revenue per user and subscriber lifetime value
+See Insider in action
+Watch Now
+Use Cases
+Customer Onboarding
+Learn how to optimize customer onboarding by converting anonymous visitors into known customers, make a great first impression, and improve with A/B testing.
+Customer Engagement
+With the near-death of third party cookies and increasing privacy regulations, explore customer engagement and responsible marketing strategies.
+Reduce Churn
+Discover how to reduce churn using strategies that can help you proactively retain customers across the entire customer lifecycle.
+Resources
+Blog
+More
+About us
+Discover the values that drive Insider and how we empower marketers to create individualized, cross-channel experiences.
+Partners
+Learn all about Insider’s global partner network and how we can help you extend your reach and offerings.
+Careers
+Ready to disrupt? Explore opportunities and see what it’s like learn and grow with an amazing team.
+Contact us
+Have a question about Insider? Drop us a line. We’re happy to help.
+Glossary
+Explore a comprehensive list of marketing terms, in-demand tools, and emerging trends in Insider’s glossary.
+Newsroom
+Stay up to date on the latest news, partnership announcements, product releases, and more from Insider.
+Product Demo Hub
+Channels
+Web
+App
+Web Push
+Email
+Messaging
+Sms
+WhatsApp
+InStory
+Eureka
+Login
+Get a Demo
+English
+Français
+Español
+Русский
+한국어
+繁體中文
+日本語
+Tiếng Việt
+Português
+Product Privacy Policy
+First things first
+This privacy policy (“Privacy Policy”) has been drafted, approved and posted by us to inform you how our products collect, use, and otherwise process – on behalf of digital marketers, website owners, leading brands, and other businesses that use our services (“Customer”) – information, including personal data of Customers’ online users and clients (“End Users”).
+This Privacy Policy is meant to help Customers and End Users understand the services we provide through our products and how the services may affect or promote End Users’ and Customers’ rights and interests. Just as our products is to be integrated with Customers’ websites, this Privacy Policy should be read in connection with Customers’ respective privacy policies. Granted this reservation, this Privacy Policy aspires to give you, the reader, a clear picture of the following:
+services we provide;
+information we process;
+cookies and JavaScript tags we use;
+purposes we answer;
+data subjects’ rights we help exercise; and
+protective measures we take.
+Services we provide
+Our products offer Customers a broad set of features across the sales funnel, from acquisition to activation, retention, and revenue, including: (a) automated personalization, (b) dynamic A/B testing to optimize yield, (c) full set of features to help optimize website conversions and maximize revenues, (d) targeted and omnichannel personalized messaging platform directed to End Users, and (e) flexible data architecture to allow for powerful integrations with any enterprise system.
+We provide our products on a SaaS basis and so we perform our services and process underpinning data on Customers’ instructions.
+Information we process
+In order to deliver on our promise to leverage real-time predictive segmentation powered by artificial intelligence and machine learning capabilities, we cannot do without data, including:
+personal data, meaning any information relating to identified or identifiable individuals, End Users, such as:
+contact information, where Customers send us – directly, by using their email service providers (“ESPs”) or our products
+technical information, in particular IP addresses End Users’ devices by the Customers, when they access or visit Customers’ websites (“Websites”).
+non-personal data that does not fall within the meaning of personal data as defined by, and thus is not subject to, the Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016 on the protection of natural persons with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (General Data Protection Regulation; “GDPR”) which may be made available to us or gathered via End Users’ use of the Websites, and include:
+your referring URL, timestamp, browser type and language, device types, GSM operations, operating system, screen parameters, color depth, whether a computer is Java enabled, Internet connection type, browser cookie settings, pages viewed on the Websites, last login time for Websites, last updated date for mobile apps, time of visit, products viewed, placed in the cart, and purchased on the Websites, quantity, price, and purchase ID of products placed in the cart or purchased on the Websites, and custom page data, as defined by our Customers – automatically collected by us and our technology providers when End Users visit or access the Websites;
+inferred information where – based on the information we collect from End Users’ Website activity, search terms entered through End Users’ browsers, and information gleaned from previous our cookies and local storage (as detailed below) – we may infer other information, such as zip code, country, state, time zone, weather, temperature, heat index, wind chill, or proximity to a shipping location.
+As long as we keep and use personal data with non-personal data combined, our processing of the same will remain compliant with the GDPR and all data subjects’ rights will be protected accordingly.
+Cookies and JavaScript tags we use
+We collect information using “cookie” technology, JavaScript tags and other technologies when End Users access the Websites. Cookies are small packets of data that a website stores on a computer’s hard drive so that the computer will “remember” information about End Users’ visit. We may use both session cookies (which expire once End Users close their browser) and persistent cookies (which stay on End Users’ computer until deleted by them) to help us collect information and to enhance End Users’ experience using the Websites. If End Users do not want us to place a cookie on their hard drive, they may turn that feature off on their computer.
+We also use JavaScript tags to trigger a sequence of events that includes viewing a first-party cookie (or setting that cookie if it does not already exist) and to help us and Customers tailor, analyze, manage, report, and optimize your experience on the Websites.
+Purposes we answer
+We use and share personal data also for the following purposes:
+to provide Services to our Customers – for example, when we receive End Users’ personal data, we may analyze such data and may instruct our Customers or their ESPs what content to insert into marketing or other communications which are directed to End Users. We, our Customers or their ESPs, as applicable, will then send End Users a tailored e-mail based on our suggestions;
+to send to our Customers relevant information and updates related to the Services;
+to generally understand the respective needs and interests of Customers and End Users;
+to conduct anonymous analytics in order to improve and customize our Services and products;
+to support and troubleshoot our Services;
+to investigate and resolve disputes in connection with our Services;
+to investigate violations and enforce our policies, and as required by law, regulation or other governmental authority, or to comply with a subpoena or similar legal process or respond to a government request; and
+to monitor system performance and network capacity, test and fix systems, and develop and implement upgrades to systems.
+We do not rent, sell, or share personal data with third parties.
+We will not share without your consent your Personal Information except as required by law, such as to comply with a subpoena, court orders and regulations or similar legal process, and when we believe in good faith that disclosure is necessary to protect our rights, protect your safety or the safety of others, investigate fraud or respond to a government request.
+Data subjects’ rights we help exercise
+End Users may request that we or Customers give them access, rectify, erase, or port their personal data, or restrict or stop the processing.
+If End Users would like to opt-out of our collection of information about them using cookies or JavaScript tags, they should follow relevant instructions available on the Websites.
+End Users can contact us at [privacy@useinsider.com] or otherwise and we’d be happy to oblige in full compliance with the GDPR. We will use commercially reasonable efforts to process such requests in a timely manner. Alternatively, End Users may use a third-party tag management service to disable our tag on the Websites.
+CREATE OPT-OUT URL
+1. Enter the webpage URL:
+2. Click the link below:
+https://www.example.com/?INSOPTOUT
+End Users also have the opt-out option for mobile devices. Privacy setting of your Android or iOS device have limit ad tracking (for iOS) and opt-out of interest based ads (for Android). End users can change the setting via this features and will not be tracked by us.
+We will retain the information we collect for as long as needed to provide our services and to comply with our legal obligations.
+Protective measures we take
+We have a Security, Privacy and Compliance Committee (“SPCC”) with data protection specialists, legal consultants and security experts helping our company and our products become and remain GDPR-compliant. Our team also includes executive members, such as our co-founders, who are fully committed to improving transparency and trust.
+We commit to notify our Customers of any and all privacy incidents. We will keep investing in threat detection and avoidance technologies, and our round-the-clock incident management program to help you respond to security or privacy incidents.
+We are constantly improving our documented processes and will continue to train our company on adequate incident response procedures.
+We have strong security measures for data processing, including:
+Encryption, and specifically: (i) encryption of your data at rest with AES256 (EBS/S3/Glacier/RDS), (ii) centralized managed Key Management (by AWS Region), (iii) IPsec tunnels into AWS with the VPN-Gateways, (iv) dedicated HSM modules in the cloud;
+Monitoring and Logging, and specifically: (i) Asset Management and Configuration, (ii) auditing and security analytics, (iii) detailed information about flows in the network through VPC-FlowLogs, (iv) rule-based configuration checks and actions, (v) filtering and monitoring of HTTP access to applications;
+Access, and specifically: (i) Multi-Factor-Authentication (MFA), (ii) fine granular access to objects in Amazon S3, Amazon SQS, and Amazon SNS, (iii) API-Request Authentication, (iv) Geo-Restrictions, (v) temporary access tokens;
+Data Privacy, and specifically: (i) we determine where our Customers’ content will be stored, including the type of storage and geographic region of that storage, (ii) we choose the secured state of our Customers’ content, (iii) We use strong encryption for Customers’ content in transit or at rest, and manage our own encryption keys, (iv) we manage access to our Customers’ content and AWS services and resources through users, groups, permissions and credentials that we control, (v) we hash all data and transactions, and (vi) we regularly audit and review the stored data and erase the unnecessary parts;
+Privacy by Design, and specifically: (i) establishing reliable operation of controls, (ii) enabling continuous and real-time auditing, (iii) enabling opt out of our services to End-Users at any given point via our Privacy Policy.
+Changes and scope of the product privacy policy
+Insider PTE LTD drafted this privacy policy to inform you. Our Privacy Policy may change from time to time. We will not reduce your rights under this Privacy Policy without your explicit consent. We will post any Privacy Policy changes and updates on this page and, if the changes are significant, we will provide a more prominent notice (including, for certain services, email notification of privacy policy changes).
+Privacy Policy
+Previous Policy
+Website Terms of Use
+Next Policy
+Join Insider’s newest women-led movement shemarkables.
+© 2023 Insider. All rights reserved.
+Subscribe to marketing growth updates
+© 2023 Insider. All rights reserved.
+PlatformIndividualize
+Connect
+Predict
+ResourcesSuccess Stories
+Ebooks
+Reports
+Webinars
+Glossary
+Blog
+CompanyAbout Us
+Partner with Insider
+Newsroom
+Contact Us
+We’re Hiring!
+PoliciesPrivacy Policy
+Product Privacy Policy
+Terms of Use
+Security
+SOC 2
+Information Security Policy
+Anti-Corruption Policy
+GDPR
+GDPR Data Subject Access Request Form
+CCPA Data Subject Access Request Form
+This website uses cookiesCookies are used on this website to personalize content and ads and to provide analytics about website usage. We also share information about your use of our website with our social media, advertising, and analytics partner. Our partners may combine this information with other data that you have provided to them or that they have collected in the course of your use of the Services. Please make your individual settings about the types of cookies that should be allowed. Please note that due to your setting, all functions of the website may no longer be available. You can also revoke your consent at any time.
+Further information on the details of the data involved, the storage period, access to your data by third parties, third country data transfers and your right of revocation can be found under cookie settings and in our privacy policy. Legal information.
+Accept AllOnly NecessaryManage consent
+Close
+Privacy Overview
+This website uses cookies to improve your experience while you navigate through the website. Out of these cookies, the cookies that are categorized as necessary are stored on your browser as they are essential for the working of basic functionalities of the website. We also use third-party cookies that help us analyze and understand how you use this website. These cookies will be stored in your browser only with your consent. You also have the option to opt-out of these cookies. But opting out of some of these cookies may have an effect on your browsing experience.
+Necessary
+Necessary
+Always Enabled
+Necessary cookies are absolutely essential for the website to function properly. These cookies ensure basic functionalities and security features of the website, anonymously.
+Functional
+functional
+Functional cookies help to perform certain functionalities like sharing the content of the website on social media platforms, collect feedbacks, and other third-party features.
+Performance
+performance
+Performance cookies are used to understand and analyze the key performance indexes of the website which helps in delivering a better user experience for the visitors.
+Analytics
+analytics
+Analytical cookies are used to understand how visitors interact with the website. These cookies help provide information on metrics the number of visitors, bounce rate, traffic source, etc.
+Advertisement
+advertisement
+Advertisement cookies are used to provide visitors with relevant ads and marketing campaigns. These cookies track visitors across websites and collect information to provide customized ads.
+Others
+others
+Other uncategorized cookies are those that are being analyzed and have not been classified into a category as yet.

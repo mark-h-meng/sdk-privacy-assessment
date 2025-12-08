@@ -1,0 +1,297 @@
+Prepare for Google Play's data disclosure requirements  |  Maps SDK for Android  |  Google Developers
+Google
+Maps Platform
+Overview
+Products
+Pricing
+Documentation
+Get Started
+Get Started with Google Maps Platform
+API Picker
+Billing & Pricing
+Reporting & Monitoring
+Map IDs
+FAQ
+Support and Resources
+Customer Care
+Incident Management
+Maps
+Maps JavaScript API
+Maps SDK for Android
+Maps SDK for iOS
+Maps Static API
+Street View Static API
+Maps Embed API
+Maps URLs
+Maps Elevation API
+Routes
+Routes API
+Roads API
+Directions API
+Distance Matrix API
+Solutions
+Industry solutions
+Mobility services
+Places
+Places API
+Places SDK for Android
+Places SDK for iOS
+Places Library, Maps JavaScript API
+Geocoding API
+Geolocation API
+Address Validation API
+Time Zone API
+Additional Resources
+API Security Best Practices
+Map Coverage Details
+Optimization Guide
+Mobile OS and software support
+Launch stages
+Deprecations
+Asset Tracking Plan
+URL Encoding
+WordPress Users
+Blog
+Community
+StackOverflow
+GitHub
+YouTube
+Discord
+Twitter
+Issue Tracker
+Google Dev Library
+English
+Bahasa Indonesia
+Deutsch
+Español
+Español – América Latina
+Français
+Italiano
+Polski
+Português – Brasil
+Tiếng Việt
+Türkçe
+Русский
+עברית
+العربيّة
+فارسی
+हिंदी
+বাংলা
+ภาษาไทย
+中文 – 简体
+中文 – 繁體
+日本語
+한국어
+Sign in
+Android
+Maps SDK for Android
+Get Started
+Contact sales
+Guides
+Reference
+Samples
+Support
+Google
+Maps Platform
+Overview
+Products
+Pricing
+Documentation
+More
+Guides
+Reference
+Samples
+Support
+Blog
+Community
+More
+Maps SDK for Android
+Overview
+Quickstart
+Setup
+Set up your Google Cloud project
+Use API keys
+Set up an Android Studio project
+Versions
+BETA
+Maps SDK for Android v.3.1.0 BETA
+Use Maps SDK v.3.1.0 BETABeta releases
+Tutorials
+Map with marker
+Polylines and polygons to represent routes and areas
+Select Current Place
+Tasks and concepts
+Creating and configuring a map
+Add a mapConfigure a mapMap and Tile CoordinatesNew Map Renderer (opt-in)Street View PanoramasBusinesses and other points of interestLite mode
+Interacting with a map
+Camera and viewControls and gesturesEventsLocation dataLaunch Google Maps
+Draw on a map
+MarkersInfo windowsShapesGround overlaysTile overlays
+Manage marker and label collisions
+Customize with Cloud-based maps styling
+OverviewMap Style Editor walkthroughManage map stylesWork with zoom levelsCustomize POI behaviorCustomize building styleStyling examplesDesign checklist
+Customize with JSON styling
+Add a styled mapHide map features with stylingStyle reference
+Enhance accessibility
+Maps API on Wear OS
+Open-source libraries
+Utility library
+OverviewSetup and demoGeoJSONKMLHeatmapsMarker clusteringMultilayer
+KTX Kotlin extensions
+Maps Compose library
+Maps Rx library
+Secrets Gradle plugin
+Policies and terms
+Usage and billing
+Reporting and monitoring
+Terms of service
+Prepare for Google Play data disclosure requirements
+Get Started
+Get Started with Google Maps Platform
+API Picker
+Billing & Pricing
+Reporting & Monitoring
+Map IDs
+FAQ
+Support and Resources
+Customer Care
+Incident Management
+Maps
+Maps JavaScript API
+Maps SDK for Android
+Maps SDK for iOS
+Maps Static API
+Street View Static API
+Maps Embed API
+Maps URLs
+Maps Elevation API
+Routes
+Routes API
+Roads API
+Directions API
+Distance Matrix API
+Solutions
+Industry solutions
+Mobility services
+Places
+Places API
+Places SDK for Android
+Places SDK for iOS
+Places Library, Maps JavaScript API
+Geocoding API
+Geolocation API
+Address Validation API
+Time Zone API
+Additional Resources
+API Security Best Practices
+Map Coverage Details
+Optimization Guide
+Mobile OS and software support
+Launch stages
+Deprecations
+Asset Tracking Plan
+URL Encoding
+WordPress Users
+StackOverflow
+GitHub
+YouTube
+Discord
+Twitter
+Issue Tracker
+Google Dev Library
+Home
+Products
+Google Maps Platform
+Documentation
+Android
+Maps SDK for Android
+Guides
+Send feedback
+Prepare for Google Play's data disclosure requirements
+Stay organized with collections
+Save and categorize content based on your preferences.
+In May 2021, Google Play
+announced the new Data safety section,
+which is a developer-provided disclosure for an app's data collection, sharing,
+and security practices.
+This page can help you complete the requirements for this data disclosure in
+regards to your usage of the Maps SDK for Android. On this page, you can find
+information on how the Maps SDK for Android handles end-user data, including any
+applicable configurations or invocations you can control as the app
+developer.
+We aim to be as transparent as possible in supporting you; however, as the
+app developer, you are solely responsible for deciding how to respond to Google
+Play's Data safety section form regarding your app's end-user data collection,
+sharing, and security practices.
+How to use the information on this page
+This page lists the end-user data collected by only the latest version of
+the Maps SDK for Android.
+To complete your data disclosure, you can use Android's
+guide about data types
+to help you determine which data type best describes the collected data. In
+your data disclosure, make sure to also account for how your specific app
+shares and uses the collected data.
+Important: To help you ensure that your app's disclosures are
+accurate, we recommend the following:
+Always use the latest SDK version in your app. This page lists the
+data collected by only the latest version of the Maps SDK for Android.
+Review this page whenever you update your app's SDK versions. Check
+that your data disclosures are accurate and up-to-date.
+Data collected automatically
+Data collected depending on your usage
+Send feedback
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
+Last updated 2023-04-20 UTC.
+Stack Overflow
+Ask a question under the google-maps tag.
+GitHub
+Fork our samples and try them yourself.
+Discord
+Chat with fellow developers about Google Maps Platform.
+Issue Tracker
+Something wrong? Send us a bug report!
+Learn More
+FAQ
+API Picker
+Places SDK for Android
+Platforms
+Android
+iOS
+Web
+Web Services
+Product Info
+Pricing and Plans
+Contact Sales
+Support
+Terms of Service
+Android
+Chrome
+Firebase
+Google Cloud Platform
+All products
+Terms
+Privacy
+Sign up for the Google for Developers newsletter
+Subscribe
+English
+Bahasa Indonesia
+Deutsch
+Español
+Español – América Latina
+Français
+Italiano
+Polski
+Português – Brasil
+Tiếng Việt
+Türkçe
+Русский
+עברית
+العربيّة
+فارسی
+हिंदी
+বাংলা
+ภาษาไทย
+中文 – 简体
+中文 – 繁體
+日本語
+한국어

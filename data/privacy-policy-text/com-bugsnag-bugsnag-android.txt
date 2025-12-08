@@ -1,0 +1,60 @@
+BugSnag docs › Platforms › Android › Play Store privacy details
+Android integration guide
+Installation
+Basic configuration
+Reporting unhandled exceptions
+Reporting ANRs
+Reporting NDK errors
+Reporting handled exceptions
+Sending diagnostic data
+Identifying users
+Logging breadcrumbs
+Session tracking
+Declaring feature flags and experiments
+Identifying crashes at launch
+Next steps
+Library reference
+Configuration options
+Reporting handled exceptions
+Customizing error reports
+Customizing breadcrumbs
+Capturing sessions
+Feature flags & experiments
+Identifying crashes at launch
+Automatically captured data
+Android mapping support
+StrictMode violations
+Frequently asked questions
+Further reading
+View on GitHub
+Android demo app
+Read Javadoc
+Changelog
+Upgrade guide
+Play Store privacy details
+Support
+Docs
+Platforms
+Android
+Play Store privacy details
+bugsnag.com
+Start Free Trial
+Play Store privacy details
+From April 2022, apps on the Google Play Store will need to submit privacy details about their app. On each appâs product page, users will be able to see the data the app may collect, and whether that data is linked to them or used to track them.
+This page provides information on how the data captured by BugSnag and its usage relates to the guidance from Google.
+Types of data
+The automatically captured data page provides information on what data BugSnag captures by default, and guidance on preventing capture of each type of data. BugSnag can be configured to override any automatically captured data, and also send custom additional metadata. Custom metadata you choose to send is of course out of the scope of this document.
+The following table describes how Google’s definition of data types relate to BugSnag’s automatically captured data, to aid providing privacy information for an app.
+You can automatically redact keys in metadata by adjusting the redactedKeys configuration option.
+Data purpose
+SmartBear does not use event data from customer applications for any of the purposes outlined by Google. We process data on behalf of each BugSnag customer to provide data analytics about crashes and application stability to that customer (the data controller).
+However, by using BugSnag, you may be using data in the ways described below.
+Data linked to the user
+If you are setting user data, then you need to be aware that all reports sent to BugSnag can be linked to that individual user. By default BugSnag captures a unique user ID (per device) so that reports from the same user can be linked, even if no user data is associated with the reports.
+This unique ID can be removed by setting null for each of the fields in setUser. There is also a device.id field which uses the same id as the default user id.This can be overriden if required.However note that the default device / user ID will still be used for internal crash reports, where the error came from the BugSnag SDK itself.
+Encryption in transit
+Communications between your application and BugSnag servers are encrypted via industry best-practice HTTPS and Transport Layer Security (TLS) by default.
+Deleting Data
+There is no mechanism to delete previously collected data via the BugSnag Android notifier directly. Developers that have access to their organisation’s BugSnag dashboard can delete any information that has been previously collected. It is also possible to delete information specific to individual users.
+Privacy
+You will have the ability to add links on your product page to your app’s privacy policy and your privacy choices. Should you wish to reference our privacy policy this is on the SmartBear website.

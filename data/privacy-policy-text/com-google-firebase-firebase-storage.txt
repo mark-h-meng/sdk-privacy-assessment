@@ -1,0 +1,726 @@
+Prepare for Google Play's data disclosure requirements  |  Firebase for Android
+Products
+Build
+Release & Monitor
+Engage
+Solutions
+Explore all solutions
+Discover solutions for use cases in your apps and businesses
+Pricing
+Docs
+Overview
+Fundamentals
+Build
+Release & Monitor
+Engage
+Reference
+Samples
+Community
+Learn
+Events
+Stories
+Support
+English
+Bahasa Indonesia
+Deutsch
+Español – América Latina
+Français
+Italiano
+Polski
+Português – Brasil
+Tiếng Việt
+Türkçe
+Русский
+עברית
+العربيّة
+فارسی
+हिंदी
+বাংলা
+ภาษาไทย
+中文 – 简体
+中文 – 繁體
+日本語
+한국어
+Go to console
+Sign in
+Documentation
+Firebase for Android
+Overview
+Fundamentals
+Add Firebase - Apple platforms (iOS+)
+Add Firebase - Android
+Add Firebase - Web
+Add Firebase - Flutter
+Add Firebase - C++
+Add Firebase - Unity
+Add Firebase - Server environments
+Manage Firebase projects
+Supported platforms & frameworks
+Use Emulator Suite
+Build
+Emulator Suite
+Authentication
+Realtime Database
+Firestore
+Storage
+ML
+Hosting
+Cloud Functions
+Security Rules
+App Check
+Extensions
+Release & Monitor
+Crashlytics
+Performance Monitoring
+Test Lab
+App Distribution
+Engage
+Analytics
+Remote Config
+A/B Testing
+Cloud Messaging
+In-App Messaging
+Dynamic Links
+Google AdMob
+Google Ads
+App Indexing
+Reference
+Samples
+Products
+More
+Solutions
+More
+Pricing
+Docs
+More
+Overview
+Fundamentals
+More
+Build
+More
+Release & Monitor
+More
+Engage
+More
+Reference
+Samples
+Community
+More
+Support
+Go to console
+Fundamentals
+Get started with Firebase
+Add Firebase to an app
+Apple platforms (iOS+)AndroidWebFlutter
+Add Firebase to a game
+OverviewC++UnityAdd Firebase to a serverSet up projects programmatically
+Manage your Firebase projects
+Understand Firebase projects
+Set up development workflows
+Overview of environmentsGeneral best practicesGeneral security guidelinesConfigure multiple projectsSelect locations for your project
+Understand billing
+Firebase pricing plansAvoid surprise billsAdvanced billing alerts & logicLearn about API keys for FirebaseExport project data to BigQueryManage Firebase installationsImport segments
+Manage projects programmatically
+Use the REST APIUse Terraform
+Use the Admin SDK
+Node.jsJavaPythonConfigure OAuth identity providers for Firebase Auth
+Manage project access (IAM)
+Overview
+Roles
+OverviewOwner, Editor, Viewer roles
+Firebase predefined roles
+OverviewFirebase-level rolesProduct-category rolesProduct-level rolesCustom rolesPermissions
+Platforms and frameworks
+Supported platforms & frameworks
+Apple platforms (iOS+)
+Learn about Apple platforms + FirebaseLink Firebase dependencies statically or dynamicallyPrepare for Apple App Store data disclosure requirementsSupporting iOS 14Install Firebase in your Apple appSDK health metricsTroubleshooting & FAQ
+Android
+Learn about Android + FirebaseDependencies of Firebase Android SDKs on Google Play servicesPrepare for Google Play data disclosure requirementsIntegrate with your Play Games services projectSDK health metricsTroubleshooting & FAQ
+Web
+Learn about Web + FirebaseUpgrade to the v9 modular SDKUsing module bundlersWeb SDK setup alternativesUse Firebase in PWAsSDK health metricsSupported environments for the Firebase JS SDK
+C++
+Learn about C++ + Firebase
+Unity
+Learn about Unity + FirebaseAdditional installation optionsTroubleshooting & FAQ
+Prototype and test with Emulator Suite
+Introduction
+Connect your app and prototype
+Get startedConnect to the Authentication emulatorConnect to the Realtime Database emulatorConnect to the Firestore emulatorConnect to the Cloud Storage for Firebase emulatorUse the Hosting emulatorConnect to the Cloud Functions emulatorUse the Extensions emulatorInstall, configure and integrate
+Build
+Release & Monitor
+Engage
+Explore all solutions
+Overview
+Fundamentals
+Build
+Release & Monitor
+Engage
+Reference
+Samples
+Learn
+Events
+Stories
+Add Firebase - Apple platforms (iOS+)
+Add Firebase - Android
+Add Firebase - Web
+Add Firebase - Flutter
+Add Firebase - C++
+Add Firebase - Unity
+Add Firebase - Server environments
+Manage Firebase projects
+Supported platforms & frameworks
+Use Emulator Suite
+Emulator Suite
+Authentication
+Realtime Database
+Firestore
+Storage
+ML
+Hosting
+Cloud Functions
+Security Rules
+App Check
+Extensions
+Crashlytics
+Performance Monitoring
+Test Lab
+App Distribution
+Analytics
+Remote Config
+A/B Testing
+Cloud Messaging
+In-App Messaging
+Dynamic Links
+Google AdMob
+Google Ads
+App Indexing
+Firebase is back at Google I/O on May 10! Register now
+Firebase
+Documentation
+Firebase for Android
+Fundamentals
+Send feedback
+Prepare for Google Play's data disclosure requirements
+Stay organized with collections
+Save and categorize content based on your preferences.
+In May 2021, Google Play
+announced the new Data safety section,
+which is a developer-provided disclosure for an app's data collection, sharing,
+and security practices.
+This page can help you complete the requirements for this data disclosure in
+regards to your usage of Firebase Android SDKs. On this page, you can find
+information on whether and how our SDKs handle end-user data, including examples
+of applicable configurations or invocations you can control as the app
+developer.
+We aim to be as transparent as possible in supporting you; however, as the app
+developer, you are solely responsible for deciding how to respond to
+Google Play's Data safety section form regarding your app's end-user data
+collection, sharing, and security practices.
+How to use the information on this page
+This page lists the end-user data collected by only the latest versionof
+each Firebase Android SDK.
+Each SDK has its own section later on this page where we provide information
+about data collected automatically versus data collected depending on
+your usage. Automatic collection means that the SDK collects specific data
+without you invoking any specific method or class in your app. However, in many
+cases, the data collected by the SDK depends on your app's specific usage of the
+product, meaning your app's configuration and how you invoke the SDK.
+To complete your data disclosure, you can use Android's
+guide about data types
+to help you determine which data type best describes the collected data.
+In your data disclosure, make sure to also account for how your specific app
+shares and uses the collected data.
+Important: To help you ensure that your app's
+disclosures are accurate, we recommend the following:
+Always use the latest SDK versions in your app. This page lists the data
+collected by only the latest version of each SDK.
+Review this page whenever you update your app's SDK versions. Check that
+your data disclosures are accurate and up-to-date.
+Overview of data encryption, data sharing, and data deletion for Firebase Android SDKs
+Firebase user agent
+The Firebase user agent is not a Firebase Android SDK, but rather a bundle
+of information that's collected by several Firebase Android SDKs and includes
+the following:
+Device metadata: OS version, name, model, brand, and form factor
+App that was used to install your app (for example, the Play Store) (see
+documentation)
+Which Firebase SDKs are used in your app, including their versions
+The Firebase user agent is used internally by Google to determine platform and
+version adoption in order to provide, maintain, and improve Firebase services.
+It is never linked to a user or device identifier.
+If a Firebase Android SDK collects the Firebase user agent, it will be listed in
+the SDK's section below.
+A/B Testing
+com.google.firebase:firebase-abt
+Data collected automatically
+The Firebase A/B Testing SDK does not automatically collect any end-user
+data.
+Other considerations
+The Firebase A/B Testing SDK sets and uses Google Analytics user
+properties in order to specify membership in experiment groups for
+Firebase Remote Config and Firebase In-App Messaging.
+Since the A/B Testing SDK is only used directly by
+Firebase Remote Config and
+Firebase In-App Messaging, refer to those specific sections
+on this page to learn more about any data collection and the purpose of
+collection.
+Data collected depending on your usage
+The Firebase A/B Testing SDK doesn't have optional features that the
+developer can configure or invoke to collect other end-user data.
+App Check
+com.google.firebase:firebase-appcheck
+com.google.firebase:firebase-appcheck-ktx
+com.google.firebase:firebase-appcheck-debug
+com.google.firebase:firebase-appcheck-safetynet
+com.google.firebase:firebase-appcheck-playintegrity
+Data collected automatically
+The Firebase App Check SDKs collect the following data automatically.
+Data collected depending on your usage
+Depending on how you configure or invoke the Firebase App Check SDKs and the
+product's features, your app may collect end-user data that needs to be included
+in your data disclosure. The following table lists examples of end-user data
+that can be collected depending on your usage, but make sure to account for any
+data collected by your specific usage.
+Additional information
+Purpose for data collection
+The Firebase user agent is used internally by Google to determine platform and
+version adoption in order to provide, maintain, and improve Firebase services.
+It is never linked to a user or device identifier.
+Firebase App Check generally uses the other collected data listed
+in the sub-sections above
+to validate app attestations to help protect your backend resources from abuse.
+Also, review the sub-sections above for information about how specific data
+may be used.
+In your data disclosure, make sure to also account for how you specifically use
+the collected data.
+App Distribution
+Full App Distribution Android SDK implementation
+com.google.firebase:firebase-appdistribution
+The full App Distribution Android SDK implementation is intended for Beta
+testing usage only. Do not include the full App Distribution SDK implementation
+in your application when submitting to Google Play.
+API-only App Distribution Android SDK
+com.google.firebase:firebase-appdistribution-api
+com.google.firebase:firebase-appdistribution-api-ktx
+Data collected automatically
+The API-only App Distribution Android SDK does not automatically collect any
+end-user data.
+Data collected depending on your usage
+The API-only App Distribution Android SDK doesn't have optional features that the
+developer can configure or invoke to collect other end-user data.
+Authentication
+com.google.firebase:firebase-auth
+com.google.firebase:firebase-auth-ktx
+Data collected automatically
+The Firebase Authentication SDK collects the following data automatically.
+Data collected depending on your usage
+Depending on how you configure or invoke the Firebase Authentication SDK and the
+product's features, your app may collect end-user data that needs to be included
+in your data disclosure. The following table lists examples of end-user data
+that can be collected depending on your usage, but make sure to account for any
+data collected by your specific usage.
+Additional information
+Purpose for data collection
+Firebase Authentication generally uses the collected data listed
+in the sub-sections above
+to enable authentication and account management.
+User agent strings are used to provide, maintain, and improve Firebase services.
+Also, review the sub-sections above for information about how specific data
+may be used.
+In your data disclosure, make sure to also account for how you specifically use
+the collected data.
+Cloud Firestore
+com.google.firebase:firebase-firestore
+com.google.firebase:firebase-firestore-ktx
+Data collected automatically
+The Cloud Firestore SDK collects the following data automatically.
+Data collected depending on your usage
+Depending on how you configure or invoke the Cloud Firestore SDK and
+the product's features, your app may collect end-user data that needs to be
+included in your data disclosure. Make sure that you account for any
+developer-defined end-user data that's collected by your specific usage.
+Other considerations
+If you use Cloud Firestore with Firebase Authentication, and if an end-user is
+signed-in, then every request from Cloud Firestore automatically includes
+the applicable User ID from Firebase Authentication.
+Additional information
+Purpose for data collection
+The Firebase user agent is used internally by Google to determine platform and
+version adoption in order to provide, maintain, and improve Firebase services.
+It is never linked to a user or device identifier.
+Review the sub-sections above for information about how specific data may be
+used.
+In your data disclosure, make sure to also account for how you specifically use
+the collected data, in addition to how you use any developer-defined end-user
+data collected by the SDK.
+Cloud Functions for Firebase
+com.google.firebase:firebase-functions
+com.google.firebase:firebase-functions-ktx
+Data collected automatically
+The Cloud Functions for Firebase Client SDK collects the following data automatically.
+Data collected depending on your usage
+The Cloud Functions for Firebase Client SDK doesn't have optional features that the developer can
+configure or invoke to collect other end-user data.
+Other considerations
+If an end-user is signed-in via Firebase Authentication, every function request
+automatically includes the applicable User ID from Firebase Authentication.
+Additional information
+Purpose for data collection
+Cloud Functions for Firebase generally uses the collected data
+listed in the sub-sections above
+to run backend code in response to events triggered by Firebase features and
+HTTPS requests from your app.
+Also, review the sub-sections above for information about how specific data
+may be used.
+In your data disclosure, make sure to also account for how you specifically use
+the collected data.
+Cloud Messaging
+com.google.firebase:firebase-messaging
+com.google.firebase:firebase-messaging-ktx
+Data collected automatically
+The Firebase Cloud Messaging SDK collects the following data automatically.
+Other considerations
+Cloud Messaging has a dependency on the Firebase installations SDK.
+Since that SDK is transitively included in your app, make sure to account for
+the end-user data collected automatically by that SDK (see the
+installations section on this page). To learn about the data
+that Cloud Messaging uses from that SDK's data collection, visit the
+Manage Firebase installations documentation.
+Data collected depending on your usage
+Depending on how you configure or invoke the Firebase Cloud Messaging SDK
+and the product's features, your app may collect end-user data that needs to be
+included in your data disclosure. The following table lists examples of end-user
+data that can be collected depending on your usage, but make sure to account for
+any data collected by your specific usage.
+Other considerations
+Some optional features of Cloud Messaging depend on the Firebase SDK for
+Google Analytics. If you include that SDK in your app, make sure to account for
+the end-user data collected automatically by that SDK (see the
+Google Analytics documentation).
+The following table lists additional logged data:
+Additional information
+Purpose for data collection
+The Firebase user agent is used internally by Google to determine platform and
+version adoption in order to provide, maintain, and improve Firebase services.
+It is never linked to a user or device identifier.
+Cloud Messaging generally uses the other collected data
+listed in the sub-sections above
+to send messages to the client app.
+Also, review the sub-sections above for information about how specific data
+may be used.
+In your data disclosure, make sure to also account for how you specifically use
+the collected data.
+Cloud Storage for Firebase
+com.google.firebase:firebase-storage
+com.google.firebase:firebase-storage-ktx
+Data collected automatically
+The Cloud Storage for Firebase SDK collects the following data automatically.
+Data collected depending on your usage
+Depending on how you configure or invoke the Cloud Storage for Firebase SDK
+and the product's features, your app may collect end-user data that needs to be
+included in your data disclosure. Make sure that you account for any
+developer-defined end-user data that's collected by your specific usage.
+Other considerations
+If you use Cloud Storage for Firebase with Firebase Authentication, and if an end-user
+is signed-in, then every request from Cloud Storage for Firebase automatically
+includes the applicable User ID from Firebase Authentication.
+Additional information
+Purpose for data collection
+Cloud Storage for Firebase generally uses the collected data listed
+in the sub-sections above to provide, maintain, and improve Firebase services.
+Also, review the sub-sections above for information about how specific data
+may be used.
+In your data disclosure, make sure to also account for how you specifically use
+the collected data, in addition to how you use any developer-defined end-user
+data collected by the SDK.
+Crashlytics
+com.google.firebase:firebase-crashlytics
+com.google.firebase:firebase-crashlytics-ktx
+com.google.firebase:firebase-crashlytics-ndk
+Data collected automatically
+The Firebase Crashlytics SDK collects the following data automatically.
+Other considerations
+Crashlytics has a dependency on the Firebase installations SDK. Since
+that SDK is transitively included in your app, make sure to account for the
+end-user data collected automatically by that SDK (see the
+installations section on this page). Note that Crashlytics
+doesn't use any of the data collected by the Firebase installations SDK,
+except to rotate the Crashlytics installation UUID based on changes to the
+app instance's Firebase installation ID.
+Data collected depending on your usage
+Depending on how you configure or invoke the Firebase Crashlytics SDK
+and the product's features, your app may collect end-user data that needs to be
+included in your data disclosure. The following table lists examples of end-user
+data that can be collected depending on your usage, but make sure to account for
+any data collected by your specific usage.
+Other considerations
+Some optional features of Crashlytics depend on the Firebase SDK for Google
+Analytics. If you include that SDK in your app, make sure to account for the
+end-user data collected automatically by that SDK (see the
+Google Analytics documentation).
+The following table lists the data that Crashlytics uses from that data
+collection:
+Additional information
+Purpose for data collection
+Firebase Crashlytics generally uses the collected data
+listed in the sub-sections above
+to enable crash reporting and crash management services.
+Also, review the sub-sections above for information about how specific data
+may be used.
+In your data disclosure, make sure to also account for how you specifically use
+the collected data, in addition to how you use any developer-defined end-user
+data collected by the SDK.
+Dynamic Links
+com.google.firebase:firebase-dynamic-links
+com.google.firebase:firebase-dynamic-links-ktx
+Data collected automatically
+The Firebase Dynamic Links SDK collects the following data automatically.
+If the app is installed with the Firebase Dynamic Links SDK integrated, then Firebase
+logs the app state and link interaction events.
+Other considerations
+If a user interacts with a Firebase dynamic link, the following data is logged
+automatically, regardless if the app is installed on the user's device:
+Data collected depending on your usage
+The Firebase Dynamic Links SDK doesn't have optional features that the developer can
+configure or invoke to collect other end-user data.
+Other considerations
+Some optional features of Dynamic Links depend on the Firebase SDK for Google
+Analytics. If you include that SDK in your app, make sure to account for the
+end-user data collected automatically by that SDK (see the
+Google Analytics documentation).
+The following table lists additional logged data:
+Additional information
+Purpose for data collection
+Firebase Dynamic Links generally uses the collected data
+listed in the sub-sections above
+to take end users directly to the linked content in your app.
+Also, review the sub-sections above for information about how specific data
+may be used.
+In your data disclosure, make sure to also account for how you specifically use
+the collected data, in addition to how you use any developer-defined end-user
+data collected by the SDK.
+Google Analytics
+com.google.firebase:firebase-analytics
+com.google.firebase:firebase-analytics-ktx
+Find Google Analytics data collection information in the
+Google Analytics documentation.
+In-App Messaging
+com.google.firebase:firebase-inappmessaging
+com.google.firebase:firebase-inappmessaging-display
+com.google.firebase:firebase-inappmessaging-ktx
+com.google.firebase:firebase-inappmessaging-display-ktx
+Data collected automatically
+The Firebase In-App Messaging SDK collects the following data automatically.
+Other considerations
+In-App Messaging has a required dependency on the Firebase SDK for Google
+Analytics. Since you must include that SDK in your app, make sure to account for
+the end-user data collected automatically by that SDK (see the
+Google Analytics documentation).
+The following table lists examples of how the In-App Messaging SDK interacts
+with data from Google Analytics:
+In-App Messaging also has a dependency on the Firebase installations SDK.
+Since that SDK is transitively included in your app, make sure to account for
+the end-user data collected automatically by that SDK (see the
+installations section on this page). To learn about the data
+that In-App Messaging uses from that SDK's data collection, visit the
+Manage Firebase installations documentation.
+Data collected depending on your usage
+The Firebase In-App Messaging SDKs don't have optional features that the
+developer can configure or invoke to collect other end-user data.
+Additional information
+Purpose for data collection
+Firebase In-App Messaging generally uses the collected data
+listed in the sub-sections above
+to send messages to end users within the app itself.
+Also, review the sub-sections above for information about how specific data
+may be used.
+In your data disclosure, make sure to also account for how you specifically use
+the collected data.
+Installations
+com.google.firebase:firebase-installations
+com.google.firebase:firebase-installations-ktx
+Data collected automatically
+The Firebase installations SDK collects the following data automatically.
+Data collected depending on your usage
+The Firebase installations SDK doesn't have optional features that the
+developer can configure or invoke to collect other end-user data.
+Additional information
+Purpose for data collection
+The Firebase user agent is used internally by Google to determine platform and
+version adoption in order to provide, maintain, and improve Firebase services.
+It is never linked to a user or device identifier.
+Firebase installations generally uses the other collected data
+listed in the sub-sections above
+to provide a unique identifier to identify app installations.
+Also, review the sub-sections above for information about how specific data
+may be used.
+In your data disclosure, make sure to also account for how you specifically use
+the collected data.
+Firebase ML model downloader
+com.google.firebase:firebase-ml-modeldownloader
+com.google.firebase:firebase-ml-modeldownloader-ktx
+Data collected automatically
+The Firebase ML model downloader SDK collects the following data
+automatically.
+Other considerations
+Firebase ML model downloader has a dependency on the
+Firebase installations SDK.
+Since that SDK is transitively included in your app, make sure to account for
+the end-user data collected automatically by that SDK (see the
+installations section on this page). To learn about the data
+that Firebase ML model downloader uses from that SDK's data collection,
+visit the
+Manage Firebase installations documentation.
+Data collected depending on your usage
+The Firebase ML model downloader SDK doesn't have optional features that the
+developer can configure or invoke to collect other end-user data.
+Additional information
+Purpose for data collection
+Firebase ML generally uses the collected data listed in the sub-sections
+above to download ML models.
+Firebase ML aggregates and uses the model download metadata to monitor
+product quality, understand usage, and inform product direction.
+Also, review the sub-sections above for information about how specific data
+may be used.
+In your data disclosure, make sure to also account for how you specifically use
+the collected data.
+Performance Monitoring
+com.google.firebase:firebase-perf
+com.google.firebase:firebase-perf-ktx
+Data collected automatically
+The Firebase Performance Monitoring SDK collects the following data automatically.
+Other considerations
+Performance Monitoring has a dependency on the Firebase installations SDK.
+Since that SDK is transitively included in your app, make sure to account for
+the end-user data collected automatically by that SDK (see the
+installations section on this page). To learn about the data
+that Performance Monitoring uses from that SDK's data collection, visit the
+Manage Firebase installations documentation.
+Performance Monitoring also has a dependency on the Firebase Remote Config SDK to help
+control the volume of events collected from an application. Since that SDK is
+transitively included in your app, make sure to account for the end-user data
+collected automatically by that SDK (see the
+Remote Config section on this page).
+Data collected depending on your usage
+Depending on how you configure or invoke the Firebase Performance Monitoring SDK
+and the product's features, your app may collect end-user data that needs to be
+included in your data disclosure. The following table lists examples of end-user
+data that can be collected depending on your usage, but make sure to account for
+any data collected by your specific usage.
+Additional information
+Purpose for data collection
+Firebase Performance Monitoring generally uses the collected data
+listed in the sub-sections above
+to enable app performance reporting and monitoring.
+Also, review the sub-sections above for information about how specific data
+may be used.
+In your data disclosure, make sure to also account for how you specifically use
+the collected data, in addition to how you use any developer-defined end-user
+data collected by the SDK.
+Realtime Database
+com.google.firebase:firebase-database
+com.google.firebase:firebase-database-ktx
+Data collected automatically
+The Firebase Realtime Database SDK collects the following data automatically.
+Data collected depending on your usage
+Depending on how you configure or invoke the Firebase Realtime Database SDK and
+the product's features, your app may collect end-user data that needs to be
+included in your data disclosure. Make sure that you account for any
+developer-defined end-user data that's collected by your specific usage.
+Other considerations
+If you use Realtime Database with Firebase Authentication, and if an end-user is
+signed-in, then every request from Realtime Database automatically includes
+the applicable User ID from Firebase Authentication.
+Additional information
+Purpose for data collection
+Please review the sub-sections above for information about how specific data
+may be used. In your data disclosure, make sure to also account for how you
+specifically use the collected data, in addition to how you use any
+developer-defined end-user data collected by the SDK.
+Remote Config
+com.google.firebase:firebase-config
+com.google.firebase:firebase-config-ktx
+Data collected automatically
+The Firebase Remote Config SDK collects the following data automatically.
+Other considerations
+Remote Config has a dependency on the Firebase installations SDK.
+Since that SDK is transitively included in your app, make sure to account for
+the end-user data collected automatically by that SDK (see the
+installations section on this page). To learn about the data
+that Remote Config uses from that SDK's data collection, visit the
+Manage Firebase installations documentation.
+Data collected depending on your usage
+The Firebase Remote Config SDK doesn't have optional features that the
+developer can configure or invoke to collect other end-user data.
+Other considerations
+Some optional features of Remote Config depend on the Firebase SDK for
+Google Analytics. If you include that SDK in your app, make sure to account for
+the end-user data collected automatically by that SDK (see the
+Google Analytics documentation).
+The following table lists examples of how the Remote Config SDK interacts
+with data from Google Analytics:
+Note that we're preparing documentation about Personalization. We will update
+this section with more information in the coming weeks.
+Additional information
+Purpose for data collection
+Firebase Remote Config generally uses the collected data
+listed in the sub-sections above
+to change the behavior and appearance of your app without publishing an app
+update.
+Aggregated data for OS version and SDK version is used by Firebase to
+understand usage trends and inform product direction.
+Also, review the sub-sections above for information about how specific data
+may be used.
+In your data disclosure, make sure to also account for how
+you specifically use the collected data.
+Other helpful resources
+Prepare for Apple's App Store data disclosure requirements
+Send feedback
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
+Last updated 2023-04-25 UTC.
+Learn
+Guides
+Reference
+Samples
+Libraries
+GitHub
+Stay connected
+Blog
+Firebase Summit
+Twitter
+YouTube
+Support
+Contact support
+Stack Overflow
+Slack community
+Google group
+Release notes
+FAQs
+Android
+Chrome
+Firebase
+Google Cloud Platform
+All products
+Terms
+Privacy
+English
+Bahasa Indonesia
+Deutsch
+Español – América Latina
+Français
+Italiano
+Polski
+Português – Brasil
+Tiếng Việt
+Türkçe
+Русский
+עברית
+العربيّة
+فارسی
+हिंदी
+বাংলা
+ภาษาไทย
+中文 – 简体
+中文 – 繁體
+日本語
+한국어

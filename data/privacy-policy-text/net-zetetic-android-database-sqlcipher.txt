@@ -1,0 +1,54 @@
+Privacy Policy - Zetetic
+Toggle navigation
+Zetetic LLC
+Home
+About
+SQLCipher
+Codebook
+Blog
+Contact
+Careers
+Discuss
+YOUR PRIVACY RIGHTS
+Effective Date: December 14, 2015
+This Privacy Policy describes Zetetic LLC’s (hereinafter “Zetetic,” “we” or “us”) privacy policy, including the types of personal information we gather, how we use it, with whom the information may be shared, what choices are available to you regarding collection, use and distribution of information and our efforts to protect the information you provide to us through our website at www.zetetic.net (the “Website”) and through other services delivered or provided to you by Zetetic (collectively, the “Services”). By using the Services, you hereby consent to allow us to process information in accordance with this Policy. This policy is subject to change. If our information retention or usage practices change, we will let you know by posting the Privacy Policy changes on the Website or otherwise through the Services. Please refer to the “Effective Date” above to see when this Policy was last updated.
+Territoriality
+Regardless of where our servers are located, your personal data will be processed by us in the United States, where data protection and privacy regulations may or may not be to the same level of protection as in other parts of the world. BY USING THE SERVICES, YOU UNEQUIVOCALLY AND UNAMBIGUOUSLY CONSENT TO THE COLLECTION AND PROCESSING IN THE UNITED STATES OF ANY INFORMATION COLLECTED OR OBTAINED BY US THROUGH VOLUNTARY SUBMISSIONS, AND THAT U.S. LAW GOVERNS ANY SUCH COLLECTION AND PROCESSING.
+Information Collected
+We collect two types of information about persons who use the Services: personal information and non-personal information. This information may be collected in a number of ways, including through direct submission, cookies, web beacons and similar data acquisition methods. Although you can disable cookies in your browser or device, they will interfere with the use of the Services.
+Personal Information Collected
+Personal information is information that would permit us to contact you, or serves as a persistent identifier of you within Zetetic. Personal Information that we may collect includes:
+Name;
+Address;
+Phone number;
+E-mail;
+IP address;
+Credit card number (held through third-party services);
+Location based information;
+We may also collect this information about your customers that use the Services.
+Zetetic does not collect any Personal Information about you without your voluntary consent. This information may be supplied to Zetetic when you sign-up for the Services, when you submit information to Zetetic or when you request services from Zetetic. Although Zetetic may collect credit card information, it is stored using a third-party service, and Zetetic cannot access that data without our provider.
+Non-Personal Information
+Non-Personal Information is information about you, other than Personal Information, that may be collected by Zetetic. It may include anonymous non-personal information about how you and your business use the Services, such as browsing habits, information about the referring source of your traffic, demographic details, your interactions with the Services and analytics relating to your use of the Services. Further data may be collected to fulfill specific requests.
+Third-Party Collection
+Our Services may use Google Analytics, a web analytics service provided by Google, Inc. (“Google”). Google Analytics uses cookies, to help us analyze how users use the Services. You may be able to opt-out of Google’s collection. Please visit Google’s Ads Preferences Manager or the Google Analytics opt-out browser add-on for more information. The Services may also use cookies or other tracking mechanisms for its own analytics. Our Services also use FastSpring, a storefront and payment processing system provided by Bright Market, LLC.Please review FastSpring’s privacy policy for more information about its collection and use of information.
+Internal Use of Information by Zetetic
+We accept and gather information in an effort to provide you with the Services. This includes the internal use of your information to tailor the Services to your interests, for fraud prevention, to deliver the Services and to improve Services. Additionally, Zetetic may use your information for administration of the Services, such as for communicating with you about the Services and managing support requests and tracking.
+Sharing Information with Third-Parties, Consultants, and Affiliates
+We will not share your Personal Information with third parties for the purpose of direct marketing. We may, however, share your information with our consultants and affiliates in order for us to provide you with the Services, to improve the Services and to otherwise operate Zetetic. Zetetic may retain third-party consultants to perform analysis on your data and to otherwise provide consulting services to Zetetic that may include review of your data. These types of disclosures will be on a confidential basis. Zetetic may share your Non-Personal Information, such as analytics data, with our business associates and partners. Such sharing is generally for the purpose of marketing Zetetic’s own services and to discuss and offer Zetetic’s services. Further, we may disclose collected information to the extent we believe it necessary to comply with the law, such as in response to a subpoena or court order, to defend a legal claim or otherwise as permitted by applicable law. Additionally, we may transfer your information to successor in interest, which may include but may not be limited to a third-party in the event of an acquisition, sale, merger or bankruptcy.
+Access and Control
+Zetetic may provide you with the ability to access certain Personal Information we have collected about you and your business through a login portal. You may have the ability to edit, update or delete certain data through such a login.
+Links and Integration
+Our Services may contain links to other services or may be integrated into the websites or services of third-parties. We are not responsible for the privacy practices of such other sites or services. When you leave our Services to visit another website, application or service, please read such third-party’s privacy statements. This Privacy Policy applies solely to information collected by Zetetic through the Services.
+Security
+We employ procedural and technical safeguards to secure your personal information against loss, theft, alteration, and unauthorized access, use and disclosure. We also employ security procedures to protect your information from unauthorized access by users inside and outside the company. These measures include password protection, firewalls, encryption and similar methods. Regardless of the precautions taken by Zetetic, no transmission of data over the Internet is guaranteed to be completely secure. It may be possible for third parties not under our control to intercept or access transmissions or private communications unlawfully. While we strive to protect personal information, we cannot ensure or warrant the security of any information you transmit to us.
+Children and Privacy
+We do not knowingly permit users if they are under 13 years old, and therefore do not request personally identifiable information from anyone under the age of 13. If we become aware that a customer is under the age of 13 and has provided us with personal information without prior verifiable parental consent, we will remove his or her personally identifiable registration information from our files. If you are the parent or guardian of a person under the age of 13 who has provided personally identifiable information to us without your approval, please inform us by contacting us at the e-mail address below.
+State Privacy Rights
+Certain states allow their residents to request information regarding our disclosures in the prior calendar year, if any, of their personally identifiable information to third parties. To make such a request, please contact us with “Request for Privacy Information” in the subject line. Please include enough detail for us to locate your file; at a minimum, your name, email, and username, if any. We will attempt to provide you with the requested information within thirty (30) days of receipt. We reserve our right not to respond to requests sent more than once in a calendar year, or requests submitted to an address other than the one posted in this notice. Please note that these laws do not cover all information sharing. Our disclosure only includes information covered by the law.
+Contact Information
+If you have any questions or suggestions regarding our Privacy Policy, please contact us.
+©2023, Zetetic, LLC.All rights reserved.
+| Security
+| Privacy
+| Contact
+Follow @TeamZetetic

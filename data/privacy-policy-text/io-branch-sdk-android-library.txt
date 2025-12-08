@@ -1,0 +1,80 @@
+Answering the Google Play Store Privacy Questions
+✕
+Filters
+Jump to ContentHomeGuidesUsing BranchPartners PortalDevelopers HubFAQsSubmit a TicketBranch DashboardBranch UniversityLog InSubmit a TicketBranch DashboardBranch UniversityLog InMoon (Dark Mode)Sun (Light Mode)Using BranchSearchGetting StartedWhat is Branch?Branch Quick Start GuideLink Behavior ToolGlossaryBranch Use CasesAds AttributionDeep LinkingNativeLink™ Deferred Deep LinkingSEO App AttributionWeb to AppEmail to AppQR CodesSMSPush NotificationsOTT & CTVAttribution & MethodologyBranch Methodology OverviewPredictive Modeling (PREM)Advertising Identifiers for AttributionBranch Attribution Logic & SettingsRe-engagement Attribution Logic & SettingsCompare Installs to Apple iTunes and Google PlayMulti-Touch AttributionCreate Branch LinksCreate Deep LinksDeep Link Data OptionsBranch Slack AppCreate Quick LinksLink TemplatesLink DebuggerCreate Ad LinksCreate In-App Sharing and Referral LinksBranch DashboardBranch Dashboard OverviewSummaryDashboard ReportsDashboard ExportsDashboard Daily ExportsDashboard Custom ExportsCustomized QR Code UIUniversal AdsUniversal Ads OverviewUniversal Ads PartnersThe Branch Certified Partner ProgramUniversal Ads Partner Integration GuideUniversal Ads ReportingUniversal Ads AnalyticsCohort AnalyticsUnified AnalyticsPostbacksBasic Postback ConfigurationAdvanced Postback ConfigurationTest PostbacksPostback Macros & FunctionsAdditional ConfigurationMultiple Goal ID SupportMoPub Impression Level Revenue DataCreate Branch Links for Product FeedsUniversal Ads Advanced ConfigurationsTUNE <> Branch Mapped FieldsConfigure Events for Self-Attributing NetworksAdd Custom PartnersTesting & TroubleshootingTest Universal Ads Campaign SetupFraudManage Fraud RulesFraud AnalyticsIn-Depth Fraud & RecommendationsEngagement BuilderEnable Engagement BuilderManage Your Engagement GroupsUniversal Ads SANsSelf-Attributing Networks (SANs)What is a Self Attributing Network?Common Sources of SAN Reporting DiscrepanciesApple Search AdsFacebook Ads OverviewFacebook App Install AdsFacebook Traffic and Conversion AdsFacebook Platform AdsFacebook FAQs and Advanced OptionsFacebook Business ManagerFacebook SKAdNetworkFacebook Install ReferrerGoogle AdsEnable Google App CampaignsEnable Google Web-Based CampaignsGoogle SKAdNetworkGoogle Ads Data & ReportingGoogle Ads DiscrepanciesGoogle Marketing Platform OverviewGoogle Marketing PlatformDoubleclick (Legacy)Yahoo AdsSnapSnap Advanced ConversionsTikTok For BusinessEnable TikTok For BusinessTikTok SKAdNetworkTikTok Data & ReportingTwitter AdsSAN Deferred Deep LinkingSAN Web TrackingRokuiOS 14 & SKAdNetworkSKAdNetworkEnable SKAdNetwork via Branch SDKEnable SKAdNetwork via Native FrameworkSKAdNetwork Dashboard ReportsSKAdNetwork Agency PermissionsSKAdNetwork Direct PostbackSKAdNetwork DataImpact of iOS 14 on Branch ChannelsImpact of iOS 14 on Branch Ad PartnersImpact of iOS 14 on Branch Data IntegrationsJourneysJourneys OverviewJourneys and GDPRJourneys AssistCreate Journeys Banners or InterstitialsAdvanced Journeys ConfigurationExample Journeys Audience ConfigurationManage JourneysCreatives ManagerCreatives OptimizationTroubleshoot Journeys BannersJourneys AnalyticsJourneys on Accelerated Mobile Pages (AMP)Journeys FAQsUniversal EmailUniversal Email OverviewUniversal Email PartnersUniversal Email Integration GuidePersonalizationMovable Ink - In-App MessagesMovable Ink - EmailUniversal Email Link DebuggerData FeedsData Feeds OverviewData Integration PartnersData Integration Implementation GuideWebhooksExport APIsDashboard ConfigurationConfigure Link Behaviors for Redirects and Link DomainAdvanced Settings & Change Your Link DomainTroubleshooting Link Formatting ErrorsAttribution WindowsDeepviewsEnable DeepviewsAdvanced Deepview ConfigurationsDeepview AnalyticsAdd Additional AppsNotification & Alerting SystemToolsLiveviewRecent ActivityAccount SettingsEnable Single Sign OnOktaManage Account ProfileManage User ProfileAdd and Manage Test DevicesManage Users & PermissionsEntity Views, Roles & Access Levels OverviewDefault Access Levels, Users Roles & PermissionsAdd & Manage UsersGrant an Agency AccessBillingBilling OverviewManage BillingAccess InvoicesManage SubscriptionCancel Your AccountRequest W9How Trials WorkMAU AnalyticsData PrivacyHandle Data Subject Requests From End UsersBest Practices to Avoid Sending PII to BranchSDK Privacy ControlsAnswering the App Store Connect Privacy QuestionsAnswering the Google Play Store Privacy QuestionsSupportBranch Support HandbookAnswering the Google Play Store Privacy QuestionsDetailed information on completing the Google Play Store questions when submitting your app for release or update.
+📘New Safety Section TimelineGoogle has informed developers that all Google Play Store submissions with the new safety section information, must be approved by April 2022. We encourage you to submit your information early so you can get review feedback and make any necessary changes before you are no longer able to make new app updates.
+Overview
+As part of the Google Play Store Developer submission process, developers are required to fill out Google’s updated Data Safety section in the Google Play Console. When completing the Safety Section portion of your developer application, you are required to provide information about your app’s data collection and privacy practices, including the practices of third-party partners like Branch whose SDK code you integrate into your app.
+After February 2022, “No information available” will be shown by Google in the Data Safety section for apps that have not submitted information in the Google Play Console for review and for apps that have submitted information but the submission was rejected.
+Without an approval in the Data Safety section, your new app submission or app update may be rejected.
+Answering the Google Play Store Safety Section Questions
+You must select answers from the options presented in Google Play Store. Please keep in mind:
+Branch’s SDKs are fully configurable by you, both in the data we collect on your behalf and how you use that data. Accordingly, you should identify all possible data collections and uses, even if not outlined here or even if certain data will be collected and used only in limited situations.
+Your answers should follow the Google Play Store Safety Section Review Guidelines and any applicable laws.
+We encourage you to consult with your legal counsel if you have questions about compliance with applicable laws or how your use of Branch implicates applicable laws.
+You are solely responsible for keeping your responses accurate and up to date. If your practices change, update your responses in Google Play Store.
+What You Need To Disclose
+Any of the required user data types that are collected and/or shared
+Any user data sent off the user’s device by libraries or SDKs used in your app, regardless of whether this information is transmitted to you (the developer) or a third party
+Any user data transferred from your server to a third party or transferred to another third-party app on the same device
+Any user data collected or transferred through a webview which can be opened from your app, unless users are navigating the open web
+*Note: you can learn more about each of these types of data use during the application submission process.
+Sample Answers for Google’s Data Safety Section for Branch SDKs
+Data Collection and Security
+Data Types Collected by Branch's SDKs
+📘Prominent Disclosure and ConsentIn addition to reviewing the information below, you are also responsible for ensuring your continued compliance with Google’s Prominent Disclosure and Consent Requirements.
+You’ll need to confirm the types of data that you and/or your third-party partners including Branch collect from your app before answering the questions in Google Play Store.
+Branch has provided a list of data types below that our services collect as further disclosed in our Privacy Policy. However, you will need to compare them to your custom configuration of the Branch SDKs and the data collection practices in your app to confirm whether your answers are accurate. Please also refer to Best Practices On How to Avoid Sending Branch PII.
+Data Usage and Handling by Branch's SDKs
+You will need to have a clear understanding of how each data type is used by you and your third-party partners including Branch. Branch provides deep linking and attribution analytics services. Depending on the type of data being collected, you may be prompted to provide more information about Branch SDKs will use and handle your data:
+Privacy Links
+You will have the ability to add links on your product page to your app’s privacy policy and your privacy choices documentation.
+To learn more about Branch’s privacy practices and end user options, please see Branch’s Privacy Policy accessible here.Updated about 1 month ago What’s NextBranch Privacy PolicyBest Practices On How to Avoid Sending Branch PIITable of Contents
+Overview
+Answering the Google Play Store Safety Section Questions
+What You Need To Disclose
+Sample Answers for Google’s Data Safety Section for Branch SDKs
+Data Collection and Security
+Data Types Collected by Branch's SDKs
+Data Usage and Handling by Branch's SDKs
+Privacy Links
+Can't find what you're looking for?
+Contact Us
+Send us a note and we'll get back to you as soon as we can.
+Ask the Community
+Find our developers and the Branch community on Stack Overflow.
+System Status
+English
+English
+中文
+한국어
+Branch provides the leading mobile linking platform, with solutions that unify user experience
+and measurement across different devices, platforms, and channels.
+Privacy
+Terms
+GDPR
+Opt-Out
+Discovery Policies
+Quick Links
+Security
+Pricing
+Contact Sales
+Mobile Growth
+Company
+About
+Branch
+Customers
+Partner
+Program
+Careers
+Press
+Contact
+Resources
+Documentation
+SDK Integration
+API Reference
+Integrations
+Support
+Status
+Cookie Consent
+©2019 Branch Metrics. All rights reserved.

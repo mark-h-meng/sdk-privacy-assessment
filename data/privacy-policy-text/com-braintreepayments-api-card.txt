@@ -1,0 +1,361 @@
+Braintree Privacy Statement | Braintree Payments
+Skip to main content
+You are viewing content for .
+View content for other locations.
+×
+Braintree Payments Homepage
+Search
+Hit ESC to close
+From braintreepayments.com
+Developer Docs
+What are Developer Docs?
+See detailed integration guides and API reference documentation for Braintree's SDKs.
+More in Developer Docs
+Support Articles
+What are Support Articles?
+Learn the basics of payments, how to best use Braintree features for your business, and what you can do to keep payments secure.
+More in Support Articles
+Braintree Payments Homepage
+Why Braintree
+Drive conversion
+Reduce friction to boost sales.
+Expand your reach
+Grow your market share globally.
+Increase efficiency
+Streamline business operations.
+Help mitigate risk
+Get peace of mind for your business.
+Products
+Braintree Direct
+Accept online payments
+The all-in-one solution for selling products or services.
+Braintree Extend
+Do more with your payments data
+Data-sharing tools to help you manage and scale your business.
+Pricing
+Customized pricing based on your business size and model.
+Explore pricing
+Features
+Fraud Tools
+Help detect and prevent fraudulent transactions.
+Learn more
+|
+3D Secure 2
+Data Security
+Safeguard your customer's information.
+Payment Methods
+Accept cards, PayPal, Venmo (in the US), and more.
+Reporting
+Get key transaction insights.
+Global Scale
+Reach customers all over the world.
+Payouts
+Pay your sellers and freelancers globally.
+Learn
+Resources
+Stay ahead of the payments curve.
+Blog
+Get Braintree updates, industry news, and more.
+Support Articles
+Learn about processing with Braintree.
+Our Merchants
+Browse real merchant success stories.
+Developer Docs
+Check out our integration documentation.
+Get help
+Log in
+Control Panel
+View and manage transactions, access reporting, and enable features for your account.
+Log in
+Looking for Sandbox?
+Log in
+or
+sign up
+Contact Sales
+Payments
+Our Merchants
+Contact Sales
+Why Braintree
+Drive conversion
+Increase efficiency
+Expand your reach
+Help mitigate risk
+Products
+Accept payments
+with Braintree Direct
+Do more with your payments data
+Braintree Extend
+Other products
+Features
+Fraud Tools
+Data Security
+Payment Methods
+Reporting
+Global Scale
+Payouts
+Learn
+Resources
+Blog
+Support Articles
+Our Merchants
+Global Payments Report
+Developer Docs
+Get help
+Log in
+Braintree Privacy Statement
+Singapore
+To read agreements for a different country or region, change your location.
+Effective Date: The Braintree Privacy Statement is effective on 31 July 2020 for Merchants who signed up before 23 March 2020 or immediately for all new Merchants who signed up on or after 23 March 2020.
+Overview
+Your privacy rights and choices
+a. Understanding your choices
+b. Understanding your rights
+The personal data we collect
+Where personal data comes from
+a. How we use tracking technologies like cookies
+Why we collect personal data
+How and why we share personal data
+How we protect your personal data
+How long do we keep your personal data
+How and where we transfer your personal data
+How this statement changes over time
+Children's privacy
+Contact us
+1. Overview
+This privacy statement explains how and why PayPal Pte. Ltd., as a controller, collects, stores, uses, shares and transfers personal data when you visit our websites offering Braintree services or use the Braintree services. Reading it will help you understand your privacy rights and the choices may you have.
+âPersonal dataâ in this statement means information about you, including your identity, financial information, contact information, and online behavior.
+2. Your privacy rights and choices
+When it comes to how your personal data is collected, stored, used, and shared, you have rights and choices.
+a. Understanding your rights
+You may review some personal data after logging into your Account, if you are a merchant using our services so your customers can pay you. If you are a merchant or use our services to pay for goods and services and have questions about your personal data, just contact us.
+b. Understanding your choices
+Here are some of the ways we communicate with you and the choices you have to limit these communications.
+How we communicate with you
+Your choices about how we communicate with you differ depending on the purpose of the message and how it is delivered.
+If you use our services to pay for goods and services, we may contact you via email, telephone, or send you paper mail. We do this when we reply to a message from you or when we have to communicate with you to comply with a law or other obligation. These messages contain important information and you may not opt out of receiving them.
+If you are an existing merchant using our services so your customers can pay you, we may contact you using a telephone, email, text, paper mail, and send notifications to your merchant dashboard to help manage your account, deliver important information to you, and market our products and services.
+If you are a merchant inquiring about our payment services, we may contact you via email or telephone to market our products and services and answer questions you may have about how our services work.
+Depending on how we send the marketing communications, you can either click the unsubscribe link in any marketing email, opt out of a text message by replying âSTOP,â or turn off notifications on your device to stop receiving these types of messages.
+3. The personal data we collect
+#
+We may collect your personal data when you visit our websites, create a merchant account, or use our payment services to buy or sell goods and services.
+Here are the kinds of personal data that we may collect when you use our services to purchase goods and services or contact us:
+Information that identifies you, for example:
+First and last name
+Shipping address
+IP address
+Information collected from cookies or other tracking technologies
+Records and financial information, for example:
+Credit and debit card information
+Commercial information, for example:
+Transaction information
+Internet or network activity, for example:
+Interactions with our services
+Geolocation information, for example:
+IP-based geolocation
+Audio, electronic, visual, or similar information, for example:
+Call recordings when you talk to customer service
+Information we infer based on your personal data, for example:
+Fraud and risk assessments
+Here are the kinds of personal data that we may collect when you inquire about our services, create a merchant account with us, or use our services so your customers can pay you. This may also include the personal data of your employees:
+Information that identifies you, for example:
+First and last name
+IP address
+Information collected from cookies or other tracking technologies
+Records and financial information, for example:
+National identification Number
+Government-issued identification
+Bank account and routing numbers
+Personal characteristics, for example:
+Age
+Internet or network activity, for example:
+Interactions with our services or websites
+Geolocation data, for example:
+IP-based geolocation
+Audio, electronic, visual, or similar information, for example:
+Call recordings when you call us
+Photo IDs
+Professional or employment information, for example:
+Business information, contact emails and phone numbers
+Tax IDs
+Information we infer based on your personal data, for example:
+Fraud and risk assessments
+Here are the kinds of personal data that we may collect when you visit our websites:
+Information that may identify you, for example:
+IP address
+Email address
+Information collected from cookies or other tracking technologies
+Internet or network activity, for example:
+Interactions with our services or websites
+Information we infer based on your data, for example:
+Fraud and risk assessments
+4. Where personal data comes from
+We may collect personal information about you from various sources, for example from:
+Website visitors and those who inquire about our services
+Merchants and their employees
+Your customers when they pay you using our services
+Our payment partners, such as card networks and payment processors
+Credit bureaus
+Service providers, such as companies that help us manage risk and fraud, deliver services to you, and market our services
+a. How we use tracking technologies
+We or our authorized service providers may use cookies and similar tracking technologies to collect data whenever you use our services, visit our websites, or visit websites that offer our services. The information collected with these technologies helps us deliver our services, measure the effect of our ads, prevent fraud and enhance the security of our websites and service.
+You can disable or decline some cookies for our websites and services. But, since some parts of our service rely on cookies to work, those services could become difficult or impossible to use.
+To learn how to opt-out of this kind of tracking technology, visit About Ads.
+5. Why we collect personal data
+We collect personal data for many reasons, including to improve your experience, and to run our business. Letâs look at some specific reasons why we collect your personal data.
+If you use our services to pay for goods and services or contact us, we may use your information for our legitimate interests to:
+Communicate with you when you need us, such as answering a question you sent to our customer service team.
+Run our websites and provide payment processing services.
+Manage and improve our business.
+Protect you from risk and fraud.
+Comply with laws.
+If you are a merchant (or the merchantâs employee) who use our services so your customer can pay you, we may use your information to fulfill our contract with you and for our legitimate interests to:
+Communicate with you when you need us, such as answering a question you sent to our customer service team.
+Run our websites and provide services, for example to verify access to your account and enable payment processing.
+Manage and improve our business.
+Protect our business and our customers from risk and fraud.
+Market our products and services.
+Personalize your experience when you use our websites and services.
+Contact you when you need us, such as answering a question you sent to our customer service team.
+Comply with laws and enforce our agreements with you and other people who use our services.
+If you visit our websites or inquire about our services, we may use your information in our legitimate interests to:
+Communicate with you when you need us, such as answering a question you sent to our customer service team.
+Manage everyday business needs.
+Protect our business and our customers from risk and fraud.
+Analyze and improve our services.
+Market our products and services.
+Comply with laws.
+6. How and why we share personal data
+We do not sell your personal data. However, we may share data across our services and with other members of the PayPal corporate family. Sometimes we also share the personal data we collect with third parties to help us provide services, protect our customers from risk and fraud, market our products to merchants and those who inquire about our services, and comply with legal obligations.
+You can review the kinds of personal data that we may share by reviewing The personal data we collect section.
+We may share personal data with:
+Other members of the PayPal corporate family
+Merchants to help us manage risk, fraud and to help provide us with information to effectively communicate with you to meet our legal obligations
+Service providers that help us with processing payments, marketing, research, compliance, audits, corporate governance, communications, and security
+Card networks and payment processors
+Courts, governments, regulators and law enforcement when accompanied by a subpoena or other legal documentation that requires PayPal or members of our corporate family to respond
+Third-party tools used to help fight spam and abuse.
+Other third parties to:
+Comply with laws
+Investigate or enforce violations of our user agreement
+Facilitate a merger, purchase, or sale of part or all of our business
+Comply with card association rules
+To prevent physical harm or illegal activity
+7. How we protect your personal data
+Helping to keep your personal data safe against loss, misuse, unauthorized access, disclosure, and alteration is our top priority.
+To protect your personal data, we use technical, physical, and administrative security measures that include:
+Firewalls
+Data encryption
+Physical access controls at our data centers
+While we protect our systems and services, youâre responsible for keeping your password(s) and account information private. Also, youâre responsible for making sure your personal information is accurate and up to date.
+8. How long do we keep your personal data
+We retain personal data for the time necessary to fulfil your request and our legal obligations. We may maintain personal data for longer periods if it is our legitimate business interests and not prohibited by law. If you no longer use our services, we may keep your personal data and other information as required by law and according to our data retention policy. If we do, weâll continue to handle it as we describe in this statement.
+9. How and where we transfer your personal data
+Our operations are supported by a network of computers, cloud-based servers, and other infrastructure and information technology, including, but not limited to, third-party service providers. We and our third-party service providers store and process your personal data outside Singapore, in the United States and elsewhere in the world. We will protect your information as described in this Privacy Statement if your personal data is transferred to other countries/regions. By using our websites and services, you consent to your personal data being transferred to other countries, including countries/regions that have different data protection rules than your country. Please contact us for more information about this.
+10. How this statement changes over time
+Weâll make changes to this privacy statement from time to time. This helps us stay up to date with changes to our business and the most current laws. After a new version is published, weâll collect, store, use, and protect your personal data as we outline in that revised statement.
+If the new version reduces your rights or increases your responsibilities, weâll post it on the Policy Updates or Privacy Statement page of our website at least 21 days before it becomes effective.
+We may also notify you about these changes through email or other communications.
+11. Childrenâs privacy
+Our services are for a general audience and are not directed at individuals under the age of majority. We do not knowingly collect information from children and individuals who are not legally able to use our services. If we realize that information has been collected from a child, we will move to promptly delete it, unless we are legally required to keep this information. You can help us by informing us if you believe that we have unintentionally collected information from a child, please contact us.
+12. Contact Us
+If you wish to learn more about our privacy practices or have questions about this Privacy Statement, please contact us following the instructions below. You can ask questions about PayPal services or Braintree services (card payments made on a merchantâs website) by visiting PayPalâs website, and submitting your inquiry using the contact information provided in our privacy statement.
+Effective Date: The Braintree Privacy Policy shall be effective forMerchants who signed up before 23 March 2020 until the Braintree Privacy Statement becomes effective on 31 July 2020.The Braintree Privacy Policy shall not be in effect for new Merchants who signed up on or after 23 March 2020.
+Effective Date: May 25, 2018
+Braintree Privacy Policy
+PayPal Pte. Ltd. (âPayPal,â âwe,â âus,â or âourâ) developed this Privacy Policy to explain how we may collect, Process, share, store, and transfer your Personal Data that you provide when you visit the Sites, access the Services and any other Site as a visitor or User (collectively âBraintree Servicesâ). All collection, use, and disclosure of your business and Personal Data will be governed under this Privacy Policy. If you create an Account to use the Braintree Services or otherwise establish a Braintree Account, our collection, use, and disclosure of your customersâ Personal Data will be governed in all respects by the terms of the Payment Services Agreement you enter into with us.
+If you have questions about our privacy practices that are not addressed in this Privacy Policy, please contact us.
+What Personal Data Do We Collect?
+The Braintree Sites are where you can learn more about Braintree Services and how to become a User, sign up for more information about our Braintree Services, or access your Account if you are a User. We may collect Personal Data about you when you visit or access the Braintree Sites, including the following:
+Personal Data You Provide to Us Voluntarily â We collect information about you that you voluntarily provide to us when you: (i) contact us to learn more about Braintree, the Braintree Services, or other opportunities you indicate are of interest at the time; (ii) access or use the Braintree Service; or (iii) contact customer service.This information may include, for example, your name, mailing address, business name, and any other information that you choose to provide to us when you comment on materials on our Braintree Services, in order to contact you as a potential customer, or respond to a support request.This also includes technical data, such as IP addresses and device identifiers that are commonly generated in establishing a connection with the Braintree Services.
+Retention â We collect and retain Personal Data submitted to the Braintree Services in an identifiable format for the amount of time necessary to meet your request or fulfill our legal or regulatory obligations, unless it is in our legitimate business interests and not prohibited by law to maintain the Personal Data for longer periods.
+How Do We Process Personal Data?
+We may use information:
+For our legitimate interests, namely:
+To operate the Braintree Services;
+To contact and communicate with you when you reach out to us to ask us about our Braintree Services;
+To manage everyday business needs;
+To analyze or improve the Braintree Services or additional products or services; and
+To protect the Braintree Services and the rights of Users and others to enforce the terms of the Braintree Services;
+To comply with our obligations, including to comply with all applicable laws and regulations; and
+To send you promotional materials from us or on behalf of our affiliates and business partners.
+Sharing of Information
+We share information with:
+Other members of the PayPal corporate family such as our affiliated entities;
+Other companies that we have hired to provide services on our behalf;
+Other third parties where necessary for our business purposes or as required by law;
+Businesses and members of the public, when data is aggregated and does not personally identify you; and
+Otherwise with your consent.
+International Transfers of Your Personal Data
+Our operations are supported by a network of computers, cloud-based servers, and other infrastructure and information technology, including, but not limited to, third-party service providers.We and our third-party service providers store and Process your Personal Data in the United States of America and elsewhere in the world.We will protect your information as described in this Privacy Policy if your Personal Data is transferred to other countries/regions.By using our Sites and Services, you consent to your Personal Data being transferred to other countries, including countries/regions that have different data protection rules than your country. Please contact us for more information about this.
+Your Rights
+You may review limited Personal Data after logging in to your Account.If you need to edit or update your information, please contact us.If you do not have an Account or if you have questions about your Account information or other Personal Data, please contact us.
+Cookies
+When you visit the Braintree Services, we and certain business partners and vendors may use cookies and other tracking technologies (collectively, âCookiesâ) to recognize you and to otherwise customize your online experiences and other content and advertising; measure the effectiveness of promotions; and mitigate risk, prevent potential fraud, and promote trust and safety across the Braintree Services.Certain aspects and features of the Braintree Services are only available through the use of Cookies, so if you choose to disable or decline Cookies, your use of the Braintree Services may be limited or not possible.
+Security
+We maintain technical, physical, and administrative security measures designed to provide reasonable protection for your information against loss, misuse, unauthorized access, disclosure, and alteration.The security measures include firewalls, data encryption, physical access controls to our data centers, and information access authorization controls.
+Childrenâs Privacy
+The Braintree Services are intended for a general audience and are not directed at individuals under the age of majority.We do not knowingly collect information from children or other individuals who are not legally able to use the Braintree Services.If we obtain actual knowledge that we have collected information from a child, we will promptly delete it, unless we are legally obligated to retain such data.If you believe that we have mistakenly or unintentionally collected information from a child, please contact us.
+Changes
+We may change this Privacy Policy from time to time to reflect changes to our privacy practices for our Braintree Services. The revised Privacy Policy will be effective as of the published Effective Date.
+If we make a material change to the Privacy Policy, we will notify you in advance by posting notice of the change on the Braintree Services before the change becomes effective.We also may notify you of the change using email or other means.
+Contact
+If you have general questions about our Privacy Policy and practices or questions about yourPersonal Data, you may contact us.
+Definitions
+Account means Braintree account.
+Personal Data means information that can be associated with an identified or identifiable person.âPersonal Dataâ can include name, postal address (including billing and shipping addresses), telephone number, email address, financial account information, account number, and date of birth.Personal Data does not include information that does not identify a specific user.
+Process describes any method or way that we handle Personal Data or sets of Personal Data, whether or not by automated means, such as collection, recording, organization, structuring, storage, adaptation or alteration, retrieval, and consultation, disclosure by transmission, dissemination or otherwise making available, alignment or combination, restriction, erasure or destruction of Personal Data.
+Services means all Braintree products, services, content, features, technologies, or functions (including integrations with third party services) offered by PayPal and all related sites, applications and services.
+Site means the Braintree websites, mobile apps, official social media platforms, or other online properties through which PayPal offers the Services.
+User means you or anyone else who has established a relationship with PayPal (for example, by opening an Account) or otherwise uses the Services or accesses the Sites.
+Scale your business with Braintree.
+Try the sandbox
+WHY BRAINTREE
+Drive conversion
+Grow your reach
+Increase efficiency
+Help mitigate risk
+PRODUCTS
+Braintree Direct
+Braintree Extend
+Pricing
+FEATURES
+Fraud Tools
+3D Secure
+Data Security
+PCI Compliance
+Reporting
+Payouts
+Global Scale
+White-Glove Support
+Third-Party Integrations
+PAYMENT METHODS
+PayPal
+Venmo
+Credit/Debit Cards
+Digital Wallets
+Local Payment Methods
+All Payment Methods
+LEARN
+Resources
+Our Merchants
+Blog
+Developer Docs
+Support Articles
+AntiâPhishing FAQ
+GET STARTED
+Contact Sales
+Sandbox
+FAQ
+COMPANY
+About Braintree
+Contact Us
+Careers
+Press
+API Status
+Accessibility
+Site Map
+Braintree is a service of PayPal. © 2023 PayPal
+Privacy Statement |
+Legal
+Consumer Advisory â PayPal Pte. Ltd. the holder of PayPalâs stored value facility, does not require the approval of the Monetary Authority of Singapore.Â  Users are advised to read theÂ terms and conditionsÂ carefully.

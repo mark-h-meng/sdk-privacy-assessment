@@ -1,0 +1,32 @@
+Google Play's Data Safety
+Jump to ContentDocumentationREST APISamplesSDK ReferenceBlogGet HelpDocumentationREST APIDocumentationREST APISamplesSDK ReferenceBlogGet HelpSign upLog inSign upLog inDocumentationREST APISearch😺 WelcomeOverviewAdding subscriptions to your appUsing RevenueCat in existing appsSetting up RevenueCatInvite your teamAccount securityBilling and account settingsAPI Keys & Authentication🚀 Getting StartedSDK QuickstartConfiguring ProductsiOS Product SetupGoogle Play Product SetupGoogle Subscriptions and Backwards CompatibilityAmazon Product SetupStripe Product SetupInstalling the SDKiOSAndroidReact NativeFlutterCordovaIonicUnitymacOS / CatalystApp BuildersConfiguring the SDKiOS App ExtensionsIdentifying UsersDisplaying ProductsMaking PurchasesAndroid with Jetpack ComposeChecking Subscription StatusRestoring PurchasesConfiguring Server NotificationsStripe Web Payments➡️ Migrating To RevenueCatMigrating SubscriptionsImporting ReceiptsObserver ModeSwiftyStoreKit Migration👥 CustomersIdentifying CustomersChecking Subscription StatusSubscriber AttributesCustomer Lists🧰 Test & LaunchDebuggingTroubleshooting the SDKsError HandlingSandbox TestingApple App Store & TestFlightGoogle Play StoreAmazon AppstoreApp Subscription Launch ChecklistApp Store Rejections💰 Subscription GuidanceFree Trials & Promo OffersiOS Subscription OffersGoogle Play OffersStripe Free TrialsBilling Issues & Grace PeriodsUpgrades, Downgrades, & ManagementChanging PricesHandling RefundsPromotional Subscriptions📈 Dashboard & MetricsOverviewChartsActive Subscriptions ChartActive Subscriptions Movement ChartChurn ChartRefund Rate ChartAnnual Recurring Revenue (ARR) ChartRealized LTV per Customer ChartRealized LTV per Paying Customer ChartMonthly Recurring Revenue (MRR) ChartMonthly Recurring Revenue Movement ChartRevenue ChartConversion to Paying ChartInitial Conversion ChartTrial Conversion ChartSubscription Retention ChartActive Trials ChartActive Trials Movement ChartCharts Feature: Incomplete PeriodsCustomer ListsCustomersCustomer DetailsCustomer HistoryActive EntitlementsOffering OverridePromotionalsAttributesAttributionApp User IDsDeleting UsersTaxes and Commissions🔌 Integrations & EventsEvents OverviewWebhooksCommon Webhook FlowsThird Party IntegrationsAirshipAmplitudeBrazeCleverTapFirebaseIntercomIterableMixpanelmParticleOneSignalSegmentSlackStatsigSuperwallAttribution ProvidersAdjustApple Search AdsAppsFlyerBranchFacebook AdsSearchAdsHQSingularSplitMetrics AcquireTenjinScheduled Data ExportsAmazon S3Google Cloud StoragePartner-Built IntegrationsStripe Dashboard App🛠 ToolsExperimentsExperiments OverviewCreating Offerings to TestConfiguring ExperimentsExperiments Results📙 Platform ResourcesImplementation ResponsibilitiesAmazon Platform ResourcesAmazon Small Business Accelerator ProgramApple Platform ResourcesApple App PrivacyApp Store Small Business ProgramApple Family SharingLegacy Mac AppsGoogle Platform ResourcesGoogle Play Pass15% Reduced Service FeeGoogle Play's Data SafetyGoogle Play Quota Increase RequestNon-Subscription PurchasesPlatform Server NotificationsApple App Store Server NotificationsGoogle Real-Time Developer NotificationsStripe Server NotificationsNo and Low Code App BuildersSample Apps🔑 Service CredentialsApple App StoreGoogle Play StoreAmazon AppstoreIn-App Purchase Key Configuration🛟 RevenueCat Support🔢 Support First Steps📘 SDK GuidesSDK Migration GuidesiOS Native - 3.x to 4.x MigrationAndroid Native - 5.x to 6.x MigrationGoogle Play's Data SafetyHow to fill out the questionnaireSuggest EditsBy July 20, 2022, Google requires all developers to declare how their application collects and handles user data. You'll need to ensure you are properly disclosing to your users the way you are using RevenueCat in regards to their data.
+Data collection and security
+Does your app collect or share any of the required user data types?
+Select 'Yes'. RevenueCat collects a customer's purchase history.
+Is all of the user data collected by your app encrypted in transit?
+Select 'Yes'. RevenueCat encrypts data in transit.
+Do you provide a way for users to request that their data is deleted?
+If selecting 'Yes', ensure your customers have a way to contact your support team to request a data deletion. You will be able to delete the customer directly from the RevenueCat dashboard or via REST API.
+Data Types
+✅ = Required when using RevenueCat
+💡 = May be required when using RevenueCat
+❌ = Not required when using RevenueCat
+Required Data Types
+Type: Financial Info
+If you are using RevenueCat, you must disclose that your app collects 'Purchase history' information from the Data types section in Google Play Console.
+1. Is this data collected, shared, or both?
+This data is collected by RevenueCat. If you are using integrations set up between RevenueCat and third parties that are not considered service providers, you may need to disclose "Shared" here as well.
+2. Is this data processed ephemerally?
+Select 'No'.
+Is this data required for your app, or can users choose whether it's collected?
+This data collection is required and cannot be turned off.
+Why is this user data collected? / Why is this user data shared?
+Select the 'App functionality' and 'Analytics' checkboxes.
+What's Next
+After making your data safety selections, Google will show a preview of your app's privacy section. If you have chosen Financial Info as described above, your privacy details should look something like this:
+If you're ready to submit your app to App Review, head over to our Launch Checklistdoc for more information about preparing your app for submission.Updated 11 months ago Table of Contents
+Data collection and security
+Data Types
+Required Data Types
+Type: Financial Info
+What's Next

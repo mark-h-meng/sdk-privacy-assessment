@@ -1,0 +1,111 @@
+Prepare for Google Play's data disclosure requirements | Flurry
+Skip to main content
+Get the Developer’s Guide to Apple’s App Tracking Transparency
+Main navigation
+Products
+Analytics
+Audience
+Events
+Funnels
+Segmentation
+User Journeys
+Push
+Crash
+Flurry App
+Solutions
+Acquisition
+Attribution
+Conversion
+Retention
+Blog
+Support
+Login
+Sign Up
+Latest Posts
+Prepare for Google Play's data disclosure requirements
+App Tracking Transparency Opt-In Rate - Monthly Updates
+The IDFA is Dead
+iOS 14 Opt-in Rate - Weekly Updates Since Launch
+iOS 14 Opt-in Rate: Behind the Numbers
+Tags
+Android
+App Category Insights
+App Growth
+Apple
+Emerging Markets
+Google
+Holiday Mobile Insights
+Insights
+Mobile Gaming
+Mobile Insights
+Mobile News Consumption
+Mobility Insights
+Product Insights
+Product News
+Samsung
+e-Commerce
+gaming
+state of mobile
+tablet
+Prepare for Google Play's data disclosure requirements
+By Rajwant Pannu, Senior Manager, Software Development Engineering
+2022-08-11
+Tags
+Google
+Product News
+In May 2021, Google Play announced the new Data safety section, which outlines the data collection, sharing, and security practices that Android developers must disclose in Google Play.
+This page will help you complete the requirements for this data disclosure in regards to your usage of the Flurry Analytics SDK. You will find information on whether and how our SDK handles end-user data, including any applicable settings or configurations you can control as the app developer.
+We aim to be as transparent as possible in supporting you; however, as the app developer, you are solely responsible for deciding how to respond to Google Play's Data safety section form regarding your app's end-user data collection, sharing, and security practices.
+How to use the information on this page
+This page lists the end-user data collected by only the latest version (version 13.3.0)of the Flurry Analytics SDK.
+If you are using a prior version of the Flurry Analytics SDK, please consider updating to the latest version to ensure your app's disclosures are accurate.
+To complete your data disclosure, reference Android's guide about data types to help you determine which data types and purposes best describe the collected data. In your data disclosure, make sure to also account for how your specific app shares and uses the collected data.
+Overview of data encryption, data sharing, and data deletion for Flurry Android SDK
+Data collected and shared automatically
+The Flurry Analytics SDK collects and shares the following data types automatically for analytics, advertising, and fraud prevention purposes.
+All of the user data collected by Flurry Analytics SDK is encrypted in transit using the Transport Layer Security (TLS) protocol.
+Data collected and shared depending on your usage
+If you are using any optional product features that involve additional data, such as custom events, Standard Events, Performance Metrics, Crash Analytics, etc., be sure to check if those features require additional data disclosures.
+Other helpful resources
+Blog post announcing the Data safety form in Google Play Console.
+The Play Console's Data safety form is available on the App content page.
+If you have any questions, please contact us at support@flurry.com
+Products
+Analytics
+Events
+Segmentation
+Audience
+User Journeys
+Funnels
+Push
+Crash
+Flurry App
+Solutions
+Acquisition
+Attribution
+Conversion
+Retention
+Knowledge & Help
+Blog
+Documentation
+Flurry on GitHub
+Support
+Contact Us
+Company
+About
+Jobs
+Privacy
+Terms
+Flurry on LinkedIn
+Flurry on Twitter
+Flurry on Facebook
+Contact Us
+×
+SUBMIT
+Try the Flurry Live Data Demo!
+×
+See how Flurry helps you build better apps.
+Please verify you're human.
+Okay, let's go!
+By trying the demo, you confirm that you have read and agree to be bound by all Terms of Service and Yahoo Enterprise Account Privacy Policy.
+© Copyright 2022 Flurry. All Rights Reserved.

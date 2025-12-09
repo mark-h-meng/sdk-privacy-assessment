@@ -1,0 +1,1 @@
+Please move to the "assessment_results" folder under the root directory for the cleansed output of our taint analysis.

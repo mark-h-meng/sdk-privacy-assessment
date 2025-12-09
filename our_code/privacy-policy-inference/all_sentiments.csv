@@ -1,0 +1,170 @@
+Type, Action phrase, Positive statement, Irrelevant statement, Negative statement (the @ symbol is the placeholder of the data type)
+Phone state,Collect Phone state, We will @., It does not mention whether to @, We will not @.
+Phone state,Read Phone state, We will @., It does not mention whether to @, We will not @.
+Phone state,Request Phone state, We will @., It does not mention whether to @, We will not @.
+Phone state,Share Phone state, We will @., It does not mention whether to @, We will not @.
+Carrier info,Collect Carrier info, We will @., It does not mention whether to @, We will not @.
+Carrier info,Read Carrier info, We will @., It does not mention whether to @, We will not @.
+Carrier info,Request Carrier info, We will @., It does not mention whether to @, We will not @.
+Carrier info,Share Carrier info, We will @., It does not mention whether to @, We will not @.
+Cellular,Collect Cellular function, We will @., It does not mention whether to @, We will not @.
+Cellular,Read Cellular function, We will @., It does not mention whether to @, We will not @.
+Cellular,Request Cellular function, We will @., It does not mention whether to @, We will not @.
+Cellular,Share Cellular function, We will @., It does not mention whether to @, We will not @.
+IMEI,Collect IMEI, We will @., It does not mention whether to @, We will not @.
+IMEI,Read IMEI, We will @., It does not mention whether to @, We will not @.
+IMEI,Request IMEI, We will @., It does not mention whether to @, We will not @.
+IMEI,Share IMEI, We will @., It does not mention whether to @, We will not @.
+MEID,Collect MEID, We will @., It does not mention whether to @, We will not @.
+MEID,Read MEID, We will @., It does not mention whether to @, We will not @.
+MEID,Request MEID, We will @., It does not mention whether to @, We will not @.
+MEID,Share MEID, We will @., It does not mention whether to @, We will not @.
+IMSI,Collect IMSI, We will @., It does not mention whether to @, We will not @.
+IMSI,Read IMSI, We will @., It does not mention whether to @, We will not @.
+IMSI,Request IMSI, We will @., It does not mention whether to @, We will not @.
+IMSI,Share IMSI, We will @., It does not mention whether to @, We will not @.
+ICCID,Collect ICCID, We will @., It does not mention whether to @, We will not @.
+ICCID,Read ICCID, We will @., It does not mention whether to @, We will not @.
+ICCID,Request ICCID, We will @., It does not mention whether to @, We will not @.
+ICCID,Share ICCID, We will @., It does not mention whether to @, We will not @.
+Serial,Collect Serial, We will @., It does not mention whether to @, We will not @.
+Serial,Read Serial, We will @., It does not mention whether to @, We will not @.
+Serial,Request Serial, We will @., It does not mention whether to @, We will not @.
+Serial,Share Serial, We will @., It does not mention whether to @, We will not @.
+Serial,Collect Device identifier, We will @., It does not mention whether to @, We will not @.
+Serial,Read Device identifier, We will @., It does not mention whether to @, We will not @.
+Serial,Request Device identifier, We will @., It does not mention whether to @, We will not @.
+Serial,Share Device identifier, We will @., It does not mention whether to @, We will not @.
+SIM,Collect SIM card information, We will @., It does not mention whether to @, We will not @.
+SIM,Read SIM card information, We will @., It does not mention whether to @, We will not @.
+SIM,Request SIM card information, We will @., It does not mention whether to @, We will not @.
+SIM,Share SIM card information, We will @., It does not mention whether to @, We will not @.
+SMS,Read SMS, We will @., It does not mention whether to @, We will not @.
+SMS,Send SMS, We will @., It does not mention whether to @, We will not @.
+SMS,Share SMS, We will @., It does not mention whether to @, We will not @.
+Message,Read Message, We will @., It does not mention whether to @, We will not @.
+Message,Send Message, We will @., It does not mention whether to @, We will not @.
+Message,Share Message, We will @., It does not mention whether to @, We will not @.
+Phone number,Collect Phone number, We will @., It does not mention whether to @, We will not @.
+Phone number,Read Phone number, We will @., It does not mention whether to @, We will not @.
+Phone number,Request Phone number, We will @., It does not mention whether to @, We will not @.
+Phone number,Share Phone number, We will @., It does not mention whether to @, We will not @.
+SSID,Collect SSID, We will @., It does not mention whether to @, We will not @.
+SSID,Read SSID, We will @., It does not mention whether to @, We will not @.
+SSID,Request SSID, We will @., It does not mention whether to @, We will not @.
+SSID,Share SSID, We will @., It does not mention whether to @, We will not @.
+BSSID,Collect BSSID, We will @., It does not mention whether to @, We will not @.
+BSSID,Read BSSID, We will @., It does not mention whether to @, We will not @.
+BSSID,Request BSSID, We will @., It does not mention whether to @, We will not @.
+BSSID,Share BSSID, We will @., It does not mention whether to @, We will not @.
+Phone call,Make Phone call, We will @., It does not mention whether to @, We will not @.
+Phone call,Share Phone call, We will @., It does not mention whether to @, We will not @.
+Storage,Read Storage, We will @., It does not mention whether to @, We will not @.
+Storage,Write Storage, We will @., It does not mention whether to @, We will not @.
+Storage,Share Storage, We will @., It does not mention whether to @, We will not @.
+SD card (R),Read SD card , We will @., It does not mention whether to @, We will not @.
+SD card (W),Write SD card , We will @., It does not mention whether to @, We will not @.
+SD card (R),Share SD card , We will @., It does not mention whether to @, We will not @.
+Peripheral,Share Peripheral, We will @., It does not mention whether to @, We will not @.
+Network Info,Request Network info, We will @., It does not mention whether to @, We will not @.
+Network Info,Share Network info, We will @., It does not mention whether to @, We will not @.
+Network State,Request Network state, We will @., It does not mention whether to @, We will not @.
+Network State,Share Network state, We will @., It does not mention whether to @, We will not @.
+Connection Status,Request Connection status, We will @., It does not mention whether to @, We will not @.
+Connection Status,Share Connection status, We will @., It does not mention whether to @, We will not @.
+Connection State,Request Connection state, We will @., It does not mention whether to @, We will not @.
+Connection State,Share Connection state, We will @., It does not mention whether to @, We will not @.
+Bluetooth,Request Bluetooth, We will @., It does not mention whether to @, We will not @.
+Bluetooth,Share Bluetooth, We will @., It does not mention whether to @, We will not @.
+Wifi,Request Wifi, We will @., It does not mention whether to @, We will not @.
+Wifi,Share Wifi, We will @., It does not mention whether to @, We will not @.
+IP address,Collect IP address, We will @., It does not mention whether to @, We will not @.
+IP address,Request IP address, We will @., It does not mention whether to @, We will not @.
+IP address,Share IP address, We will @., It does not mention whether to @, We will not @.
+MAC address,Collect MAC address, We will @., It does not mention whether to @, We will not @.
+MAC address,Request MAC address, We will @., It does not mention whether to @, We will not @.
+MAC address,Share MAC address, We will @., It does not mention whether to @, We will not @.
+VOIP,Make VOIP call, We will @., It does not mention whether to @, We will not @.
+VOIP,Share VOIP call, We will @., It does not mention whether to @, We will not @.
+UWB,Request UWB, We will @., It does not mention whether to @, We will not @.
+UWB,Share UWB, We will @., It does not mention whether to @, We will not @.
+Ultra-band,Request Ultra-band Broadcasting, We will @., It does not mention whether to @, We will not @.
+Ultra-band,Share Ultra-band Broadcasting, We will @., It does not mention whether to @, We will not @.
+Location (1),Collect Location, We will @., It does not mention whether to @, We will not @.
+Location (1),Request Location, We will @., It does not mention whether to @, We will not @.
+Location (1),Share Location, We will @., It does not mention whether to @, We will not @.
+Location (2),Collect GPS, We will @., It does not mention whether to @, We will not @.
+Location (2),Request GPS, We will @., It does not mention whether to @, We will not @.
+Location (2),Share GPS, We will @., It does not mention whether to @, We will not @.
+Camera,Request Camera, We will @., It does not mention whether to @, We will not @.
+Camera,Share Camera, We will @., It does not mention whether to @, We will not @.
+Sensor,Request Sensor, We will @., It does not mention whether to @, We will not @.
+Sensor,Share Sensor, We will @., It does not mention whether to @, We will not @.
+Android ID,Collect Android ID, We will @., It does not mention whether to @, We will not @.
+Android ID,Read Android ID, We will @., It does not mention whether to @, We will not @.
+Android ID,Request Android ID, We will @., It does not mention whether to @, We will not @.
+Android ID,Share Android ID, We will @., It does not mention whether to @, We will not @.
+Android ID,Collect Google Ad ID, We will @., It does not mention whether to @, We will not @.
+Android ID,Read Google Ad ID, We will @., It does not mention whether to @, We will not @.
+Android ID,Request Google Ad ID, We will @., It does not mention whether to @, We will not @.
+Android ID,Share Google Ad ID, We will @., It does not mention whether to @, We will not @.
+GAID (1),Collect Google Advertising ID, We will @., It does not mention whether to @, We will not @.
+GAID (1),Read Google Advertising ID, We will @., It does not mention whether to @, We will not @.
+GAID (1),Request Google Advertising ID, We will @., It does not mention whether to @, We will not @.
+GAID (1),Share Google Advertising ID, We will @., It does not mention whether to @, We will not @.
+GAID (2),Collect GAID, We will @., It does not mention whether to @, We will not @.
+GAID (2),Read GAID, We will @., It does not mention whether to @, We will not @.
+GAID (2),Request GAID, We will @., It does not mention whether to @, We will not @.
+GAID (2),Share GAID, We will @., It does not mention whether to @, We will not @.
+OAID,Collect OAID, We will @., It does not mention whether to @, We will not @.
+OAID,Read OAID, We will @., It does not mention whether to @, We will not @.
+OAID,Request OAID, We will @., It does not mention whether to @, We will not @.
+OAID,Share OAID, We will @., It does not mention whether to @, We will not @.
+App list,Collect App list, We will @., It does not mention whether to @, We will not @.
+App list,Request App list, We will @., It does not mention whether to @, We will not @.
+App list,Share App list, We will @., It does not mention whether to @, We will not @.
+Package list,Collect Package list, We will @., It does not mention whether to @, We will not @.
+Package list,Request Package list, We will @., It does not mention whether to @, We will not @.
+Package list,Share Package list, We will @., It does not mention whether to @, We will not @.
+Installed apps,Collect Installed apps, We will @., It does not mention whether to @, We will not @.
+Installed apps,Request Installed apps, We will @., It does not mention whether to @, We will not @.
+Installed apps,Share Installed apps, We will @., It does not mention whether to @, We will not @.
+Audio,Request Audio, We will @., It does not mention whether to @, We will not @.
+Audio,Share Audio, We will @., It does not mention whether to @, We will not @.
+Recording,Make Recording, We will @., It does not mention whether to @, We will not @.
+Recording,Request Recording, We will @., It does not mention whether to @, We will not @.
+Recording,Share Recording, We will @., It does not mention whether to @, We will not @.
+Media,Request Media, We will @., It does not mention whether to @, We will not @.
+Media,Share Media, We will @., It does not mention whether to @, We will not @.
+Screenshot (1),Make Screenshot, We will @., It does not mention whether to @, We will not @.
+Screenshot (1),Read Screenshot, We will @., It does not mention whether to @, We will not @.
+Screenshot (1),Take Screenshot, We will @., It does not mention whether to @, We will not @.
+Screenshot (1),Share Screenshot, We will @., It does not mention whether to @, We will not @.
+Screenshot (2),Read Screen, We will @., It does not mention whether to @, We will not @.
+Screenshot (2),Share Screen, We will @., It does not mention whether to @, We will not @.
+Account info,Collect Account info, We will @., It does not mention whether to @, We will not @.
+Account info,Read Account info, We will @., It does not mention whether to @, We will not @.
+Account info,Request Account info, We will @., It does not mention whether to @, We will not @.
+Account info,Share Account info, We will @., It does not mention whether to @, We will not @.
+Account info,Collect Username, We will @., It does not mention whether to @, We will not @.
+Account info,Request Username, We will @., It does not mention whether to @, We will not @.
+Account info,Share Username, We will @., It does not mention whether to @, We will not @.
+Account info,Collect Email address, We will @., It does not mention whether to @, We will not @.
+Account info,Request Email address, We will @., It does not mention whether to @, We will not @.
+Account info,Share Email address, We will @., It does not mention whether to @, We will not @.
+Clipboard,Collect Clipboard, We will @., It does not mention whether to @, We will not @.
+Clipboard,Read Clipboard, We will @., It does not mention whether to @, We will not @.
+Clipboard,Request Clipboard, We will @., It does not mention whether to @, We will not @.
+Clipboard,Share Clipboard, We will @., It does not mention whether to @, We will not @.
+Contact,Collect Contact, We will @., It does not mention whether to @, We will not @.
+Contact,Read Contact, We will @., It does not mention whether to @, We will not @.
+Contact,Request Contact, We will @., It does not mention whether to @, We will not @.
+Contact,Share Contact, We will @., It does not mention whether to @, We will not @.
+Calendar,Collect Calendar, We will @., It does not mention whether to @, We will not @.
+Calendar,Read Calendar, We will @., It does not mention whether to @, We will not @.
+Calendar,Request Calendar, We will @., It does not mention whether to @, We will not @.
+Calendar,Share Calendar, We will @., It does not mention whether to @, We will not @.
+Browser bookmark,Collect Browser bookmark, We will @., It does not mention whether to @, We will not @.
+Browser bookmark,Read Browser bookmark, We will @., It does not mention whether to @, We will not @.
+Browser bookmark,Request Browser bookmark, We will @., It does not mention whether to @, We will not @.
+Browser bookmark,Share Browser bookmark, We will @., It does not mention whether to @, We will not @.

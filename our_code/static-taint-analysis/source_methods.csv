@@ -1,0 +1,799 @@
+id,privacy_api_class,privacy_api_method,privacy_api,description
+1,Get Sensor,18,,Allows an application  to recognize physical activity
+2,Get Sensor,19,,Allows an application  to recognize physical activity
+3,Get Sensor,21,,"Allows an application  to access data from sensors that the user uses to measure what is happening  inside his/her body, such as heart rate"
+4,android.os.Build,getSerial,Landroid/os/Build;.getSerial:()Ljava/lang/String;,"Allows read only access to phone state, including the current cellular  network information, the status of any ongoing calls, and a list of any  android.telecom.PhoneAccounts registered on the device. Note: If both your  minSdkVersion and targetSdkVersion values are set to 3 or lower, the system  implicitly grants your app this permission. If you don't need this  permission, be sure your targetSdkVersion is 4 or higher"
+5,android.os.Build,SERIAL,Landroid/os/Build;.SERIAL:Ljava/lang/String;,"Allows read only access to phone state, including the current cellular  network information, the status of any ongoing calls, and a list of any  android.telecom.PhoneAccounts registered on the device. Note: If both your  minSdkVersion and targetSdkVersion values are set to 3 or lower, the system  implicitly grants your app this permission. If you don't need this  permission, be sure your targetSdkVersion is 4 or higher"
+6,android.bluetooth.BluetoothAdapter.LeScanCallback,*,,"Allows an app to access approximate location. Alternatively, you might  want ACCESS_FINE_LOCATION"
+7,android.net.wifi.aware.WifiAwareManager,init,Landroid/net/wifi/aware/WifiAwareManager;.<init>:()V,
+8,android.net.wifi.aware.WifiAwareManager,attach,Landroid/net/wifi/aware/WifiAwareManager;.attach:(Landroid/net/wifi/aware/AttachCallback;Landroid/net/wifi/aware/IdentityChangedListener;Landroid/os/Handler;)V,
+9,android.net.wifi.aware.WifiAwareManager,attach,Landroid/net/wifi/aware/WifiAwareManager;.attach:(Landroid/net/wifi/aware/AttachCallback;Landroid/os/Handler;)V,
+10,android.net.wifi.aware.WifiAwareManager,getCharacteristics,Landroid/net/wifi/aware/WifiAwareManager;.getCharacteristics:()Landroid/net/wifi/aware/Characteristics;,
+11,android.net.wifi.aware.WifiAwareManager,isAvailable,Landroid/net/wifi/aware/WifiAwareManager;.isAvailable:()Z,
+12,android.net.wifi.p2p.WifiP2pManager,init,Landroid/net/wifi/p2p/WifiP2pManager;.<init>:()V,
+13,android.net.wifi.p2p.WifiP2pManager,addLocalService,Landroid/net/wifi/p2p/WifiP2pManager;.addLocalService:(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/nsd/WifiP2pServiceInfo;Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;)V,
+14,android.net.wifi.p2p.WifiP2pManager,addServiceRequest,Landroid/net/wifi/p2p/WifiP2pManager;.addServiceRequest:(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/nsd/WifiP2pServiceRequest;Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;)V,
+15,android.net.wifi.p2p.WifiP2pManager,cancelConnect,Landroid/net/wifi/p2p/WifiP2pManager;.cancelConnect:(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;)V,
+16,android.net.wifi.p2p.WifiP2pManager,clearLocalServices,Landroid/net/wifi/p2p/WifiP2pManager;.clearLocalServices:(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;)V,
+17,android.net.wifi.p2p.WifiP2pManager,clearServiceRequests,Landroid/net/wifi/p2p/WifiP2pManager;.clearServiceRequests:(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;)V,
+18,android.net.wifi.p2p.WifiP2pManager,connect,Landroid/net/wifi/p2p/WifiP2pManager;.connect:(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/WifiP2pConfig;Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;)V,
+19,android.net.wifi.p2p.WifiP2pManager,createGroup,Landroid/net/wifi/p2p/WifiP2pManager;.createGroup:(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/WifiP2pConfig;Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;)V,
+20,android.net.wifi.p2p.WifiP2pManager,createGroup,Landroid/net/wifi/p2p/WifiP2pManager;.createGroup:(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;)V,
+21,android.net.wifi.p2p.WifiP2pManager,discoverPeers,Landroid/net/wifi/p2p/WifiP2pManager;.discoverPeers:(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;)V,
+22,android.net.wifi.p2p.WifiP2pManager,discoverServices,Landroid/net/wifi/p2p/WifiP2pManager;.discoverServices:(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;)V,
+23,android.net.wifi.p2p.WifiP2pManager,initialize,Landroid/net/wifi/p2p/WifiP2pManager;.initialize:(Landroid/content/Context;Landroid/os/Looper;Landroid/net/wifi/p2p/WifiP2pManager$ChannelListener;)Landroid/net/wifi/p2p/WifiP2pManager$Channel;,
+24,android.net.wifi.p2p.WifiP2pManager,removeGroup,Landroid/net/wifi/p2p/WifiP2pManager;.removeGroup:(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;)V,
+25,android.net.wifi.p2p.WifiP2pManager,removeLocalService,Landroid/net/wifi/p2p/WifiP2pManager;.removeLocalService:(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/nsd/WifiP2pServiceInfo;Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;)V,
+26,android.net.wifi.p2p.WifiP2pManager,removeServiceRequest,Landroid/net/wifi/p2p/WifiP2pManager;.removeServiceRequest:(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/nsd/WifiP2pServiceRequest;Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;)V,
+27,android.net.wifi.p2p.WifiP2pManager,requestConnectionInfo,Landroid/net/wifi/p2p/WifiP2pManager;.requestConnectionInfo:(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/WifiP2pManager$ConnectionInfoListener;)V,
+28,android.net.wifi.p2p.WifiP2pManager,requestDeviceInfo,Landroid/net/wifi/p2p/WifiP2pManager;.requestDeviceInfo:(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/WifiP2pManager$DeviceInfoListener;)V,
+29,android.net.wifi.p2p.WifiP2pManager,requestDiscoveryState,Landroid/net/wifi/p2p/WifiP2pManager;.requestDiscoveryState:(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/WifiP2pManager$DiscoveryStateListener;)V,
+30,android.net.wifi.p2p.WifiP2pManager,requestGroupInfo,Landroid/net/wifi/p2p/WifiP2pManager;.requestGroupInfo:(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/WifiP2pManager$GroupInfoListener;)V,
+31,android.net.wifi.p2p.WifiP2pManager,requestNetworkInfo,Landroid/net/wifi/p2p/WifiP2pManager;.requestNetworkInfo:(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/WifiP2pManager$NetworkInfoListener;)V,
+32,android.net.wifi.p2p.WifiP2pManager,requestP2pState,Landroid/net/wifi/p2p/WifiP2pManager;.requestP2pState:(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/WifiP2pManager$P2pStateListener;)V,
+33,android.net.wifi.p2p.WifiP2pManager,requestPeers,Landroid/net/wifi/p2p/WifiP2pManager;.requestPeers:(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/WifiP2pManager$PeerListListener;)V,
+34,android.net.wifi.p2p.WifiP2pManager,setDnsSdResponseListeners,Landroid/net/wifi/p2p/WifiP2pManager;.setDnsSdResponseListeners:(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/WifiP2pManager$DnsSdServiceResponseListener;Landroid/net/wifi/p2p/WifiP2pManager$DnsSdTxtRecordListener;)V,
+35,android.net.wifi.p2p.WifiP2pManager,setServiceResponseListener,Landroid/net/wifi/p2p/WifiP2pManager;.setServiceResponseListener:(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/WifiP2pManager$ServiceResponseListener;)V,
+36,android.net.wifi.p2p.WifiP2pManager,setUpnpServiceResponseListener,Landroid/net/wifi/p2p/WifiP2pManager;.setUpnpServiceResponseListener:(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/WifiP2pManager$UpnpServiceResponseListener;)V,
+37,android.net.wifi.p2p.WifiP2pManager,stopPeerDiscovery,Landroid/net/wifi/p2p/WifiP2pManager;.stopPeerDiscovery:(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;)V,
+38,android.net.wifi.rtt.WifiRttManager,init,Landroid/net/wifi/rtt/WifiRttManager;.<init>:()V,
+39,android.net.wifi.rtt.WifiRttManager,isAvailable,Landroid/net/wifi/rtt/WifiRttManager;.isAvailable:()Z,
+40,android.net.wifi.rtt.WifiRttManager,startRanging,Landroid/net/wifi/rtt/WifiRttManager;.startRanging:(Landroid/net/wifi/rtt/RangingRequest;Ljava/util/concurrent/Executor;Landroid/net/wifi/rtt/RangingResultCallback;)V,
+41,android.hardware.Camera,init,Landroid/hardware/Camera;.<init>:()V,
+42,android.hardware.Camera,getCameraInfo,Landroid/hardware/Camera;.getCameraInfo:(ILandroid/hardware/Camera$CameraInfo;)V,
+43,android.hardware.Camera,getNumberOfCameras,Landroid/hardware/Camera;.getNumberOfCameras:()I,
+44,android.hardware.Camera,open,Landroid/hardware/Camera;.open:()Landroid/hardware/Camera;,
+45,android.hardware.Camera,open,Landroid/hardware/Camera;.open:(I)Landroid/hardware/Camera;,
+46,android.hardware.Camera,addCallbackBuffer,Landroid/hardware/Camera;.addCallbackBuffer:([B)V,
+47,android.hardware.Camera,autoFocus,Landroid/hardware/Camera;.autoFocus:(Landroid/hardware/Camera$AutoFocusCallback;)V,
+48,android.hardware.Camera,cancelAutoFocus,Landroid/hardware/Camera;.cancelAutoFocus:()V,
+49,android.hardware.Camera,enableShutterSound,Landroid/hardware/Camera;.enableShutterSound:(Z)Z,
+50,android.hardware.Camera,finalize,Landroid/hardware/Camera;.finalize:()V,
+51,android.hardware.Camera,getParameters,Landroid/hardware/Camera;.getParameters:()Landroid/hardware/Camera$Parameters;,
+52,android.hardware.Camera,lock,Landroid/hardware/Camera;.lock:()V,
+53,android.hardware.Camera,reconnect,Landroid/hardware/Camera;.reconnect:()V,
+54,android.hardware.Camera,release,Landroid/hardware/Camera;.release:()V,
+55,android.hardware.Camera,setAutoFocusMoveCallback,Landroid/hardware/Camera;.setAutoFocusMoveCallback:(Landroid/hardware/Camera$AutoFocusMoveCallback;)V,
+56,android.hardware.Camera,setDisplayOrientation,Landroid/hardware/Camera;.setDisplayOrientation:(I)V,
+57,android.hardware.Camera,setErrorCallback,Landroid/hardware/Camera;.setErrorCallback:(Landroid/hardware/Camera$ErrorCallback;)V,
+58,android.hardware.Camera,setFaceDetectionListener,Landroid/hardware/Camera;.setFaceDetectionListener:(Landroid/hardware/Camera$FaceDetectionListener;)V,
+59,android.hardware.Camera,setOneShotPreviewCallback,Landroid/hardware/Camera;.setOneShotPreviewCallback:(Landroid/hardware/Camera$PreviewCallback;)V,
+60,android.hardware.Camera,setParameters,Landroid/hardware/Camera;.setParameters:(Landroid/hardware/Camera$Parameters;)V,
+61,android.hardware.Camera,setPreviewCallback,Landroid/hardware/Camera;.setPreviewCallback:(Landroid/hardware/Camera$PreviewCallback;)V,
+62,android.hardware.Camera,setPreviewCallbackWithBuffer,Landroid/hardware/Camera;.setPreviewCallbackWithBuffer:(Landroid/hardware/Camera$PreviewCallback;)V,
+63,android.hardware.Camera,setPreviewDisplay,Landroid/hardware/Camera;.setPreviewDisplay:(Landroid/view/SurfaceHolder;)V,
+64,android.hardware.Camera,setPreviewTexture,Landroid/hardware/Camera;.setPreviewTexture:(Landroid/graphics/SurfaceTexture;)V,
+65,android.hardware.Camera,setZoomChangeListener,Landroid/hardware/Camera;.setZoomChangeListener:(Landroid/hardware/Camera$OnZoomChangeListener;)V,
+66,android.hardware.Camera,startFaceDetection,Landroid/hardware/Camera;.startFaceDetection:()V,
+67,android.hardware.Camera,startPreview,Landroid/hardware/Camera;.startPreview:()V,
+68,android.hardware.Camera,startSmoothZoom,Landroid/hardware/Camera;.startSmoothZoom:(I)V,
+69,android.hardware.Camera,stopFaceDetection,Landroid/hardware/Camera;.stopFaceDetection:()V,
+70,android.hardware.Camera,stopPreview,Landroid/hardware/Camera;.stopPreview:()V,
+71,android.hardware.Camera,stopSmoothZoom,Landroid/hardware/Camera;.stopSmoothZoom:()V,
+72,android.hardware.Camera,takePicture,Landroid/hardware/Camera;.takePicture:(Landroid/hardware/Camera$ShutterCallback;Landroid/hardware/Camera$PictureCallback;Landroid/hardware/Camera$PictureCallback;)V,
+73,android.hardware.Camera,takePicture,Landroid/hardware/Camera;.takePicture:(Landroid/hardware/Camera$ShutterCallback;Landroid/hardware/Camera$PictureCallback;Landroid/hardware/Camera$PictureCallback;Landroid/hardware/Camera$PictureCallback;)V,
+74,android.hardware.Camera,unlock,Landroid/hardware/Camera;.unlock:()V,
+75,android.hardware.camera2.CameraDevice,init,Landroid/hardware/camera2/CameraDevice;.<init>:()V,
+76,android.hardware.camera2.CameraDevice,close,Landroid/hardware/camera2/CameraDevice;.close:()V,
+77,android.hardware.camera2.CameraDevice,createCaptureRequest,Landroid/hardware/camera2/CameraDevice;.createCaptureRequest:(I)Landroid/hardware/camera2/CaptureRequest$Builder;,
+78,android.hardware.camera2.CameraDevice,createCaptureRequest,Landroid/hardware/camera2/CameraDevice;.createCaptureRequest:(ILjava/util/Set;)Landroid/hardware/camera2/CaptureRequest$Builder;,
+79,android.hardware.camera2.CameraDevice,createCaptureSession,Landroid/hardware/camera2/CameraDevice;.createCaptureSession:(Landroid/hardware/camera2/params/SessionConfiguration;)V,
+80,android.hardware.camera2.CameraDevice,createCaptureSession,Landroid/hardware/camera2/CameraDevice;.createCaptureSession:(Ljava/util/List;Landroid/hardware/camera2/CameraCaptureSession$StateCallback;Landroid/os/Handler;)V,
+81,android.hardware.camera2.CameraDevice,createCaptureSessionByOutputConfigurations,Landroid/hardware/camera2/CameraDevice;.createCaptureSessionByOutputConfigurations:(Ljava/util/List;Landroid/hardware/camera2/CameraCaptureSession$StateCallback;Landroid/os/Handler;)V,
+82,android.hardware.camera2.CameraDevice,createConstrainedHighSpeedCaptureSession,Landroid/hardware/camera2/CameraDevice;.createConstrainedHighSpeedCaptureSession:(Ljava/util/List;Landroid/hardware/camera2/CameraCaptureSession$StateCallback;Landroid/os/Handler;)V,
+83,android.hardware.camera2.CameraDevice,createReprocessCaptureRequest,Landroid/hardware/camera2/CameraDevice;.createReprocessCaptureRequest:(Landroid/hardware/camera2/TotalCaptureResult;)Landroid/hardware/camera2/CaptureRequest$Builder;,
+84,android.hardware.camera2.CameraDevice,createReprocessableCaptureSession,Landroid/hardware/camera2/CameraDevice;.createReprocessableCaptureSession:(Landroid/hardware/camera2/params/InputConfiguration;Ljava/util/List;Landroid/hardware/camera2/CameraCaptureSession$StateCallback;Landroid/os/Handler;)V,
+85,android.hardware.camera2.CameraDevice,createReprocessableCaptureSessionByConfigurations,Landroid/hardware/camera2/CameraDevice;.createReprocessableCaptureSessionByConfigurations:(Landroid/hardware/camera2/params/InputConfiguration;Ljava/util/List;Landroid/hardware/camera2/CameraCaptureSession$StateCallback;Landroid/os/Handler;)V,
+86,android.hardware.camera2.CameraDevice,getCameraAudioRestriction,Landroid/hardware/camera2/CameraDevice;.getCameraAudioRestriction:()I,
+87,android.hardware.camera2.CameraDevice,getId,Landroid/hardware/camera2/CameraDevice;.getId:()Ljava/lang/String;,
+88,android.hardware.camera2.CameraDevice,isSessionConfigurationSupported,Landroid/hardware/camera2/CameraDevice;.isSessionConfigurationSupported:(Landroid/hardware/camera2/params/SessionConfiguration;)Z,
+89,android.hardware.camera2.CameraDevice,setCameraAudioRestriction,Landroid/hardware/camera2/CameraDevice;.setCameraAudioRestriction:(I)V,
+90,android.net.sip.SipManager,init,Landroid/net/sip/SipManager;.<init>:()V,
+91,android.net.sip.SipManager,getCallId,Landroid/net/sip/SipManager;.getCallId:(Landroid/content/Intent;)Ljava/lang/String;,
+92,android.net.sip.SipManager,getOfferSessionDescription,Landroid/net/sip/SipManager;.getOfferSessionDescription:(Landroid/content/Intent;)Ljava/lang/String;,
+93,android.net.sip.SipManager,isApiSupported,Landroid/net/sip/SipManager;.isApiSupported:(Landroid/content/Context;)Z,
+94,android.net.sip.SipManager,isIncomingCallIntent,Landroid/net/sip/SipManager;.isIncomingCallIntent:(Landroid/content/Intent;)Z,
+95,android.net.sip.SipManager,isSipWifiOnly,Landroid/net/sip/SipManager;.isSipWifiOnly:(Landroid/content/Context;)Z,
+96,android.net.sip.SipManager,isVoipSupported,Landroid/net/sip/SipManager;.isVoipSupported:(Landroid/content/Context;)Z,
+97,android.net.sip.SipManager,newInstance,Landroid/net/sip/SipManager;.newInstance:(Landroid/content/Context;)Landroid/net/sip/SipManager;,
+98,android.net.sip.SipManager,close,Landroid/net/sip/SipManager;.close:(Ljava/lang/String;)V,
+99,android.net.sip.SipManager,createSipSession,Landroid/net/sip/SipManager;.createSipSession:(Landroid/net/sip/SipProfile;Landroid/net/sip/SipSession$Listener;)Landroid/net/sip/SipSession;,
+100,android.net.sip.SipManager,getSessionFor,Landroid/net/sip/SipManager;.getSessionFor:(Landroid/content/Intent;)Landroid/net/sip/SipSession;,
+101,android.net.sip.SipManager,isOpened,Landroid/net/sip/SipManager;.isOpened:(Ljava/lang/String;)Z,
+102,android.net.sip.SipManager,isRegistered,Landroid/net/sip/SipManager;.isRegistered:(Ljava/lang/String;)Z,
+103,android.net.sip.SipManager,makeAudioCall,Landroid/net/sip/SipManager;.makeAudioCall:(Landroid/net/sip/SipProfile;Landroid/net/sip/SipProfile;Landroid/net/sip/SipAudioCall$Listener;I)Landroid/net/sip/SipAudioCall;,
+104,android.net.sip.SipManager,makeAudioCall,Landroid/net/sip/SipManager;.makeAudioCall:(Ljava/lang/String;Ljava/lang/String;Landroid/net/sip/SipAudioCall$Listener;I)Landroid/net/sip/SipAudioCall;,
+105,android.net.sip.SipManager,open,Landroid/net/sip/SipManager;.open:(Landroid/net/sip/SipProfile;)V,
+106,android.net.sip.SipManager,open,Landroid/net/sip/SipManager;.open:(Landroid/net/sip/SipProfile;Landroid/app/PendingIntent;Landroid/net/sip/SipRegistrationListener;)V,
+107,android.net.sip.SipManager,register,Landroid/net/sip/SipManager;.register:(Landroid/net/sip/SipProfile;ILandroid/net/sip/SipRegistrationListener;)V,
+108,android.net.sip.SipManager,setRegistrationListener,Landroid/net/sip/SipManager;.setRegistrationListener:(Ljava/lang/String;Landroid/net/sip/SipRegistrationListener;)V,
+109,android.net.sip.SipManager,takeAudioCall,Landroid/net/sip/SipManager;.takeAudioCall:(Landroid/content/Intent;Landroid/net/sip/SipAudioCall$Listener;)Landroid/net/sip/SipAudioCall;,
+110,android.net.sip.SipManager,unregister,Landroid/net/sip/SipManager;.unregister:(Landroid/net/sip/SipProfile;Landroid/net/sip/SipRegistrationListener;)V,
+111,android.net.sip.SipAudioCall,init,Landroid/net/sip/SipAudioCall;.<init>:(Landroid/content/Context;Landroid/net/sip/SipProfile;)V,
+112,android.net.sip.SipAudioCall,answerCall,Landroid/net/sip/SipAudioCall;.answerCall:(I)V,
+113,android.net.sip.SipAudioCall,attachCall,Landroid/net/sip/SipAudioCall;.attachCall:(Landroid/net/sip/SipSession;Ljava/lang/String;)V,
+114,android.net.sip.SipAudioCall,close,Landroid/net/sip/SipAudioCall;.close:()V,
+115,android.net.sip.SipAudioCall,continueCall,Landroid/net/sip/SipAudioCall;.continueCall:(I)V,
+116,android.net.sip.SipAudioCall,endCall,Landroid/net/sip/SipAudioCall;.endCall:()V,
+117,android.net.sip.SipAudioCall,getLocalProfile,Landroid/net/sip/SipAudioCall;.getLocalProfile:()Landroid/net/sip/SipProfile;,
+118,android.net.sip.SipAudioCall,getPeerProfile,Landroid/net/sip/SipAudioCall;.getPeerProfile:()Landroid/net/sip/SipProfile;,
+119,android.net.sip.SipAudioCall,getState,Landroid/net/sip/SipAudioCall;.getState:()I,
+120,android.net.sip.SipAudioCall,holdCall,Landroid/net/sip/SipAudioCall;.holdCall:(I)V,
+121,android.net.sip.SipAudioCall,isInCall,Landroid/net/sip/SipAudioCall;.isInCall:()Z,
+122,android.net.sip.SipAudioCall,isMuted,Landroid/net/sip/SipAudioCall;.isMuted:()Z,
+123,android.net.sip.SipAudioCall,isOnHold,Landroid/net/sip/SipAudioCall;.isOnHold:()Z,
+124,android.net.sip.SipAudioCall,makeCall,Landroid/net/sip/SipAudioCall;.makeCall:(Landroid/net/sip/SipProfile;Landroid/net/sip/SipSession;I)V,
+125,android.net.sip.SipAudioCall,sendDtmf,Landroid/net/sip/SipAudioCall;.sendDtmf:(I)V,
+126,android.net.sip.SipAudioCall,sendDtmf,Landroid/net/sip/SipAudioCall;.sendDtmf:(ILandroid/os/Message;)V,
+127,android.net.sip.SipAudioCall,setListener,Landroid/net/sip/SipAudioCall;.setListener:(Landroid/net/sip/SipAudioCall$Listener;)V,
+128,android.net.sip.SipAudioCall,setListener,Landroid/net/sip/SipAudioCall;.setListener:(Landroid/net/sip/SipAudioCall$Listener;Z)V,
+129,android.net.sip.SipAudioCall,setSpeakerMode,Landroid/net/sip/SipAudioCall;.setSpeakerMode:(Z)V,Allows an application to modify global audio settings
+130,android.net.sip.SipAudioCall,startAudio,Landroid/net/sip/SipAudioCall;.startAudio:()V,Allows using PowerManager WakeLocks to keep processor from sleeping or  screen from dimming
+131,android.net.sip.SipAudioCall,toggleMute,Landroid/net/sip/SipAudioCall;.toggleMute:()V,
+132,android.bluetooth.BluetoothHeadsetClient,acceptCall,,Required to be able to connect to paired Bluetooth devices.
+133,android.telecom.TelecomManager,acceptHandover,Landroid/telecom/TelecomManager;.acceptHandover:(Landroid/net/Uri;ILandroid/telecom/PhoneAccountHandle;)V,"Allows a calling app  to continue a call which was started in another app. An example is a video  calling app that wants to continue a voice call on the user's mobile network.  When the handover of a call from one app to another takes place, there are  two devices which are involved in the handover; the initiating and receiving  devices. The initiating device is where the request to handover the call was  started, and the receiving device is where the handover request is confirmed  by the other party. This permission protects access to the  android.telecom.TelecomManager#acceptHandover(Uri, int, PhoneAccountHandle)  which the receiving side of the handover uses to accept a handover"
+134,android.telecom.TelecomManager,acceptRingingCall,Landroid/telecom/TelecomManager;.acceptRingingCall:()V,Allows the app to  answer an incoming phone call
+135,android.telecom.TelecomManager,acceptRingingCall,Landroid/telecom/TelecomManager;.acceptRingingCall:(I)V,Allows the app to  answer an incoming phone call
+136,android.hardware.location.GeofenceHardware,addGeofence,,"Allows an app to access precise location. Alternatively, you might want  ACCESS_COARSE_LOCATION"
+137,android.location.LocationManager,addGeofence,,"Allows an app to access precise location. Alternatively, you might want  ACCESS_COARSE_LOCATION"
+138,android.location.LocationManager,addGpsStatusListener,Landroid/location/LocationManager;.addGpsStatusListener:(Landroid/location/GpsStatus$Listener;)Z,"Allows an app to access precise location. Alternatively, you might want  ACCESS_COARSE_LOCATION"
+139,android.location.LocationManager,addNmeaListener,Landroid/location/LocationManager;.addNmeaListener:(Landroid/location/GpsStatus$NmeaListener;)Z,"Allows an app to access precise location. Alternatively, you might want  ACCESS_COARSE_LOCATION"
+140,android.location.LocationManager,addNmeaListener,Landroid/location/LocationManager;.addNmeaListener:(Landroid/location/OnNmeaMessageListener;)Z,"Allows an app to access precise location. Alternatively, you might want  ACCESS_COARSE_LOCATION"
+141,android.location.LocationManager,addNmeaListener,Landroid/location/LocationManager;.addNmeaListener:(Landroid/location/OnNmeaMessageListener;Landroid/os/Handler;)Z,"Allows an app to access precise location. Alternatively, you might want  ACCESS_COARSE_LOCATION"
+142,android.location.LocationManager,addNmeaListener,Landroid/location/LocationManager;.addNmeaListener:(Ljava/util/concurrent/Executor;Landroid/location/OnNmeaMessageListener;)Z,"Allows an app to access precise location. Alternatively, you might want  ACCESS_COARSE_LOCATION"
+143,android.location.LocationManager,addProximityAlert,Landroid/location/LocationManager;.addProximityAlert:(DDFJLandroid/app/PendingIntent;)V,"Allows an app to access precise location. Alternatively, you might want  ACCESS_COARSE_LOCATION"
+144,android.net.wifi.WifiManager,addSuggestionConnectionStatusListener,Landroid/net/wifi/WifiManager;.addSuggestionConnectionStatusListener:(Ljava/util/concurrent/Executor;Landroid/net/wifi/WifiManager$SuggestionConnectionStatusListener;)V,"Allows an app to access precise location. Alternatively, you might want  ACCESS_COARSE_LOCATION"
+145,android.telephony.TelephonyManager,call,,Allows an application to initiate a phone call without going throughthe  Dialer user interface for the user to confirm the call
+146,android.bluetooth.BluetoothDevice,cancelBondProcess,,Required to be able to connect to paired Bluetooth devices.
+147,android.bluetooth.BluetoothAdapter,cancelDiscovery,Landroid/bluetooth/BluetoothAdapter;.cancelDiscovery:()Z,Required to be able to discover and pair nearby Bluetooth devices.
+148,android.bluetooth.BluetoothDevice,cancelPairing,,Required to be able to connect to paired Bluetooth devices.
+149,android.bluetooth.BluetoothHeadsetClient,connect,,Required to be able to connect to paired Bluetooth devices.
+150,android.bluetooth.BluetoothA2dp,connect,,Required to be able to connect to paired Bluetooth devices.
+151,android.bluetooth.BluetoothSocket,connect,Landroid/bluetooth/BluetoothSocket;.connect:()V,Required to be able to connect to paired Bluetooth devices.
+152,android.bluetooth.BluetoothHeadsetClient,connectAudio,,Required to be able to connect to paired Bluetooth devices.
+153,android.bluetooth.BluetoothHeadset,connectAudio,,Required to be able to connect to paired Bluetooth devices.
+154,android.bluetooth.BluetoothHealth,connectChannelToSource,Landroid/bluetooth/BluetoothHealth;.connectChannelToSource:(Landroid/bluetooth/BluetoothDevice;Landroid/bluetooth/BluetoothHealthAppConfiguration;)Z,Required to be able to connect to paired Bluetooth devices.
+155,android.bluetooth.BluetoothDevice,connectGatt,Landroid/bluetooth/BluetoothDevice;.connectGatt:(Landroid/content/Context;ZLandroid/bluetooth/BluetoothGattCallback;)Landroid/bluetooth/BluetoothGatt;,Required to be able to connect to paired Bluetooth devices.
+156,android.bluetooth.BluetoothDevice,connectGatt,Landroid/bluetooth/BluetoothDevice;.connectGatt:(Landroid/content/Context;ZLandroid/bluetooth/BluetoothGattCallback;I)Landroid/bluetooth/BluetoothGatt;,Required to be able to connect to paired Bluetooth devices.
+157,android.bluetooth.BluetoothDevice,connectGatt,Landroid/bluetooth/BluetoothDevice;.connectGatt:(Landroid/content/Context;ZLandroid/bluetooth/BluetoothGattCallback;II)Landroid/bluetooth/BluetoothGatt;,Required to be able to connect to paired Bluetooth devices.
+158,android.bluetooth.BluetoothDevice,connectGatt,Landroid/bluetooth/BluetoothDevice;.connectGatt:(Landroid/content/Context;ZLandroid/bluetooth/BluetoothGattCallback;IILandroid/os/Handler;)Landroid/bluetooth/BluetoothGatt;,Required to be able to connect to paired Bluetooth devices.
+159,android.bluetooth.BluetoothDevice,createBond,Landroid/bluetooth/BluetoothDevice;.createBond:()Z,Required to be able to connect to paired Bluetooth devices.
+160,android.bluetooth.BluetoothDevice,createBondOutOfBand,,Required to be able to connect to paired Bluetooth devices.
+161,android.bluetooth.BluetoothDevice,createInsecureL2capSocket,,Required to be able to connect to paired Bluetooth devices.
+162,android.bluetooth.BluetoothDevice,createInsecureRfcommSocketToServiceRecord,Landroid/bluetooth/BluetoothDevice;.createInsecureRfcommSocketToServiceRecord:(Ljava/util/UUID;)Landroid/bluetooth/BluetoothSocket;,Required to be able to connect to paired Bluetooth devices.
+163,android.bluetooth.BluetoothDevice,createL2capChannel,Landroid/bluetooth/BluetoothDevice;.createL2capChannel:(I)Landroid/bluetooth/BluetoothSocket;,Required to be able to connect to paired Bluetooth devices.
+164,android.bluetooth.BluetoothDevice,createL2capSocket,,Required to be able to connect to paired Bluetooth devices.
+165,android.bluetooth.BluetoothDevice,createRfcommSocket,,Required to be able to connect to paired Bluetooth devices.
+166,android.bluetooth.BluetoothDevice,createRfcommSocketToServiceRecord,Landroid/bluetooth/BluetoothDevice;.createRfcommSocketToServiceRecord:(Ljava/util/UUID;)Landroid/bluetooth/BluetoothSocket;,Required to be able to connect to paired Bluetooth devices.
+167,android.bluetooth.BluetoothDevice,createScoSocket,,Required to be able to connect to paired Bluetooth devices.
+168,android.bluetooth.BluetoothHeadsetClient,dial,,Required to be able to connect to paired Bluetooth devices.
+169,android.bluetooth.BluetoothAdapter,disable,Landroid/bluetooth/BluetoothAdapter;.disable:()Z,Required to be able to connect to paired Bluetooth devices.
+170,android.bluetooth.BluetoothAdapter,disableBLE,,Required to be able to connect to paired Bluetooth devices.
+171,android.bluetooth.BluetoothHeadsetClient,disconnect,,Required to be able to connect to paired Bluetooth devices.
+172,android.bluetooth.BluetoothHeadset,disconnect,,Required to be able to connect to paired Bluetooth devices.
+173,android.bluetooth.BluetoothA2dp,disconnect,,Required to be able to connect to paired Bluetooth devices.
+174,android.bluetooth.BluetoothMap,disconnect,,Required to be able to connect to paired Bluetooth devices.
+175,android.bluetooth.BluetoothHeadsetClient,disconnectAudio,,Required to be able to connect to paired Bluetooth devices.
+176,android.bluetooth.BluetoothHeadset,disconnectAudio,,Required to be able to connect to paired Bluetooth devices.
+177,android.bluetooth.BluetoothHealth,disconnectChannel,Landroid/bluetooth/BluetoothHealth;.disconnectChannel:(Landroid/bluetooth/BluetoothDevice;Landroid/bluetooth/BluetoothHealthAppConfiguration;I)Z,Required to be able to connect to paired Bluetooth devices.
+178,android.bluetooth.BluetoothGatt,discoverServiceByUuid,,Required to be able to connect to paired Bluetooth devices.
+179,android.bluetooth.BluetoothGatt,discoverServices,Landroid/bluetooth/BluetoothGatt;.discoverServices:()Z,Required to be able to connect to paired Bluetooth devices.
+180,android.bluetooth.BluetoothAdapter,enable,Landroid/bluetooth/BluetoothAdapter;.enable:()Z,Required to be able to connect to paired Bluetooth devices.
+181,android.bluetooth.le.AdvertisingSet,enableAdvertising,Landroid/bluetooth/le/AdvertisingSet;.enableAdvertising:(ZII)V,Required to be able to advertise to nearby Bluetooth devices.
+182,android.bluetooth.BluetoothAdapter,enableBLE,,Required to be able to connect to paired Bluetooth devices.
+183,android.telephony.TelephonyManager,endCall,,Allows an application to initiate a phone call without going throughthe  Dialer user interface for the user to confirm the call
+184,android.telecom.TelecomManager,endCall,Landroid/telecom/TelecomManager;.endCall:()Z,Allows the app to  answer an incoming phone call
+185,android.bluetooth.BluetoothHeadsetClient,enterPrivateMode,,Required to be able to connect to paired Bluetooth devices.
+186,android.media.MediaMetadataRetriever,extractMetadata,Landroid/media/MediaMetadataRetriever;.extractMetadata:(I)Ljava/lang/String;,Allows an application  to access any geographic locations persisted in the user's shared collection
+187,android.bluetooth.BluetoothDevice,fetchUuidsWithSdp,Landroid/bluetooth/BluetoothDevice;.fetchUuidsWithSdp:()Z,Required to be able to connect to paired Bluetooth devices.
+188,android.bluetooth.le.BluetoothLeScanner,flushPendingScanResults,Landroid/bluetooth/le/BluetoothLeScanner;.flushPendingScanResults:(Landroid/bluetooth/le/ScanCallback;)V,Required to be able to discover and pair nearby Bluetooth devices.
+189,android.telephony.SubscriptionManager,getAccessibleSubscriptionInfoList,Landroid/telephony/SubscriptionManager;.getAccessibleSubscriptionInfoList:()Ljava/util/List;,"Allows read only access to phone state, including the current cellular  network information, the status of any ongoing calls, and a list of any  android.telecom.PhoneAccounts registered on the device. Note: If both your  minSdkVersion and targetSdkVersion values are set to 3 or lower, the system  implicitly grants your app this permission. If you don't need this  permission, be sure your targetSdkVersion is 4 or higher"
+190,android.accounts.AccountManager,getAccounts,Landroid/accounts/AccountManager;.getAccounts:()[Landroid/accounts/Account;,Allows access to the list of accounts in the Accounts Service
+191,android.accounts.AccountManager,getAccountsAsUser,,Allows access to the list of accounts in the Accounts Service
+192,android.accounts.AccountManager,getAccountsByType,Landroid/accounts/AccountManager;.getAccountsByType:(Ljava/lang/String;)[Landroid/accounts/Account;,Allows access to the list of accounts in the Accounts Service
+193,android.accounts.AccountManager,getAccountsByTypeAndFeatures,Landroid/accounts/AccountManager;.getAccountsByTypeAndFeatures:(Ljava/lang/String;[Ljava/lang/String;Landroid/accounts/AccountManagerCallback;Landroid/os/Handler;)Landroid/accounts/AccountManagerFuture;,Allows access to the list of accounts in the Accounts Service
+194,android.accounts.AccountManager,getAccountsByTypeForPackage,Landroid/accounts/AccountManager;.getAccountsByTypeForPackage:(Ljava/lang/String;Ljava/lang/String;)[Landroid/accounts/Account;,Allows access to the list of accounts in the Accounts Service
+195,android.accounts.AccountManager,getAccountsForPackage,,Allows access to the list of accounts in the Accounts Service
+196,android.bluetooth.BluetoothHeadset,getActiveDevice,,Required to be able to connect to paired Bluetooth devices.
+197,android.bluetooth.BluetoothLeAudio,getActiveDevices,,Required to be able to connect to paired Bluetooth devices.
+198,android.telephony.SubscriptionManager,getActiveSubscriptionInfo,Landroid/telephony/SubscriptionManager;.getActiveSubscriptionInfo:(I)Landroid/telephony/SubscriptionInfo;,"Allows read only access to phone state, including the current cellular  network information, the status of any ongoing calls, and a list of any  android.telecom.PhoneAccounts registered on the device. Note: If both your  minSdkVersion and targetSdkVersion values are set to 3 or lower, the system  implicitly grants your app this permission. If you don't need this  permission, be sure your targetSdkVersion is 4 or higher"
+199,android.telephony.SubscriptionManager,getActiveSubscriptionInfoCount,Landroid/telephony/SubscriptionManager;.getActiveSubscriptionInfoCount:()I,"Allows read only access to phone state, including the current cellular  network information, the status of any ongoing calls, and a list of any  android.telecom.PhoneAccounts registered on the device. Note: If both your  minSdkVersion and targetSdkVersion values are set to 3 or lower, the system  implicitly grants your app this permission. If you don't need this  permission, be sure your targetSdkVersion is 4 or higher"
+200,android.telephony.SubscriptionManager,getActiveSubscriptionInfoForSimSlotIndex,Landroid/telephony/SubscriptionManager;.getActiveSubscriptionInfoForSimSlotIndex:(I)Landroid/telephony/SubscriptionInfo;,"Allows read only access to phone state, including the current cellular  network information, the status of any ongoing calls, and a list of any  android.telecom.PhoneAccounts registered on the device. Note: If both your  minSdkVersion and targetSdkVersion values are set to 3 or lower, the system  implicitly grants your app this permission. If you don't need this  permission, be sure your targetSdkVersion is 4 or higher"
+201,android.telephony.SubscriptionManager,getActiveSubscriptionInfoList,Landroid/telephony/SubscriptionManager;.getActiveSubscriptionInfoList:()Ljava/util/List;,"Allows read only access to phone state, including the current cellular  network information, the status of any ongoing calls, and a list of any  android.telecom.PhoneAccounts registered on the device. Note: If both your  minSdkVersion and targetSdkVersion values are set to 3 or lower, the system  implicitly grants your app this permission. If you don't need this  permission, be sure your targetSdkVersion is 4 or higher"
+202,android.bluetooth.BluetoothDevice,getAlias,Landroid/bluetooth/BluetoothDevice;.getAlias:()Ljava/lang/String;,Required to be able to connect to paired Bluetooth devices.
+203,android.telephony.TelephonyManager,getAllCellInfo,Landroid/telephony/TelephonyManager;.getAllCellInfo:()Ljava/util/List;,"Allows an app to access approximate location. Alternatively, you might  want ACCESS_FINE_LOCATION"
+204,android.media.ExifInterface,getAltitude,Landroid/media/ExifInterface;.getAltitude:(D)D,Allows an application  to access any geographic locations persisted in the user's shared collection
+205,android.media.ExifInterface,getAttribute,Landroid/media/ExifInterface;.getAttribute:(Ljava/lang/String;)Ljava/lang/String;,Allows an application  to access any geographic locations persisted in the user's shared collection
+206,android.media.ExifInterface,getAttributeBytes,Landroid/media/ExifInterface;.getAttributeBytes:(Ljava/lang/String;)[B,Allows an application  to access any geographic locations persisted in the user's shared collection
+207,android.media.ExifInterface,getAttributeDouble,Landroid/media/ExifInterface;.getAttributeDouble:(Ljava/lang/String;D)D,Allows an application  to access any geographic locations persisted in the user's shared collection
+208,android.media.ExifInterface,getAttributeInt,Landroid/media/ExifInterface;.getAttributeInt:(Ljava/lang/String;I)I,Allows an application  to access any geographic locations persisted in the user's shared collection
+209,android.media.ExifInterface,getAttributeRange,Landroid/media/ExifInterface;.getAttributeRange:(Ljava/lang/String;)[J,Allows an application  to access any geographic locations persisted in the user's shared collection
+210,android.bluetooth.BluetoothHeadsetClient,getAudioRouteAllowed,,Required to be able to connect to paired Bluetooth devices.
+211,android.bluetooth.BluetoothHeadset,getAudioState,,Required to be able to connect to paired Bluetooth devices.
+212,android.bluetooth.BluetoothDevice,getBluetoothClass,Landroid/bluetooth/BluetoothDevice;.getBluetoothClass:()Landroid/bluetooth/BluetoothClass;,Required to be able to connect to paired Bluetooth devices.
+213,android.bluetooth.BluetoothAdapter,getBondedDevices,Landroid/bluetooth/BluetoothAdapter;.getBondedDevices:()Ljava/util/Set;,Required to be able to connect to paired Bluetooth devices.
+214,android.bluetooth.BluetoothDevice,getBondState,Landroid/bluetooth/BluetoothDevice;.getBondState:()I,Required to be able to connect to paired Bluetooth devices.
+215,android.telecom.TelecomManager,getCallCapablePhoneAccounts,Landroid/telecom/TelecomManager;.getCallCapablePhoneAccounts:()Ljava/util/List;,"Allows read only access to phone state, including the current cellular  network information, the status of any ongoing calls, and a list of any  android.telecom.PhoneAccounts registered on the device. Note: If both your  minSdkVersion and targetSdkVersion values are set to 3 or lower, the system  implicitly grants your app this permission. If you don't need this  permission, be sure your targetSdkVersion is 4 or higher"
+216,android.telecom.TelecomManager,getCallState,,"Allows read only access to phone state, including the current cellular  network information, the status of any ongoing calls, and a list of any  android.telecom.PhoneAccounts registered on the device. Note: If both your  minSdkVersion and targetSdkVersion values are set to 3 or lower, the system  implicitly grants your app this permission. If you don't need this  permission, be sure your targetSdkVersion is 4 or higher"
+217,android.hardware.camera2.CameraManager,getCameraCharacteristics,Landroid/hardware/camera2/CameraManager;.getCameraCharacteristics:(Ljava/lang/String;)Landroid/hardware/camera2/CameraCharacteristics;,"Required to be able to access the camera device. This will automatically  enforce the uses-feature manifest element for all camera features. If you do  not require all camera features or can properly operate if a camera is not  available, then you must modify your manifest as appropriate in order to  install on devices that don't support all camera features"
+218,android.telephony.TelephonyManager,getCdmaEriIconIndex,,"Allows read only access to phone state, including the current cellular  network information, the status of any ongoing calls, and a list of any  android.telecom.PhoneAccounts registered on the device. Note: If both your  minSdkVersion and targetSdkVersion values are set to 3 or lower, the system  implicitly grants your app this permission. If you don't need this  permission, be sure your targetSdkVersion is 4 or higher"
+219,android.telephony.TelephonyManager,getCdmaEriIconMode,,"Allows read only access to phone state, including the current cellular  network information, the status of any ongoing calls, and a list of any  android.telecom.PhoneAccounts registered on the device. Note: If both your  minSdkVersion and targetSdkVersion values are set to 3 or lower, the system  implicitly grants your app this permission. If you don't need this  permission, be sure your targetSdkVersion is 4 or higher"
+220,android.telephony.TelephonyManager,getCdmaEriText,,"Allows read only access to phone state, including the current cellular  network information, the status of any ongoing calls, and a list of any  android.telecom.PhoneAccounts registered on the device. Note: If both your  minSdkVersion and targetSdkVersion values are set to 3 or lower, the system  implicitly grants your app this permission. If you don't need this  permission, be sure your targetSdkVersion is 4 or higher"
+221,android.telephony.TelephonyManager,getCellLocation,Landroid/telephony/TelephonyManager;.getCellLocation:()Landroid/telephony/CellLocation;,"Allows an app to access approximate location. Alternatively, you might  want ACCESS_FINE_LOCATION"
+222,android.bluetooth.BluetoothMap,getClient,,Required to be able to connect to paired Bluetooth devices.
+223,android.database.Cursor,getColumnIndexOrThrow,Landroid/database/Cursor;.getColumnIndexOrThrow:(Ljava/lang/String;)I,
+224,android.telephony.SubscriptionManager,getCompleteActiveSubscriptionInfoList,Landroid/telephony/SubscriptionManager;.getCompleteActiveSubscriptionInfoList:()Ljava/util/List;,"Allows read only access to phone state, including the current cellular  network information, the status of any ongoing calls, and a list of any  android.telecom.PhoneAccounts registered on the device. Note: If both your  minSdkVersion and targetSdkVersion values are set to 3 or lower, the system  implicitly grants your app this permission. If you don't need this  permission, be sure your targetSdkVersion is 4 or higher"
+225,android.telephony.CarrierConfigManager,getConfig,Landroid/telephony/CarrierConfigManager;.getConfig:()Landroid/os/PersistableBundle;,"Allows read only access to phone state, including the current cellular  network information, the status of any ongoing calls, and a list of any  android.telecom.PhoneAccounts registered on the device. Note: If both your  minSdkVersion and targetSdkVersion values are set to 3 or lower, the system  implicitly grants your app this permission. If you don't need this  permission, be sure your targetSdkVersion is 4 or higher"
+226,android.telephony.CarrierConfigManager,getConfigForSubId,Landroid/telephony/CarrierConfigManager;.getConfigForSubId:(I)Landroid/os/PersistableBundle;,"Allows read only access to phone state, including the current cellular  network information, the status of any ongoing calls, and a list of any  android.telecom.PhoneAccounts registered on the device. Note: If both your  minSdkVersion and targetSdkVersion values are set to 3 or lower, the system  implicitly grants your app this permission. If you don't need this  permission, be sure your targetSdkVersion is 4 or higher"
+227,android.net.wifi.WifiManager,getConfiguredNetworks,Landroid/net/wifi/WifiManager;.getConfiguredNetworks:()Ljava/util/List;,"Allows an app to access precise location. Alternatively, you might want  ACCESS_COARSE_LOCATION"
+228,android.bluetooth.BluetoothHeadsetClient,getConnectedDevices,,Required to be able to connect to paired Bluetooth devices.
+229,android.bluetooth.BluetoothHeadset,getConnectedDevices,Landroid/bluetooth/BluetoothHeadset;.getConnectedDevices:()Ljava/util/List;,Required to be able to connect to paired Bluetooth devices.
+230,android.bluetooth.BluetoothA2dp,getConnectedDevices,Landroid/bluetooth/BluetoothA2dp;.getConnectedDevices:()Ljava/util/List;,Required to be able to connect to paired Bluetooth devices.
+231,android.bluetooth.BluetoothAvrcpController,getConnectedDevices,,Required to be able to connect to paired Bluetooth devices.
+232,android.bluetooth.BluetoothSap,getConnectedDevices,,Required to be able to connect to paired Bluetooth devices.
+233,android.bluetooth.BluetoothHidHost,getConnectedDevices,,Required to be able to connect to paired Bluetooth devices.
+234,android.bluetooth.BluetoothHearingAid,getConnectedDevices,Landroid/bluetooth/BluetoothHearingAid;.getConnectedDevices:()Ljava/util/List;,Required to be able to connect to paired Bluetooth devices.
+235,android.bluetooth.BluetoothManager,getConnectedDevices,Landroid/bluetooth/BluetoothManager;.getConnectedDevices:(I)Ljava/util/List;,Required to be able to connect to paired Bluetooth devices.
+236,android.bluetooth.BluetoothHealth,getConnectedDevices,Landroid/bluetooth/BluetoothHealth;.getConnectedDevices:()Ljava/util/List;,Required to be able to connect to paired Bluetooth devices.
+237,android.bluetooth.BluetoothHidDevice,getConnectedDevices,Landroid/bluetooth/BluetoothHidDevice;.getConnectedDevices:()Ljava/util/List;,Required to be able to connect to paired Bluetooth devices.
+238,android.bluetooth.BluetoothLeAudio,getConnectedDevices,,Required to be able to connect to paired Bluetooth devices.
+239,android.net.wifi.WifiManager,getConnectionInfo,Landroid/net/wifi/WifiManager;.getConnectionInfo:()Landroid/net/wifi/WifiInfo;,"Allows an app to access precise location. Alternatively, you might want  ACCESS_COARSE_LOCATION"
+240,android.bluetooth.BluetoothLeAudio,getConnectionPolicy,,Required to be able to connect to paired Bluetooth devices.
+241,android.bluetooth.BluetoothHeadsetClient,getConnectionState,,Required to be able to connect to paired Bluetooth devices.
+242,android.bluetooth.BluetoothA2dp,getConnectionState,Landroid/bluetooth/BluetoothA2dp;.getConnectionState:(Landroid/bluetooth/BluetoothDevice;)I,Required to be able to connect to paired Bluetooth devices.
+243,android.bluetooth.BluetoothHeadset,getConnectionState,Landroid/bluetooth/BluetoothHeadset;.getConnectionState:(Landroid/bluetooth/BluetoothDevice;)I,Required to be able to connect to paired Bluetooth devices.
+244,android.bluetooth.BluetoothHearingAid,getConnectionState,Landroid/bluetooth/BluetoothHearingAid;.getConnectionState:(Landroid/bluetooth/BluetoothDevice;)I,Required to be able to connect to paired Bluetooth devices.
+245,android.bluetooth.BluetoothManager,getConnectionState,Landroid/bluetooth/BluetoothManager;.getConnectionState:(Landroid/bluetooth/BluetoothDevice;I)I,Required to be able to connect to paired Bluetooth devices.
+246,android.bluetooth.BluetoothHealth,getConnectionState,Landroid/bluetooth/BluetoothHealth;.getConnectionState:(Landroid/bluetooth/BluetoothDevice;)I,Required to be able to connect to paired Bluetooth devices.
+247,android.bluetooth.BluetoothMap,getConnectionState,,Required to be able to connect to paired Bluetooth devices.
+248,android.bluetooth.BluetoothHidDevice,getConnectionState,Landroid/bluetooth/BluetoothHidDevice;.getConnectionState:(Landroid/bluetooth/BluetoothDevice;)I,Required to be able to connect to paired Bluetooth devices.
+249,android.bluetooth.BluetoothLeAudio,getConnectionState,,Required to be able to connect to paired Bluetooth devices.
+250,android.bluetooth.BluetoothHeadsetClient,getCurrentAgFeatures,,Required to be able to connect to paired Bluetooth devices.
+251,android.bluetooth.BluetoothHeadsetClient,getCurrentCalls,,Required to be able to connect to paired Bluetooth devices.
+252,android.location.LocationManager,getCurrentLocation,Landroid/location/LocationManager;.getCurrentLocation:(Ljava/lang/String;Landroid/os/CancellationSignal;Ljava/util/concurrent/Executor;Ljava/util/function/Consumer;)V,"Allows an app to access approximate location. Alternatively, you might  want ACCESS_FINE_LOCATION"
+253,android.telephony.TelephonyManager,getDataNetworkType,Landroid/telephony/TelephonyManager;.getDataNetworkType:()I,"Allows read only access to phone state, including the current cellular  network information, the status of any ongoing calls, and a list of any  android.telecom.PhoneAccounts registered on the device. Note: If both your  minSdkVersion and targetSdkVersion values are set to 3 or lower, the system  implicitly grants your app this permission. If you don't need this  permission, be sure your targetSdkVersion is 4 or higher"
+254,android.telecom.TelecomManager,getDefaultOutgoingPhoneAccount,Landroid/telecom/TelecomManager;.getDefaultOutgoingPhoneAccount:(Ljava/lang/String;)Landroid/telecom/PhoneAccountHandle;,"Allows read only access to phone state, including the current cellular  network information, the status of any ongoing calls, and a list of any  android.telecom.PhoneAccounts registered on the device. Note: If both your  minSdkVersion and targetSdkVersion values are set to 3 or lower, the system  implicitly grants your app this permission. If you don't need this  permission, be sure your targetSdkVersion is 4 or higher"
+255,android.telephony.TelephonyManager,getDeviceId,Landroid/telephony/TelephonyManager;.getDeviceId:()Ljava/lang/String;,"Allows read only access to phone state, including the current cellular  network information, the status of any ongoing calls, and a list of any  android.telecom.PhoneAccounts registered on the device. Note: If both your  minSdkVersion and targetSdkVersion values are set to 3 or lower, the system  implicitly grants your app this permission. If you don't need this  permission, be sure your targetSdkVersion is 4 or higher"
+256,android.telephony.TelephonyManager,getDeviceId,Landroid/telephony/TelephonyManager;.getDeviceId:(I)Ljava/lang/String;,"Allows read only access to phone state, including the current cellular  network information, the status of any ongoing calls, and a list of any  android.telecom.PhoneAccounts registered on the device. Note: If both your  minSdkVersion and targetSdkVersion values are set to 3 or lower, the system  implicitly grants your app this permission. If you don't need this  permission, be sure your targetSdkVersion is 4 or higher"
+257,android.bluetooth.BluetoothHearingAid,getDevicesMatchingConnectionStates,Landroid/bluetooth/BluetoothHearingAid;.getDevicesMatchingConnectionStates:([I)Ljava/util/List;,
+258,android.bluetooth.BluetoothHeadsetClient,getDevicesMatchingConnectionStates,,Required to be able to connect to paired Bluetooth devices.
+259,android.bluetooth.BluetoothA2dp,getDevicesMatchingConnectionStates,Landroid/bluetooth/BluetoothA2dp;.getDevicesMatchingConnectionStates:([I)Ljava/util/List;,Required to be able to connect to paired Bluetooth devices.
+260,android.bluetooth.BluetoothHeadset,getDevicesMatchingConnectionStates,Landroid/bluetooth/BluetoothHeadset;.getDevicesMatchingConnectionStates:([I)Ljava/util/List;,Required to be able to connect to paired Bluetooth devices.
+261,android.bluetooth.BluetoothAvrcpController,getDevicesMatchingConnectionStates,,Required to be able to connect to paired Bluetooth devices.
+262,android.bluetooth.BluetoothSap,getDevicesMatchingConnectionStates,,Required to be able to connect to paired Bluetooth devices.
+263,android.bluetooth.BluetoothManager,getDevicesMatchingConnectionStates,Landroid/bluetooth/BluetoothManager;.getDevicesMatchingConnectionStates:(I[I)Ljava/util/List;,Required to be able to connect to paired Bluetooth devices.
+264,android.bluetooth.BluetoothHealth,getDevicesMatchingConnectionStates,Landroid/bluetooth/BluetoothHealth;.getDevicesMatchingConnectionStates:([I)Ljava/util/List;,Required to be able to connect to paired Bluetooth devices.
+265,android.bluetooth.BluetoothMap,getDevicesMatchingConnectionStates,,Required to be able to connect to paired Bluetooth devices.
+266,android.bluetooth.BluetoothHidDevice,getDevicesMatchingConnectionStates,Landroid/bluetooth/BluetoothHidDevice;.getDevicesMatchingConnectionStates:([I)Ljava/util/List;,Required to be able to connect to paired Bluetooth devices.
+267,android.bluetooth.BluetoothLeAudio,getDevicesMatchingConnectionStates,,Required to be able to connect to paired Bluetooth devices.
+268,android.telephony.TelephonyManager,getDeviceSoftwareVersion,Landroid/telephony/TelephonyManager;.getDeviceSoftwareVersion:()Ljava/lang/String;,"Allows read only access to phone state, including the current cellular  network information, the status of any ongoing calls, and a list of any  android.telecom.PhoneAccounts registered on the device. Note: If both your  minSdkVersion and targetSdkVersion values are set to 3 or lower, the system  implicitly grants your app this permission. If you don't need this  permission, be sure your targetSdkVersion is 4 or higher"
+269,android.bluetooth.BluetoothAdapter,getDiscoverableTimeout,,Required to be able to discover and pair nearby Bluetooth devices.
+270,android.hardware.SensorManager,getDynamicSensorList,Landroid/hardware/SensorManager;.getDynamicSensorList:(I)Ljava/util/List;,
+271,android.location.LocationManager,getGpsStatus,Landroid/location/LocationManager;.getGpsStatus:(Landroid/location/GpsStatus;)Landroid/location/GpsStatus;,"Allows an app to access precise location. Alternatively, you might want  ACCESS_COARSE_LOCATION"
+272,android.bluetooth.BluetoothLeAudio,getGroupId,,Required to be able to connect to paired Bluetooth devices.
+273,android.telephony.TelephonyManager,getGroupIdLevel1,Landroid/telephony/TelephonyManager;.getGroupIdLevel1:()Ljava/lang/String;,"Allows read only access to phone state, including the current cellular  network information, the status of any ongoing calls, and a list of any  android.telecom.PhoneAccounts registered on the device. Note: If both your  minSdkVersion and targetSdkVersion values are set to 3 or lower, the system  implicitly grants your app this permission. If you don't need this  permission, be sure your targetSdkVersion is 4 or higher"
+274,android.telephony.TelephonyManager,getImei,Landroid/telephony/TelephonyManager;.getImei:()Ljava/lang/String;,"Allows read only access to phone state, including the current cellular  network information, the status of any ongoing calls, and a list of any  android.telecom.PhoneAccounts registered on the device. Note: If both your  minSdkVersion and targetSdkVersion values are set to 3 or lower, the system  implicitly grants your app this permission. If you don't need this  permission, be sure your targetSdkVersion is 4 or higher"
+275,android.telephony.TelephonyManager,getImei,Landroid/telephony/TelephonyManager;.getImei:(I)Ljava/lang/String;,"Allows read only access to phone state, including the current cellular  network information, the status of any ongoing calls, and a list of any  android.telecom.PhoneAccounts registered on the device. Note: If both your  minSdkVersion and targetSdkVersion values are set to 3 or lower, the system  implicitly grants your app this permission. If you don't need this  permission, be sure your targetSdkVersion is 4 or higher"
+276,android.content.pm.PackageManager,getInstalledApplications,Landroid/content/pm/PackageManager;.getInstalledApplications:(I)Ljava/util/List;,"Allows query of any normal app on the device, regardless of manifest declarations."
+277,android.content.pm.PackageManager,getInstalledApplicationsAsUser,,"Allows query of any normal app on the device, regardless of manifest declarations."
+278,android.content.pm.PackageManager,getInstalledPackages,Landroid/content/pm/PackageManager;.getInstalledPackages:(I)Ljava/util/List;,"Allows query of any normal app on the device, regardless of manifest declarations."
+279,android.content.pm.PackageManager,getInstalledPackagesAsUser,,"Allows query of any normal app on the device, regardless of manifest declarations."
+280,android.location.LocationManager,getLastKnownLocation,Landroid/location/LocationManager;.getLastKnownLocation:(Ljava/lang/String;)Landroid/location/Location;,"Allows an app to access approximate location. Alternatively, you might  want ACCESS_FINE_LOCATION"
+281,android.location.LocationManager,getLastLocation,,"Allows an app to access approximate location. Alternatively, you might  want ACCESS_FINE_LOCATION"
+282,android.bluetooth.BluetoothHeadsetClient,getLastVoiceTagNumber,,Required to be able to connect to paired Bluetooth devices.
+283,android.media.ExifInterface,getLatLong,Landroid/media/ExifInterface;.getLatLong:([F)Z,Allows an application  to access any geographic locations persisted in the user's shared collection
+284,android.telephony.TelephonyManager,getLine1AlphaTag,,"Allows read only access to phone state, including the current cellular  network information, the status of any ongoing calls, and a list of any  android.telecom.PhoneAccounts registered on the device. Note: If both your  minSdkVersion and targetSdkVersion values are set to 3 or lower, the system  implicitly grants your app this permission. If you don't need this  permission, be sure your targetSdkVersion is 4 or higher"
+285,android.telephony.TelephonyManager,getLine1Number,Landroid/telephony/TelephonyManager;.getLine1Number:()Ljava/lang/String;,Allows read access to the device's phone number(s). This is a subset of the capabilities granted by READ_PHONE_STATE but is exposed to instant applications
+286,android.telecom.TelecomManager,getLine1Number,Landroid/telecom/TelecomManager;.getLine1Number:(Landroid/telecom/PhoneAccountHandle;)Ljava/lang/String;,Allows read access to the device's phone number(s). This is a subset of the capabilities granted by READ_PHONE_STATE but is exposed to instant applications
+287,android.provider.ContactsContract$Contacts,getLookupUri,Landroid/provider/ContactsContract$Contacts;.getLookupUri:(JLjava/lang/String;)Landroid/net/Uri;,Allows an application  to read the user's contacts dat
+288,android.provider.ContactsContract$Contacts,getLookupUri,Landroid/provider/ContactsContract$Contacts;.getLookupUri:(Landroid/content/ContentResolver;Landroid/net/Uri;)Landroid/net/Uri;,Allows an application  to read the user's contacts dat
+289,android.telephony.TelephonyManager,getLteOnCdmaMode,,"Allows read only access to phone state, including the current cellular  network information, the status of any ongoing calls, and a list of any  android.telecom.PhoneAccounts registered on the device. Note: If both your  minSdkVersion and targetSdkVersion values are set to 3 or lower, the system  implicitly grants your app this permission. If you don't need this  permission, be sure your targetSdkVersion is 4 or higher"
+290,android.bluetooth.BluetoothHealth,getMainChannelFd,Landroid/bluetooth/BluetoothHealth;.getMainChannelFd:(Landroid/bluetooth/BluetoothDevice;Landroid/bluetooth/BluetoothHealthAppConfiguration;)Landroid/os/ParcelFileDescriptor;,Required to be able to connect to paired Bluetooth devices.
+291,android.bluetooth.BluetoothAdapter,getMaxConnectedAudioDevices,,Required to be able to connect to paired Bluetooth devices.
+292,android.media.projection.MediaProjectionManager,getMediaProjection,Landroid/media/projection/MediaProjectionManager;.getMediaProjection:(ILandroid/content/Intent;)Landroid/media/projection/MediaProjection;,
+293,android.telephony.TelephonyManager,getMeid,Landroid/telephony/TelephonyManager;.getMeid:()Ljava/lang/String;,"Allows read only access to phone state, including the current cellular  network information, the status of any ongoing calls, and a list of any  android.telecom.PhoneAccounts registered on the device. Note: If both your  minSdkVersion and targetSdkVersion values are set to 3 or lower, the system  implicitly grants your app this permission. If you don't need this  permission, be sure your targetSdkVersion is 4 or higher"
+294,android.telephony.TelephonyManager,getMeid,Landroid/telephony/TelephonyManager;.getMeid:(I)Ljava/lang/String;,"Allows read only access to phone state, including the current cellular  network information, the status of any ongoing calls, and a list of any  android.telecom.PhoneAccounts registered on the device. Note: If both your  minSdkVersion and targetSdkVersion values are set to 3 or lower, the system  implicitly grants your app this permission. If you don't need this  permission, be sure your targetSdkVersion is 4 or higher"
+295,android.telephony.TelephonyManager,getMsisdn,,Allows read access to the device's phone number(s). This is a subset of the capabilities granted by READ_PHONE_STATE but is exposed to instant applications
+296,android.bluetooth.BluetoothAdapter,getName,Landroid/bluetooth/BluetoothAdapter;.getName:()Ljava/lang/String;,Required to be able to connect to paired Bluetooth devices.
+297,android.bluetooth.BluetoothDevice,getName,Landroid/bluetooth/BluetoothDevice;.getName:()Ljava/lang/String;,Required to be able to connect to paired Bluetooth devices.
+298,android.telephony.TelephonyManager,getNeighboringCellInfo,,"Allows an app to access approximate location. Alternatively, you might  want ACCESS_FINE_LOCATION"
+299,android.telephony.TelephonyManager,getNetworkType,Landroid/telephony/TelephonyManager;.getNetworkType:()I,"Allows read only access to phone state, including the current cellular  network information, the status of any ongoing calls, and a list of any  android.telecom.PhoneAccounts registered on the device. Note: If both your  minSdkVersion and targetSdkVersion values are set to 3 or lower, the system  implicitly grants your app this permission. If you don't need this  permission, be sure your targetSdkVersion is 4 or higher"
+300,android.telephony.TelephonyManager,getNumberOfModemsWithSimultaneousDataConnections,,"Allows read only access to phone state, including the current cellular  network information, the status of any ongoing calls, and a list of any  android.telecom.PhoneAccounts registered on the device. Note: If both your  minSdkVersion and targetSdkVersion values are set to 3 or lower, the system  implicitly grants your app this permission. If you don't need this  permission, be sure your targetSdkVersion is 4 or higher"
+301,android.telephony.SubscriptionManager,getOpportunisticSubscriptions,Landroid/telephony/SubscriptionManager;.getOpportunisticSubscriptions:()Ljava/util/List;,"Allows read only access to phone state, including the current cellular  network information, the status of any ongoing calls, and a list of any  android.telecom.PhoneAccounts registered on the device. Note: If both your  minSdkVersion and targetSdkVersion values are set to 3 or lower, the system  implicitly grants your app this permission. If you don't need this  permission, be sure your targetSdkVersion is 4 or higher"
+302,android.bluetooth.le.AdvertisingSet,getOwnAddress,,Required to be able to advertise to nearby Bluetooth devices.
+303,android.content.pm.PackageManager,getPackagesForUid,Landroid/content/pm/PackageManager;.getPackagesForUid:(I)[Ljava/lang/String;,"Allows query of any normal app on the device, regardless of manifest declarations."
+304,android.telecom.TelecomManager,getPhoneAccountsSupportingScheme,,"Allows read only access to phone state, including the current cellular  network information, the status of any ongoing calls, and a list of any  android.telecom.PhoneAccounts registered on the device. Note: If both your  minSdkVersion and targetSdkVersion values are set to 3 or lower, the system  implicitly grants your app this permission. If you don't need this  permission, be sure your targetSdkVersion is 4 or higher"
+305,android.content.ClipboardManager,getPrimaryClip,Landroid/content/ClipboardManager;.getPrimaryClip:()Landroid/content/ClipData;,
+306,android.bluetooth.BluetoothAdapter,getProfileConnectionState,Landroid/bluetooth/BluetoothAdapter;.getProfileConnectionState:(I)I,Required to be able to connect to paired Bluetooth devices.
+307,android.telephony.SubscriptionManager,getResourcesForSubId,,"Allows read only access to phone state, including the current cellular  network information, the status of any ongoing calls, and a list of any  android.telecom.PhoneAccounts registered on the device. Note: If both your  minSdkVersion and targetSdkVersion values are set to 3 or lower, the system  implicitly grants your app this permission. If you don't need this  permission, be sure your targetSdkVersion is 4 or higher"
+308,android.bluetooth.BluetoothAdapter,getScanMode,Landroid/bluetooth/BluetoothAdapter;.getScanMode:()I,Required to be able to discover and pair nearby Bluetooth devices.
+309,android.net.wifi.WifiManager,getScanResults,Landroid/net/wifi/WifiManager;.getScanResults:()Ljava/util/List;,"Allows an app to access precise location. Alternatively, you might want  ACCESS_COARSE_LOCATION"
+310,android.telecom.TelecomManager,getSelfManagedPhoneAccounts,Landroid/telecom/TelecomManager;.getSelfManagedPhoneAccounts:()Ljava/util/List;,"Allows read only access to phone state, including the current cellular  network information, the status of any ongoing calls, and a list of any  android.telecom.PhoneAccounts registered on the device. Note: If both your  minSdkVersion and targetSdkVersion values are set to 3 or lower, the system  implicitly grants your app this permission. If you don't need this  permission, be sure your targetSdkVersion is 4 or higher"
+311,android.hardware.SensorManager,getSensorList,Landroid/hardware/SensorManager;.getSensorList:(I)Ljava/util/List;,
+312,android.telephony.TelephonyManager,getServiceState,Landroid/telephony/TelephonyManager;.getServiceState:()Landroid/telephony/ServiceState;,"Allows an app to access approximate location. Alternatively, you might  want ACCESS_FINE_LOCATION"
+313,android.telephony.TelephonyManager,getSimSerialNumber,Landroid/telephony/TelephonyManager;.getSimSerialNumber:()Ljava/lang/String;,"Allows read only access to phone state, including the current cellular  network information, the status of any ongoing calls, and a list of any  android.telecom.PhoneAccounts registered on the device. Note: If both your  minSdkVersion and targetSdkVersion values are set to 3 or lower, the system  implicitly grants your app this permission. If you don't need this  permission, be sure your targetSdkVersion is 4 or higher"
+314,android.bluetooth.BluetoothMap,getState,,Required to be able to connect to paired Bluetooth devices.
+315,android.provider.Settings$Secure,getString,Landroid/provider/Settings$Secure;.getString:(Landroid/content/ContentResolver;Ljava/lang/String;)Ljava/lang/String;,
+316,android.telephony.TelephonyManager,getSubscriberId,Landroid/telephony/TelephonyManager;.getSubscriberId:()Ljava/lang/String;,"Allows read only access to phone state, including the current cellular  network information, the status of any ongoing calls, and a list of any  android.telecom.PhoneAccounts registered on the device. Note: If both your  minSdkVersion and targetSdkVersion values are set to 3 or lower, the system  implicitly grants your app this permission. If you don't need this  permission, be sure your targetSdkVersion is 4 or higher"
+317,android.telephony.SubscriptionManager,getSubscriptionsInGroup,Landroid/telephony/SubscriptionManager;.getSubscriptionsInGroup:(Landroid/os/ParcelUuid;)Ljava/util/List;,"Allows read only access to phone state, including the current cellular  network information, the status of any ongoing calls, and a list of any  android.telecom.PhoneAccounts registered on the device. Note: If both your  minSdkVersion and targetSdkVersion values are set to 3 or lower, the system  implicitly grants your app this permission. If you don't need this  permission, be sure your targetSdkVersion is 4 or higher"
+318,android.bluetooth.BluetoothDevice,getType,Landroid/bluetooth/BluetoothDevice;.getType:()I,Required to be able to connect to paired Bluetooth devices.
+319,android.bluetooth.BluetoothHidDevice,getUserAppName,,Required to be able to connect to paired Bluetooth devices.
+320,android.telecom.TelecomManager,getUserSelectedOutgoingPhoneAccount,Landroid/telecom/TelecomManager;.getUserSelectedOutgoingPhoneAccount:()Landroid/telecom/PhoneAccountHandle;,"Allows read only access to phone state, including the current cellular  network information, the status of any ongoing calls, and a list of any  android.telecom.PhoneAccounts registered on the device. Note: If both your  minSdkVersion and targetSdkVersion values are set to 3 or lower, the system  implicitly grants your app this permission. If you don't need this  permission, be sure your targetSdkVersion is 4 or higher"
+321,android.bluetooth.BluetoothAdapter,getUuids,,Required to be able to connect to paired Bluetooth devices.
+322,android.bluetooth.BluetoothDevice,getUuids,Landroid/bluetooth/BluetoothDevice;.getUuids:()[Landroid/os/ParcelUuid;,Required to be able to connect to paired Bluetooth devices.
+323,android.telephony.TelephonyManager,getVoiceMailAlphaTag,Landroid/telephony/TelephonyManager;.getVoiceMailAlphaTag:()Ljava/lang/String;,"Allows read only access to phone state, including the current cellular  network information, the status of any ongoing calls, and a list of any  android.telecom.PhoneAccounts registered on the device. Note: If both your  minSdkVersion and targetSdkVersion values are set to 3 or lower, the system  implicitly grants your app this permission. If you don't need this  permission, be sure your targetSdkVersion is 4 or higher"
+324,android.telephony.TelephonyManager,getVoiceMailNumber,Landroid/telephony/TelephonyManager;.getVoiceMailNumber:()Ljava/lang/String;,"Allows read only access to phone state, including the current cellular  network information, the status of any ongoing calls, and a list of any  android.telecom.PhoneAccounts registered on the device. Note: If both your  minSdkVersion and targetSdkVersion values are set to 3 or lower, the system  implicitly grants your app this permission. If you don't need this  permission, be sure your targetSdkVersion is 4 or higher"
+325,android.telecom.TelecomManager,getVoiceMailNumber,Landroid/telecom/TelecomManager;.getVoiceMailNumber:(Landroid/telecom/PhoneAccountHandle;)Ljava/lang/String;,"Allows read only access to phone state, including the current cellular  network information, the status of any ongoing calls, and a list of any  android.telecom.PhoneAccounts registered on the device. Note: If both your  minSdkVersion and targetSdkVersion values are set to 3 or lower, the system  implicitly grants your app this permission. If you don't need this  permission, be sure your targetSdkVersion is 4 or higher"
+326,android.telephony.TelephonyManager,getVoiceMessageCount,,"Allows read only access to phone state, including the current cellular  network information, the status of any ongoing calls, and a list of any  android.telecom.PhoneAccounts registered on the device. Note: If both your  minSdkVersion and targetSdkVersion values are set to 3 or lower, the system  implicitly grants your app this permission. If you don't need this  permission, be sure your targetSdkVersion is 4 or higher"
+327,android.telephony.TelephonyManager,getVoiceNetworkType,Landroid/telephony/TelephonyManager;.getVoiceNetworkType:()I,"Allows read only access to phone state, including the current cellular  network information, the status of any ongoing calls, and a list of any  android.telecom.PhoneAccounts registered on the device. Note: If both your  minSdkVersion and targetSdkVersion values are set to 3 or lower, the system  implicitly grants your app this permission. If you don't need this  permission, be sure your targetSdkVersion is 4 or higher"
+328,android.bluetooth.BluetoothHeadsetClient,holdCall,,Required to be able to connect to paired Bluetooth devices.
+329,android.bluetooth.BluetoothA2dp,isA2dpPlaying,Landroid/bluetooth/BluetoothA2dp;.isA2dpPlaying:(Landroid/bluetooth/BluetoothDevice;)Z,Required to be able to connect to paired Bluetooth devices.
+330,android.telephony.SubscriptionManager,isActiveSubscriptionId,Landroid/telephony/SubscriptionManager;.isActiveSubscriptionId:(I)Z,"Allows read only access to phone state, including the current cellular  network information, the status of any ongoing calls, and a list of any  android.telecom.PhoneAccounts registered on the device. Note: If both your  minSdkVersion and targetSdkVersion values are set to 3 or lower, the system  implicitly grants your app this permission. If you don't need this  permission, be sure your targetSdkVersion is 4 or higher"
+331,android.bluetooth.BluetoothHeadset,isAudioConnected,Landroid/bluetooth/BluetoothHeadset;.isAudioConnected:(Landroid/bluetooth/BluetoothDevice;)Z,Required to be able to connect to paired Bluetooth devices.
+332,android.bluetooth.BluetoothDevice,isBondingInitiatedLocally,,Required to be able to connect to paired Bluetooth devices.
+333,android.hardware.camera2.CameraManager,isConcurrentSessionConfigurationSupported,Landroid/hardware/camera2/CameraManager;.isConcurrentSessionConfigurationSupported:(Ljava/util/Map;)Z,"Required to be able to access the camera device. This will automatically  enforce the uses-feature manifest element for all camera features. If you do  not require all camera features or can properly operate if a camera is not  available, then you must modify your manifest as appropriate in order to  install on devices that don't support all camera features"
+334,android.bluetooth.BluetoothMap,isConnected,,Required to be able to connect to paired Bluetooth devices.
+335,android.bluetooth.BluetoothDevice,isConnected,,Required to be able to connect to paired Bluetooth devices.
+336,android.bluetooth.BluetoothAdapter,isDiscovering,Landroid/bluetooth/BluetoothAdapter;.isDiscovering:()Z,Required to be able to discover and pair nearby Bluetooth devices.
+337,android.bluetooth.BluetoothDevice,isEncrypted,,Required to be able to connect to paired Bluetooth devices.
+338,android.telecom.TelecomManager,isInCall,Landroid/telecom/TelecomManager;.isInCall:()Z,"Allows read only access to phone state, including the current cellular  network information, the status of any ongoing calls, and a list of any  android.telecom.PhoneAccounts registered on the device. Note: If both your  minSdkVersion and targetSdkVersion values are set to 3 or lower, the system  implicitly grants your app this permission. If you don't need this  permission, be sure your targetSdkVersion is 4 or higher"
+339,android.telecom.TelecomManager,isInManagedCall,Landroid/telecom/TelecomManager;.isInManagedCall:()Z,"Allows read only access to phone state, including the current cellular  network information, the status of any ongoing calls, and a list of any  android.telecom.PhoneAccounts registered on the device. Note: If both your  minSdkVersion and targetSdkVersion values are set to 3 or lower, the system  implicitly grants your app this permission. If you don't need this  permission, be sure your targetSdkVersion is 4 or higher"
+340,android.bluetooth.BluetoothHeadset,isNoiseReductionSupported,,Required to be able to connect to paired Bluetooth devices.
+341,android.telecom.TelecomManager,isRinging,,"Allows read only access to phone state, including the current cellular  network information, the status of any ongoing calls, and a list of any  android.telecom.PhoneAccounts registered on the device. Note: If both your  minSdkVersion and targetSdkVersion values are set to 3 or lower, the system  implicitly grants your app this permission. If you don't need this  permission, be sure your targetSdkVersion is 4 or higher"
+342,android.telecom.TelecomManager,isTtySupported,Landroid/telecom/TelecomManager;.isTtySupported:()Z,"Allows read only access to phone state, including the current cellular  network information, the status of any ongoing calls, and a list of any  android.telecom.PhoneAccounts registered on the device. Note: If both your  minSdkVersion and targetSdkVersion values are set to 3 or lower, the system  implicitly grants your app this permission. If you don't need this  permission, be sure your targetSdkVersion is 4 or higher"
+343,android.telephony.TelephonyManager,isVisualVoicemailEnabled,,"Allows read only access to phone state, including the current cellular  network information, the status of any ongoing calls, and a list of any  android.telecom.PhoneAccounts registered on the device. Note: If both your  minSdkVersion and targetSdkVersion values are set to 3 or lower, the system  implicitly grants your app this permission. If you don't need this  permission, be sure your targetSdkVersion is 4 or higher"
+344,android.telephony.PhoneNumberUtils,isVoiceMailNumber,Landroid/telephony/PhoneNumberUtils;.isVoiceMailNumber:(Ljava/lang/String;)Z,"Allows read only access to phone state, including the current cellular  network information, the status of any ongoing calls, and a list of any  android.telecom.PhoneAccounts registered on the device. Note: If both your  minSdkVersion and targetSdkVersion values are set to 3 or lower, the system  implicitly grants your app this permission. If you don't need this  permission, be sure your targetSdkVersion is 4 or higher"
+345,android.telecom.TelecomManager,isVoiceMailNumber,Landroid/telecom/TelecomManager;.isVoiceMailNumber:(Landroid/telecom/PhoneAccountHandle;Ljava/lang/String;)Z,"Allows read only access to phone state, including the current cellular  network information, the status of any ongoing calls, and a list of any  android.telecom.PhoneAccounts registered on the device. Note: If both your  minSdkVersion and targetSdkVersion values are set to 3 or lower, the system  implicitly grants your app this permission. If you don't need this  permission, be sure your targetSdkVersion is 4 or higher"
+346,android.bluetooth.BluetoothHeadset,isVoiceRecognitionSupported,,Required to be able to connect to paired Bluetooth devices.
+347,android.telephony.TelephonyManager,listen,Landroid/telephony/TelephonyManager;.listen:(Landroid/telephony/PhoneStateListener;I)V,
+348,android.bluetooth.BluetoothAdapter,listenUsingEncryptedRfcommWithServiceRecord,,Required to be able to connect to paired Bluetooth devices.
+349,android.bluetooth.BluetoothAdapter,listenUsingInsecureL2capChannel,Landroid/bluetooth/BluetoothAdapter;.listenUsingInsecureL2capChannel:()Landroid/bluetooth/BluetoothServerSocket;,Required to be able to connect to paired Bluetooth devices.
+350,android.bluetooth.BluetoothAdapter,listenUsingInsecureRfcommWithServiceRecord,Landroid/bluetooth/BluetoothAdapter;.listenUsingInsecureRfcommWithServiceRecord:(Ljava/lang/String;Ljava/util/UUID;)Landroid/bluetooth/BluetoothServerSocket;,Required to be able to connect to paired Bluetooth devices.
+351,android.bluetooth.BluetoothAdapter,listenUsingL2capChannel,Landroid/bluetooth/BluetoothAdapter;.listenUsingL2capChannel:()Landroid/bluetooth/BluetoothServerSocket;,Required to be able to connect to paired Bluetooth devices.
+352,android.bluetooth.BluetoothAdapter,listenUsingRfcommWithServiceRecord,Landroid/bluetooth/BluetoothAdapter;.listenUsingRfcommWithServiceRecord:(Ljava/lang/String;Ljava/util/UUID;)Landroid/bluetooth/BluetoothServerSocket;,Required to be able to connect to paired Bluetooth devices.
+353,android.provider.ContactsContract$Contacts,lookupContact,Landroid/provider/ContactsContract$Contacts;.lookupContact:(Landroid/content/ContentResolver;Landroid/net/Uri;)Landroid/net/Uri;,Allows an application  to read the user's contacts dat
+354,android.telephony.PhoneStateListener,onCallStateChanged,Landroid/telephony/PhoneStateListener;.onCallStateChanged:(ILjava/lang/String;)V,"Allows an application  to read the user's call log. Note: If your app uses the READ_CONTACTS  permission and both your minSdkVersion and targetSdkVersion values are set to  15 or lower, the system implicitly grants your app this permission. If you  don't need this permission, be sure your targetSdkVersion is 16 or higher"
+355,android.telephony.PhoneStateListener,onCellInfoChanged,Landroid/telephony/PhoneStateListener;.onCellInfoChanged:(Ljava/util/List;)V,"Allows an app to access approximate location. Alternatively, you might  want ACCESS_FINE_LOCATION"
+356,android.telephony.PhoneStateListener,onCellLocationChanged,Landroid/telephony/PhoneStateListener;.onCellLocationChanged:(Landroid/telephony/CellLocation;)V,"Allows an app to access approximate location. Alternatively, you might  want ACCESS_FINE_LOCATION"
+357,android.webkit.WebChromeClient,onGeolocationPermissionsShowPrompt,Landroid/webkit/WebChromeClient;.onGeolocationPermissionsShowPrompt:(Ljava/lang/String;Landroid/webkit/GeolocationPermissions$Callback;)V,
+358,android.location.LocationListener,onLocationChanged,Landroid/location/LocationListener;.onLocationChanged:(Landroid/location/Location;)V,
+359,android.telephony.PhoneStateListener,onOtaspChanged,,"Allows read only access to phone state, including the current cellular  network information, the status of any ongoing calls, and a list of any  android.telecom.PhoneAccounts registered on the device. Note: If both your  minSdkVersion and targetSdkVersion values are set to 3 or lower, the system  implicitly grants your app this permission. If you don't need this  permission, be sure your targetSdkVersion is 4 or higher"
+360,android.telephony.TelephonyScanManager$NetworkScanCallback,onResults,Landroid/telephony/TelephonyScanManager$NetworkScanCallback;.onResults:(Ljava/util/List;)V,"Allows an app to access approximate location. Alternatively, you might  want ACCESS_FINE_LOCATION"
+361,android.telephony.PhoneStateListener,onServiceStateChanged,Landroid/telephony/PhoneStateListener;.onServiceStateChanged:(Landroid/telephony/ServiceState;)V,"Allows an app to access approximate location. Alternatively, you might  want ACCESS_FINE_LOCATION"
+362,android.hardware.camera2.CameraManager,openCamera,Landroid/hardware/camera2/CameraManager;.openCamera:(Ljava/lang/String;Landroid/hardware/camera2/CameraDevice$StateCallback;Landroid/os/Handler;)V,"Required to be able to access the camera device. This will automatically  enforce the uses-feature manifest element for all camera features. If you do  not require all camera features or can properly operate if a camera is not  available, then you must modify your manifest as appropriate in order to  install on devices that don't support all camera features"
+363,android.hardware.camera2.CameraManager,openCamera,Landroid/hardware/camera2/CameraManager;.openCamera:(Ljava/lang/String;Ljava/util/concurrent/Executor;Landroid/hardware/camera2/CameraDevice$StateCallback;)V,"Required to be able to access the camera device. This will automatically  enforce the uses-feature manifest element for all camera features. If you do  not require all camera features or can properly operate if a camera is not  available, then you must modify your manifest as appropriate in order to  install on devices that don't support all camera features"
+364,android.hardware.camera2.CameraManager,openCameraDeviceUserAsync,,"Required to be able to access the camera device. This will automatically  enforce the uses-feature manifest element for all camera features. If you do  not require all camera features or can properly operate if a camera is not  available, then you must modify your manifest as appropriate in order to  install on devices that don't support all camera features"
+365,android.provider.ContactsContract$Contacts,openContactPhotoInputStream,Landroid/provider/ContactsContract$Contacts;.openContactPhotoInputStream:(Landroid/content/ContentResolver;Landroid/net/Uri;)Ljava/io/InputStream;,Allows an application  to read the user's contacts dat
+366,android.provider.ContactsContract$Contacts,openContactPhotoInputStream,Landroid/provider/ContactsContract$Contacts;.openContactPhotoInputStream:(Landroid/content/ContentResolver;Landroid/net/Uri;Z)Ljava/io/InputStream;,Allows an application  to read the user's contacts dat
+367,android.bluetooth.BluetoothManager,openGattServer,Landroid/bluetooth/BluetoothManager;.openGattServer:(Landroid/content/Context;Landroid/bluetooth/BluetoothGattServerCallback;)Landroid/bluetooth/BluetoothGattServer;,Required to be able to connect to paired Bluetooth devices.
+368,android.uwb.UwbManager,openRangingSession,,Required to be able to range to devices using ultra-wideband.
+369,android.media.MediaRecorder,pause,Landroid/media/MediaRecorder;.pause:()V,Allows an application to record audio
+370,android.hardware.location.GeofenceHardware,pauseGeofence,,"Allows an app to access precise location. Alternatively, you might want  ACCESS_COARSE_LOCATION"
+371,android.telecom.TelecomManager,placeCall,Landroid/telecom/TelecomManager;.placeCall:(Landroid/net/Uri;Landroid/os/Bundle;)V,Allows an application to initiate a phone call without going throughthe  Dialer user interface for the user to confirm the call
+372,android.media.MediaRecorder,prepare,Landroid/media/MediaRecorder;.prepare:()V,Allows an application to record audio
+373,android.net.wifi.aware.WifiAwareSession,publish,Landroid/net/wifi/aware/WifiAwareSession;.publish:(Landroid/net/wifi/aware/PublishConfig;Landroid/net/wifi/aware/DiscoverySessionCallback;Landroid/os/Handler;)V,"Allows an app to access precise location. Alternatively, you might want  ACCESS_COARSE_LOCATION"
+374,android.content.pm.PackageManager,queryIntentActivities,Landroid/content/pm/PackageManager;.queryIntentActivities:(Landroid/content/Intent;I)Ljava/util/List;,"Allows query of any normal app on the device, regardless of manifest declarations."
+375,android.media.AudioRecord,read,Landroid/media/AudioRecord;.read:(Ljava/nio/ByteBuffer;I)I,Allows an application to record audio
+376,android.media.AudioRecord,read,Landroid/media/AudioRecord;.read:(Ljava/nio/ByteBuffer;II)I,Allows an application to record audio
+377,android.media.AudioRecord,read,Landroid/media/AudioRecord;.read:([BII)I,Allows an application to record audio
+378,android.media.AudioRecord,read,Landroid/media/AudioRecord;.read:([BIII)I,Allows an application to record audio
+379,android.media.AudioRecord,read,Landroid/media/AudioRecord;.read:([FIII)I,Allows an application to record audio
+380,android.media.AudioRecord,read,Landroid/media/AudioRecord;.read:([SII)I,Allows an application to record audio
+381,android.media.AudioRecord,read,Landroid/media/AudioRecord;.read:([SIII)I,Allows an application to record audio
+382,android.bluetooth.BluetoothGatt,readDescriptor,Landroid/bluetooth/BluetoothGatt;.readDescriptor:(Landroid/bluetooth/BluetoothGattDescriptor;)Z,Required to be able to connect to paired Bluetooth devices.
+383,android.hardware.location.GeofenceHardware,registerForMonitorStateChangeCallback,,Allows an app to access precise location. Alternatively you might want  ACCESS_COARSE_LOCATION
+384,android.location.LocationManager,registerGnssMeasurementsCallback,Landroid/location/LocationManager;.registerGnssMeasurementsCallback:(Landroid/location/GnssMeasurementsEvent$Callback;)Z,"Allows an app to access precise location. Alternatively, you might want  ACCESS_COARSE_LOCATION"
+385,android.location.LocationManager,registerGnssMeasurementsCallback,Landroid/location/LocationManager;.registerGnssMeasurementsCallback:(Landroid/location/GnssMeasurementsEvent$Callback;Landroid/os/Handler;)Z,"Allows an app to access precise location. Alternatively, you might want  ACCESS_COARSE_LOCATION"
+386,android.location.LocationManager,registerGnssMeasurementsCallback,Landroid/location/LocationManager;.registerGnssMeasurementsCallback:(Ljava/util/concurrent/Executor;Landroid/location/GnssMeasurementsEvent$Callback;)Z,"Allows an app to access precise location. Alternatively, you might want  ACCESS_COARSE_LOCATION"
+387,android.location.LocationManager,registerGnssNavigationMessageCallback,Landroid/location/LocationManager;.registerGnssNavigationMessageCallback:(Landroid/location/GnssNavigationMessage$Callback;)Z,"Allows an app to access precise location. Alternatively, you might want  ACCESS_COARSE_LOCATION"
+388,android.location.LocationManager,registerGnssNavigationMessageCallback,Landroid/location/LocationManager;.registerGnssNavigationMessageCallback:(Landroid/location/GnssNavigationMessage$Callback;Landroid/os/Handler;)Z,"Allows an app to access precise location. Alternatively, you might want  ACCESS_COARSE_LOCATION"
+389,android.location.LocationManager,registerGnssNavigationMessageCallback,Landroid/location/LocationManager;.registerGnssNavigationMessageCallback:(Ljava/util/concurrent/Executor;Landroid/location/GnssNavigationMessage$Callback;)Z,"Allows an app to access precise location. Alternatively, you might want  ACCESS_COARSE_LOCATION"
+390,android.location.LocationManager,registerGnssStatusCallback,Landroid/location/LocationManager;.registerGnssStatusCallback:(Landroid/location/GnssStatus$Callback;)Z,"Allows an app to access precise location. Alternatively, you might want  ACCESS_COARSE_LOCATION"
+391,android.location.LocationManager,registerGnssStatusCallback,Landroid/location/LocationManager;.registerGnssStatusCallback:(Landroid/location/GnssStatus$Callback;Landroid/os/Handler;)Z,"Allows an app to access precise location. Alternatively, you might want  ACCESS_COARSE_LOCATION"
+392,android.location.LocationManager,registerGnssStatusCallback,Landroid/location/LocationManager;.registerGnssStatusCallback:(Ljava/util/concurrent/Executor;Landroid/location/GnssStatus$Callback;)Z,"Allows an app to access precise location. Alternatively, you might want  ACCESS_COARSE_LOCATION"
+393,android.hardware.SensorManager,registerListener,Landroid/hardware/SensorManager;.registerListener:(Landroid/hardware/SensorEventListener;Landroid/hardware/Sensor;I)Z,
+394,android.hardware.SensorManager,registerListener,Landroid/hardware/SensorManager;.registerListener:(Landroid/hardware/SensorEventListener;Landroid/hardware/Sensor;II)Z,
+395,android.hardware.SensorManager,registerListener,Landroid/hardware/SensorManager;.registerListener:(Landroid/hardware/SensorEventListener;Landroid/hardware/Sensor;IILandroid/os/Handler;)Z,
+396,android.hardware.SensorManager,registerListener,Landroid/hardware/SensorManager;.registerListener:(Landroid/hardware/SensorEventListener;Landroid/hardware/Sensor;ILandroid/os/Handler;)Z,
+397,android.hardware.SensorManager,registerListener,Landroid/hardware/SensorManager;.registerListener:(Landroid/hardware/SensorListener;I)Z,
+398,android.hardware.SensorManager,registerListener,Landroid/hardware/SensorManager;.registerListener:(Landroid/hardware/SensorListener;II)Z,
+399,android.bluetooth.BluetoothHealth,registerSinkAppConfiguration,Landroid/bluetooth/BluetoothHealth;.registerSinkAppConfiguration:(Ljava/lang/String;ILandroid/bluetooth/BluetoothHealthCallback;)Z,Required to be able to connect to paired Bluetooth devices.
+400,android.bluetooth.le.PeriodicAdvertisingManager,registerSync,,Required to be able to discover and pair nearby Bluetooth devices.
+401,android.bluetooth.BluetoothHeadsetClient,rejectCall,,Required to be able to connect to paired Bluetooth devices.
+402,android.media.MediaRecorder,release,Landroid/media/MediaRecorder;.release:()V,Allows an application to record audio
+403,android.media.AudioRecord,release,Landroid/media/AudioRecord;.release:()V,Allows an application to record audio
+404,android.bluetooth.BluetoothDevice,removeBond,,Required to be able to connect to paired Bluetooth devices.
+405,android.hardware.location.GeofenceHardware,removeGeofence,,"Allows an app to access precise location. Alternatively, you might want  ACCESS_COARSE_LOCATION"
+406,android.location.LocationManager,removeProximityAlert,Landroid/location/LocationManager;.removeProximityAlert:(Landroid/app/PendingIntent;)V,"Allows an app to access precise location. Alternatively, you might want  ACCESS_COARSE_LOCATION"
+407,android.bluetooth.BluetoothHidDevice,replyReport,Landroid/bluetooth/BluetoothHidDevice;.replyReport:(Landroid/bluetooth/BluetoothDevice;BB[B)Z,Required to be able to connect to paired Bluetooth devices.
+408,android.telephony.TelephonyManager,requestCellInfoUpdate,Landroid/telephony/TelephonyManager;.requestCellInfoUpdate:(Ljava/util/concurrent/Executor;Landroid/telephony/TelephonyManager$CellInfoCallback;)V,"Allows an app to access approximate location. Alternatively, you might  want ACCESS_FINE_LOCATION"
+409,android.bluetooth.BluetoothGatt,requestConnectionPriority,Landroid/bluetooth/BluetoothGatt;.requestConnectionPriority:(I)Z,Required to be able to connect to paired Bluetooth devices.
+410,android.bluetooth.BluetoothGatt,requestLeConnectionUpdate,,Required to be able to connect to paired Bluetooth devices.
+411,android.location.LocationManager,requestLocationUpdates,Landroid/location/LocationManager;.requestLocationUpdates:(JFLandroid/location/Criteria;Landroid/app/PendingIntent;)V,"Allows an app to access precise location. Alternatively, you might want  ACCESS_COARSE_LOCATION"
+412,android.location.LocationManager,requestLocationUpdates,Landroid/location/LocationManager;.requestLocationUpdates:(JFLandroid/location/Criteria;Landroid/location/LocationListener;Landroid/os/Looper;)V,"Allows an app to access precise location. Alternatively, you might want  ACCESS_COARSE_LOCATION"
+413,android.location.LocationManager,requestLocationUpdates,Landroid/location/LocationManager;.requestLocationUpdates:(JFLandroid/location/Criteria;Ljava/util/concurrent/Executor;Landroid/location/LocationListener;)V,"Allows an app to access precise location. Alternatively, you might want  ACCESS_COARSE_LOCATION"
+414,android.location.LocationManager,requestLocationUpdates,Landroid/location/LocationManager;.requestLocationUpdates:(Ljava/lang/String;JFLandroid/app/PendingIntent;)V,"Allows an app to access precise location. Alternatively, you might want  ACCESS_COARSE_LOCATION"
+415,android.location.LocationManager,requestLocationUpdates,Landroid/location/LocationManager;.requestLocationUpdates:(Ljava/lang/String;JFLandroid/location/LocationListener;)V,"Allows an app to access precise location. Alternatively, you might want  ACCESS_COARSE_LOCATION"
+416,android.location.LocationManager,requestLocationUpdates,Landroid/location/LocationManager;.requestLocationUpdates:(Ljava/lang/String;JFLandroid/location/LocationListener;Landroid/os/Looper;)V,"Allows an app to access precise location. Alternatively, you might want  ACCESS_COARSE_LOCATION"
+417,android.location.LocationManager,requestLocationUpdates,Landroid/location/LocationManager;.requestLocationUpdates:(Ljava/lang/String;JFLjava/util/concurrent/Executor;Landroid/location/LocationListener;)V,"Allows an app to access precise location. Alternatively, you might want  ACCESS_COARSE_LOCATION"
+418,android.telephony.TelephonyManager,requestNetworkScan,Landroid/telephony/TelephonyManager;.requestNetworkScan:(Landroid/telephony/NetworkScanRequest;Ljava/util/concurrent/Executor;Landroid/telephony/TelephonyScanManager$NetworkScanCallback;)Landroid/telephony/NetworkScan;,"Allows an app to access approximate location. Alternatively, you might  want ACCESS_FINE_LOCATION"
+419,android.telephony.TelephonyScanManager,requestNetworkScan,,"Allows an app to access approximate location. Alternatively, you might  want ACCESS_FINE_LOCATION"
+420,android.location.LocationManager,requestSingleUpdate,Landroid/location/LocationManager;.requestSingleUpdate:(Landroid/location/Criteria;Landroid/app/PendingIntent;)V,"Allows an app to access precise location. Alternatively, you might want  ACCESS_COARSE_LOCATION"
+421,android.location.LocationManager,requestSingleUpdate,Landroid/location/LocationManager;.requestSingleUpdate:(Landroid/location/Criteria;Landroid/location/LocationListener;Landroid/os/Looper;)V,"Allows an app to access precise location. Alternatively, you might want  ACCESS_COARSE_LOCATION"
+422,android.location.LocationManager,requestSingleUpdate,Landroid/location/LocationManager;.requestSingleUpdate:(Ljava/lang/String;Landroid/app/PendingIntent;)V,"Allows an app to access precise location. Alternatively, you might want  ACCESS_COARSE_LOCATION"
+423,android.location.LocationManager,requestSingleUpdate,Landroid/location/LocationManager;.requestSingleUpdate:(Ljava/lang/String;Landroid/location/LocationListener;Landroid/os/Looper;)V,"Allows an app to access precise location. Alternatively, you might want  ACCESS_COARSE_LOCATION"
+424,android.media.MediaRecorder,reset,Landroid/media/MediaRecorder;.reset:()V,Allows an application to record audio
+425,android.hardware.location.GeofenceHardware,resumeGeofence,,"Allows an app to access precise location. Alternatively, you might want  ACCESS_COARSE_LOCATION"
+426,android.bluetooth.BluetoothDevice,sdpSearch,,Required to be able to connect to paired Bluetooth devices.
+427,android.telephony.SmsManager,sendDataMessage,Landroid/telephony/SmsManager;.sendDataMessage:(Ljava/lang/String;Ljava/lang/String;S[BLandroid/app/PendingIntent;Landroid/app/PendingIntent;)V,Used for runtime permissions related to user's SMS message
+428,android.telephony.SmsManager,sendMultipartTextMessage,Landroid/telephony/SmsManager;.sendMultipartTextMessage:(Ljava/lang/String;Ljava/lang/String;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/util/ArrayList;)V,Used for runtime permissions related to user's SMS message
+429,android.telephony.SmsManager,sendMultipartTextMessage,Landroid/telephony/SmsManager;.sendMultipartTextMessage:(Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/util/List;Ljava/util/List;J)V,Used for runtime permissions related to user's SMS message
+430,android.telephony.SmsManager,sendMultipartTextMessage,Landroid/telephony/SmsManager;.sendMultipartTextMessage:(Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;)V,Used for runtime permissions related to user's SMS message
+431,android.bluetooth.BluetoothHidDevice,sendReport,Landroid/bluetooth/BluetoothHidDevice;.sendReport:(Landroid/bluetooth/BluetoothDevice;I[B)Z,Required to be able to connect to paired Bluetooth devices.
+432,com.android.internal.telephony.IccSmsInterfaceManager,sendText,,Used for runtime permissions related to user's SMS message
+433,android.telephony.SmsManager,sendTextMessage,Landroid/telephony/SmsManager;.sendTextMessage:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/app/PendingIntent;Landroid/app/PendingIntent;)V,Used for runtime permissions related to user's SMS message
+434,android.telephony.SmsManager,sendTextMessage,Landroid/telephony/SmsManager;.sendTextMessage:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/app/PendingIntent;Landroid/app/PendingIntent;J)V,Used for runtime permissions related to user's SMS message
+435,android.telephony.SmsManager,sendTextMessageWithoutPersisting,Landroid/telephony/SmsManager;.sendTextMessageWithoutPersisting:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/app/PendingIntent;Landroid/app/PendingIntent;)V,Used for runtime permissions related to user's SMS message
+436,android.telephony.TelephonyManager,sendUssdRequest,Landroid/telephony/TelephonyManager;.sendUssdRequest:(Ljava/lang/String;Landroid/telephony/TelephonyManager$UssdResponseCallback;Landroid/os/Handler;)V,Allows an application to initiate a phone call without going throughthe  Dialer user interface for the user to confirm the call
+437,android.bluetooth.BluetoothHeadset,sendVendorSpecificResultCode,Landroid/bluetooth/BluetoothHeadset;.sendVendorSpecificResultCode:(Landroid/bluetooth/BluetoothDevice;Ljava/lang/String;Ljava/lang/String;)Z,Required to be able to connect to paired Bluetooth devices.
+438,android.telephony.TelephonyManager,sendVisualVoicemailSms,Landroid/telephony/TelephonyManager;.sendVisualVoicemailSms:(Ljava/lang/String;ILjava/lang/String;Landroid/app/PendingIntent;)V,Used for runtime permissions related to user's SMS message
+439,android.telephony.TelephonyManager,sendVisualVoicemailSmsForSubscriber,,Used for runtime permissions related to user's SMS message
+440,android.bluetooth.le.AdvertisingSet,setAdvertisingData,Landroid/bluetooth/le/AdvertisingSet;.setAdvertisingData:(Landroid/bluetooth/le/AdvertiseData;)V,Required to be able to advertise to nearby Bluetooth devices.
+441,android.bluetooth.le.AdvertisingSet,setAdvertisingParameters,Landroid/bluetooth/le/AdvertisingSet;.setAdvertisingParameters:(Landroid/bluetooth/le/AdvertisingSetParameters;)V,Required to be able to advertise to nearby Bluetooth devices.
+442,android.bluetooth.BluetoothDevice,setAlias,,Required to be able to connect to paired Bluetooth devices.
+443,android.bluetooth.BluetoothHeadsetClient,setAudioRouteAllowed,,Required to be able to connect to paired Bluetooth devices.
+444,android.bluetooth.BluetoothAdapter,setDiscoverableTimeout,,Required to be able to discover and pair nearby Bluetooth devices.
+445,android.bluetooth.BluetoothAdapter,setName,Landroid/bluetooth/BluetoothAdapter;.setName:(Ljava/lang/String;)Z,Required to be able to connect to paired Bluetooth devices.
+446,android.media.MediaRecorder,setNextOutputFile,Landroid/media/MediaRecorder;.setNextOutputFile:(Ljava/io/File;)V,Allows an application to record audio
+447,android.media.MediaRecorder,setNextOutputFile,Landroid/media/MediaRecorder;.setNextOutputFile:(Ljava/io/FileDescriptor;)V,Allows an application to record audio
+448,android.media.MediaRecorder,setOutputFile,Landroid/media/MediaRecorder;.setOutputFile:(Ljava/io/File;)V,Allows an application to record audio
+449,android.media.MediaRecorder,setOutputFile,Landroid/media/MediaRecorder;.setOutputFile:(Ljava/io/FileDescriptor;)V,Allows an application to record audio
+450,android.media.MediaRecorder,setOutputFile,Landroid/media/MediaRecorder;.setOutputFile:(Ljava/lang/String;)V,Allows an application to record audio
+451,android.bluetooth.BluetoothDevice,setPin,Landroid/bluetooth/BluetoothDevice;.setPin:([B)Z,Required to be able to connect to paired Bluetooth devices.
+452,android.bluetooth.BluetoothGatt,setPreferredPhy,Landroid/bluetooth/BluetoothGatt;.setPreferredPhy:(III)V,Required to be able to connect to paired Bluetooth devices.
+453,android.content.ClipboardManager,setPrimaryClip,Landroid/content/ClipboardManager;.setPrimaryClip:(Landroid/content/ClipData;)V,
+454,android.provider.MediaStore,setRequireOriginal,Landroid/provider/MediaStore;.setRequireOriginal:(Landroid/net/Uri;)Landroid/net/Uri;,
+455,android.bluetooth.BluetoothAdapter,setScanMode,,Required to be able to discover and pair nearby Bluetooth devices.
+456,android.bluetooth.le.AdvertisingSet,setScanResponseData,Landroid/bluetooth/le/AdvertisingSet;.setScanResponseData:(Landroid/bluetooth/le/AdvertiseData;)V,Required to be able to advertise to nearby Bluetooth devices.
+457,android.telecom.TelecomManager,showInCallScreen,Landroid/telecom/TelecomManager;.showInCallScreen:(Z)V,"Allows read only access to phone state, including the current cellular  network information, the status of any ongoing calls, and a list of any  android.telecom.PhoneAccounts registered on the device. Note: If both your  minSdkVersion and targetSdkVersion values are set to 3 or lower, the system  implicitly grants your app this permission. If you don't need this  permission, be sure your targetSdkVersion is 4 or higher"
+458,android.media.MediaRecorder,start,Landroid/media/MediaRecorder;.start:()V,Allows an application to record audio
+459,android.bluetooth.le.BluetoothLeAdvertiser,startAdvertising,Landroid/bluetooth/le/BluetoothLeAdvertiser;.startAdvertising:(Landroid/bluetooth/le/AdvertiseSettings;Landroid/bluetooth/le/AdvertiseData;Landroid/bluetooth/le/AdvertiseCallback;)V,Required to be able to advertise to nearby Bluetooth devices.
+460,android.bluetooth.le.BluetoothLeAdvertiser,startAdvertising,Landroid/bluetooth/le/BluetoothLeAdvertiser;.startAdvertising:(Landroid/bluetooth/le/AdvertiseSettings;Landroid/bluetooth/le/AdvertiseData;Landroid/bluetooth/le/AdvertiseData;Landroid/bluetooth/le/AdvertiseCallback;)V,Required to be able to advertise to nearby Bluetooth devices.
+461,android.bluetooth.le.BluetoothLeAdvertiser,startAdvertisingSet,Landroid/bluetooth/le/BluetoothLeAdvertiser;.startAdvertisingSet:(Landroid/bluetooth/le/AdvertisingSetParameters;Landroid/bluetooth/le/AdvertiseData;Landroid/bluetooth/le/AdvertiseData;Landroid/bluetooth/le/PeriodicAdvertisingParameters;Landroid/bluetooth;)V,Required to be able to advertise to nearby Bluetooth devices.
+462,android.bluetooth.le.BluetoothLeAdvertiser,startAdvertisingSet,Landroid/bluetooth/le/BluetoothLeAdvertiser;.startAdvertisingSet:(Landroid/bluetooth/le/AdvertisingSetParameters;Landroid/bluetooth/le/AdvertiseData;Landroid/bluetooth/le/AdvertiseData;Landroid/bluetooth/le/PeriodicAdvertisingParameters;Landroid/bluetooth;)V,Required to be able to advertise to nearby Bluetooth devices.
+463,android.bluetooth.le.BluetoothLeAdvertiser,startAdvertisingSet,Landroid/bluetooth/le/BluetoothLeAdvertiser;.startAdvertisingSet:(Landroid/bluetooth/le/AdvertisingSetParameters;Landroid/bluetooth/le/AdvertiseData;Landroid/bluetooth/le/AdvertiseData;Landroid/bluetooth/le/PeriodicAdvertisingParameters;Landroid/bluetooth;)V,Required to be able to advertise to nearby Bluetooth devices.
+464,android.bluetooth.le.BluetoothLeAdvertiser,startAdvertisingSet,Landroid/bluetooth/le/BluetoothLeAdvertiser;.startAdvertisingSet:(Landroid/bluetooth/le/AdvertisingSetParameters;Landroid/bluetooth/le/AdvertiseData;Landroid/bluetooth/le/AdvertiseData;Landroid/bluetooth/le/PeriodicAdvertisingParameters;Landroid/bluetooth;)V,Required to be able to advertise to nearby Bluetooth devices.
+465,android.telecom.TelecomManager,startConference,,Allows an application to initiate a phone call without going throughthe  Dialer user interface for the user to confirm the call
+466,android.bluetooth.BluetoothAdapter,startDiscovery,Landroid/bluetooth/BluetoothAdapter;.startDiscovery:()Z,Required to be able to discover and pair nearby Bluetooth devices.
+467,android.bluetooth.BluetoothAdapter,startLeScan,Landroid/bluetooth/BluetoothAdapter;.startLeScan:(Landroid/bluetooth/BluetoothAdapter$LeScanCallback;)Z,Required to be able to discover and pair nearby Bluetooth devices.
+468,android.bluetooth.BluetoothAdapter,startLeScan,Landroid/bluetooth/BluetoothAdapter;.startLeScan:([Ljava/util/UUID;Landroid/bluetooth/BluetoothAdapter$LeScanCallback;)Z,Required to be able to discover and pair nearby Bluetooth devices.
+469,android.media.AudioRecord,startRecording,Landroid/media/AudioRecord;.startRecording:()V,Allows an application to record audio
+470,android.media.AudioRecord,startRecording,Landroid/media/AudioRecord;.startRecording:(Landroid/media/MediaSyncEvent;)V,Allows an application to record audio
+471,android.net.wifi.WifiManager,startScan,Landroid/net/wifi/WifiManager;.startScan:()Z,"Allows an app to access precise location. Alternatively, you might want  ACCESS_COARSE_LOCATION"
+472,android.bluetooth.le.BluetoothLeScanner,startScan,Landroid/bluetooth/le/BluetoothLeScanner;.startScan:(Ljava/util/List;Landroid/bluetooth/le/ScanSettings;Landroid/app/PendingIntent;)I,Required to be able to discover and pair nearby Bluetooth devices.
+473,android.bluetooth.le.BluetoothLeScanner,startScan,Landroid/bluetooth/le/BluetoothLeScanner;.startScan:(Landroid/bluetooth/le/ScanCallback;)V,Required to be able to discover and pair nearby Bluetooth devices.
+474,android.bluetooth.le.BluetoothLeScanner,startScan,Landroid/bluetooth/le/BluetoothLeScanner;.startScan:(Ljava/util/List;Landroid/bluetooth/le/ScanSettings;Landroid/bluetooth/le/ScanCallback;)V,Required to be able to discover and pair nearby Bluetooth devices.
+475,android.bluetooth.le.BluetoothLeScanner,startTruncatedScan,,Required to be able to discover and pair nearby Bluetooth devices.
+476,android.media.AudioRecord,stop,Landroid/media/AudioRecord;.stop:()V,Allows an application to record audio
+477,android.media.MediaRecorder,stop,Landroid/media/MediaRecorder;.stop:()V,Allows an application to record audio
+478,android.bluetooth.le.BluetoothLeAdvertiser,stopAdvertising,Landroid/bluetooth/le/BluetoothLeAdvertiser;.stopAdvertising:(Landroid/bluetooth/le/AdvertiseCallback;)V,Required to be able to advertise to nearby Bluetooth devices.
+479,android.bluetooth.le.BluetoothLeAdvertiser,stopAdvertisingSet,Landroid/bluetooth/le/BluetoothLeAdvertiser;.stopAdvertisingSet:(Landroid/bluetooth/le/AdvertisingSetCallback;)V,Required to be able to advertise to nearby Bluetooth devices.
+480,android.bluetooth.BluetoothAdapter,stopLeScan,Landroid/bluetooth/BluetoothAdapter;.stopLeScan:(Landroid/bluetooth/BluetoothAdapter$LeScanCallback;)V,Required to be able to discover and pair nearby Bluetooth devices.
+481,android.bluetooth.le.BluetoothLeScanner,stopScan,Landroid/bluetooth/le/BluetoothLeScanner;.stopScan:(Landroid/app/PendingIntent;)V,Required to be able to discover and pair nearby Bluetooth devices.
+482,android.bluetooth.le.BluetoothLeScanner,stopScan,Landroid/bluetooth/le/BluetoothLeScanner;.stopScan:(Landroid/bluetooth/le/ScanCallback;)V,Required to be able to discover and pair nearby Bluetooth devices.
+483,android.bluetooth.BluetoothHeadset,stopVoiceRecognition,Landroid/bluetooth/BluetoothHeadset;.stopVoiceRecognition:(Landroid/bluetooth/BluetoothDevice;)Z,Required to be able to connect to paired Bluetooth devices.
+484,android.net.wifi.aware.WifiAwareSession,subscribe,Landroid/net/wifi/aware/WifiAwareSession;.subscribe:(Landroid/net/wifi/aware/SubscribeConfig;Landroid/net/wifi/aware/DiscoverySessionCallback;Landroid/os/Handler;)V,"Allows an app to access precise location. Alternatively, you might want  ACCESS_COARSE_LOCATION"
+485,android.bluetooth.BluetoothHeadsetClient,terminateCall,,Required to be able to connect to paired Bluetooth devices.
+486,android.bluetooth.BluetoothHealth,unregisterAppConfiguration,Landroid/bluetooth/BluetoothHealth;.unregisterAppConfiguration:(Landroid/bluetooth/BluetoothHealthAppConfiguration;)Z,Required to be able to connect to paired Bluetooth devices.
+487,android.hardware.location.GeofenceHardware,unregisterForMonitorStateChangeCallback,,"Allows an app to access precise location. Alternatively, you might want  ACCESS_COARSE_LOCATION"
+488,android.bluetooth.le.PeriodicAdvertisingManager,unregisterSync,,Required to be able to discover and pair nearby Bluetooth devices.
+489,android.bluetooth.BluetoothGatt,writeDescriptor,Landroid/bluetooth/BluetoothGatt;.writeDescriptor:(Landroid/bluetooth/BluetoothGattDescriptor;)Z,Required to be able to connect to paired Bluetooth devices.
+490,java.lang.Runtime.exec,pm list packages,,
+491,java.lang.Runtime.exec,/proc/net/arp,,
+492,java.lang.Runtime.exec,/proc/pid/net/arp,,
+493,java.lang.Runtime.exec,/sys/block/mmcblk0/device/cid,,
+494,java.lang.Runtime.exec,/sys/block/mmcblk1/device/cid,,
+495,java.lang.Runtime.exec,/sys/class/mmc_host/mmc1/cid,,
+496,java.lang.Runtime.exec,/sys/class/net/wlan0/address,,
+497,java.lang.Runtime.exec,/sys/devices/platform/mmci-omap-hs.0/mmc_host/mmc0/mmc0:aaaa/cid,,
+498,Intent Action,action.com.heytap.openid.OPEN_ID_SERVICE,,
+499,Intent Action,android.intent.action.CALL,,Allows an application to initiate a phone call without going throughthe  Dialer user interface for the user to confirm the call
+500,Intent Action,android.intent.action.DATA_SMS_RECEIVED,,
+501,Intent Action,android.intent.action.NEW_OUTGOING_CALL,,
+502,Register Broadcast,android.net.wifi.SCAN_RESULTS,,
+503,Register Broadcast,android.provider.Telephony.SIM_FULL,,Allows an application to receive SMS message
+504,Register Broadcast,android.provider.Telephony.SMS_CB_RECEIVED,,Allows an application to receive SMS message
+505,Register Broadcast,android.provider.Telephony.SMS_DELIVER,,Allows an application to receive SMS message
+506,Register Broadcast,android.provider.Telephony.SMS_RECEIVED,,Allows an application to receive SMS message
+507,Register Broadcast,android.provider.Telephony.SMS_REJECTED,,Allows an application to receive SMS message
+508,Register Broadcast,android.provider.Telephony.SMS_SERVICE_CATEGORY_PROGRAM_DATA_RECEIVED,,Allows an application to receive SMS message
+509,Register Broadcast,android.provider.Telephony.WAP_PUSH_DELIVER,,Allows an application  to receive WAP push message
+510,Register Broadcast,android.provider.Telephony.WAP_PUSH_DELIVER,,Allows an application  to receive WAP push message
+511,Register Broadcast,android.provider.Telephony.WAP_PUSH_RECEIVED,,Allows an application  to receive WAP push message
+512,Register Broadcast,android.provider.Telephony.WAP_PUSH_RECEIVED,,Allows an application  to receive WAP push message
+513,Intent Class,com.google.android.gms.ads.identifier.service.AdvertisingIdService,,
+514,Intent Action,com.google.android.gms.ads.identifier.service.PERSISTENT_START,,
+515,Intent Action,com.google.android.gms.ads.identifier.service.START,,
+516,Intent Class,com.samsung.android.deviceidservice.DeviceIdService,,
+517,Intent Class,com.uodis.opendevice.aidl.OpenDeviceIdentifierService,,
+518,Intent Class,com.zui.deviceidservice.DeviceidService,,
+519,String Regex Query,content://call_log/*,,
+520,String Regex Query,content://cellbroadcast-legacy*,,
+521,String Regex Query,content://cellbroadcasts*,,
+522,Content Query,content://cn.nubia.identity/identity/*,,
+523,Content Query,content://cn.nubia.identity/identity;,,
+524,String Regex Query,content://com.android.browse*,,
+525,String Regex Query,content://com.android.calendar/*,,
+526,String Regex Query,content://com.android.contacts*,,
+527,String Regex Query,content://com.android.voicemail*,,
+528,Content Query,content://com.meizu.flyme.openidsdk/*,,
+529,Content Query,content://com.miui.idprovider/*,,
+530,Content Query,content://com.vivo.vms.IdProvider/IdentifierId/*,,
+531,String Regex Query,content://sms/*,,
+532,android.provider.Telephony.Sms*,retType=android.net.Uri,,Allows an application to read SMS messages
+533,Field Regex Query,android.provider.CalendarContract*,,
+534,Field Regex Query,android.provider.VoicemailContract*,,
+535,Field Regex Query,android.provider.CallLog*,,
+536,Field Regex Query,android.provider.ContactsContract*,,
+537,retType=android.net.Uri,MediaStore.Audio.Media.EXTERNAL_CONTENT_URI,,
+538,retType=android.net.Uri,MediaStore.Video.Media.EXTERNAL_CONTENT_URI,,
+539,retType=android.net.Uri,"MediaStore.Images.Media.EXTERNAL_CONTENT_URI
+MediaStore.Audio.Playlists.EXTERNAL_CONTENT_URI;
+MediaStore.Video.Thumbnails.EXTERNAL_CONTENT_URI
+MediaStore.Images.Thumbnails.EXTERNAL_CONTENT_URI
+MediaStore.Downloads.EXTERNAL_CONTENT_URI
+MediaStore.Audio.Media.EXTERNAL_CONTENT_URI
+MediaStore.Video.Media.EXTERNAL_CONTENT_URI
+MediaStore.Images.Media.EXTERNAL_CONTENT_URI",,
+540,retType=android.net.Uri,"MediaStore.Images.Media.EXTERNAL_CONTENT_URI
+MediaStore.Audio.Playlists.EXTERNAL_CONTENT_URI;
+MediaStore.Video.Thumbnails.EXTERNAL_CONTENT_URI
+MediaStore.Images.Thumbnails.EXTERNAL_CONTENT_URI
+MediaStore.Downloads.EXTERNAL_CONTENT_URI
+MediaStore.Audio.Media.EXTERNAL_CONTENT_URI
+MediaStore.Video.Media.EXTERNAL_CONTENT_URI
+MediaStore.Images.Media.EXTERNAL_CONTENT_URI",,
+541,retType=android.net.Uri,"MediaStore.Images.Media.EXTERNAL_CONTENT_URI
+MediaStore.Audio.Playlists.EXTERNAL_CONTENT_URI;
+MediaStore.Video.Thumbnails.EXTERNAL_CONTENT_URI
+MediaStore.Images.Thumbnails.EXTERNAL_CONTENT_URI
+MediaStore.Downloads.EXTERNAL_CONTENT_URI
+MediaStore.Audio.Media.EXTERNAL_CONTENT_URI
+MediaStore.Video.Media.EXTERNAL_CONTENT_URI
+MediaStore.Images.Media.EXTERNAL_CONTENT_URI",,
+542,retType=android.net.Uri,"MediaStore.Images.Media.EXTERNAL_CONTENT_URI
+MediaStore.Audio.Playlists.EXTERNAL_CONTENT_URI;
+MediaStore.Video.Thumbnails.EXTERNAL_CONTENT_URI
+MediaStore.Images.Thumbnails.EXTERNAL_CONTENT_URI
+MediaStore.Downloads.EXTERNAL_CONTENT_URI
+MediaStore.Audio.Media.EXTERNAL_CONTENT_URI
+MediaStore.Video.Media.EXTERNAL_CONTENT_URI
+MediaStore.Images.Media.EXTERNAL_CONTENT_URI",,
+543,retType=android.net.Uri,"MediaStore.Images.Media.EXTERNAL_CONTENT_URI
+MediaStore.Audio.Playlists.EXTERNAL_CONTENT_URI;
+MediaStore.Video.Thumbnails.EXTERNAL_CONTENT_URI
+MediaStore.Images.Thumbnails.EXTERNAL_CONTENT_URI
+MediaStore.Downloads.EXTERNAL_CONTENT_URI
+MediaStore.Audio.Media.EXTERNAL_CONTENT_URI
+MediaStore.Video.Media.EXTERNAL_CONTENT_URI
+MediaStore.Images.Media.EXTERNAL_CONTENT_URI",,
+544,retType=android.net.Uri,"MediaStore.Images.Media.EXTERNAL_CONTENT_URI
+MediaStore.Audio.Playlists.EXTERNAL_CONTENT_URI;
+MediaStore.Video.Thumbnails.EXTERNAL_CONTENT_URI
+MediaStore.Images.Thumbnails.EXTERNAL_CONTENT_URI
+MediaStore.Downloads.EXTERNAL_CONTENT_URI
+MediaStore.Audio.Media.EXTERNAL_CONTENT_URI
+MediaStore.Video.Media.EXTERNAL_CONTENT_URI
+MediaStore.Images.Media.EXTERNAL_CONTENT_URI",,
+545,retType=android.net.Uri,"MediaStore.Images.Media.EXTERNAL_CONTENT_URI
+MediaStore.Audio.Playlists.EXTERNAL_CONTENT_URI;
+MediaStore.Video.Thumbnails.EXTERNAL_CONTENT_URI
+MediaStore.Images.Thumbnails.EXTERNAL_CONTENT_URI
+MediaStore.Downloads.EXTERNAL_CONTENT_URI
+MediaStore.Audio.Media.EXTERNAL_CONTENT_URI
+MediaStore.Video.Media.EXTERNAL_CONTENT_URI
+MediaStore.Images.Media.EXTERNAL_CONTENT_URI",,
+546,retType=android.net.Uri,"MediaStore.Images.Media.EXTERNAL_CONTENT_URI
+MediaStore.Audio.Playlists.EXTERNAL_CONTENT_URI;
+MediaStore.Video.Thumbnails.EXTERNAL_CONTENT_URI
+MediaStore.Images.Thumbnails.EXTERNAL_CONTENT_URI
+MediaStore.Downloads.EXTERNAL_CONTENT_URI
+MediaStore.Audio.Media.EXTERNAL_CONTENT_URI
+MediaStore.Video.Media.EXTERNAL_CONTENT_URI
+MediaStore.Images.Media.EXTERNAL_CONTENT_URI",,
+547,java.lang.Runtime.exec,ro.boot.serialno,,
+548,java.lang.Runtime.exec,ro.serialno,,
+549,android.telephony.TelephonyManager,listen,Landroid/telephony/TelephonyManager;.listen:(Landroid/telephony/PhoneStateListener;I)V,
+550,android.provider.Settings$Secure,getString,Landroid/provider/Settings$Secure;.getString:(Landroid/content/ContentResolver;Ljava/lang/String;)Ljava/lang/String;,
+551,android.provider.ContactsContract$Contacts,openContactPhotoInputStream,Landroid/provider/ContactsContract$Contacts;.openContactPhotoInputStream:(Landroid/content/ContentResolver;Landroid/net/Uri;)Ljava/io/InputStream;,Allows an application  to read the user's contacts dat
+552,android.provider.ContactsContract$Contacts,openContactPhotoInputStream,Landroid/provider/ContactsContract$Contacts;.openContactPhotoInputStream:(Landroid/content/ContentResolver;Landroid/net/Uri;Z)Ljava/io/InputStream;,Allows an application  to read the user's contacts dat
+553,android.net.sip.SipAudioCall,startAudio,Landroid/net/sip/SipAudioCall;.startAudio:()V,Allows an application to record audio
+554,android.net.wifi.WifiInfo,mWifiSsid,Landroid/net/wifi/WifiInfo;.mWifiSsid:Landroid/net/wifi/WifiSsid,
+555,android.net.wifi.WifiInfo,getSSID,Landroid/net/wifi/WifiInfo;.getSSID:()Ljava/lang/String;,
+556,android.net.wifi.WifiInfo,mBSSID,Landroid/net/wifi/WifiInfo;.mBSSID:Ljava/lang/String;,
+557,android.net.wifi.WifiInfo,getBSSID,Landroid/net/wifi/WifiInfo;.getBSSID:()Ljava/lang/String;,
+558,android.net.wifi.WifiInfo,mMacAddress,Landroid/net/wifi/WifiInfo;.mMacAddress:Ljava/lang/String;,
+559,android.net.wifi.WifiInfo,getMacAddress,Landroid/net/wifi/WifiInfo;.getMacAddress:()Ljava/lang/String;,
+560,android.net.wifi.WifiConfiguration,SSID,Landroid/net/wifi/WifiConfiguration;.SSID:Ljava/lang/String;,
+561,android.net.wifi.WifiConfiguration,BSSID,Landroid/net/wifi/WifiConfiguration;.BSSID:Ljava/lang/String;,
+562,android.net.wifi.WifiConfiguration,preSharedKey,Landroid/net/wifi/WifiConfiguration;.preSharedKey:Ljava/lang/String;,
+563,android.telephony.SubscriptionInfo,getIccId,Landroid/telephony/SubscriptionInfo;.getIccId:()Ljava/lang/String;,
+564,android.telephony.SubscriptionInfo,getNumber,Landroid/telephony/SubscriptionInfo;.getNumber:()Ljava/lang/String;,
+565,android.telephony.SubscriptionInfo,getSubscriptionId,Landroid/telephony/SubscriptionInfo;.getSubscriptionId:()I,
+566,android.telephony.SubscriptionInfo,mIccid,Landroid/telephony/SubscriptionInfo;.mIccid:Ljava/lang/String;,
+567,android.telephony.SubscriptionInfo,mNumber,Landroid/telephony/SubscriptionInfo;.mNumber:Ljava/lang/String;,
+568,android.telephony.SubscriptionInfo,mId,Landroid/telephony/SubscriptionInfo;.mId:I,
+569,android.net.wifi.ScanResult,BSSID,Landroid/net/wifi/ScanResult;.BSSID:Ljava/lang/String;,
+570,android.net.wifi.ScanResult,SSID,Landroid/net/wifi/ScanResult;.SSID:Ljava/lang/String;,
+571,java.net.NetworkInterface,addrs,Ljava/net/NetworkInterface;.addrs:Ljava/net/InetAddress;,
+572,java.net.NetworkInterface,hardwareAddr,Ljava/net/NetworkInterface;.hardwareAddr:[B,
+573,java.net.NetworkInterface,getInetAddresses,Ljava/net/NetworkInterface;.getInetAddresses:()Ljava/util/Enumeration;,
+574,java.net.NetworkInterface,getHardwareAddress,Ljava/net/NetworkInterface;.getHardwareAddress:()[B,
+575,android.location.Location,getLatitude,Landroid/location/Location;.getLatitude:()D,
+576,android.location.Location,getLongitude,Landroid/location/Location;.getLongitude:()D,
+577,android.location.Location,getAltitude,Landroid/location/Location;.getAltitude:()D,
+578,android.telephony.cdma.CdmaCellLocation,getSystemId,Landroid/telephony/cdma/CdmaCellLocation;.getSystemId:()I,
+579,android.telephony.gsm.GsmCellLocation,getPsc,Landroid/telephony/gsm/GsmCellLocation;.getPsc:()I,
+580,android.telephony.gsm.GsmCellLocation,"
+getLac",Landroid/telephony/gsm/GsmCellLocation;.getLac:()I,
+581,android.location.Address,getLatitude,Landroid/location/Address;.getLatitude:()D,
+582,android.location.Address,getLongitude,Landroid/location/Address;.getLongitude:()D,
+583,android.telephony.gsm.GsmCellLocation,getCid,Landroid/telephony/gsm/GsmCellLocation;.getCid:()I,
+584,android.telephony.cdma.CdmaCellLocation,getNetworkId,Landroid/telephony/cdma/CdmaCellLocation;.getNetworkId:()I,
+585,android.telephony.cdma.CdmaCellLocation,getBaseStationLongitude,Landroid/telephony/cdma/CdmaCellLocation;.getBaseStationLongitude:()I,
+586,android.telephony.cdma.CdmaCellLocation,getBaseStationLatitude,Landroid/telephony/cdma/CdmaCellLocation;.getBaseStationLatitude:()I,
+587,android.telephony.cdma.CdmaCellLocation,getBaseStationId,Landroid/telephony/cdma/CdmaCellLocation;.getBaseStationId:()I,
+588,android.net.NetworkInfo,getExtraInfo,Landroid/net/NetworkInfo;.getExtraInfo:()Ljava/lang/String;,
+589,android.location.Location,mLatitude,Landroid/location/Location;.mLatitude:D,
+590,android.location.Location,mLongitude,Landroid/location/Location;.mLongitude:D,
+591,android.location.Location,mAltitude,Landroid/location/Location;.mAltitude:D,
+592,android.telephony.cdma.CdmaCellLocation,mSystemId,Landroid/telephony/cdma/CdmaCellLocation;.mSystemId:I,
+593,android.telephony.gsm.GsmCellLocation,mPsc,Landroid/telephony/gsm/GsmCellLocation;.mPsc:I,
+594,android.telephony.gsm.GsmCellLocation,mLac,Landroid/telephony/gsm/GsmCellLocation;.mLac:I,
+595,android.location.Address,mLatitude,Landroid/location/Address;.mLatitude:D,
+596,android.location.Address,mLongitude,Landroid/location/Address;.mLongitude:D,
+597,android.telephony.gsm.GsmCellLocation,mCid,Landroid/telephony/gsm/GsmCellLocation;.mCid:I,
+598,android.telephony.cdma.CdmaCellLocation,mNetworkId,Landroid/telephony/cdma/CdmaCellLocation;.mNetworkId:I,
+599,android.telephony.cdma.CdmaCellLocation,mBaseStationLongitude,Landroid/telephony/cdma/CdmaCellLocation;.mBaseStationLongitude:I,
+600,android.telephony.cdma.CdmaCellLocation,mBaseStationLatitude,Landroid/telephony/cdma/CdmaCellLocation;.mBaseStationLatitude:I,
+601,android.telephony.cdma.CdmaCellLocation,mBaseStationId,Landroid/telephony/cdma/CdmaCellLocation;.mBaseStationId:I,
+602,android.net.NetworkInfo,mExtraInfo,Landroid/net/NetworkInfo;.mExtraInfo:Ljava/lang/String;,
+603,android.database.Cursor,getColumnIndexOrThrow,Landroid/database/Cursor;.getColumnIndexOrThrow:(Ljava/lang/String;)I,
+604,android.hardware.SensorManager,getSensorList,Landroid/hardware/SensorManager;.getSensorList:(I)Ljava/util/List;,
+605,android.hardware.SensorManager,getDefaultSensor,Landroid/hardware/SensorManager;.getDefaultSensor:(I)Landroid/hardware/Sensor;,
+606,android.hardware.SensorManager,getDefaultSensor,Landroid/hardware/SensorManager;.getDefaultSensor:(IZ)Landroid/hardware/Sensor;,
+607,android.hardware.SensorManager,getDynamicSensorList,Landroid/hardware/SensorManager;.getDynamicSensorList:(I)Ljava/util/List;,
+608,android.hardware.SensorManager,registerListener,Landroid/hardware/SensorManager;.registerListener:(Landroid/hardware/SensorListener;I)Z,
+609,android.hardware.SensorManager,registerListener,Landroid/hardware/SensorManager;.registerListener:(Landroid/hardware/SensorListener;II)Z,
+610,android.hardware.SensorManager,getSensorList,Landroid/hardware/SensorManager;.getSensorList:(I)Ljava/util/List;,
+611,android.hardware.SensorManager,getDefaultSensor,Landroid/hardware/SensorManager;.getDefaultSensor:(I)Landroid/hardware/Sensor;,
+612,android.hardware.SensorManager,getDefaultSensor,Landroid/hardware/SensorManager;.getDefaultSensor:(IZ)Landroid/hardware/Sensor;,
+613,android.hardware.SensorManager,getDynamicSensorList,Landroid/hardware/SensorManager;.getDynamicSensorList:(I)Ljava/util/List;,
+614,android.hardware.SensorManager,registerListener,Landroid/hardware/SensorManager;.registerListener:(Landroid/hardware/SensorListener;I)Z,
+615,android.hardware.SensorManager,registerListener,Landroid/hardware/SensorManager;.registerListener:(Landroid/hardware/SensorListener;II)Z,
+616,android.hardware.SensorManager,getSensorList,Landroid/hardware/SensorManager;.getSensorList:(I)Ljava/util/List;,
+617,android.hardware.SensorManager,getDefaultSensor,Landroid/hardware/SensorManager;.getDefaultSensor:(I)Landroid/hardware/Sensor;,
+618,android.hardware.SensorManager,getDefaultSensor,Landroid/hardware/SensorManager;.getDefaultSensor:(IZ)Landroid/hardware/Sensor;,
+619,android.hardware.SensorManager,getDynamicSensorList,Landroid/hardware/SensorManager;.getDynamicSensorList:(I)Ljava/util/List;,
+620,android.hardware.SensorManager,registerListener,Landroid/hardware/SensorManager;.registerListener:(Landroid/hardware/SensorListener;I)Z,
+621,android.hardware.SensorManager,registerListener,Landroid/hardware/SensorManager;.registerListener:(Landroid/hardware/SensorListener;II)Z,
+622,android.hardware.SensorManager,getSensorList,Landroid/hardware/SensorManager;.getSensorList:(I)Ljava/util/List;,
+623,android.hardware.SensorManager,getDefaultSensor,Landroid/hardware/SensorManager;.getDefaultSensor:(I)Landroid/hardware/Sensor;,
+624,android.hardware.SensorManager,getDefaultSensor,Landroid/hardware/SensorManager;.getDefaultSensor:(IZ)Landroid/hardware/Sensor;,
+625,android.hardware.SensorManager,getDynamicSensorList,Landroid/hardware/SensorManager;.getDynamicSensorList:(I)Ljava/util/List;,
+626,android.hardware.SensorManager,registerListener,Landroid/hardware/SensorManager;.registerListener:(Landroid/hardware/SensorListener;I)Z,
+627,android.hardware.SensorManager,registerListener,Landroid/hardware/SensorManager;.registerListener:(Landroid/hardware/SensorListener;II)Z,
+628,android.hardware.SensorManager,getSensorList,Landroid/hardware/SensorManager;.getSensorList:(I)Ljava/util/List;,
+629,android.hardware.SensorManager,getDefaultSensor,Landroid/hardware/SensorManager;.getDefaultSensor:(I)Landroid/hardware/Sensor;,
+630,android.hardware.SensorManager,getDefaultSensor,Landroid/hardware/SensorManager;.getDefaultSensor:(IZ)Landroid/hardware/Sensor;,
+631,android.hardware.SensorManager,getDynamicSensorList,Landroid/hardware/SensorManager;.getDynamicSensorList:(I)Ljava/util/List;,
+632,android.hardware.SensorManager,registerListener,Landroid/hardware/SensorManager;.registerListener:(Landroid/hardware/SensorListener;I)Z,
+633,android.hardware.SensorManager,registerListener,Landroid/hardware/SensorManager;.registerListener:(Landroid/hardware/SensorListener;II)Z,
+634,android.hardware.SensorManager,getSensorList,Landroid/hardware/SensorManager;.getSensorList:(I)Ljava/util/List;,
+635,android.hardware.SensorManager,getDefaultSensor,Landroid/hardware/SensorManager;.getDefaultSensor:(I)Landroid/hardware/Sensor;,
+636,android.hardware.SensorManager,getDefaultSensor,Landroid/hardware/SensorManager;.getDefaultSensor:(IZ)Landroid/hardware/Sensor;,
+637,android.hardware.SensorManager,getDynamicSensorList,Landroid/hardware/SensorManager;.getDynamicSensorList:(I)Ljava/util/List;,
+638,android.hardware.SensorManager,registerListener,Landroid/hardware/SensorManager;.registerListener:(Landroid/hardware/SensorListener;I)Z,
+639,android.hardware.SensorManager,registerListener,Landroid/hardware/SensorManager;.registerListener:(Landroid/hardware/SensorListener;II)Z,
+640,android.hardware.SensorManager,getSensorList,Landroid/hardware/SensorManager;.getSensorList:(I)Ljava/util/List;,
+641,android.hardware.SensorManager,getDefaultSensor,Landroid/hardware/SensorManager;.getDefaultSensor:(I)Landroid/hardware/Sensor;,
+642,android.hardware.SensorManager,getDefaultSensor,Landroid/hardware/SensorManager;.getDefaultSensor:(IZ)Landroid/hardware/Sensor;,
+643,android.hardware.SensorManager,getDynamicSensorList,Landroid/hardware/SensorManager;.getDynamicSensorList:(I)Ljava/util/List;,
+644,android.hardware.SensorManager,registerListener,Landroid/hardware/SensorManager;.registerListener:(Landroid/hardware/SensorListener;I)Z,
+645,android.hardware.SensorManager,registerListener,Landroid/hardware/SensorManager;.registerListener:(Landroid/hardware/SensorListener;II)Z,
+646,android.hardware.SensorManager,getSensorList,Landroid/hardware/SensorManager;.getSensorList:(I)Ljava/util/List;,
+647,android.hardware.SensorManager,getDefaultSensor,Landroid/hardware/SensorManager;.getDefaultSensor:(I)Landroid/hardware/Sensor;,
+648,android.hardware.SensorManager,getDefaultSensor,Landroid/hardware/SensorManager;.getDefaultSensor:(IZ)Landroid/hardware/Sensor;,
+649,android.hardware.SensorManager,getDynamicSensorList,Landroid/hardware/SensorManager;.getDynamicSensorList:(I)Ljava/util/List;,
+650,android.hardware.SensorManager,registerListener,Landroid/hardware/SensorManager;.registerListener:(Landroid/hardware/SensorListener;I)Z,
+651,android.hardware.SensorManager,registerListener,Landroid/hardware/SensorManager;.registerListener:(Landroid/hardware/SensorListener;II)Z,
+652,android.hardware.SensorManager,getSensorList,Landroid/hardware/SensorManager;.getSensorList:(I)Ljava/util/List;,
+653,android.hardware.SensorManager,getDefaultSensor,Landroid/hardware/SensorManager;.getDefaultSensor:(I)Landroid/hardware/Sensor;,
+654,android.hardware.SensorManager,getDefaultSensor,Landroid/hardware/SensorManager;.getDefaultSensor:(IZ)Landroid/hardware/Sensor;,
+655,android.hardware.SensorManager,getDynamicSensorList,Landroid/hardware/SensorManager;.getDynamicSensorList:(I)Ljava/util/List;,
+656,android.hardware.SensorManager,registerListener,Landroid/hardware/SensorManager;.registerListener:(Landroid/hardware/SensorListener;I)Z,
+657,android.hardware.SensorManager,registerListener,Landroid/hardware/SensorManager;.registerListener:(Landroid/hardware/SensorListener;II)Z,
+658,android.hardware.SensorManager,getSensorList,Landroid/hardware/SensorManager;.getSensorList:(I)Ljava/util/List;,
+659,android.hardware.SensorManager,getDefaultSensor,Landroid/hardware/SensorManager;.getDefaultSensor:(I)Landroid/hardware/Sensor;,
+660,android.hardware.SensorManager,getDefaultSensor,Landroid/hardware/SensorManager;.getDefaultSensor:(IZ)Landroid/hardware/Sensor;,
+661,android.hardware.SensorManager,getDynamicSensorList,Landroid/hardware/SensorManager;.getDynamicSensorList:(I)Ljava/util/List;,
+662,android.hardware.SensorManager,registerListener,Landroid/hardware/SensorManager;.registerListener:(Landroid/hardware/SensorListener;I)Z,
+663,android.hardware.SensorManager,registerListener,Landroid/hardware/SensorManager;.registerListener:(Landroid/hardware/SensorListener;II)Z,
+664,android.hardware.SensorManager,getSensorList,Landroid/hardware/SensorManager;.getSensorList:(I)Ljava/util/List;,
+665,android.hardware.SensorManager,getDefaultSensor,Landroid/hardware/SensorManager;.getDefaultSensor:(I)Landroid/hardware/Sensor;,
+666,android.hardware.SensorManager,getDefaultSensor,Landroid/hardware/SensorManager;.getDefaultSensor:(IZ)Landroid/hardware/Sensor;,
+667,android.hardware.SensorManager,getDynamicSensorList,Landroid/hardware/SensorManager;.getDynamicSensorList:(I)Ljava/util/List;,
+668,android.hardware.SensorManager,registerListener,Landroid/hardware/SensorManager;.registerListener:(Landroid/hardware/SensorListener;I)Z,
+669,android.hardware.SensorManager,registerListener,Landroid/hardware/SensorManager;.registerListener:(Landroid/hardware/SensorListener;II)Z,
+670,android.hardware.SensorManager,getSensorList,Landroid/hardware/SensorManager;.getSensorList:(I)Ljava/util/List;,
+671,android.hardware.SensorManager,getDefaultSensor,Landroid/hardware/SensorManager;.getDefaultSensor:(I)Landroid/hardware/Sensor;,
+672,android.hardware.SensorManager,getDefaultSensor,Landroid/hardware/SensorManager;.getDefaultSensor:(IZ)Landroid/hardware/Sensor;,
+673,android.hardware.SensorManager,getDynamicSensorList,Landroid/hardware/SensorManager;.getDynamicSensorList:(I)Ljava/util/List;,
+674,android.hardware.SensorManager,registerListener,Landroid/hardware/SensorManager;.registerListener:(Landroid/hardware/SensorListener;I)Z,
+675,android.hardware.SensorManager,registerListener,Landroid/hardware/SensorManager;.registerListener:(Landroid/hardware/SensorListener;II)Z,
+676,android.hardware.SensorManager,getSensorList,Landroid/hardware/SensorManager;.getSensorList:(I)Ljava/util/List;,
+677,android.hardware.SensorManager,getDefaultSensor,Landroid/hardware/SensorManager;.getDefaultSensor:(I)Landroid/hardware/Sensor;,
+678,android.hardware.SensorManager,getDefaultSensor,Landroid/hardware/SensorManager;.getDefaultSensor:(IZ)Landroid/hardware/Sensor;,
+679,android.hardware.SensorManager,getDynamicSensorList,Landroid/hardware/SensorManager;.getDynamicSensorList:(I)Ljava/util/List;,
+680,android.hardware.SensorManager,registerListener,Landroid/hardware/SensorManager;.registerListener:(Landroid/hardware/SensorListener;I)Z,
+681,android.hardware.SensorManager,registerListener,Landroid/hardware/SensorManager;.registerListener:(Landroid/hardware/SensorListener;II)Z,
+682,android.hardware.SensorManager,getSensorList,Landroid/hardware/SensorManager;.getSensorList:(I)Ljava/util/List;,
+683,android.hardware.SensorManager,getDefaultSensor,Landroid/hardware/SensorManager;.getDefaultSensor:(I)Landroid/hardware/Sensor;,
+684,android.hardware.SensorManager,getDefaultSensor,Landroid/hardware/SensorManager;.getDefaultSensor:(IZ)Landroid/hardware/Sensor;,
+685,android.hardware.SensorManager,getDynamicSensorList,Landroid/hardware/SensorManager;.getDynamicSensorList:(I)Ljava/util/List;,
+686,android.hardware.SensorManager,registerListener,Landroid/hardware/SensorManager;.registerListener:(Landroid/hardware/SensorListener;I)Z,
+687,android.hardware.SensorManager,registerListener,Landroid/hardware/SensorManager;.registerListener:(Landroid/hardware/SensorListener;II)Z,
+688,android.hardware.SensorManager,getSensorList,Landroid/hardware/SensorManager;.getSensorList:(I)Ljava/util/List;,
+689,android.hardware.SensorManager,getDefaultSensor,Landroid/hardware/SensorManager;.getDefaultSensor:(I)Landroid/hardware/Sensor;,
+690,android.hardware.SensorManager,getDefaultSensor,Landroid/hardware/SensorManager;.getDefaultSensor:(IZ)Landroid/hardware/Sensor;,
+691,android.hardware.SensorManager,getDynamicSensorList,Landroid/hardware/SensorManager;.getDynamicSensorList:(I)Ljava/util/List;,
+692,android.hardware.SensorManager,registerListener,Landroid/hardware/SensorManager;.registerListener:(Landroid/hardware/SensorListener;I)Z,
+693,android.hardware.SensorManager,registerListener,Landroid/hardware/SensorManager;.registerListener:(Landroid/hardware/SensorListener;II)Z,
+694,android.hardware.SensorManager,getSensorList,Landroid/hardware/SensorManager;.getSensorList:(I)Ljava/util/List;,
+695,android.hardware.SensorManager,getDefaultSensor,Landroid/hardware/SensorManager;.getDefaultSensor:(I)Landroid/hardware/Sensor;,
+696,android.hardware.SensorManager,getDefaultSensor,Landroid/hardware/SensorManager;.getDefaultSensor:(IZ)Landroid/hardware/Sensor;,
+697,android.hardware.SensorManager,getDynamicSensorList,Landroid/hardware/SensorManager;.getDynamicSensorList:(I)Ljava/util/List;,
+698,android.hardware.SensorManager,registerListener,Landroid/hardware/SensorManager;.registerListener:(Landroid/hardware/SensorListener;I)Z,
+699,android.hardware.SensorManager,registerListener,Landroid/hardware/SensorManager;.registerListener:(Landroid/hardware/SensorListener;II)Z,
+700,android.hardware.SensorManager,getSensorList,Landroid/hardware/SensorManager;.getSensorList:(I)Ljava/util/List;,
+701,android.hardware.SensorManager,getDefaultSensor,Landroid/hardware/SensorManager;.getDefaultSensor:(I)Landroid/hardware/Sensor;,
+702,android.hardware.SensorManager,getDefaultSensor,Landroid/hardware/SensorManager;.getDefaultSensor:(IZ)Landroid/hardware/Sensor;,
+703,android.hardware.SensorManager,getDynamicSensorList,Landroid/hardware/SensorManager;.getDynamicSensorList:(I)Ljava/util/List;,
+704,android.hardware.SensorManager,registerListener,Landroid/hardware/SensorManager;.registerListener:(Landroid/hardware/SensorListener;I)Z,
+705,android.hardware.SensorManager,registerListener,Landroid/hardware/SensorManager;.registerListener:(Landroid/hardware/SensorListener;II)Z,
+706,android.hardware.SensorManager,getSensorList,Landroid/hardware/SensorManager;.getSensorList:(I)Ljava/util/List;,
+707,android.hardware.SensorManager,getDefaultSensor,Landroid/hardware/SensorManager;.getDefaultSensor:(I)Landroid/hardware/Sensor;,
+708,android.hardware.SensorManager,getDefaultSensor,Landroid/hardware/SensorManager;.getDefaultSensor:(IZ)Landroid/hardware/Sensor;,
+709,android.hardware.SensorManager,getDynamicSensorList,Landroid/hardware/SensorManager;.getDynamicSensorList:(I)Ljava/util/List;,
+710,android.hardware.SensorManager,registerListener,Landroid/hardware/SensorManager;.registerListener:(Landroid/hardware/SensorListener;I)Z,
+711,android.hardware.SensorManager,registerListener,Landroid/hardware/SensorManager;.registerListener:(Landroid/hardware/SensorListener;II)Z,
+712,android.hardware.SensorManager,getSensorList,Landroid/hardware/SensorManager;.getSensorList:(I)Ljava/util/List;,
+713,android.hardware.SensorManager,getDefaultSensor,Landroid/hardware/SensorManager;.getDefaultSensor:(I)Landroid/hardware/Sensor;,
+714,android.hardware.SensorManager,getDefaultSensor,Landroid/hardware/SensorManager;.getDefaultSensor:(IZ)Landroid/hardware/Sensor;,
+715,android.hardware.SensorManager,getDynamicSensorList,Landroid/hardware/SensorManager;.getDynamicSensorList:(I)Ljava/util/List;,
+716,android.hardware.SensorManager,registerListener,Landroid/hardware/SensorManager;.registerListener:(Landroid/hardware/SensorListener;I)Z,
+717,android.hardware.SensorManager,registerListener,Landroid/hardware/SensorManager;.registerListener:(Landroid/hardware/SensorListener;II)Z,
+718,android.provider.Settings$System,getString,Landroid/provider/Settings$System;.getString:(Landroid/content/ContentResolver;Ljava/lang/String;)Ljava/lang/String;,
+719,android.provider.MediaStore,Images.Media.EXTERNAL_CONTENT_URI,Landroid/provider/MediaStore$Images$Media;.EXTERNAL_CONTENT_URI:Landroid/net/Uri;,
+720,android.provider.MediaStore,Audio.Playlists.EXTERNAL_CONTENT_URI,Landroid/provider/MediaStore$Audio$Playlists;.EXTERNAL_CONTENT_URI:Landroid/net/Uri;,
+721,android.provider.MediaStore,Video.Thumbnails.EXTERNAL_CONTENT_URI,Landroid/provider/MediaStore$Video$Thumbnails;.EXTERNAL_CONTENT_URI:Landroid/net/Uri;,
+722,android.provider.MediaStore,Images.Thumbnails.EXTERNAL_CONTENT_URI,Landroid/provider/MediaStore$Images$Thumbnails;.EXTERNAL_CONTENT_URI:Landroid/net/Uri;,
+723,android.provider.MediaStore,Downloads.EXTERNAL_CONTENT_URI,Landroid/provider/MediaStore$Downloads;.EXTERNAL_CONTENT_URI:Landroid/net/Uri;,
+724,android.provider.MediaStore,MediaStore.Audio.Media.EXTERNAL_CONTENT_URI,Landroid/provider/MediaStore$Audio$Media;.EXTERNAL_CONTENT_URI:Landroid/net/Uri;,
+725,android.provider.MediaStore,MediaStore.Video.Media.EXTERNAL_CONTENT_URI,Landroid/provider/MediaStore$Video$Media;.EXTERNAL_CONTENT_URI:Landroid/net/Uri;,
+726,String Regex Query,content://media/external/*,,
+727,android.view.OrientationEventListener,enable,Landroid/view/OrientationEventListener;.enable:()V,
+728,android.view.OrientationEventListener,disable,Landroid/view/OrientationEventListener;.disable:()V,
+729,android.view.OrientationEventListener,canDetectOrientation,Landroid/view/OrientationEventListener;.canDetectOrientation:()Z,
+730,android.view.OrientationEventListener,<init>,Landroid/view/OrientationEventListener;.<init>:(Landroid/content/Context;)V,
+731,android.view.OrientationEventListener,<init>,Landroid/view/OrientationEventListener;.<init>:(Landroid/content/Context;I)V,
+732,android.hardware.fingerprint.FingerprintManager,authenticate,Landroid/hardware/fingerprint/FingerprintManager;.authenticate:(Landroid/hardware/fingerprint/FingerprintManager$CryptoObject;Landroid/os/CancellationSignal;ILandroid/hardware/fingerprint/FingerprintManager$AuthenticationCallback;Landroid/os/Handler;)V,
+733,android.hardware.fingerprint.FingerprintManager,hasEnrolledFingerprints,Landroid/hardware/fingerprint/FingerprintManager;.hasEnrolledFingerprints:()Z,
+734,android.hardware.biometrics.BiometricPrompt,isConfirmationRequired,Landroid/hardware/biometrics/BiometricPrompt;.isConfirmationRequired:()Z,
+735,android.hardware.biometrics.BiometricPrompt,authenticate,Landroid/hardware/biometrics/BiometricPrompt;.authenticate:(Landroid/hardware/biometrics/BiometricPrompt$CryptoObject;Landroid/os/CancellationSignal;Ljava/util/concurrent/Executor;Landroid/hardware/biometrics/BiometricPrompt$AuthenticationCallback;)V,
+736,android.hardware.biometrics.BiometricPrompt,authenticate,Landroid/hardware/biometrics/BiometricPrompt;.authenticate:(Landroid/os/CancellationSignal;Ljava/util/concurrent/Executor;Landroid/hardware/biometrics/BiometricPrompt$AuthenticationCallback;)V,
+737,android.hardware.biometrics.BiometricPrompt,getTitle,Landroid/hardware/biometrics/BiometricPrompt;.getTitle:()Ljava/lang/CharSequence;,
+738,android.hardware.biometrics.BiometricPrompt,getSubtitle,Landroid/hardware/biometrics/BiometricPrompt;.getSubtitle:()Ljava/lang/CharSequence;,
+739,android.hardware.biometrics.BiometricPrompt,getNegativeButtonText,Landroid/hardware/biometrics/BiometricPrompt;.getNegativeButtonText:()Ljava/lang/CharSequence;,
+740,android.hardware.biometrics.BiometricPrompt,getDescription,Landroid/hardware/biometrics/BiometricPrompt;.getDescription:()Ljava/lang/CharSequence;,
+741,android.hardware.biometrics.BiometricPrompt,getAllowedAuthenticators,Landroid/hardware/biometrics/BiometricPrompt;.getAllowedAuthenticators:()I,

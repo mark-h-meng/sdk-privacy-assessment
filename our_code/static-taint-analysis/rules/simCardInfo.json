@@ -1,0 +1,142 @@
+{
+  "simCardInfo_Database": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 30,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "simCardInfo_Database",
+      "detail": "存在<simCardInfo>[获取]写数据库",
+      "category": "ComplianceInfo",
+      "complianceCategory": "simCardInfo_Database",
+      "complianceCategoryDetail": "simCardInfo_Database",
+      "level": "4"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.telephony.SubscriptionInfo: * getIccId(*)>",
+        "<android.telephony.TelephonyManager: * getSimSerialNumber(*)>",
+        "<android.telephony.TelephonyManager: * getSubscriberId(*)>",
+        "<android.telephony.TelephonyManager: * getLine1Number(*)>"
+      ]
+    },
+    "sink": {
+      "<android.database.sqlite.SQLiteDatabase: * insert(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * insertOrThrow(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * insertWithOnConflict(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * update(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * updateWithOnConflict(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * execSQL(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "simCardInfo_SharedPreferencesStored": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 30,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "simCardInfo_SharedPreferencesStored",
+      "detail": "存在<simCardInfo>[获取]写入SharedPreferences",
+      "category": "ComplianceInfo",
+      "complianceCategory": "simCardInfo_SharedPreferencesStored",
+      "complianceCategoryDetail": "simCardInfo_SharedPreferencesStored",
+      "level": "4"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.telephony.SubscriptionInfo: * getIccId(*)>",
+        "<android.telephony.TelephonyManager: * getSimSerialNumber(*)>",
+        "<android.telephony.TelephonyManager: * getSubscriberId(*)>",
+        "<android.telephony.TelephonyManager: * getLine1Number(*)>"
+      ]
+    },
+    "sink": {
+      "<android.content.SharedPreferences.Editor: * putString(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.content.SharedPreferences.Editor: * putStringSet(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.content.SharedPreferences.Editor: * putInt(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.content.SharedPreferences.Editor: * putLong(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "simCardInfo_WriteFile": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 30,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "simCardInfo_WriteFile",
+      "detail": "存在<simCardInfo>[获取]写文件",
+      "category": "ComplianceInfo",
+      "complianceCategory": "simCardInfo_WriteFile",
+      "complianceCategoryDetail": "simCardInfo_WriteFile",
+      "level": "4"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.telephony.SubscriptionInfo: * getIccId(*)>",
+        "<android.telephony.TelephonyManager: * getSimSerialNumber(*)>",
+        "<android.telephony.TelephonyManager: * getSubscriberId(*)>",
+        "<android.telephony.TelephonyManager: * getLine1Number(*)>"
+      ]
+    },
+    "sink": {
+      "<java.io.FileOutputStream: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.FileWriter: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.RandomAccessFile: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  }
+}

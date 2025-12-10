@@ -1,0 +1,226 @@
+{
+  "softwareUsageRecords_NetworkTransfer_body": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 30,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "softwareUsageRecords_NetworkTransfer_body",
+      "detail": "存在<软件使用记录>[获取]相关操作通过网络发送-body",
+      "category": "ComplianceInfo",
+      "complianceCategory": "ServiceContentInformation_NetworkTransfer",
+      "complianceCategoryDetail": "服务内容信息_NetworkTransfer",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.app.usage.UsageStatsManager: * query*(*)>",
+        "<android.app.usage.UsageStatsManager: int getAppStandbyBucket()>"
+      ]
+    },
+    "sink": {
+      "<okio.Buffer: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<okio.BufferedSink: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<okio.Sink: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<okio.ForwardingSink: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.OutputStream: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.Writer: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.OutputStreamWriter: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.DataOutputStream: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.util.zip.GZIPOutputStream: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<com.bytedance.retrofit2.CallServerInterceptor: * intercept(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdySession: * submitRequestN(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdySession: * streamSendDataN(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdySession: * sendCustomControlFrameN(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "softwareUsageRecords_NetworkTransfer_header": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 30,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "softwareUsageRecords_NetworkTransfer_header",
+      "detail": "存在<软件使用记录>[获取]相关操作通过网络发送-header",
+      "category": "ComplianceInfo",
+      "complianceCategory": "ServiceContentInformation_NetworkTransfer",
+      "complianceCategoryDetail": "服务内容信息_NetworkTransfer",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.app.usage.UsageStatsManager: * query*(*)>",
+        "<android.app.usage.UsageStatsManager: int getAppStandbyBucket()>"
+      ]
+    },
+    "sink": {
+      "<java.net.URLConnection: * addRequestProperty(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.net.URLConnection: * setRequestProperty(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * addHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * addHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * setHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * setHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * setHeaders(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * setHeaders(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdyRequest: * addHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdyRequest: * addHeaders(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "softwareUsageRecords_NetworkTransfer_url": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 30,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "softwareUsageRecords_NetworkTransfer_url",
+      "detail": "存在<软件使用记录>[获取]相关操作通过网络发送-url",
+      "category": "ComplianceInfo",
+      "complianceCategory": "ServiceContentInformation_NetworkTransfer",
+      "complianceCategoryDetail": "服务内容信息_NetworkTransfer",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.app.usage.UsageStatsManager: * query*(*)>",
+        "<android.app.usage.UsageStatsManager: int getAppStandbyBucket()>"
+      ]
+    },
+    "sink": {
+      "<java.net.URL: * openConnection(*)>": {
+        "TaintCheck": [
+          "@this"
+        ]
+      },
+      "<java.net.HttpURLConnection: * <init>(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * <init>(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * <init>(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * setParams(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * setParams(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.params.HttpParams: * setParameter(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdyRequest: * <init>(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "simCardInfo2Broadcast": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 12,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "simCardInfo2Broadcast",
+      "detail": "存在<simCardInfo>[获取]并通过广播发送",
+      "category": "ComplianceInfo",
+      "complianceCategory": "simCardInfo",
+      "complianceCategoryDetail": "simCardInfo",
+      "level": "4"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.telephony.SubscriptionInfo: * getIccId(*)>",
+        "<android.telephony.TelephonyManager: * getSimSerialNumber(*)>",
+        "<android.telephony.TelephonyManager: * getSubscriberId(*)>",
+        "<android.telephony.TelephonyManager: * getLine1Number(*)>"
+      ]
+    },
+    "sink": {
+      "<*: * sendBroadcast*(*)>": {
+        "LibraryOnly": true,
+        "TaintParamType": [
+          "android.content.Intent",
+          "android.content.Intent[]"
+        ],
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  }
+}

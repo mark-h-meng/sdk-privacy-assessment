@@ -1,0 +1,133 @@
+{
+  "serialNoInfo_Database": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 12,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "serialNoInfo_Database",
+      "detail": "存在<serialNoInfo>[获取]写数据库",
+      "category": "ComplianceInfo",
+      "complianceCategory": "serialNoInfo_Database",
+      "complianceCategoryDetail": "serialNoInfo_Database",
+      "level": "4"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.os*: * getSerial()>"
+      ]
+    },
+    "sink": {
+      "<android.database.sqlite.SQLiteDatabase: * insert(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * insertOrThrow(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * insertWithOnConflict(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * update(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * updateWithOnConflict(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * execSQL(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "serialNoInfo_SharedPreferencesStored": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 12,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "serialNoInfo_SharedPreferencesStored",
+      "detail": "存在<serialNoInfo>[获取]写入SharedPreferences",
+      "category": "ComplianceInfo",
+      "complianceCategory": "serialNoInfo_SharedPreferencesStored",
+      "complianceCategoryDetail": "serialNoInfo_SharedPreferencesStored",
+      "level": "4"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.os*: * getSerial()>"
+      ]
+    },
+    "sink": {
+      "<android.content.SharedPreferences.Editor: * putString(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.content.SharedPreferences.Editor: * putStringSet(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.content.SharedPreferences.Editor: * putInt(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.content.SharedPreferences.Editor: * putLong(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "serialNoInfo_WriteFile": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 12,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "serialNoInfo_WriteFile",
+      "detail": "存在<serialNoInfo>[获取]写文件",
+      "category": "ComplianceInfo",
+      "complianceCategory": "serialNoInfo_WriteFile",
+      "complianceCategoryDetail": "serialNoInfo_WriteFile",
+      "level": "4"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.os*: * getSerial()>"
+      ]
+    },
+    "sink": {
+      "<java.io.FileOutputStream: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.FileWriter: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.RandomAccessFile: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  }
+}

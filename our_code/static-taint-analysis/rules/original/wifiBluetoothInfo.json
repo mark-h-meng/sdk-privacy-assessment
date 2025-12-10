@@ -1,0 +1,163 @@
+{
+  "wifiBluetoothInfo_Database": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 12,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "wifiBluetoothInfo_Database",
+      "detail": "存在<wifiBluetoothInfo>[获取]写数据库",
+      "category": "ComplianceInfo",
+      "complianceCategory": "wifiBluetoothInfo_Database",
+      "complianceCategoryDetail": "wifiBluetoothInfo_Database",
+      "level": "4"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.bluetooth.BluetoothAdapter: * getAddress(*)>",
+        "<android.bluetooth.BluetoothDevice: * getAddress(*)>",
+        "<android.net.wifi.WifiInfo: * getMacAddress(*)>",
+        "<android.net.wifi.WifiInfo: * getSSID(*)>",
+        "<android.net.wifi.WifiInfo: * getBSSID(*)>",
+        "<java.net.NetworkInterface: * getHardwareAddress(*)>",
+        "<android.net.wifi.WifiManager: * getScanResults(*)>",
+        "<android.net.NetworkInfo: * getExtraInfo(*)>",
+        "<android.net.wifi.WifiSsid: * toString(*)>",
+        "<android.net.ConnectivityManager: * getActiveNetworkInfo(*)>",
+        "<android.net.wifi.WifiManager: * getConfiguredNetworks(*)>"
+      ]
+    },
+    "sink": {
+      "<android.database.sqlite.SQLiteDatabase: * insert(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * insertOrThrow(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * insertWithOnConflict(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * update(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * updateWithOnConflict(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * execSQL(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "wifiBluetoothInfo_SharedPreferencesStored": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 12,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "wifiBluetoothInfo_SharedPreferencesStored",
+      "detail": "存在<wifiBluetoothInfo>[获取]写入SharedPreferences",
+      "category": "ComplianceInfo",
+      "complianceCategory": "wifiBluetoothInfo_SharedPreferencesStored",
+      "complianceCategoryDetail": "wifiBluetoothInfo_SharedPreferencesStored",
+      "level": "4"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.bluetooth.BluetoothAdapter: * getAddress(*)>",
+        "<android.bluetooth.BluetoothDevice: * getAddress(*)>",
+        "<android.net.wifi.WifiInfo: * getMacAddress(*)>",
+        "<android.net.wifi.WifiInfo: * getSSID(*)>",
+        "<android.net.wifi.WifiInfo: * getBSSID(*)>",
+        "<java.net.NetworkInterface: * getHardwareAddress(*)>",
+        "<android.net.wifi.WifiManager: * getScanResults(*)>",
+        "<android.net.NetworkInfo: * getExtraInfo(*)>",
+        "<android.net.wifi.WifiSsid: * toString(*)>",
+        "<android.net.ConnectivityManager: * getActiveNetworkInfo(*)>",
+        "<android.net.wifi.WifiManager: * getConfiguredNetworks(*)>"
+      ]
+    },
+    "sink": {
+      "<android.content.SharedPreferences.Editor: * putString(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.content.SharedPreferences.Editor: * putStringSet(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.content.SharedPreferences.Editor: * putInt(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.content.SharedPreferences.Editor: * putLong(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "wifiBluetoothInfo_WriteFile": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 12,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "wifiBluetoothInfo_WriteFile",
+      "detail": "存在<wifiBluetoothInfo>[获取]写文件",
+      "category": "ComplianceInfo",
+      "complianceCategory": "wifiBluetoothInfo_WriteFile",
+      "complianceCategoryDetail": "wifiBluetoothInfo_WriteFile",
+      "level": "4"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.bluetooth.BluetoothAdapter: * getAddress(*)>",
+        "<android.bluetooth.BluetoothDevice: * getAddress(*)>",
+        "<android.net.wifi.WifiInfo: * getMacAddress(*)>",
+        "<android.net.wifi.WifiInfo: * getSSID(*)>",
+        "<android.net.wifi.WifiInfo: * getBSSID(*)>",
+        "<java.net.NetworkInterface: * getHardwareAddress(*)>",
+        "<android.net.wifi.WifiManager: * getScanResults(*)>",
+        "<android.net.NetworkInfo: * getExtraInfo(*)>",
+        "<android.net.wifi.WifiSsid: * toString(*)>",
+        "<android.net.ConnectivityManager: * getActiveNetworkInfo(*)>",
+        "<android.net.wifi.WifiManager: * getConfiguredNetworks(*)>"
+      ]
+    },
+    "sink": {
+      "<java.io.FileOutputStream: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.FileWriter: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.RandomAccessFile: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  }
+}

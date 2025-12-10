@@ -1,0 +1,37 @@
+{
+  "imeiInfo2Broadcast": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 12,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "imeiInfo2Broadcast",
+      "detail": "存在<imeiInfo>[获取]并通过广播发送",
+      "category": "ComplianceInfo",
+      "complianceCategory": "imeiInfo",
+      "complianceCategoryDetail": "imeiInfo",
+      "level": "4"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.telephony.TelephonyManager: * getImei(*)>",
+        "<android.telephony.TelephonyManager: * getDeviceId(*)>",
+        "<android.telephony.TelephonyManager: * getMeid(*)>",
+        "<android.telephony.TelephonyManager: * getDeviceSoftwareVersion(*)>"
+      ]
+    },
+    "sink": {
+      "<*: * sendBroadcast*(*)>": {
+        "LibraryOnly": true,
+        "TaintParamType": [
+          "android.content.Intent",
+          "android.content.Intent[]"
+        ],
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  }
+}

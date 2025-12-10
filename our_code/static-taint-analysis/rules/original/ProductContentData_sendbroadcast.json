@@ -1,0 +1,702 @@
+{
+  "clipboardQuery_Database": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 12,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "clipboardQuery_Database",
+      "detail": "存在<剪贴板>[获取]相关操作写数据库",
+      "category": "ComplianceInfo",
+      "complianceCategory": "ProductContentData_Database",
+      "complianceCategoryDetail": "产品内容信息_Database",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.content.ClipboardManager: * getPrimaryClipDescription(*)>",
+        "<android.content.ClipboardManager: * getText(*)>",
+        "<android.content.ClipboardManager: * addPrimaryClipChangedListener(*)>",
+        "<android.content.ClipData$Item: * getText(*)>"
+      ]
+    },
+    "sink": {
+      "<android.database.sqlite.SQLiteDatabase: * insert(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * insertOrThrow(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * insertWithOnConflict(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * update(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * updateWithOnConflict(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * execSQL(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "accessibility_Database": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 12,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "accessibility_Database",
+      "detail": "存在<无障碍模式>[获取]相关操作写数据库",
+      "category": "ComplianceInfo",
+      "complianceCategory": "ProductContentData_Database",
+      "complianceCategoryDetail": "产品内容信息_Database",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.view.accessibility.AccessibilityManager: * getEnabledAccessibilityServiceList(*)>",
+        "<android.view.accessibility.AccessibilityManager: * getInstalledAccessibilityServiceList(*)>"
+      ]
+    },
+    "sink": {
+      "<android.database.sqlite.SQLiteDatabase: * insert(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * insertOrThrow(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * insertWithOnConflict(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * update(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * updateWithOnConflict(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * execSQL(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "mediaStoreQuery1_Database": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 12,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "mediaStoreQuery1_Database",
+      "detail": "存在<多媒体文件>相关操作写数据库",
+      "category": "ComplianceInfo",
+      "complianceCategory": "ProductContentData_Database",
+      "complianceCategoryDetail": "产品内容信息_Database",
+      "level": "2"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.provider.MediaStore: * getDocumentUri(*)>",
+        "<android.provider.MediaStore: * getMediaScannerUri(*)>",
+        "<android.provider.MediaStore: * getMediaUri(*)>"
+      ]
+    },
+    "sink": {
+      "<android.database.sqlite.SQLiteDatabase: * insert(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * insertOrThrow(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * insertWithOnConflict(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * update(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * updateWithOnConflict(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * execSQL(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "screenShot_Database": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 12,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "screenShot_Database",
+      "detail": "存在<屏幕截图>[获取]相关操作写数据库",
+      "category": "ComplianceInfo",
+      "complianceCategory": "ProductContentData_Database",
+      "complianceCategoryDetail": "产品内容信息_Database",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.view.View: * getDrawingCache(*)>",
+        "<android.view.View: * draw(*)>",
+        "<android.view.PixelCopy: * request(*)>",
+        "<android.app.UiAutomation: * takeScreenshot(*)>",
+        "<android.view.SurfaceControl: * screenshot(*)>"
+      ]
+    },
+    "sink": {
+      "<android.database.sqlite.SQLiteDatabase: * insert(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * insertOrThrow(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * insertWithOnConflict(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * update(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * updateWithOnConflict(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * execSQL(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "sensorManager_Database": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 12,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "sensorManager_Database",
+      "detail": "存在<传感器信息>[获取]相关操作写数据库",
+      "category": "ComplianceInfo",
+      "complianceCategory": "ProductContentData_Database",
+      "complianceCategoryDetail": "产品内容信息_Database",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.hardware.SensorManager: * registerListener(*)>",
+        "<android.hardware.SensorManager: * registerDynamicSensorCallback(*)>",
+        "<android.hardware.SensorManager: * requestTriggerSensor(*)>",
+        "<android.hardware.SensorManager: * getDefaultSensor(*)>",
+        "<android.hardware.SensorManager: * getDynamicSensorList(*)>",
+        "<android.hardware.SensorManager: * getSensorList(*)>"
+      ]
+    },
+    "sink": {
+      "<android.database.sqlite.SQLiteDatabase: * insert(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * insertOrThrow(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * insertWithOnConflict(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * update(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * updateWithOnConflict(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * execSQL(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "clipboardQuery_SharedPreferencesStored": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 12,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "clipboardQuery_SharedPreferencesStored",
+      "detail": "存在<剪贴板>[获取]相关操作写入SharedPreferences",
+      "category": "ComplianceInfo",
+      "complianceCategory": "ProductContentData_SharedPreferencesStored",
+      "complianceCategoryDetail": "产品内容信息_SharedPreferencesStored",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.content.ClipboardManager: * getPrimaryClipDescription(*)>",
+        "<android.content.ClipboardManager: * getText(*)>",
+        "<android.content.ClipboardManager: * addPrimaryClipChangedListener(*)>",
+        "<android.content.ClipData$Item: * getText(*)>"
+      ]
+    },
+    "sink": {
+      "<android.content.SharedPreferences.Editor: * putString(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.content.SharedPreferences.Editor: * putStringSet(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.content.SharedPreferences.Editor: * putInt(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.content.SharedPreferences.Editor: * putLong(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "accessibility_SharedPreferencesStored": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 12,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "accessibility_SharedPreferencesStored",
+      "detail": "存在<无障碍模式>[获取]相关操作写入SharedPreferences",
+      "category": "ComplianceInfo",
+      "complianceCategory": "ProductContentData_SharedPreferencesStored",
+      "complianceCategoryDetail": "产品内容信息_SharedPreferencesStored",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.view.accessibility.AccessibilityManager: * getEnabledAccessibilityServiceList(*)>",
+        "<android.view.accessibility.AccessibilityManager: * getInstalledAccessibilityServiceList(*)>"
+      ]
+    },
+    "sink": {
+      "<android.content.SharedPreferences.Editor: * putString(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.content.SharedPreferences.Editor: * putStringSet(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.content.SharedPreferences.Editor: * putInt(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.content.SharedPreferences.Editor: * putLong(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "mediaStoreQuery1_SharedPreferencesStored": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 12,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "mediaStoreQuery1_SharedPreferencesStored",
+      "detail": "存在<多媒体文件>相关操作写入SharedPreferences",
+      "category": "ComplianceInfo",
+      "complianceCategory": "ProductContentData_SharedPreferencesStored",
+      "complianceCategoryDetail": "产品内容信息_SharedPreferencesStored",
+      "level": "2"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.provider.MediaStore: * getDocumentUri(*)>",
+        "<android.provider.MediaStore: * getMediaScannerUri(*)>",
+        "<android.provider.MediaStore: * getMediaUri(*)>"
+      ]
+    },
+    "sink": {
+      "<android.content.SharedPreferences.Editor: * putString(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.content.SharedPreferences.Editor: * putStringSet(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.content.SharedPreferences.Editor: * putInt(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.content.SharedPreferences.Editor: * putLong(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "screenShot_SharedPreferencesStored": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 12,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "screenShot_SharedPreferencesStored",
+      "detail": "存在<屏幕截图>[获取]相关操作写入SharedPreferences",
+      "category": "ComplianceInfo",
+      "complianceCategory": "ProductContentData_SharedPreferencesStored",
+      "complianceCategoryDetail": "产品内容信息_SharedPreferencesStored",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.view.View: * getDrawingCache(*)>",
+        "<android.view.View: * draw(*)>",
+        "<android.view.PixelCopy: * request(*)>",
+        "<android.app.UiAutomation: * takeScreenshot(*)>",
+        "<android.view.SurfaceControl: * screenshot(*)>"
+      ]
+    },
+    "sink": {
+      "<android.content.SharedPreferences.Editor: * putString(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.content.SharedPreferences.Editor: * putStringSet(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.content.SharedPreferences.Editor: * putInt(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.content.SharedPreferences.Editor: * putLong(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "sensorManager_SharedPreferencesStored": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 12,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "sensorManager_SharedPreferencesStored",
+      "detail": "存在<传感器信息>[获取]相关操作写入SharedPreferences",
+      "category": "ComplianceInfo",
+      "complianceCategory": "ProductContentData_SharedPreferencesStored",
+      "complianceCategoryDetail": "产品内容信息_SharedPreferencesStored",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.hardware.SensorManager: * registerListener(*)>",
+        "<android.hardware.SensorManager: * registerDynamicSensorCallback(*)>",
+        "<android.hardware.SensorManager: * requestTriggerSensor(*)>",
+        "<android.hardware.SensorManager: * getDefaultSensor(*)>",
+        "<android.hardware.SensorManager: * getDynamicSensorList(*)>",
+        "<android.hardware.SensorManager: * getSensorList(*)>"
+      ]
+    },
+    "sink": {
+      "<android.content.SharedPreferences.Editor: * putString(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.content.SharedPreferences.Editor: * putStringSet(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.content.SharedPreferences.Editor: * putInt(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.content.SharedPreferences.Editor: * putLong(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "clipboardQuery_WriteFile": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 12,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "clipboardQuery_WriteFile",
+      "detail": "存在<剪贴板>[获取]相关操作写文件",
+      "category": "ComplianceInfo",
+      "complianceCategory": "ProductContentData_WriteFile",
+      "complianceCategoryDetail": "产品内容信息_WriteFile",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.content.ClipboardManager: * getPrimaryClipDescription(*)>",
+        "<android.content.ClipboardManager: * getText(*)>",
+        "<android.content.ClipboardManager: * addPrimaryClipChangedListener(*)>",
+        "<android.content.ClipData$Item: * getText(*)>"
+      ]
+    },
+    "sink": {
+      "<java.io.FileOutputStream: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.FileWriter: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.RandomAccessFile: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "accessibility_WriteFile": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 12,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "accessibility_WriteFile",
+      "detail": "存在<无障碍模式>[获取]相关操作写文件",
+      "category": "ComplianceInfo",
+      "complianceCategory": "ProductContentData_WriteFile",
+      "complianceCategoryDetail": "产品内容信息_WriteFile",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.view.accessibility.AccessibilityManager: * getEnabledAccessibilityServiceList(*)>",
+        "<android.view.accessibility.AccessibilityManager: * getInstalledAccessibilityServiceList(*)>"
+      ]
+    },
+    "sink": {
+      "<java.io.FileOutputStream: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.FileWriter: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.RandomAccessFile: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "mediaStoreQuery1_WriteFile": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 12,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "mediaStoreQuery1_WriteFile",
+      "detail": "存在<多媒体文件>相关操作写文件",
+      "category": "ComplianceInfo",
+      "complianceCategory": "ProductContentData_WriteFile",
+      "complianceCategoryDetail": "产品内容信息_WriteFile",
+      "level": "2"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.provider.MediaStore: * getDocumentUri(*)>",
+        "<android.provider.MediaStore: * getMediaScannerUri(*)>",
+        "<android.provider.MediaStore: * getMediaUri(*)>"
+      ]
+    },
+    "sink": {
+      "<java.io.FileOutputStream: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.FileWriter: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.RandomAccessFile: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "screenShot_WriteFile": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 12,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "screenShot_WriteFile",
+      "detail": "存在<屏幕截图>[获取]相关操作写文件",
+      "category": "ComplianceInfo",
+      "complianceCategory": "ProductContentData_WriteFile",
+      "complianceCategoryDetail": "产品内容信息_WriteFile",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.view.View: * getDrawingCache(*)>",
+        "<android.view.View: * draw(*)>",
+        "<android.view.PixelCopy: * request(*)>",
+        "<android.app.UiAutomation: * takeScreenshot(*)>",
+        "<android.view.SurfaceControl: * screenshot(*)>"
+      ]
+    },
+    "sink": {
+      "<java.io.FileOutputStream: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.FileWriter: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.RandomAccessFile: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "sensorManager_WriteFile": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 12,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "sensorManager_WriteFile",
+      "detail": "存在<传感器信息>[获取]相关操作写文件",
+      "category": "ComplianceInfo",
+      "complianceCategory": "ProductContentData_WriteFile",
+      "complianceCategoryDetail": "产品内容信息_WriteFile",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.hardware.SensorManager: * registerListener(*)>",
+        "<android.hardware.SensorManager: * registerDynamicSensorCallback(*)>",
+        "<android.hardware.SensorManager: * requestTriggerSensor(*)>",
+        "<android.hardware.SensorManager: * getDefaultSensor(*)>",
+        "<android.hardware.SensorManager: * getDynamicSensorList(*)>",
+        "<android.hardware.SensorManager: * getSensorList(*)>"
+      ]
+    },
+    "sink": {
+      "<java.io.FileOutputStream: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.FileWriter: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.RandomAccessFile: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  }
+}

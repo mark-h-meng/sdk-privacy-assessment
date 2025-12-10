@@ -1,0 +1,273 @@
+{
+  "wifiBluetoothInfo_NetworkTransfer_body": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 12,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "wifiBluetoothInfo_NetworkTransfer_body",
+      "detail": "存在<wifiBluetoothInfo>[获取]通过网络发送-body",
+      "category": "ComplianceInfo",
+      "complianceCategory": "wifiBluetoothInfo_NetworkTransfer",
+      "complianceCategoryDetail": "wifiBluetoothInfo_NetworkTransfer",
+      "level": "4"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.bluetooth.BluetoothAdapter: * getAddress(*)>",
+        "<android.bluetooth.BluetoothDevice: * getAddress(*)>",
+        "<android.net.wifi.WifiInfo: * getMacAddress(*)>",
+        "<android.net.wifi.WifiInfo: * getSSID(*)>",
+        "<android.net.wifi.WifiInfo: * getBSSID(*)>",
+        "<java.net.NetworkInterface: * getHardwareAddress(*)>",
+        "<android.net.wifi.WifiManager: * getScanResults(*)>",
+        "<android.net.NetworkInfo: * getExtraInfo(*)>",
+        "<android.net.wifi.WifiSsid: * toString(*)>",
+        "<android.net.ConnectivityManager: * getActiveNetworkInfo(*)>",
+        "<android.net.wifi.WifiManager: * getConfiguredNetworks(*)>"
+      ]
+    },
+    "sink": {
+      "<okio.Buffer: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<okio.BufferedSink: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<okio.Sink: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<okio.ForwardingSink: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.OutputStream: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.BufferedWriter: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.Writer: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.OutputStreamWriter: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.DataOutputStream: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.util.zip.GZIPOutputStream: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<com.bytedance.retrofit2.CallServerInterceptor: * intercept(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdySession: * submitRequestN(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdySession: * streamSendDataN(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdySession: * sendCustomControlFrameN(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "wifiBluetoothInfo_NetworkTransfer_header": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 12,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "wifiBluetoothInfo_NetworkTransfer_header",
+      "detail": "存在<wifiBluetoothInfo>[获取]通过网络发送-header",
+      "category": "ComplianceInfo",
+      "complianceCategory": "wifiBluetoothInfo_NetworkTransfer",
+      "complianceCategoryDetail": "wifiBluetoothInfo_NetworkTransfer",
+      "level": "4"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.bluetooth.BluetoothAdapter: * getAddress(*)>",
+        "<android.bluetooth.BluetoothDevice: * getAddress(*)>",
+        "<android.net.wifi.WifiInfo: * getMacAddress(*)>",
+        "<android.net.wifi.WifiInfo: * getSSID(*)>",
+        "<android.net.wifi.WifiInfo: * getBSSID(*)>",
+        "<java.net.NetworkInterface: * getHardwareAddress(*)>",
+        "<android.net.wifi.WifiManager: * getScanResults(*)>",
+        "<android.net.NetworkInfo: * getExtraInfo(*)>",
+        "<android.net.wifi.WifiSsid: * toString(*)>",
+        "<android.net.ConnectivityManager: * getActiveNetworkInfo(*)>",
+        "<android.net.wifi.WifiManager: * getConfiguredNetworks(*)>"
+      ]
+    },
+    "sink": {
+      "<java.net.URLConnection: * addRequestProperty(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.net.URLConnection: * setRequestProperty(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * addHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * addHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * setHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * setHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * setHeaders(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * setHeaders(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdyRequest: * addHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdyRequest: * addHeaders(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "wifiBluetoothInfo_NetworkTransfer_url": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 12,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "wifiBluetoothInfo_NetworkTransfer_url",
+      "detail": "存在<wifiBluetoothInfo>[获取]通过网络发送-url",
+      "category": "ComplianceInfo",
+      "complianceCategory": "wifiBluetoothInfo_NetworkTransfer",
+      "complianceCategoryDetail": "wifiBluetoothInfo_NetworkTransfer",
+      "level": "4"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.bluetooth.BluetoothAdapter: * getAddress(*)>",
+        "<android.bluetooth.BluetoothDevice: * getAddress(*)>",
+        "<android.net.wifi.WifiInfo: * getMacAddress(*)>",
+        "<android.net.wifi.WifiInfo: * getSSID(*)>",
+        "<android.net.wifi.WifiInfo: * getBSSID(*)>",
+        "<java.net.NetworkInterface: * getHardwareAddress(*)>",
+        "<android.net.wifi.WifiManager: * getScanResults(*)>",
+        "<android.net.NetworkInfo: * getExtraInfo(*)>",
+        "<android.net.wifi.WifiSsid: * toString(*)>",
+        "<android.net.ConnectivityManager: * getActiveNetworkInfo(*)>",
+        "<android.net.wifi.WifiManager: * getConfiguredNetworks(*)>"
+      ]
+    },
+    "sink": {
+      "<java.net.URL: * openConnection(*)>": {
+        "TaintCheck": [
+          "@this"
+        ]
+      },
+      "<java.net.HttpURLConnection: * <init>(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * <init>(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * <init>(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * setParams(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * setParams(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.params.HttpParams: * setParameter(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdyRequest: * <init>(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    },
+    "TaintTweak": {
+      "DisableEngineWrapper": false,
+      "MethodSignature": {
+        "<java.net.URLEncoder: java.lang.String encode(java.lang.String, java.lang.String)>": {
+          "p0->ret": {
+            "I": [
+              "p0"
+            ],
+            "O": [
+              "ret"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

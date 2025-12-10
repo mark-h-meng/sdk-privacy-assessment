@@ -1,0 +1,1152 @@
+{
+  "clipboardQuery_NetworkTransfer_body": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 12,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "clipboardQuery_NetworkTransfer_body",
+      "detail": "存在<剪贴板>[获取]相关操作通过网络发送-body",
+      "category": "ComplianceInfo",
+      "complianceCategory": "ProductContentData_NetworkTransfer",
+      "complianceCategoryDetail": "产品内容信息_NetworkTransfer",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.content.ClipboardManager: * getPrimaryClipDescription(*)>",
+        "<android.content.ClipboardManager: * getText(*)>",
+        "<android.content.ClipboardManager: * addPrimaryClipChangedListener(*)>",
+        "<android.content.ClipData$Item: * getText(*)>"
+      ]
+    },
+    "sink": {
+      "<okio.Buffer: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<okio.BufferedSink: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<okio.Sink: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<okio.ForwardingSink: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.OutputStream: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.Writer: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.OutputStreamWriter: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.DataOutputStream: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.util.zip.GZIPOutputStream: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<com.bytedance.retrofit2.CallServerInterceptor: * intercept(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdySession: * submitRequestN(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdySession: * streamSendDataN(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdySession: * sendCustomControlFrameN(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "accessibility_NetworkTransfer_body": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 12,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "accessibility_NetworkTransfer_body",
+      "detail": "存在<无障碍模式>[获取]相关操作通过网络发送-body",
+      "category": "ComplianceInfo",
+      "complianceCategory": "ProductContentData_NetworkTransfer",
+      "complianceCategoryDetail": "产品内容信息_NetworkTransfer",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.view.accessibility.AccessibilityManager: * getEnabledAccessibilityServiceList(*)>",
+        "<android.view.accessibility.AccessibilityManager: * getInstalledAccessibilityServiceList(*)>"
+      ]
+    },
+    "sink": {
+      "<okio.Buffer: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<okio.BufferedSink: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<okio.Sink: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<okio.ForwardingSink: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.OutputStream: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.Writer: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.OutputStreamWriter: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.DataOutputStream: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.util.zip.GZIPOutputStream: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<com.bytedance.retrofit2.CallServerInterceptor: * intercept(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdySession: * submitRequestN(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdySession: * streamSendDataN(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdySession: * sendCustomControlFrameN(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "mediaStoreQuery1_NetworkTransfer_body": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 12,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "mediaStoreQuery1_NetworkTransfer_body",
+      "detail": "存在<多媒体文件>相关操作通过网络发送-body",
+      "category": "ComplianceInfo",
+      "complianceCategory": "ProductContentData_NetworkTransfer",
+      "complianceCategoryDetail": "产品内容信息_NetworkTransfer",
+      "level": "2"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.provider.MediaStore: * getDocumentUri(*)>",
+        "<android.provider.MediaStore: * getMediaScannerUri(*)>",
+        "<android.provider.MediaStore: * getMediaUri(*)>"
+      ]
+    },
+    "sink": {
+      "<okio.Buffer: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<okio.BufferedSink: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<okio.Sink: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<okio.ForwardingSink: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.OutputStream: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.Writer: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.OutputStreamWriter: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.DataOutputStream: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.util.zip.GZIPOutputStream: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<com.bytedance.retrofit2.CallServerInterceptor: * intercept(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdySession: * submitRequestN(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdySession: * streamSendDataN(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdySession: * sendCustomControlFrameN(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "screenShot_NetworkTransfer_body": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 12,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "screenShot_NetworkTransfer_body",
+      "detail": "存在<屏幕截图>[获取]相关操作通过网络发送-body",
+      "category": "ComplianceInfo",
+      "complianceCategory": "ProductContentData_NetworkTransfer",
+      "complianceCategoryDetail": "产品内容信息_NetworkTransfer",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.view.View: * getDrawingCache(*)>",
+        "<android.view.View: * draw(*)>",
+        "<android.view.PixelCopy: * request(*)>",
+        "<android.app.UiAutomation: * takeScreenshot(*)>",
+        "<android.view.SurfaceControl: * screenshot(*)>"
+      ]
+    },
+    "sink": {
+      "<okio.Buffer: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<okio.BufferedSink: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<okio.Sink: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<okio.ForwardingSink: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.OutputStream: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.Writer: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.OutputStreamWriter: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.DataOutputStream: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.util.zip.GZIPOutputStream: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<com.bytedance.retrofit2.CallServerInterceptor: * intercept(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdySession: * submitRequestN(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdySession: * streamSendDataN(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdySession: * sendCustomControlFrameN(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "sensorManager_NetworkTransfer_body": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 12,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "sensorManager_NetworkTransfer_body",
+      "detail": "存在<传感器信息>[获取]相关操作通过网络发送-body",
+      "category": "ComplianceInfo",
+      "complianceCategory": "ProductContentData_NetworkTransfer",
+      "complianceCategoryDetail": "产品内容信息_NetworkTransfer",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.hardware.SensorManager: * registerListener(*)>",
+        "<android.hardware.SensorManager: * registerDynamicSensorCallback(*)>",
+        "<android.hardware.SensorManager: * requestTriggerSensor(*)>",
+        "<android.hardware.SensorManager: * getDefaultSensor(*)>",
+        "<android.hardware.SensorManager: * getDynamicSensorList(*)>",
+        "<android.hardware.SensorManager: * getSensorList(*)>"
+      ]
+    },
+    "sink": {
+      "<okio.Buffer: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<okio.BufferedSink: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<okio.Sink: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<okio.ForwardingSink: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.OutputStream: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.Writer: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.OutputStreamWriter: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.DataOutputStream: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.util.zip.GZIPOutputStream: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<com.bytedance.retrofit2.CallServerInterceptor: * intercept(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdySession: * submitRequestN(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdySession: * streamSendDataN(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdySession: * sendCustomControlFrameN(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "clipboardQuery_NetworkTransfer_header": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 12,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "clipboardQuery_NetworkTransfer_header",
+      "detail": "存在<剪贴板>[获取]相关操作通过网络发送-header",
+      "category": "ComplianceInfo",
+      "complianceCategory": "ProductContentData_NetworkTransfer",
+      "complianceCategoryDetail": "产品内容信息_NetworkTransfer",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.content.ClipboardManager: * getPrimaryClipDescription(*)>",
+        "<android.content.ClipboardManager: * getText(*)>",
+        "<android.content.ClipboardManager: * addPrimaryClipChangedListener(*)>",
+        "<android.content.ClipData$Item: * getText(*)>"
+      ]
+    },
+    "sink": {
+      "<java.net.URLConnection: * addRequestProperty(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.net.URLConnection: * setRequestProperty(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * addHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * addHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * setHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * setHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * setHeaders(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * setHeaders(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdyRequest: * addHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdyRequest: * addHeaders(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "accessibility_NetworkTransfer_header": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 12,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "accessibility_NetworkTransfer_header",
+      "detail": "存在<无障碍模式>[获取]相关操作通过网络发送-header",
+      "category": "ComplianceInfo",
+      "complianceCategory": "ProductContentData_NetworkTransfer",
+      "complianceCategoryDetail": "产品内容信息_NetworkTransfer",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.view.accessibility.AccessibilityManager: * getEnabledAccessibilityServiceList(*)>",
+        "<android.view.accessibility.AccessibilityManager: * getInstalledAccessibilityServiceList(*)>"
+      ]
+    },
+    "sink": {
+      "<java.net.URLConnection: * addRequestProperty(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.net.URLConnection: * setRequestProperty(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * addHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * addHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * setHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * setHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * setHeaders(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * setHeaders(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdyRequest: * addHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdyRequest: * addHeaders(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "mediaStoreQuery1_NetworkTransfer_header": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 12,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "mediaStoreQuery1_NetworkTransfer_header",
+      "detail": "存在<多媒体文件>相关操作通过网络发送-header",
+      "category": "ComplianceInfo",
+      "complianceCategory": "ProductContentData_NetworkTransfer",
+      "complianceCategoryDetail": "产品内容信息_NetworkTransfer",
+      "level": "2"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.provider.MediaStore: * getDocumentUri(*)>",
+        "<android.provider.MediaStore: * getMediaScannerUri(*)>",
+        "<android.provider.MediaStore: * getMediaUri(*)>"
+      ]
+    },
+    "sink": {
+      "<java.net.URLConnection: * addRequestProperty(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.net.URLConnection: * setRequestProperty(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * addHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * addHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * setHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * setHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * setHeaders(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * setHeaders(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdyRequest: * addHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdyRequest: * addHeaders(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "screenShot_NetworkTransfer_header": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 12,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "screenShot_NetworkTransfer_header",
+      "detail": "存在<屏幕截图>[获取]相关操作通过网络发送-header",
+      "category": "ComplianceInfo",
+      "complianceCategory": "ProductContentData_NetworkTransfer",
+      "complianceCategoryDetail": "产品内容信息_NetworkTransfer",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.view.View: * getDrawingCache(*)>",
+        "<android.view.View: * draw(*)>",
+        "<android.view.PixelCopy: * request(*)>",
+        "<android.app.UiAutomation: * takeScreenshot(*)>",
+        "<android.view.SurfaceControl: * screenshot(*)>"
+      ]
+    },
+    "sink": {
+      "<java.net.URLConnection: * addRequestProperty(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.net.URLConnection: * setRequestProperty(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * addHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * addHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * setHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * setHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * setHeaders(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * setHeaders(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdyRequest: * addHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdyRequest: * addHeaders(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "sensorManager_NetworkTransfer_header": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 12,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "sensorManager_NetworkTransfer_header",
+      "detail": "存在<传感器信息>[获取]相关操作通过网络发送-header",
+      "category": "ComplianceInfo",
+      "complianceCategory": "ProductContentData_NetworkTransfer",
+      "complianceCategoryDetail": "产品内容信息_NetworkTransfer",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.hardware.SensorManager: * registerListener(*)>",
+        "<android.hardware.SensorManager: * registerDynamicSensorCallback(*)>",
+        "<android.hardware.SensorManager: * requestTriggerSensor(*)>",
+        "<android.hardware.SensorManager: * getDefaultSensor(*)>",
+        "<android.hardware.SensorManager: * getDynamicSensorList(*)>",
+        "<android.hardware.SensorManager: * getSensorList(*)>"
+      ]
+    },
+    "sink": {
+      "<java.net.URLConnection: * addRequestProperty(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.net.URLConnection: * setRequestProperty(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * addHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * addHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * setHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * setHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * setHeaders(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * setHeaders(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdyRequest: * addHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdyRequest: * addHeaders(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "clipboardQuery_NetworkTransfer_url": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 12,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "clipboardQuery_NetworkTransfer_url",
+      "detail": "存在<剪贴板>[获取]相关操作通过网络发送-url",
+      "category": "ComplianceInfo",
+      "complianceCategory": "ProductContentData_NetworkTransfer",
+      "complianceCategoryDetail": "产品内容信息_NetworkTransfer",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.content.ClipboardManager: * getPrimaryClipDescription(*)>",
+        "<android.content.ClipboardManager: * getText(*)>",
+        "<android.content.ClipboardManager: * addPrimaryClipChangedListener(*)>",
+        "<android.content.ClipData$Item: * getText(*)>"
+      ]
+    },
+    "sink": {
+      "<java.net.URL: * openConnection(*)>": {
+        "TaintCheck": [
+          "@this"
+        ]
+      },
+      "<java.net.HttpURLConnection: * <init>(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * <init>(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * <init>(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * setParams(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * setParams(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.params.HttpParams: * setParameter(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdyRequest: * <init>(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "accessibility_NetworkTransfer_url": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 12,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "accessibility_NetworkTransfer_url",
+      "detail": "存在<无障碍模式>[获取]相关操作通过网络发送-url",
+      "category": "ComplianceInfo",
+      "complianceCategory": "ProductContentData_NetworkTransfer",
+      "complianceCategoryDetail": "产品内容信息_NetworkTransfer",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.view.accessibility.AccessibilityManager: * getEnabledAccessibilityServiceList(*)>",
+        "<android.view.accessibility.AccessibilityManager: * getInstalledAccessibilityServiceList(*)>"
+      ]
+    },
+    "sink": {
+      "<java.net.URL: * openConnection(*)>": {
+        "TaintCheck": [
+          "@this"
+        ]
+      },
+      "<java.net.HttpURLConnection: * <init>(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * <init>(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * <init>(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * setParams(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * setParams(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.params.HttpParams: * setParameter(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdyRequest: * <init>(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "mediaStoreQuery1_NetworkTransfer_url": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 12,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "mediaStoreQuery1_NetworkTransfer_url",
+      "detail": "存在<多媒体文件>相关操作通过网络发送-url",
+      "category": "ComplianceInfo",
+      "complianceCategory": "ProductContentData_NetworkTransfer",
+      "complianceCategoryDetail": "产品内容信息_NetworkTransfer",
+      "level": "2"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.provider.MediaStore: * getDocumentUri(*)>",
+        "<android.provider.MediaStore: * getMediaScannerUri(*)>",
+        "<android.provider.MediaStore: * getMediaUri(*)>"
+      ]
+    },
+    "sink": {
+      "<java.net.URL: * openConnection(*)>": {
+        "TaintCheck": [
+          "@this"
+        ]
+      },
+      "<java.net.HttpURLConnection: * <init>(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * <init>(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * <init>(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * setParams(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * setParams(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.params.HttpParams: * setParameter(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdyRequest: * <init>(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "screenShot_NetworkTransfer_url": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 12,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "screenShot_NetworkTransfer_url",
+      "detail": "存在<屏幕截图>[获取]相关操作通过网络发送-url",
+      "category": "ComplianceInfo",
+      "complianceCategory": "ProductContentData_NetworkTransfer",
+      "complianceCategoryDetail": "产品内容信息_NetworkTransfer",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.view.View: * getDrawingCache(*)>",
+        "<android.view.View: * draw(*)>",
+        "<android.view.PixelCopy: * request(*)>",
+        "<android.app.UiAutomation: * takeScreenshot(*)>",
+        "<android.view.SurfaceControl: * screenshot(*)>"
+      ]
+    },
+    "sink": {
+      "<java.net.URL: * openConnection(*)>": {
+        "TaintCheck": [
+          "@this"
+        ]
+      },
+      "<java.net.HttpURLConnection: * <init>(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * <init>(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * <init>(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * setParams(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * setParams(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.params.HttpParams: * setParameter(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdyRequest: * <init>(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "sensorManager_NetworkTransfer_url": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 12,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "sensorManager_NetworkTransfer_url",
+      "detail": "存在<传感器信息>[获取]相关操作通过网络发送-url",
+      "category": "ComplianceInfo",
+      "complianceCategory": "ProductContentData_NetworkTransfer",
+      "complianceCategoryDetail": "产品内容信息_NetworkTransfer",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.hardware.SensorManager: * registerListener(*)>",
+        "<android.hardware.SensorManager: * registerDynamicSensorCallback(*)>",
+        "<android.hardware.SensorManager: * requestTriggerSensor(*)>",
+        "<android.hardware.SensorManager: * getDefaultSensor(*)>",
+        "<android.hardware.SensorManager: * getDynamicSensorList(*)>",
+        "<android.hardware.SensorManager: * getSensorList(*)>"
+      ]
+    },
+    "sink": {
+      "<java.net.URL: * openConnection(*)>": {
+        "TaintCheck": [
+          "@this"
+        ]
+      },
+      "<java.net.HttpURLConnection: * <init>(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * <init>(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * <init>(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * setParams(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * setParams(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.params.HttpParams: * setParameter(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdyRequest: * <init>(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,467 @@
+{
+  "IMSI": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 30,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "IMSI",
+      "detail": "存在<IMSI>[获取]相关操作",
+      "category": "ComplianceInfo",
+      "complianceCategory": "SystemOrNetworkIdentifierInformation",
+      "complianceCategoryDetail": "系统或网络识别信息",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.telephony.TelephonyManager: * getSubscriberId(*)>"
+      ]
+    },
+    "sink": {
+      "<*: * sendBroadcast*(*)>": {
+        "LibraryOnly": true,
+        "TaintParamType": [
+          "android.content.Intent",
+          "android.content.Intent[]"
+        ],
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "countryIso": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 30,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "countryIso",
+      "detail": "存在<长途区号>[获取]相关操作",
+      "category": "ComplianceInfo",
+      "complianceCategory": "SystemOrNetworkIdentifierInformation",
+      "complianceCategoryDetail": "系统或网络识别信息",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.telephony.TelephonyManager: * getNetworkCountryIso(*)>",
+        "<android.telephony.TelephonyManager: * getSimCountryIso(*)>"
+      ]
+    },
+    "sink": {
+      "<*: * sendBroadcast*(*)>": {
+        "LibraryOnly": true,
+        "TaintParamType": [
+          "android.content.Intent",
+          "android.content.Intent[]"
+        ],
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "dataState": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 30,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "dataState",
+      "detail": "存在<移动网络状态>[获取]相关操作",
+      "category": "ComplianceInfo",
+      "complianceCategory": "SystemOrNetworkIdentifierInformation",
+      "complianceCategoryDetail": "系统或网络识别信息",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.telephony.TelephonyManager: * isDataEnabled(*)>",
+        "<android.telephony.TelephonyManager: * isDataRoamingEnabled(*)>",
+        "<android.telephony.TelephonyManager: * getDataState(*)>",
+        "<android.telephony.TelephonyManager: * getNetworkType(*)>",
+        "<android.telephony.TelephonyManager: * getDataNetworkType(*)>",
+        "<android.telephony.TelephonyManager: * isNetworkRoaming(*)>",
+        "<android.telephony.TelephonyManager: * setDataEnabled(*)>"
+      ]
+    },
+    "sink": {
+      "<*: * sendBroadcast*(*)>": {
+        "LibraryOnly": true,
+        "TaintParamType": [
+          "android.content.Intent",
+          "android.content.Intent[]"
+        ],
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "ipAddress": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 30,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "ipAddress",
+      "detail": "存在<IP地址>[获取]相关操作",
+      "category": "ComplianceInfo",
+      "complianceCategory": "SystemOrNetworkIdentifierInformation",
+      "complianceCategoryDetail": "系统或网络识别信息",
+      "level": "3"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.net.wifi.WifiInfo: * getIpAddress(*)>",
+        "<java.net.InetAddress: * getHostAddress(*)>",
+        "<java.net.InetAddress: * getAddress(*)>"
+      ]
+    },
+    "sink": {
+      "<*: * sendBroadcast*(*)>": {
+        "LibraryOnly": true,
+        "TaintParamType": [
+          "android.content.Intent",
+          "android.content.Intent[]"
+        ],
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "carrier": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 30,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "carrier",
+      "detail": "存在<运营商信息>[获取]相关操作",
+      "category": "ComplianceInfo",
+      "complianceCategory": "SystemOrNetworkIdentifierInformation",
+      "complianceCategoryDetail": "系统或网络识别信息",
+      "level": "3"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.telephony.TelephonyManager: * getNetworkOperator(*)>",
+        "<android.telephony.TelephonyManager: * getNetworkOperatorName(*)>",
+        "<android.telephony.TelephonyManager: * getCarrierIdFromSimMccMnc(*)>"
+      ]
+    },
+    "sink": {
+      "<*: * sendBroadcast*(*)>": {
+        "LibraryOnly": true,
+        "TaintParamType": [
+          "android.content.Intent",
+          "android.content.Intent[]"
+        ],
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "MCCMNC": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 30,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "MCCMNC",
+      "detail": "存在<移动国家码/网络码>[获取]相关操作",
+      "category": "ComplianceInfo",
+      "complianceCategory": "SystemOrNetworkIdentifierInformation",
+      "complianceCategoryDetail": "系统或网络识别信息",
+      "level": "3"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.telephony.TelephonyManager: * getSimOperator(*)>",
+        "<android.telephony.TelephonyManager: * getSimOperatorName(*)>"
+      ]
+    },
+    "sink": {
+      "<*: * sendBroadcast*(*)>": {
+        "LibraryOnly": true,
+        "TaintParamType": [
+          "android.content.Intent",
+          "android.content.Intent[]"
+        ],
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "phoneType": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 30,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "phoneType",
+      "detail": "存在<手机类型>[获取]相关操作",
+      "category": "ComplianceInfo",
+      "complianceCategory": "SystemOrNetworkIdentifierInformation",
+      "complianceCategoryDetail": "系统或网络识别信息",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.telephony.TelephonyManager: * getPhoneType(*)>"
+      ]
+    },
+    "sink": {
+      "<*: * sendBroadcast*(*)>": {
+        "LibraryOnly": true,
+        "TaintParamType": [
+          "android.content.Intent",
+          "android.content.Intent[]"
+        ],
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "simState": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 30,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "simState",
+      "detail": "存在<手机卡状态>[获取]相关操作",
+      "category": "ComplianceInfo",
+      "complianceCategory": "SystemOrNetworkIdentifierInformation",
+      "complianceCategoryDetail": "系统或网络识别信息",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.telephony.TelephonyManager: * getSimState(*)>"
+      ]
+    },
+    "sink": {
+      "<*: * sendBroadcast*(*)>": {
+        "LibraryOnly": true,
+        "TaintParamType": [
+          "android.content.Intent",
+          "android.content.Intent[]"
+        ],
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "voiceMail": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 30,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "voiceMail",
+      "detail": "存在<手机语音邮件>[获取]相关操作",
+      "category": "ComplianceInfo",
+      "complianceCategory": "SystemOrNetworkIdentifierInformation",
+      "complianceCategoryDetail": "系统或网络识别信息",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.telephony.TelephonyManager: * getVoiceMailAlphaTag(*)>",
+        "<android.telephony.TelephonyManager: * getVoiceMailNumber(*)>"
+      ]
+    },
+    "sink": {
+      "<*: * sendBroadcast*(*)>": {
+        "LibraryOnly": true,
+        "TaintParamType": [
+          "android.content.Intent",
+          "android.content.Intent[]"
+        ],
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "tac": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 30,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "tac",
+      "detail": "存在<Tracking Area Code>[获取]相关操作",
+      "category": "ComplianceInfo",
+      "complianceCategory": "SystemOrNetworkIdentifierInformation",
+      "complianceCategoryDetail": "系统或网络识别信息",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.telephony.CellIdentityLte: * getTac(*)>"
+      ]
+    },
+    "sink": {
+      "<*: * sendBroadcast*(*)>": {
+        "LibraryOnly": true,
+        "TaintParamType": [
+          "android.content.Intent",
+          "android.content.Intent[]"
+        ],
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "wifiStateQuery": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 30,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "wifiState",
+      "detail": "存在<WI-FI状态>[获取]相关操作",
+      "category": "ComplianceInfo",
+      "complianceCategory": "SystemOrNetworkIdentifierInformation",
+      "complianceCategoryDetail": "系统或网络识别信息",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.net.wifi.WifiManager: boolean isWifiEnabled()>",
+        "<android.net.wifi.WifiManager: int getWifiState()>"
+      ]
+    },
+    "sink": {
+      "<*: * sendBroadcast*(*)>": {
+        "LibraryOnly": true,
+        "TaintParamType": [
+          "android.content.Intent",
+          "android.content.Intent[]"
+        ],
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "wifiStateSet": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 30,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "wifiState",
+      "detail": "存在<WI-FI状态>[设置]相关操作",
+      "category": "ComplianceInfo",
+      "complianceCategory": "SystemOrNetworkIdentifierInformation",
+      "complianceCategoryDetail": "系统或网络识别信息",
+      "level": "2"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.net.wifi.WifiManager: boolean setWifiEnabled(boolean)>"
+      ]
+    },
+    "sink": {
+      "<*: * sendBroadcast*(*)>": {
+        "LibraryOnly": true,
+        "TaintParamType": [
+          "android.content.Intent",
+          "android.content.Intent[]"
+        ],
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "blueToothStateQuery": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 30,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "blueToothState",
+      "detail": "存在<蓝牙状态>[获取]相关操作",
+      "category": "ComplianceInfo",
+      "complianceCategory": "SystemOrNetworkIdentifierInformation",
+      "complianceCategoryDetail": "系统或网络识别信息",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.bluetooth.BluetoothAdapter: boolean isDiscovering()>",
+        "<android.bluetooth.BluetoothAdapter: int getState()>",
+        "<android.bluetooth.BluetoothAdapter: boolean isEnabled()>"
+      ]
+    },
+    "sink": {
+      "<*: * sendBroadcast*(*)>": {
+        "LibraryOnly": true,
+        "TaintParamType": [
+          "android.content.Intent",
+          "android.content.Intent[]"
+        ],
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "blueToothStateSet": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 30,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "blueToothState",
+      "detail": "存在<蓝牙状态>[设置]相关操作",
+      "category": "ComplianceInfo",
+      "complianceCategory": "SystemOrNetworkIdentifierInformation",
+      "complianceCategoryDetail": "系统或网络识别信息",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.bluetooth.BluetoothAdapter: boolean enable()>",
+        "<android.bluetooth.BluetoothAdapter: boolean disable()>"
+      ]
+    },
+    "sink": {
+      "<*: * sendBroadcast*(*)>": {
+        "LibraryOnly": true,
+        "TaintParamType": [
+          "android.content.Intent",
+          "android.content.Intent[]"
+        ],
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  }
+}

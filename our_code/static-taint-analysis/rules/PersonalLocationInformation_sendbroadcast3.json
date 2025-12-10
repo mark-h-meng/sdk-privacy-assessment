@@ -1,0 +1,265 @@
+{
+  "cellInformation2broadcast": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 30,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "cellInformation2broadcast",
+      "detail": "存在<基站信息>发送广播",
+      "category": "ComplianceInfo",
+      "complianceCategory": "cellInformation2broadcast",
+      "complianceCategoryDetail": "个人位置信息",
+      "level": "4"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.telephony.TelephonyManager: * getCellLocation(*)>",
+        "<android.telephony.TelephonyManager: * getAllCellInfo(*)>",
+        "<android.telephony.cdma.CdmaCellLocation: * getBaseStationId(*)>",
+        "<android.telephony.cdma.CdmaCellLocation: * getBaseStationLatitude(*)>",
+        "<android.telephony.cdma.CdmaCellLocation: * getBaseStationLongitude(*)>",
+        "<android.telephony.cdma.CdmaCellLocation: * getNetworkId(*)>",
+        "<android.telephony.cdma.CdmaCellLocation: * getSystemId(*)>",
+        "<android.telephony.gsm.GsmCellLocation: * getCid(*)>",
+        "<android.telephony.gsm.GsmCellLocation: * getLac(*)>",
+        "<android.telephony.gsm.GsmCellLocation: * getPsc(*)>",
+        "<android.telephony.PhoneStateListener: * onServiceStateChanged(*)>",
+        "<android.telephony.PhoneStateListener: * onSignalStrengthChanged(*)>",
+        "<android.telephony.PhoneStateListener: * onMessageWaitingIndicatorChanged(*)>",
+        "<android.telephony.PhoneStateListener: * onCallForwardingIndicatorChanged(*)>",
+        "<android.telephony.PhoneStateListener: * onCallStateChanged(*)>",
+        "<android.telephony.PhoneStateListener: * onDataConnectionStateChanged(*)>",
+        "<android.telephony.PhoneStateListener: * onDataActivity(*)>",
+        "<android.telephony.PhoneStateListener: * onSignalStrengthsChanged(*)>",
+        "<android.telephony.PhoneStateListener: * onCellInfoChanged(*)>",
+        "<android.telephony.PhoneStateListener: * onCellLocationChanged(*)>"
+      ]
+    },
+    "sink": {
+      "<*: * sendBroadcast*(*)>": {
+        "LibraryOnly": true,
+        "TaintParamType": [
+          "android.content.Intent",
+          "android.content.Intent[]"
+        ],
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "latitudeAndLongitudeInformation2broadcast": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 30,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "latitudeAndLongitudeInformation2broadcast",
+      "detail": "存在<经纬度信息>[获取]相关操作",
+      "category": "ComplianceInfo",
+      "complianceCategory": "latitudeAndLongitudeInformation2broadcast",
+      "complianceCategoryDetail": "个人位置信息",
+      "level": "4"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.location.LocationManager: * getLastKnownLocation(*)>",
+        "<android.location.LocationManager: * getCurrentLocation(*)>",
+        "<android.location.LocationManager: * getGpsStatus(*)>",
+        "<android.location.LocationManager: * requestSingleUpdate(*)>",
+        "<android.location.LocationManager: * requestLocationUpdates(*)>",
+        "<android.location.LocationManager: * addGpsStatusListener(*)>",
+        "<android.location.LocationManager: * registerGnssStatusCallback(*)>",
+        "<android.location.LocationManager: * registerGnssMeasurementsCallback(*)>",
+        "<android.location.LocationManager: * registerGnssNavigationMessageCallback(*)>",
+        "<android.location.LocationManager: * addNmeaListener(*)>",
+        "<android.location.Location: * getLatitude(*)>",
+        "<android.location.Location: * getLongitude(*)>",
+        "<android.location.Location: * getAltitude(*)>",
+        "<android.location.Address: * getLatitude(*)>",
+        "<android.location.Address: * getLongitude(*)>"
+      ]
+    },
+    "sink": {
+      "<*: * sendBroadcast*(*)>": {
+        "LibraryOnly": true,
+        "TaintParamType": [
+          "android.content.Intent",
+          "android.content.Intent[]"
+        ],
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "scanBluetooth": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 30,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "scanBluetooth",
+      "detail": "存在<蓝牙扫描>[扫描]相关操作",
+      "category": "ComplianceInfo",
+      "complianceCategory": "cellInformation2broadcast",
+      "complianceCategoryDetail": "个人位置信息",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.bluetooth.BluetoothAdapter: * startDiscovery(*)>"
+      ]
+    },
+    "sink": {
+      "<*: * sendBroadcast*(*)>": {
+        "LibraryOnly": true,
+        "TaintParamType": [
+          "android.content.Intent",
+          "android.content.Intent[]"
+        ],
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "scanWifi": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 30,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "scanWifi",
+      "detail": "存在<Wi-Fi扫描>[扫描]相关操作",
+      "category": "ComplianceInfo",
+      "complianceCategory": "cellInformation2broadcast",
+      "complianceCategoryDetail": "个人位置信息",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.net.wifi.WifiManager: * startScan(*)>",
+        "<android.net.wifi.WifiManager: * getScanResults(*)>"
+      ]
+    },
+    "sink": {
+      "<*: * sendBroadcast*(*)>": {
+        "LibraryOnly": true,
+        "TaintParamType": [
+          "android.content.Intent",
+          "android.content.Intent[]"
+        ],
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "systemCountryOrRegion": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 30,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "systemCountryOrRegion",
+      "detail": "存在<系统国家/区域信息>[获取]相关操作",
+      "category": "ComplianceInfo",
+      "complianceCategory": "cellInformation2broadcast",
+      "complianceCategoryDetail": "个人位置信息",
+      "level": "3"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.telephony.TelephonyManager: * getSimCountryIso(*)>",
+        "<java.util.Locale: * getCountry(*)>",
+        "<android.location.Address: * getCountryName(*)>",
+        "<android.location.Address: * getCountryCode(*)>"
+      ]
+    },
+    "sink": {
+      "<*: * sendBroadcast*(*)>": {
+        "LibraryOnly": true,
+        "TaintParamType": [
+          "android.content.Intent",
+          "android.content.Intent[]"
+        ],
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "mediaLocationSet": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 30,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "mediaLocation",
+      "detail": "存在<媒体文件位置信息>[设置]相关操作",
+      "category": "ComplianceInfo",
+      "complianceCategory": "cellInformation2broadcast",
+      "complianceCategoryDetail": "个人位置信息",
+      "level": "4"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.provider.MediaStore: * setRequireOriginal(*)>"
+      ]
+    },
+    "sink": {
+      "<*: * sendBroadcast*(*)>": {
+        "LibraryOnly": true,
+        "TaintParamType": [
+          "android.content.Intent",
+          "android.content.Intent[]"
+        ],
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "mediaLocation": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 30,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "mediaLocation",
+      "detail": "存在<媒体文件位置信息>[获取]相关操作",
+      "category": "ComplianceInfo",
+      "complianceCategory": "cellInformation2broadcast",
+      "complianceCategoryDetail": "个人位置信息",
+      "level": "4"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.media.ExifInterface: * getAltitude(*)>",
+        "<android.media.ExifInterface: * getLatLong(*)>",
+        "<android.provider.MediaStore: * getRequireOriginal(*)>"
+      ]
+    },
+    "sink": {
+      "<*: * sendBroadcast*(*)>": {
+        "LibraryOnly": true,
+        "TaintParamType": [
+          "android.content.Intent",
+          "android.content.Intent[]"
+        ],
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  }
+}

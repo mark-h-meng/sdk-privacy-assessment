@@ -1,0 +1,35 @@
+{
+  "softwareUsageRecords": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 30,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "softwareUsageRecords",
+      "detail": "存在<软件使用记录>[获取]相关操作",
+      "category": "ComplianceInfo",
+      "complianceCategory": "ServiceContentInformation",
+      "complianceCategoryDetail": "服务内容信息",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.app.usage.UsageStatsManager: * query*(*)>",
+        "<android.app.usage.UsageStatsManager: int getAppStandbyBucket()>"
+      ]
+    },
+    "sink": {
+      "<*: * sendBroadcast*(*)>": {
+        "LibraryOnly": true,
+        "TaintParamType": [
+          "android.content.Intent",
+          "android.content.Intent[]"
+        ],
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  }
+}

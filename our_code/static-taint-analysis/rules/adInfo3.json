@@ -1,0 +1,36 @@
+{
+  "adInfo2Broadcast": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 30,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "adInfo2Broadcast",
+      "detail": "存在<adInfo>[获取]并通过广播发送",
+      "category": "ComplianceInfo",
+      "complianceCategory": "adInfo",
+      "complianceCategoryDetail": "adInfo",
+      "level": "4"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<com.google.android.gms.ads.identifier.AdvertisingIdClient: * getAdvertisingIdInfo(*)>",
+        "<androidx.ads.identifier.AdvertisingIdClient: * getAdvertisingIdInfo(*)>",
+        "<androidx.ads.identifier.AdvertisingIdClient: * isAdvertisingIdProviderAvailable(*)>"
+      ]
+    },
+    "sink": {
+      "<*: * sendBroadcast*(*)>": {
+        "LibraryOnly": true,
+        "TaintParamType": [
+          "android.content.Intent",
+          "android.content.Intent[]"
+        ],
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  }
+}

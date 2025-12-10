@@ -1,0 +1,3147 @@
+{
+  "IMSI_NetworkTransfer_body": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 12,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "IMSI_NetworkTransfer_body",
+      "detail": "存在<IMSI>[获取]相关操作通过网络发送-body",
+      "category": "ComplianceInfo",
+      "complianceCategory": "SystemOrNetworkIdentifierInformation_NetworkTransfer",
+      "complianceCategoryDetail": "系统或网络识别信息_NetworkTransfer",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.telephony.TelephonyManager: * getSubscriberId(*)>"
+      ]
+    },
+    "sink": {
+      "<okio.Buffer: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<okio.BufferedSink: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<okio.Sink: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<okio.ForwardingSink: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.OutputStream: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.Writer: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.OutputStreamWriter: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.DataOutputStream: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.util.zip.GZIPOutputStream: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<com.bytedance.retrofit2.CallServerInterceptor: * intercept(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdySession: * submitRequestN(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdySession: * streamSendDataN(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdySession: * sendCustomControlFrameN(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "countryIso_NetworkTransfer_body": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 12,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "countryIso_NetworkTransfer_body",
+      "detail": "存在<长途区号>[获取]相关操作通过网络发送-body",
+      "category": "ComplianceInfo",
+      "complianceCategory": "SystemOrNetworkIdentifierInformation_NetworkTransfer",
+      "complianceCategoryDetail": "系统或网络识别信息_NetworkTransfer",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.telephony.TelephonyManager: * getNetworkCountryIso(*)>",
+        "<android.telephony.TelephonyManager: * getSimCountryIso(*)>"
+      ]
+    },
+    "sink": {
+      "<okio.Buffer: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<okio.BufferedSink: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<okio.Sink: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<okio.ForwardingSink: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.OutputStream: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.Writer: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.OutputStreamWriter: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.DataOutputStream: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.util.zip.GZIPOutputStream: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<com.bytedance.retrofit2.CallServerInterceptor: * intercept(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdySession: * submitRequestN(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdySession: * streamSendDataN(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdySession: * sendCustomControlFrameN(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "dataState_NetworkTransfer_body": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 12,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "dataState_NetworkTransfer_body",
+      "detail": "存在<移动网络状态>[获取]相关操作通过网络发送-body",
+      "category": "ComplianceInfo",
+      "complianceCategory": "SystemOrNetworkIdentifierInformation_NetworkTransfer",
+      "complianceCategoryDetail": "系统或网络识别信息_NetworkTransfer",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.telephony.TelephonyManager: * isDataEnabled(*)>",
+        "<android.telephony.TelephonyManager: * isDataRoamingEnabled(*)>",
+        "<android.telephony.TelephonyManager: * getDataState(*)>",
+        "<android.telephony.TelephonyManager: * getNetworkType(*)>",
+        "<android.telephony.TelephonyManager: * getDataNetworkType(*)>",
+        "<android.telephony.TelephonyManager: * isNetworkRoaming(*)>",
+        "<android.telephony.TelephonyManager: * setDataEnabled(*)>"
+      ]
+    },
+    "sink": {
+      "<okio.Buffer: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<okio.BufferedSink: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<okio.Sink: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<okio.ForwardingSink: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.OutputStream: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.Writer: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.OutputStreamWriter: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.DataOutputStream: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.util.zip.GZIPOutputStream: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<com.bytedance.retrofit2.CallServerInterceptor: * intercept(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdySession: * submitRequestN(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdySession: * streamSendDataN(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdySession: * sendCustomControlFrameN(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "ipAddress_NetworkTransfer_body": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 12,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "ipAddress_NetworkTransfer_body",
+      "detail": "存在<IP地址>[获取]相关操作通过网络发送-body",
+      "category": "ComplianceInfo",
+      "complianceCategory": "SystemOrNetworkIdentifierInformation_NetworkTransfer",
+      "complianceCategoryDetail": "系统或网络识别信息_NetworkTransfer",
+      "level": "3"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.net.wifi.WifiInfo: * getIpAddress(*)>",
+        "<java.net.InetAddress: * getHostAddress(*)>",
+        "<java.net.InetAddress: * getAddress(*)>"
+      ]
+    },
+    "sink": {
+      "<okio.Buffer: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<okio.BufferedSink: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<okio.Sink: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<okio.ForwardingSink: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.OutputStream: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.Writer: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.OutputStreamWriter: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.DataOutputStream: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.util.zip.GZIPOutputStream: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<com.bytedance.retrofit2.CallServerInterceptor: * intercept(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdySession: * submitRequestN(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdySession: * streamSendDataN(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdySession: * sendCustomControlFrameN(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "carrier_NetworkTransfer_body": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 12,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "carrier_NetworkTransfer_body",
+      "detail": "存在<运营商信息>[获取]相关操作通过网络发送-body",
+      "category": "ComplianceInfo",
+      "complianceCategory": "SystemOrNetworkIdentifierInformation_NetworkTransfer",
+      "complianceCategoryDetail": "系统或网络识别信息_NetworkTransfer",
+      "level": "3"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.telephony.TelephonyManager: * getNetworkOperator(*)>",
+        "<android.telephony.TelephonyManager: * getNetworkOperatorName(*)>",
+        "<android.telephony.TelephonyManager: * getCarrierIdFromSimMccMnc(*)>"
+      ]
+    },
+    "sink": {
+      "<okio.Buffer: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<okio.BufferedSink: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<okio.Sink: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<okio.ForwardingSink: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.OutputStream: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.Writer: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.OutputStreamWriter: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.DataOutputStream: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.util.zip.GZIPOutputStream: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<com.bytedance.retrofit2.CallServerInterceptor: * intercept(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdySession: * submitRequestN(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdySession: * streamSendDataN(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdySession: * sendCustomControlFrameN(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "MCCMNC_NetworkTransfer_body": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 12,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "MCCMNC_NetworkTransfer_body",
+      "detail": "存在<移动国家码/网络码>[获取]相关操作通过网络发送-body",
+      "category": "ComplianceInfo",
+      "complianceCategory": "SystemOrNetworkIdentifierInformation_NetworkTransfer",
+      "complianceCategoryDetail": "系统或网络识别信息_NetworkTransfer",
+      "level": "3"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.telephony.TelephonyManager: * getSimOperator(*)>",
+        "<android.telephony.TelephonyManager: * getSimOperatorName(*)>"
+      ]
+    },
+    "sink": {
+      "<okio.Buffer: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<okio.BufferedSink: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<okio.Sink: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<okio.ForwardingSink: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.OutputStream: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.Writer: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.OutputStreamWriter: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.DataOutputStream: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.util.zip.GZIPOutputStream: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<com.bytedance.retrofit2.CallServerInterceptor: * intercept(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdySession: * submitRequestN(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdySession: * streamSendDataN(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdySession: * sendCustomControlFrameN(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "phoneType_NetworkTransfer_body": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 12,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "phoneType_NetworkTransfer_body",
+      "detail": "存在<手机类型>[获取]相关操作通过网络发送-body",
+      "category": "ComplianceInfo",
+      "complianceCategory": "SystemOrNetworkIdentifierInformation_NetworkTransfer",
+      "complianceCategoryDetail": "系统或网络识别信息_NetworkTransfer",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.telephony.TelephonyManager: * getPhoneType(*)>"
+      ]
+    },
+    "sink": {
+      "<okio.Buffer: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<okio.BufferedSink: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<okio.Sink: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<okio.ForwardingSink: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.OutputStream: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.Writer: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.OutputStreamWriter: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.DataOutputStream: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.util.zip.GZIPOutputStream: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<com.bytedance.retrofit2.CallServerInterceptor: * intercept(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdySession: * submitRequestN(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdySession: * streamSendDataN(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdySession: * sendCustomControlFrameN(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "simState_NetworkTransfer_body": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 12,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "simState_NetworkTransfer_body",
+      "detail": "存在<手机卡状态>[获取]相关操作通过网络发送-body",
+      "category": "ComplianceInfo",
+      "complianceCategory": "SystemOrNetworkIdentifierInformation_NetworkTransfer",
+      "complianceCategoryDetail": "系统或网络识别信息_NetworkTransfer",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.telephony.TelephonyManager: * getSimState(*)>"
+      ]
+    },
+    "sink": {
+      "<okio.Buffer: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<okio.BufferedSink: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<okio.Sink: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<okio.ForwardingSink: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.OutputStream: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.Writer: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.OutputStreamWriter: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.DataOutputStream: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.util.zip.GZIPOutputStream: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<com.bytedance.retrofit2.CallServerInterceptor: * intercept(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdySession: * submitRequestN(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdySession: * streamSendDataN(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdySession: * sendCustomControlFrameN(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "voiceMail_NetworkTransfer_body": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 12,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "voiceMail_NetworkTransfer_body",
+      "detail": "存在<手机语音邮件>[获取]相关操作通过网络发送-body",
+      "category": "ComplianceInfo",
+      "complianceCategory": "SystemOrNetworkIdentifierInformation_NetworkTransfer",
+      "complianceCategoryDetail": "系统或网络识别信息_NetworkTransfer",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.telephony.TelephonyManager: * getVoiceMailAlphaTag(*)>",
+        "<android.telephony.TelephonyManager: * getVoiceMailNumber(*)>"
+      ]
+    },
+    "sink": {
+      "<okio.Buffer: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<okio.BufferedSink: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<okio.Sink: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<okio.ForwardingSink: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.OutputStream: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.Writer: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.OutputStreamWriter: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.DataOutputStream: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.util.zip.GZIPOutputStream: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<com.bytedance.retrofit2.CallServerInterceptor: * intercept(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdySession: * submitRequestN(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdySession: * streamSendDataN(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdySession: * sendCustomControlFrameN(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "tac_NetworkTransfer_body": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 12,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "tac_NetworkTransfer_body",
+      "detail": "存在<Tracking Area Code>[获取]相关操作通过网络发送-body",
+      "category": "ComplianceInfo",
+      "complianceCategory": "SystemOrNetworkIdentifierInformation_NetworkTransfer",
+      "complianceCategoryDetail": "系统或网络识别信息_NetworkTransfer",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.telephony.CellIdentityLte: * getTac(*)>"
+      ]
+    },
+    "sink": {
+      "<okio.Buffer: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<okio.BufferedSink: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<okio.Sink: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<okio.ForwardingSink: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.OutputStream: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.Writer: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.OutputStreamWriter: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.DataOutputStream: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.util.zip.GZIPOutputStream: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<com.bytedance.retrofit2.CallServerInterceptor: * intercept(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdySession: * submitRequestN(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdySession: * streamSendDataN(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdySession: * sendCustomControlFrameN(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "wifiStateQuery_NetworkTransfer_body": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 12,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "wifiStateQuery_NetworkTransfer_body",
+      "detail": "存在<WI-FI状态>[获取]相关操作通过网络发送-body",
+      "category": "ComplianceInfo",
+      "complianceCategory": "SystemOrNetworkIdentifierInformation_NetworkTransfer",
+      "complianceCategoryDetail": "系统或网络识别信息_NetworkTransfer",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.net.wifi.WifiManager: boolean isWifiEnabled()>",
+        "<android.net.wifi.WifiManager: int getWifiState()>"
+      ]
+    },
+    "sink": {
+      "<okio.Buffer: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<okio.BufferedSink: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<okio.Sink: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<okio.ForwardingSink: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.OutputStream: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.Writer: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.OutputStreamWriter: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.DataOutputStream: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.util.zip.GZIPOutputStream: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<com.bytedance.retrofit2.CallServerInterceptor: * intercept(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdySession: * submitRequestN(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdySession: * streamSendDataN(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdySession: * sendCustomControlFrameN(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "wifiStateSet_NetworkTransfer_body": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 12,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "wifiStateSet_NetworkTransfer_body",
+      "detail": "存在<WI-FI状态>[设置]相关操作通过网络发送-body",
+      "category": "ComplianceInfo",
+      "complianceCategory": "SystemOrNetworkIdentifierInformation_NetworkTransfer",
+      "complianceCategoryDetail": "系统或网络识别信息_NetworkTransfer",
+      "level": "2"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.net.wifi.WifiManager: boolean setWifiEnabled(boolean)>"
+      ]
+    },
+    "sink": {
+      "<okio.Buffer: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<okio.BufferedSink: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<okio.Sink: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<okio.ForwardingSink: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.OutputStream: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.Writer: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.OutputStreamWriter: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.DataOutputStream: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.util.zip.GZIPOutputStream: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<com.bytedance.retrofit2.CallServerInterceptor: * intercept(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdySession: * submitRequestN(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdySession: * streamSendDataN(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdySession: * sendCustomControlFrameN(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "blueToothStateQuery_NetworkTransfer_body": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 12,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "blueToothStateQuery_NetworkTransfer_body",
+      "detail": "存在<蓝牙状态>[获取]相关操作通过网络发送-body",
+      "category": "ComplianceInfo",
+      "complianceCategory": "SystemOrNetworkIdentifierInformation_NetworkTransfer",
+      "complianceCategoryDetail": "系统或网络识别信息_NetworkTransfer",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.bluetooth.BluetoothAdapter: boolean isDiscovering()>",
+        "<android.bluetooth.BluetoothAdapter: int getState()>",
+        "<android.bluetooth.BluetoothAdapter: boolean isEnabled()>"
+      ]
+    },
+    "sink": {
+      "<okio.Buffer: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<okio.BufferedSink: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<okio.Sink: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<okio.ForwardingSink: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.OutputStream: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.Writer: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.OutputStreamWriter: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.DataOutputStream: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.util.zip.GZIPOutputStream: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<com.bytedance.retrofit2.CallServerInterceptor: * intercept(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdySession: * submitRequestN(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdySession: * streamSendDataN(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdySession: * sendCustomControlFrameN(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "blueToothStateSet_NetworkTransfer_body": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 12,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "blueToothStateSet_NetworkTransfer_body",
+      "detail": "存在<蓝牙状态>[设置]相关操作通过网络发送-body",
+      "category": "ComplianceInfo",
+      "complianceCategory": "SystemOrNetworkIdentifierInformation_NetworkTransfer",
+      "complianceCategoryDetail": "系统或网络识别信息_NetworkTransfer",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.bluetooth.BluetoothAdapter: boolean enable()>",
+        "<android.bluetooth.BluetoothAdapter: boolean disable()>"
+      ]
+    },
+    "sink": {
+      "<okio.Buffer: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<okio.BufferedSink: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<okio.Sink: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<okio.ForwardingSink: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.OutputStream: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.Writer: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.OutputStreamWriter: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.DataOutputStream: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.util.zip.GZIPOutputStream: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<com.bytedance.retrofit2.CallServerInterceptor: * intercept(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdySession: * submitRequestN(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdySession: * streamSendDataN(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdySession: * sendCustomControlFrameN(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "IMSI_NetworkTransfer_header": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 12,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "IMSI_NetworkTransfer_header",
+      "detail": "存在<IMSI>[获取]相关操作通过网络发送-header",
+      "category": "ComplianceInfo",
+      "complianceCategory": "SystemOrNetworkIdentifierInformation_NetworkTransfer",
+      "complianceCategoryDetail": "系统或网络识别信息_NetworkTransfer",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.telephony.TelephonyManager: * getSubscriberId(*)>"
+      ]
+    },
+    "sink": {
+      "<java.net.URLConnection: * addRequestProperty(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.net.URLConnection: * setRequestProperty(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * addHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * addHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * setHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * setHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * setHeaders(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * setHeaders(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdyRequest: * addHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdyRequest: * addHeaders(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "countryIso_NetworkTransfer_header": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 12,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "countryIso_NetworkTransfer_header",
+      "detail": "存在<长途区号>[获取]相关操作通过网络发送-header",
+      "category": "ComplianceInfo",
+      "complianceCategory": "SystemOrNetworkIdentifierInformation_NetworkTransfer",
+      "complianceCategoryDetail": "系统或网络识别信息_NetworkTransfer",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.telephony.TelephonyManager: * getNetworkCountryIso(*)>",
+        "<android.telephony.TelephonyManager: * getSimCountryIso(*)>"
+      ]
+    },
+    "sink": {
+      "<java.net.URLConnection: * addRequestProperty(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.net.URLConnection: * setRequestProperty(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * addHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * addHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * setHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * setHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * setHeaders(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * setHeaders(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdyRequest: * addHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdyRequest: * addHeaders(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "dataState_NetworkTransfer_header": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 12,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "dataState_NetworkTransfer_header",
+      "detail": "存在<移动网络状态>[获取]相关操作通过网络发送-header",
+      "category": "ComplianceInfo",
+      "complianceCategory": "SystemOrNetworkIdentifierInformation_NetworkTransfer",
+      "complianceCategoryDetail": "系统或网络识别信息_NetworkTransfer",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.telephony.TelephonyManager: * isDataEnabled(*)>",
+        "<android.telephony.TelephonyManager: * isDataRoamingEnabled(*)>",
+        "<android.telephony.TelephonyManager: * getDataState(*)>",
+        "<android.telephony.TelephonyManager: * getNetworkType(*)>",
+        "<android.telephony.TelephonyManager: * getDataNetworkType(*)>",
+        "<android.telephony.TelephonyManager: * isNetworkRoaming(*)>",
+        "<android.telephony.TelephonyManager: * setDataEnabled(*)>"
+      ]
+    },
+    "sink": {
+      "<java.net.URLConnection: * addRequestProperty(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.net.URLConnection: * setRequestProperty(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * addHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * addHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * setHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * setHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * setHeaders(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * setHeaders(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdyRequest: * addHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdyRequest: * addHeaders(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "ipAddress_NetworkTransfer_header": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 12,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "ipAddress_NetworkTransfer_header",
+      "detail": "存在<IP地址>[获取]相关操作通过网络发送-header",
+      "category": "ComplianceInfo",
+      "complianceCategory": "SystemOrNetworkIdentifierInformation_NetworkTransfer",
+      "complianceCategoryDetail": "系统或网络识别信息_NetworkTransfer",
+      "level": "3"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.net.wifi.WifiInfo: * getIpAddress(*)>",
+        "<java.net.InetAddress: * getHostAddress(*)>",
+        "<java.net.InetAddress: * getAddress(*)>"
+      ]
+    },
+    "sink": {
+      "<java.net.URLConnection: * addRequestProperty(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.net.URLConnection: * setRequestProperty(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * addHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * addHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * setHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * setHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * setHeaders(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * setHeaders(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdyRequest: * addHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdyRequest: * addHeaders(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "carrier_NetworkTransfer_header": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 12,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "carrier_NetworkTransfer_header",
+      "detail": "存在<运营商信息>[获取]相关操作通过网络发送-header",
+      "category": "ComplianceInfo",
+      "complianceCategory": "SystemOrNetworkIdentifierInformation_NetworkTransfer",
+      "complianceCategoryDetail": "系统或网络识别信息_NetworkTransfer",
+      "level": "3"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.telephony.TelephonyManager: * getNetworkOperator(*)>",
+        "<android.telephony.TelephonyManager: * getNetworkOperatorName(*)>",
+        "<android.telephony.TelephonyManager: * getCarrierIdFromSimMccMnc(*)>"
+      ]
+    },
+    "sink": {
+      "<java.net.URLConnection: * addRequestProperty(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.net.URLConnection: * setRequestProperty(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * addHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * addHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * setHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * setHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * setHeaders(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * setHeaders(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdyRequest: * addHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdyRequest: * addHeaders(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "MCCMNC_NetworkTransfer_header": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 12,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "MCCMNC_NetworkTransfer_header",
+      "detail": "存在<移动国家码/网络码>[获取]相关操作通过网络发送-header",
+      "category": "ComplianceInfo",
+      "complianceCategory": "SystemOrNetworkIdentifierInformation_NetworkTransfer",
+      "complianceCategoryDetail": "系统或网络识别信息_NetworkTransfer",
+      "level": "3"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.telephony.TelephonyManager: * getSimOperator(*)>",
+        "<android.telephony.TelephonyManager: * getSimOperatorName(*)>"
+      ]
+    },
+    "sink": {
+      "<java.net.URLConnection: * addRequestProperty(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.net.URLConnection: * setRequestProperty(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * addHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * addHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * setHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * setHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * setHeaders(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * setHeaders(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdyRequest: * addHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdyRequest: * addHeaders(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "phoneType_NetworkTransfer_header": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 12,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "phoneType_NetworkTransfer_header",
+      "detail": "存在<手机类型>[获取]相关操作通过网络发送-header",
+      "category": "ComplianceInfo",
+      "complianceCategory": "SystemOrNetworkIdentifierInformation_NetworkTransfer",
+      "complianceCategoryDetail": "系统或网络识别信息_NetworkTransfer",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.telephony.TelephonyManager: * getPhoneType(*)>"
+      ]
+    },
+    "sink": {
+      "<java.net.URLConnection: * addRequestProperty(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.net.URLConnection: * setRequestProperty(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * addHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * addHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * setHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * setHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * setHeaders(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * setHeaders(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdyRequest: * addHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdyRequest: * addHeaders(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "simState_NetworkTransfer_header": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 12,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "simState_NetworkTransfer_header",
+      "detail": "存在<手机卡状态>[获取]相关操作通过网络发送-header",
+      "category": "ComplianceInfo",
+      "complianceCategory": "SystemOrNetworkIdentifierInformation_NetworkTransfer",
+      "complianceCategoryDetail": "系统或网络识别信息_NetworkTransfer",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.telephony.TelephonyManager: * getSimState(*)>"
+      ]
+    },
+    "sink": {
+      "<java.net.URLConnection: * addRequestProperty(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.net.URLConnection: * setRequestProperty(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * addHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * addHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * setHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * setHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * setHeaders(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * setHeaders(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdyRequest: * addHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdyRequest: * addHeaders(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "voiceMail_NetworkTransfer_header": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 12,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "voiceMail_NetworkTransfer_header",
+      "detail": "存在<手机语音邮件>[获取]相关操作通过网络发送-header",
+      "category": "ComplianceInfo",
+      "complianceCategory": "SystemOrNetworkIdentifierInformation_NetworkTransfer",
+      "complianceCategoryDetail": "系统或网络识别信息_NetworkTransfer",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.telephony.TelephonyManager: * getVoiceMailAlphaTag(*)>",
+        "<android.telephony.TelephonyManager: * getVoiceMailNumber(*)>"
+      ]
+    },
+    "sink": {
+      "<java.net.URLConnection: * addRequestProperty(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.net.URLConnection: * setRequestProperty(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * addHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * addHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * setHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * setHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * setHeaders(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * setHeaders(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdyRequest: * addHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdyRequest: * addHeaders(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "tac_NetworkTransfer_header": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 12,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "tac_NetworkTransfer_header",
+      "detail": "存在<Tracking Area Code>[获取]相关操作通过网络发送-header",
+      "category": "ComplianceInfo",
+      "complianceCategory": "SystemOrNetworkIdentifierInformation_NetworkTransfer",
+      "complianceCategoryDetail": "系统或网络识别信息_NetworkTransfer",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.telephony.CellIdentityLte: * getTac(*)>"
+      ]
+    },
+    "sink": {
+      "<java.net.URLConnection: * addRequestProperty(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.net.URLConnection: * setRequestProperty(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * addHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * addHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * setHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * setHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * setHeaders(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * setHeaders(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdyRequest: * addHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdyRequest: * addHeaders(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "wifiStateQuery_NetworkTransfer_header": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 12,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "wifiStateQuery_NetworkTransfer_header",
+      "detail": "存在<WI-FI状态>[获取]相关操作通过网络发送-header",
+      "category": "ComplianceInfo",
+      "complianceCategory": "SystemOrNetworkIdentifierInformation_NetworkTransfer",
+      "complianceCategoryDetail": "系统或网络识别信息_NetworkTransfer",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.net.wifi.WifiManager: boolean isWifiEnabled()>",
+        "<android.net.wifi.WifiManager: int getWifiState()>"
+      ]
+    },
+    "sink": {
+      "<java.net.URLConnection: * addRequestProperty(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.net.URLConnection: * setRequestProperty(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * addHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * addHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * setHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * setHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * setHeaders(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * setHeaders(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdyRequest: * addHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdyRequest: * addHeaders(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "wifiStateSet_NetworkTransfer_header": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 12,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "wifiStateSet_NetworkTransfer_header",
+      "detail": "存在<WI-FI状态>[设置]相关操作通过网络发送-header",
+      "category": "ComplianceInfo",
+      "complianceCategory": "SystemOrNetworkIdentifierInformation_NetworkTransfer",
+      "complianceCategoryDetail": "系统或网络识别信息_NetworkTransfer",
+      "level": "2"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.net.wifi.WifiManager: boolean setWifiEnabled(boolean)>"
+      ]
+    },
+    "sink": {
+      "<java.net.URLConnection: * addRequestProperty(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.net.URLConnection: * setRequestProperty(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * addHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * addHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * setHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * setHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * setHeaders(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * setHeaders(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdyRequest: * addHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdyRequest: * addHeaders(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "blueToothStateQuery_NetworkTransfer_header": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 12,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "blueToothStateQuery_NetworkTransfer_header",
+      "detail": "存在<蓝牙状态>[获取]相关操作通过网络发送-header",
+      "category": "ComplianceInfo",
+      "complianceCategory": "SystemOrNetworkIdentifierInformation_NetworkTransfer",
+      "complianceCategoryDetail": "系统或网络识别信息_NetworkTransfer",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.bluetooth.BluetoothAdapter: boolean isDiscovering()>",
+        "<android.bluetooth.BluetoothAdapter: int getState()>",
+        "<android.bluetooth.BluetoothAdapter: boolean isEnabled()>"
+      ]
+    },
+    "sink": {
+      "<java.net.URLConnection: * addRequestProperty(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.net.URLConnection: * setRequestProperty(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * addHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * addHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * setHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * setHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * setHeaders(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * setHeaders(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdyRequest: * addHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdyRequest: * addHeaders(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "blueToothStateSet_NetworkTransfer_header": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 12,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "blueToothStateSet_NetworkTransfer_header",
+      "detail": "存在<蓝牙状态>[设置]相关操作通过网络发送-header",
+      "category": "ComplianceInfo",
+      "complianceCategory": "SystemOrNetworkIdentifierInformation_NetworkTransfer",
+      "complianceCategoryDetail": "系统或网络识别信息_NetworkTransfer",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.bluetooth.BluetoothAdapter: boolean enable()>",
+        "<android.bluetooth.BluetoothAdapter: boolean disable()>"
+      ]
+    },
+    "sink": {
+      "<java.net.URLConnection: * addRequestProperty(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.net.URLConnection: * setRequestProperty(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * addHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * addHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * setHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * setHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * setHeaders(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * setHeaders(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdyRequest: * addHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdyRequest: * addHeaders(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "IMSI_NetworkTransfer_url": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 12,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "IMSI_NetworkTransfer_url",
+      "detail": "存在<IMSI>[获取]相关操作通过网络发送-url",
+      "category": "ComplianceInfo",
+      "complianceCategory": "SystemOrNetworkIdentifierInformation_NetworkTransfer",
+      "complianceCategoryDetail": "系统或网络识别信息_NetworkTransfer",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.telephony.TelephonyManager: * getSubscriberId(*)>"
+      ]
+    },
+    "sink": {
+      "<java.net.URL: * openConnection(*)>": {
+        "TaintCheck": [
+          "@this"
+        ]
+      },
+      "<java.net.HttpURLConnection: * <init>(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * <init>(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * <init>(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * setParams(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * setParams(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.params.HttpParams: * setParameter(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdyRequest: * <init>(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "countryIso_NetworkTransfer_url": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 12,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "countryIso_NetworkTransfer_url",
+      "detail": "存在<长途区号>[获取]相关操作通过网络发送-url",
+      "category": "ComplianceInfo",
+      "complianceCategory": "SystemOrNetworkIdentifierInformation_NetworkTransfer",
+      "complianceCategoryDetail": "系统或网络识别信息_NetworkTransfer",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.telephony.TelephonyManager: * getNetworkCountryIso(*)>",
+        "<android.telephony.TelephonyManager: * getSimCountryIso(*)>"
+      ]
+    },
+    "sink": {
+      "<java.net.URL: * openConnection(*)>": {
+        "TaintCheck": [
+          "@this"
+        ]
+      },
+      "<java.net.HttpURLConnection: * <init>(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * <init>(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * <init>(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * setParams(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * setParams(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.params.HttpParams: * setParameter(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdyRequest: * <init>(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "dataState_NetworkTransfer_url": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 12,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "dataState_NetworkTransfer_url",
+      "detail": "存在<移动网络状态>[获取]相关操作通过网络发送-url",
+      "category": "ComplianceInfo",
+      "complianceCategory": "SystemOrNetworkIdentifierInformation_NetworkTransfer",
+      "complianceCategoryDetail": "系统或网络识别信息_NetworkTransfer",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.telephony.TelephonyManager: * isDataEnabled(*)>",
+        "<android.telephony.TelephonyManager: * isDataRoamingEnabled(*)>",
+        "<android.telephony.TelephonyManager: * getDataState(*)>",
+        "<android.telephony.TelephonyManager: * getNetworkType(*)>",
+        "<android.telephony.TelephonyManager: * getDataNetworkType(*)>",
+        "<android.telephony.TelephonyManager: * isNetworkRoaming(*)>",
+        "<android.telephony.TelephonyManager: * setDataEnabled(*)>"
+      ]
+    },
+    "sink": {
+      "<java.net.URL: * openConnection(*)>": {
+        "TaintCheck": [
+          "@this"
+        ]
+      },
+      "<java.net.HttpURLConnection: * <init>(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * <init>(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * <init>(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * setParams(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * setParams(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.params.HttpParams: * setParameter(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdyRequest: * <init>(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "ipAddress_NetworkTransfer_url": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 12,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "ipAddress_NetworkTransfer_url",
+      "detail": "存在<IP地址>[获取]相关操作通过网络发送-url",
+      "category": "ComplianceInfo",
+      "complianceCategory": "SystemOrNetworkIdentifierInformation_NetworkTransfer",
+      "complianceCategoryDetail": "系统或网络识别信息_NetworkTransfer",
+      "level": "3"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.net.wifi.WifiInfo: * getIpAddress(*)>",
+        "<java.net.InetAddress: * getHostAddress(*)>",
+        "<java.net.InetAddress: * getAddress(*)>"
+      ]
+    },
+    "sink": {
+      "<java.net.URL: * openConnection(*)>": {
+        "TaintCheck": [
+          "@this"
+        ]
+      },
+      "<java.net.HttpURLConnection: * <init>(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * <init>(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * <init>(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * setParams(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * setParams(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.params.HttpParams: * setParameter(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdyRequest: * <init>(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "carrier_NetworkTransfer_url": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 12,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "carrier_NetworkTransfer_url",
+      "detail": "存在<运营商信息>[获取]相关操作通过网络发送-url",
+      "category": "ComplianceInfo",
+      "complianceCategory": "SystemOrNetworkIdentifierInformation_NetworkTransfer",
+      "complianceCategoryDetail": "系统或网络识别信息_NetworkTransfer",
+      "level": "3"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.telephony.TelephonyManager: * getNetworkOperator(*)>",
+        "<android.telephony.TelephonyManager: * getNetworkOperatorName(*)>",
+        "<android.telephony.TelephonyManager: * getCarrierIdFromSimMccMnc(*)>"
+      ]
+    },
+    "sink": {
+      "<java.net.URL: * openConnection(*)>": {
+        "TaintCheck": [
+          "@this"
+        ]
+      },
+      "<java.net.HttpURLConnection: * <init>(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * <init>(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * <init>(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * setParams(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * setParams(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.params.HttpParams: * setParameter(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdyRequest: * <init>(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "MCCMNC_NetworkTransfer_url": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 12,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "MCCMNC_NetworkTransfer_url",
+      "detail": "存在<移动国家码/网络码>[获取]相关操作通过网络发送-url",
+      "category": "ComplianceInfo",
+      "complianceCategory": "SystemOrNetworkIdentifierInformation_NetworkTransfer",
+      "complianceCategoryDetail": "系统或网络识别信息_NetworkTransfer",
+      "level": "3"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.telephony.TelephonyManager: * getSimOperator(*)>",
+        "<android.telephony.TelephonyManager: * getSimOperatorName(*)>"
+      ]
+    },
+    "sink": {
+      "<java.net.URL: * openConnection(*)>": {
+        "TaintCheck": [
+          "@this"
+        ]
+      },
+      "<java.net.HttpURLConnection: * <init>(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * <init>(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * <init>(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * setParams(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * setParams(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.params.HttpParams: * setParameter(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdyRequest: * <init>(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "phoneType_NetworkTransfer_url": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 12,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "phoneType_NetworkTransfer_url",
+      "detail": "存在<手机类型>[获取]相关操作通过网络发送-url",
+      "category": "ComplianceInfo",
+      "complianceCategory": "SystemOrNetworkIdentifierInformation_NetworkTransfer",
+      "complianceCategoryDetail": "系统或网络识别信息_NetworkTransfer",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.telephony.TelephonyManager: * getPhoneType(*)>"
+      ]
+    },
+    "sink": {
+      "<java.net.URL: * openConnection(*)>": {
+        "TaintCheck": [
+          "@this"
+        ]
+      },
+      "<java.net.HttpURLConnection: * <init>(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * <init>(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * <init>(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * setParams(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * setParams(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.params.HttpParams: * setParameter(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdyRequest: * <init>(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "simState_NetworkTransfer_url": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 12,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "simState_NetworkTransfer_url",
+      "detail": "存在<手机卡状态>[获取]相关操作通过网络发送-url",
+      "category": "ComplianceInfo",
+      "complianceCategory": "SystemOrNetworkIdentifierInformation_NetworkTransfer",
+      "complianceCategoryDetail": "系统或网络识别信息_NetworkTransfer",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.telephony.TelephonyManager: * getSimState(*)>"
+      ]
+    },
+    "sink": {
+      "<java.net.URL: * openConnection(*)>": {
+        "TaintCheck": [
+          "@this"
+        ]
+      },
+      "<java.net.HttpURLConnection: * <init>(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * <init>(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * <init>(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * setParams(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * setParams(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.params.HttpParams: * setParameter(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdyRequest: * <init>(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "voiceMail_NetworkTransfer_url": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 12,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "voiceMail_NetworkTransfer_url",
+      "detail": "存在<手机语音邮件>[获取]相关操作通过网络发送-url",
+      "category": "ComplianceInfo",
+      "complianceCategory": "SystemOrNetworkIdentifierInformation_NetworkTransfer",
+      "complianceCategoryDetail": "系统或网络识别信息_NetworkTransfer",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.telephony.TelephonyManager: * getVoiceMailAlphaTag(*)>",
+        "<android.telephony.TelephonyManager: * getVoiceMailNumber(*)>"
+      ]
+    },
+    "sink": {
+      "<java.net.URL: * openConnection(*)>": {
+        "TaintCheck": [
+          "@this"
+        ]
+      },
+      "<java.net.HttpURLConnection: * <init>(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * <init>(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * <init>(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * setParams(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * setParams(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.params.HttpParams: * setParameter(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdyRequest: * <init>(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "tac_NetworkTransfer_url": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 12,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "tac_NetworkTransfer_url",
+      "detail": "存在<Tracking Area Code>[获取]相关操作通过网络发送-url",
+      "category": "ComplianceInfo",
+      "complianceCategory": "SystemOrNetworkIdentifierInformation_NetworkTransfer",
+      "complianceCategoryDetail": "系统或网络识别信息_NetworkTransfer",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.telephony.CellIdentityLte: * getTac(*)>"
+      ]
+    },
+    "sink": {
+      "<java.net.URL: * openConnection(*)>": {
+        "TaintCheck": [
+          "@this"
+        ]
+      },
+      "<java.net.HttpURLConnection: * <init>(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * <init>(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * <init>(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * setParams(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * setParams(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.params.HttpParams: * setParameter(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdyRequest: * <init>(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "wifiStateQuery_NetworkTransfer_url": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 12,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "wifiStateQuery_NetworkTransfer_url",
+      "detail": "存在<WI-FI状态>[获取]相关操作通过网络发送-url",
+      "category": "ComplianceInfo",
+      "complianceCategory": "SystemOrNetworkIdentifierInformation_NetworkTransfer",
+      "complianceCategoryDetail": "系统或网络识别信息_NetworkTransfer",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.net.wifi.WifiManager: boolean isWifiEnabled()>",
+        "<android.net.wifi.WifiManager: int getWifiState()>"
+      ]
+    },
+    "sink": {
+      "<java.net.URL: * openConnection(*)>": {
+        "TaintCheck": [
+          "@this"
+        ]
+      },
+      "<java.net.HttpURLConnection: * <init>(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * <init>(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * <init>(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * setParams(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * setParams(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.params.HttpParams: * setParameter(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdyRequest: * <init>(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "wifiStateSet_NetworkTransfer_url": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 12,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "wifiStateSet_NetworkTransfer_url",
+      "detail": "存在<WI-FI状态>[设置]相关操作通过网络发送-url",
+      "category": "ComplianceInfo",
+      "complianceCategory": "SystemOrNetworkIdentifierInformation_NetworkTransfer",
+      "complianceCategoryDetail": "系统或网络识别信息_NetworkTransfer",
+      "level": "2"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.net.wifi.WifiManager: boolean setWifiEnabled(boolean)>"
+      ]
+    },
+    "sink": {
+      "<java.net.URL: * openConnection(*)>": {
+        "TaintCheck": [
+          "@this"
+        ]
+      },
+      "<java.net.HttpURLConnection: * <init>(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * <init>(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * <init>(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * setParams(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * setParams(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.params.HttpParams: * setParameter(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdyRequest: * <init>(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "blueToothStateQuery_NetworkTransfer_url": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 12,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "blueToothStateQuery_NetworkTransfer_url",
+      "detail": "存在<蓝牙状态>[获取]相关操作通过网络发送-url",
+      "category": "ComplianceInfo",
+      "complianceCategory": "SystemOrNetworkIdentifierInformation_NetworkTransfer",
+      "complianceCategoryDetail": "系统或网络识别信息_NetworkTransfer",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.bluetooth.BluetoothAdapter: boolean isDiscovering()>",
+        "<android.bluetooth.BluetoothAdapter: int getState()>",
+        "<android.bluetooth.BluetoothAdapter: boolean isEnabled()>"
+      ]
+    },
+    "sink": {
+      "<java.net.URL: * openConnection(*)>": {
+        "TaintCheck": [
+          "@this"
+        ]
+      },
+      "<java.net.HttpURLConnection: * <init>(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * <init>(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * <init>(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * setParams(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * setParams(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.params.HttpParams: * setParameter(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdyRequest: * <init>(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "blueToothStateSet_NetworkTransfer_url": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 12,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "blueToothStateSet_NetworkTransfer_url",
+      "detail": "存在<蓝牙状态>[设置]相关操作通过网络发送-url",
+      "category": "ComplianceInfo",
+      "complianceCategory": "SystemOrNetworkIdentifierInformation_NetworkTransfer",
+      "complianceCategoryDetail": "系统或网络识别信息_NetworkTransfer",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.bluetooth.BluetoothAdapter: boolean enable()>",
+        "<android.bluetooth.BluetoothAdapter: boolean disable()>"
+      ]
+    },
+    "sink": {
+      "<java.net.URL: * openConnection(*)>": {
+        "TaintCheck": [
+          "@this"
+        ]
+      },
+      "<java.net.HttpURLConnection: * <init>(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * <init>(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * <init>(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * setParams(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * setParams(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.params.HttpParams: * setParameter(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdyRequest: * <init>(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  }
+}

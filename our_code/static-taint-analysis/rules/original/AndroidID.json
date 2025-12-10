@@ -1,0 +1,313 @@
+{
+  "androidID_NetworkTransfer_body": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 12,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "androidID_NetworkTransfer_body",
+      "detail": "存在<安卓ID>[获取]相关操作通过网络发送-body",
+      "category": "ComplianceInfo",
+      "complianceCategory": "PersonalDeviceInformation_NetworkTransfer",
+      "complianceCategoryDetail": "个人设备信息_NetworkTransfer",
+      "level": "3"
+    },
+    "entry": {},
+    "source": {
+      "ConstString": [
+        "android_id"
+      ]
+    },
+    "sink": {
+      "<com.bytedance.retrofit2.Call: * execute(*)>": {
+        "TaintCheck": [
+          "@this"
+        ]
+      },
+      "<com.bytedance.retrofit2.ServiceMethod: * toRequest(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<okio.Buffer: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<okio.BufferedSink: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<okio.Sink: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<okio.ForwardingSink: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.OutputStream: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.Writer: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.OutputStreamWriter: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.DataOutputStream: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.BufferedOutputStream: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.util.zip.GZIPOutputStream: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<com.bytedance.retrofit2.CallServerInterceptor: * intercept(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdySession: * submitRequestN(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdySession: * streamSendDataN(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdySession: * sendCustomControlFrameN(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    },
+    "TaintTweak": {
+      "DisableEngineWrapper": false,
+      "MethodSignature": {
+        "<android.provider.Settings$System: * getString(*)>": {
+          "p0->ret": {
+            "I": [
+              "p0"
+            ],
+            "O": [
+              "ret"
+            ]
+          }
+        },
+        "<android.provider.Settings$Secure: * getString(*)>": {
+          "p0->ret": {
+            "I": [
+              "p0"
+            ],
+            "O": [
+              "ret"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "androidID_NetworkTransfer_header": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 12,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "androidID_NetworkTransfer_header",
+      "detail": "存在<安卓ID>[获取]相关操作通过网络发送-header",
+      "category": "ComplianceInfo",
+      "complianceCategory": "PersonalDeviceInformation_NetworkTransfer",
+      "complianceCategoryDetail": "个人设备信息_NetworkTransfer",
+      "level": "3"
+    },
+    "entry": {},
+    "source": {
+      "ConstString": [
+        "android_id"
+      ]
+    },
+    "sink": {
+      "<java.net.URLConnection: * addRequestProperty(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.net.URLConnection: * setRequestProperty(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * addHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * addHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * setHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * setHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * setHeaders(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * setHeaders(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdyRequest: * addHeader(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdyRequest: * addHeaders(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    },
+    "TaintTweak": {
+      "DisableEngineWrapper": false,
+      "MethodSignature": {
+        "<android.provider.Settings$System: * getString(*)>": {
+          "p0->ret": {
+            "I": [
+              "p0"
+            ],
+            "O": [
+              "ret"
+            ]
+          }
+        },
+        "<android.provider.Settings$Secure: * getString(*)>": {
+          "p0->ret": {
+            "I": [
+              "p0"
+            ],
+            "O": [
+              "ret"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "androidID_NetworkTransfer_url": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 12,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "androidID_NetworkTransfer_url",
+      "detail": "存在<安卓ID>[获取]相关操作通过网络发送-url",
+      "category": "ComplianceInfo",
+      "complianceCategory": "PersonalDeviceInformation_NetworkTransfer",
+      "complianceCategoryDetail": "个人设备信息_NetworkTransfer",
+      "level": "3"
+    },
+    "entry": {},
+    "source": {
+      "ConstString": [
+        "android_id"
+      ]
+    },
+    "sink": {
+      "<java.net.URL: * openConnection(*)>": {
+        "TaintCheck": [
+          "@this"
+        ]
+      },
+      "<java.net.HttpURLConnection: * <init>(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * <init>(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * <init>(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpGet: * setParams(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.client.methods.HttpPost: * setParams(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.apache.http.params.HttpParams: * setParameter(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<org.android.spdy.SpdyRequest: * <init>(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    },
+    "TaintTweak": {
+      "DisableEngineWrapper": false,
+      "MethodSignature": {
+        "<android.provider.Settings$System: * getString(*)>": {
+          "p0->ret": {
+            "I": [
+              "p0"
+            ],
+            "O": [
+              "ret"
+            ]
+          }
+        },
+        "<android.provider.Settings$Secure: * getString(*)>": {
+          "p0->ret": {
+            "I": [
+              "p0"
+            ],
+            "O": [
+              "ret"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

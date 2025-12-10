@@ -1,0 +1,44 @@
+{
+  "wifiBluetoothInfo2Broadcast": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 30,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "wifiBluetoothInfo2Broadcast",
+      "detail": "存在<wifiBluetoothInfo>[获取]并通过广播发送",
+      "category": "ComplianceInfo",
+      "complianceCategory": "wifiBluetoothInfo",
+      "complianceCategoryDetail": "wifiBluetoothInfo",
+      "level": "4"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.bluetooth.BluetoothAdapter: * getAddress(*)>",
+        "<android.bluetooth.BluetoothDevice: * getAddress(*)>",
+        "<android.net.wifi.WifiInfo: * getMacAddress(*)>",
+        "<android.net.wifi.WifiInfo: * getSSID(*)>",
+        "<android.net.wifi.WifiInfo: * getBSSID(*)>",
+        "<java.net.NetworkInterface: * getHardwareAddress(*)>",
+        "<android.net.wifi.WifiManager: * getScanResults(*)>",
+        "<android.net.NetworkInfo: * getExtraInfo(*)>",
+        "<android.net.wifi.WifiSsid: * toString(*)>",
+        "<android.net.ConnectivityManager: * getActiveNetworkInfo(*)>",
+        "<android.net.wifi.WifiManager: * getConfiguredNetworks(*)>"
+      ]
+    },
+    "sink": {
+      "<*: * sendBroadcast*(*)>": {
+        "LibraryOnly": true,
+        "TaintParamType": [
+          "android.content.Intent",
+          "android.content.Intent[]"
+        ],
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  }
+}

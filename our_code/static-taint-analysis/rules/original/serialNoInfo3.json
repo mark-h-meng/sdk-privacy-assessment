@@ -1,0 +1,34 @@
+{
+  "serialNoInfo2Broadcast": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 12,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "serialNoInfo2Broadcast",
+      "detail": "存在<serialNoInfo>[获取]并通过广播发送",
+      "category": "ComplianceInfo",
+      "complianceCategory": "serialNoInfo",
+      "complianceCategoryDetail": "serialNoInfo",
+      "level": "4"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.os*: * getSerial()>"
+      ]
+    },
+    "sink": {
+      "<*: * sendBroadcast*(*)>": {
+        "LibraryOnly": true,
+        "TaintParamType": [
+          "android.content.Intent",
+          "android.content.Intent[]"
+        ],
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  }
+}

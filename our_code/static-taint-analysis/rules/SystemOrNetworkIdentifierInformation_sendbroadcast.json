@@ -1,0 +1,1887 @@
+{
+  "IMSI_Database": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 30,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "IMSI_Database",
+      "detail": "存在<IMSI>[获取]相关操作写数据库",
+      "category": "ComplianceInfo",
+      "complianceCategory": "SystemOrNetworkIdentifierInformation_Database",
+      "complianceCategoryDetail": "系统或网络识别信息_Database",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.telephony.TelephonyManager: * getSubscriberId(*)>"
+      ]
+    },
+    "sink": {
+      "<android.database.sqlite.SQLiteDatabase: * insert(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * insertOrThrow(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * insertWithOnConflict(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * update(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * updateWithOnConflict(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * execSQL(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "countryIso_Database": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 30,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "countryIso_Database",
+      "detail": "存在<长途区号>[获取]相关操作写数据库",
+      "category": "ComplianceInfo",
+      "complianceCategory": "SystemOrNetworkIdentifierInformation_Database",
+      "complianceCategoryDetail": "系统或网络识别信息_Database",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.telephony.TelephonyManager: * getNetworkCountryIso(*)>",
+        "<android.telephony.TelephonyManager: * getSimCountryIso(*)>"
+      ]
+    },
+    "sink": {
+      "<android.database.sqlite.SQLiteDatabase: * insert(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * insertOrThrow(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * insertWithOnConflict(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * update(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * updateWithOnConflict(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * execSQL(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "dataState_Database": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 30,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "dataState_Database",
+      "detail": "存在<移动网络状态>[获取]相关操作写数据库",
+      "category": "ComplianceInfo",
+      "complianceCategory": "SystemOrNetworkIdentifierInformation_Database",
+      "complianceCategoryDetail": "系统或网络识别信息_Database",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.telephony.TelephonyManager: * isDataEnabled(*)>",
+        "<android.telephony.TelephonyManager: * isDataRoamingEnabled(*)>",
+        "<android.telephony.TelephonyManager: * getDataState(*)>",
+        "<android.telephony.TelephonyManager: * getNetworkType(*)>",
+        "<android.telephony.TelephonyManager: * getDataNetworkType(*)>",
+        "<android.telephony.TelephonyManager: * isNetworkRoaming(*)>",
+        "<android.telephony.TelephonyManager: * setDataEnabled(*)>"
+      ]
+    },
+    "sink": {
+      "<android.database.sqlite.SQLiteDatabase: * insert(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * insertOrThrow(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * insertWithOnConflict(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * update(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * updateWithOnConflict(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * execSQL(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "ipAddress_Database": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 30,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "ipAddress_Database",
+      "detail": "存在<IP地址>[获取]相关操作写数据库",
+      "category": "ComplianceInfo",
+      "complianceCategory": "SystemOrNetworkIdentifierInformation_Database",
+      "complianceCategoryDetail": "系统或网络识别信息_Database",
+      "level": "3"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.net.wifi.WifiInfo: * getIpAddress(*)>",
+        "<java.net.InetAddress: * getHostAddress(*)>",
+        "<java.net.InetAddress: * getAddress(*)>"
+      ]
+    },
+    "sink": {
+      "<android.database.sqlite.SQLiteDatabase: * insert(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * insertOrThrow(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * insertWithOnConflict(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * update(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * updateWithOnConflict(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * execSQL(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "carrier_Database": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 30,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "carrier_Database",
+      "detail": "存在<运营商信息>[获取]相关操作写数据库",
+      "category": "ComplianceInfo",
+      "complianceCategory": "SystemOrNetworkIdentifierInformation_Database",
+      "complianceCategoryDetail": "系统或网络识别信息_Database",
+      "level": "3"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.telephony.TelephonyManager: * getNetworkOperator(*)>",
+        "<android.telephony.TelephonyManager: * getNetworkOperatorName(*)>",
+        "<android.telephony.TelephonyManager: * getCarrierIdFromSimMccMnc(*)>"
+      ]
+    },
+    "sink": {
+      "<android.database.sqlite.SQLiteDatabase: * insert(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * insertOrThrow(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * insertWithOnConflict(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * update(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * updateWithOnConflict(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * execSQL(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "MCCMNC_Database": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 30,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "MCCMNC_Database",
+      "detail": "存在<移动国家码/网络码>[获取]相关操作写数据库",
+      "category": "ComplianceInfo",
+      "complianceCategory": "SystemOrNetworkIdentifierInformation_Database",
+      "complianceCategoryDetail": "系统或网络识别信息_Database",
+      "level": "3"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.telephony.TelephonyManager: * getSimOperator(*)>",
+        "<android.telephony.TelephonyManager: * getSimOperatorName(*)>"
+      ]
+    },
+    "sink": {
+      "<android.database.sqlite.SQLiteDatabase: * insert(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * insertOrThrow(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * insertWithOnConflict(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * update(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * updateWithOnConflict(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * execSQL(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "phoneType_Database": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 30,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "phoneType_Database",
+      "detail": "存在<手机类型>[获取]相关操作写数据库",
+      "category": "ComplianceInfo",
+      "complianceCategory": "SystemOrNetworkIdentifierInformation_Database",
+      "complianceCategoryDetail": "系统或网络识别信息_Database",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.telephony.TelephonyManager: * getPhoneType(*)>"
+      ]
+    },
+    "sink": {
+      "<android.database.sqlite.SQLiteDatabase: * insert(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * insertOrThrow(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * insertWithOnConflict(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * update(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * updateWithOnConflict(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * execSQL(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "simState_Database": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 30,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "simState_Database",
+      "detail": "存在<手机卡状态>[获取]相关操作写数据库",
+      "category": "ComplianceInfo",
+      "complianceCategory": "SystemOrNetworkIdentifierInformation_Database",
+      "complianceCategoryDetail": "系统或网络识别信息_Database",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.telephony.TelephonyManager: * getSimState(*)>"
+      ]
+    },
+    "sink": {
+      "<android.database.sqlite.SQLiteDatabase: * insert(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * insertOrThrow(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * insertWithOnConflict(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * update(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * updateWithOnConflict(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * execSQL(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "voiceMail_Database": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 30,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "voiceMail_Database",
+      "detail": "存在<手机语音邮件>[获取]相关操作写数据库",
+      "category": "ComplianceInfo",
+      "complianceCategory": "SystemOrNetworkIdentifierInformation_Database",
+      "complianceCategoryDetail": "系统或网络识别信息_Database",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.telephony.TelephonyManager: * getVoiceMailAlphaTag(*)>",
+        "<android.telephony.TelephonyManager: * getVoiceMailNumber(*)>"
+      ]
+    },
+    "sink": {
+      "<android.database.sqlite.SQLiteDatabase: * insert(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * insertOrThrow(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * insertWithOnConflict(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * update(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * updateWithOnConflict(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * execSQL(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "tac_Database": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 30,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "tac_Database",
+      "detail": "存在<Tracking Area Code>[获取]相关操作写数据库",
+      "category": "ComplianceInfo",
+      "complianceCategory": "SystemOrNetworkIdentifierInformation_Database",
+      "complianceCategoryDetail": "系统或网络识别信息_Database",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.telephony.CellIdentityLte: * getTac(*)>"
+      ]
+    },
+    "sink": {
+      "<android.database.sqlite.SQLiteDatabase: * insert(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * insertOrThrow(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * insertWithOnConflict(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * update(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * updateWithOnConflict(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * execSQL(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "wifiStateQuery_Database": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 30,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "wifiStateQuery_Database",
+      "detail": "存在<WI-FI状态>[获取]相关操作写数据库",
+      "category": "ComplianceInfo",
+      "complianceCategory": "SystemOrNetworkIdentifierInformation_Database",
+      "complianceCategoryDetail": "系统或网络识别信息_Database",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.net.wifi.WifiManager: boolean isWifiEnabled()>",
+        "<android.net.wifi.WifiManager: int getWifiState()>"
+      ]
+    },
+    "sink": {
+      "<android.database.sqlite.SQLiteDatabase: * insert(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * insertOrThrow(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * insertWithOnConflict(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * update(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * updateWithOnConflict(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * execSQL(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "wifiStateSet_Database": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 30,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "wifiStateSet_Database",
+      "detail": "存在<WI-FI状态>[设置]相关操作写数据库",
+      "category": "ComplianceInfo",
+      "complianceCategory": "SystemOrNetworkIdentifierInformation_Database",
+      "complianceCategoryDetail": "系统或网络识别信息_Database",
+      "level": "2"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.net.wifi.WifiManager: boolean setWifiEnabled(boolean)>"
+      ]
+    },
+    "sink": {
+      "<android.database.sqlite.SQLiteDatabase: * insert(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * insertOrThrow(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * insertWithOnConflict(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * update(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * updateWithOnConflict(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * execSQL(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "blueToothStateQuery_Database": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 30,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "blueToothStateQuery_Database",
+      "detail": "存在<蓝牙状态>[获取]相关操作写数据库",
+      "category": "ComplianceInfo",
+      "complianceCategory": "SystemOrNetworkIdentifierInformation_Database",
+      "complianceCategoryDetail": "系统或网络识别信息_Database",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.bluetooth.BluetoothAdapter: boolean isDiscovering()>",
+        "<android.bluetooth.BluetoothAdapter: int getState()>",
+        "<android.bluetooth.BluetoothAdapter: boolean isEnabled()>"
+      ]
+    },
+    "sink": {
+      "<android.database.sqlite.SQLiteDatabase: * insert(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * insertOrThrow(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * insertWithOnConflict(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * update(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * updateWithOnConflict(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * execSQL(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "blueToothStateSet_Database": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 30,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "blueToothStateSet_Database",
+      "detail": "存在<蓝牙状态>[设置]相关操作写数据库",
+      "category": "ComplianceInfo",
+      "complianceCategory": "SystemOrNetworkIdentifierInformation_Database",
+      "complianceCategoryDetail": "系统或网络识别信息_Database",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.bluetooth.BluetoothAdapter: boolean enable()>",
+        "<android.bluetooth.BluetoothAdapter: boolean disable()>"
+      ]
+    },
+    "sink": {
+      "<android.database.sqlite.SQLiteDatabase: * insert(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * insertOrThrow(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * insertWithOnConflict(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * update(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * updateWithOnConflict(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * execSQL(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "IMSI_SharedPreferencesStored": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 30,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "IMSI_SharedPreferencesStored",
+      "detail": "存在<IMSI>[获取]相关操作写入SharedPreferences",
+      "category": "ComplianceInfo",
+      "complianceCategory": "SystemOrNetworkIdentifierInformation_SharedPreferencesStored",
+      "complianceCategoryDetail": "系统或网络识别信息_SharedPreferencesStored",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.telephony.TelephonyManager: * getSubscriberId(*)>"
+      ]
+    },
+    "sink": {
+      "<android.content.SharedPreferences.Editor: * putString(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.content.SharedPreferences.Editor: * putStringSet(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.content.SharedPreferences.Editor: * putInt(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.content.SharedPreferences.Editor: * putLong(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "countryIso_SharedPreferencesStored": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 30,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "countryIso_SharedPreferencesStored",
+      "detail": "存在<长途区号>[获取]相关操作写入SharedPreferences",
+      "category": "ComplianceInfo",
+      "complianceCategory": "SystemOrNetworkIdentifierInformation_SharedPreferencesStored",
+      "complianceCategoryDetail": "系统或网络识别信息_SharedPreferencesStored",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.telephony.TelephonyManager: * getNetworkCountryIso(*)>",
+        "<android.telephony.TelephonyManager: * getSimCountryIso(*)>"
+      ]
+    },
+    "sink": {
+      "<android.content.SharedPreferences.Editor: * putString(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.content.SharedPreferences.Editor: * putStringSet(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.content.SharedPreferences.Editor: * putInt(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.content.SharedPreferences.Editor: * putLong(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "dataState_SharedPreferencesStored": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 30,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "dataState_SharedPreferencesStored",
+      "detail": "存在<移动网络状态>[获取]相关操作写入SharedPreferences",
+      "category": "ComplianceInfo",
+      "complianceCategory": "SystemOrNetworkIdentifierInformation_SharedPreferencesStored",
+      "complianceCategoryDetail": "系统或网络识别信息_SharedPreferencesStored",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.telephony.TelephonyManager: * isDataEnabled(*)>",
+        "<android.telephony.TelephonyManager: * isDataRoamingEnabled(*)>",
+        "<android.telephony.TelephonyManager: * getDataState(*)>",
+        "<android.telephony.TelephonyManager: * getNetworkType(*)>",
+        "<android.telephony.TelephonyManager: * getDataNetworkType(*)>",
+        "<android.telephony.TelephonyManager: * isNetworkRoaming(*)>",
+        "<android.telephony.TelephonyManager: * setDataEnabled(*)>"
+      ]
+    },
+    "sink": {
+      "<android.content.SharedPreferences.Editor: * putString(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.content.SharedPreferences.Editor: * putStringSet(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.content.SharedPreferences.Editor: * putInt(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.content.SharedPreferences.Editor: * putLong(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "ipAddress_SharedPreferencesStored": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 30,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "ipAddress_SharedPreferencesStored",
+      "detail": "存在<IP地址>[获取]相关操作写入SharedPreferences",
+      "category": "ComplianceInfo",
+      "complianceCategory": "SystemOrNetworkIdentifierInformation_SharedPreferencesStored",
+      "complianceCategoryDetail": "系统或网络识别信息_SharedPreferencesStored",
+      "level": "3"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.net.wifi.WifiInfo: * getIpAddress(*)>",
+        "<java.net.InetAddress: * getHostAddress(*)>",
+        "<java.net.InetAddress: * getAddress(*)>"
+      ]
+    },
+    "sink": {
+      "<android.content.SharedPreferences.Editor: * putString(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.content.SharedPreferences.Editor: * putStringSet(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.content.SharedPreferences.Editor: * putInt(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.content.SharedPreferences.Editor: * putLong(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "carrier_SharedPreferencesStored": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 30,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "carrier_SharedPreferencesStored",
+      "detail": "存在<运营商信息>[获取]相关操作写入SharedPreferences",
+      "category": "ComplianceInfo",
+      "complianceCategory": "SystemOrNetworkIdentifierInformation_SharedPreferencesStored",
+      "complianceCategoryDetail": "系统或网络识别信息_SharedPreferencesStored",
+      "level": "3"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.telephony.TelephonyManager: * getNetworkOperator(*)>",
+        "<android.telephony.TelephonyManager: * getNetworkOperatorName(*)>",
+        "<android.telephony.TelephonyManager: * getCarrierIdFromSimMccMnc(*)>"
+      ]
+    },
+    "sink": {
+      "<android.content.SharedPreferences.Editor: * putString(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.content.SharedPreferences.Editor: * putStringSet(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.content.SharedPreferences.Editor: * putInt(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.content.SharedPreferences.Editor: * putLong(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "MCCMNC_SharedPreferencesStored": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 30,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "MCCMNC_SharedPreferencesStored",
+      "detail": "存在<移动国家码/网络码>[获取]相关操作写入SharedPreferences",
+      "category": "ComplianceInfo",
+      "complianceCategory": "SystemOrNetworkIdentifierInformation_SharedPreferencesStored",
+      "complianceCategoryDetail": "系统或网络识别信息_SharedPreferencesStored",
+      "level": "3"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.telephony.TelephonyManager: * getSimOperator(*)>",
+        "<android.telephony.TelephonyManager: * getSimOperatorName(*)>"
+      ]
+    },
+    "sink": {
+      "<android.content.SharedPreferences.Editor: * putString(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.content.SharedPreferences.Editor: * putStringSet(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.content.SharedPreferences.Editor: * putInt(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.content.SharedPreferences.Editor: * putLong(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "phoneType_SharedPreferencesStored": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 30,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "phoneType_SharedPreferencesStored",
+      "detail": "存在<手机类型>[获取]相关操作写入SharedPreferences",
+      "category": "ComplianceInfo",
+      "complianceCategory": "SystemOrNetworkIdentifierInformation_SharedPreferencesStored",
+      "complianceCategoryDetail": "系统或网络识别信息_SharedPreferencesStored",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.telephony.TelephonyManager: * getPhoneType(*)>"
+      ]
+    },
+    "sink": {
+      "<android.content.SharedPreferences.Editor: * putString(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.content.SharedPreferences.Editor: * putStringSet(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.content.SharedPreferences.Editor: * putInt(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.content.SharedPreferences.Editor: * putLong(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "simState_SharedPreferencesStored": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 30,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "simState_SharedPreferencesStored",
+      "detail": "存在<手机卡状态>[获取]相关操作写入SharedPreferences",
+      "category": "ComplianceInfo",
+      "complianceCategory": "SystemOrNetworkIdentifierInformation_SharedPreferencesStored",
+      "complianceCategoryDetail": "系统或网络识别信息_SharedPreferencesStored",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.telephony.TelephonyManager: * getSimState(*)>"
+      ]
+    },
+    "sink": {
+      "<android.content.SharedPreferences.Editor: * putString(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.content.SharedPreferences.Editor: * putStringSet(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.content.SharedPreferences.Editor: * putInt(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.content.SharedPreferences.Editor: * putLong(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "voiceMail_SharedPreferencesStored": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 30,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "voiceMail_SharedPreferencesStored",
+      "detail": "存在<手机语音邮件>[获取]相关操作写入SharedPreferences",
+      "category": "ComplianceInfo",
+      "complianceCategory": "SystemOrNetworkIdentifierInformation_SharedPreferencesStored",
+      "complianceCategoryDetail": "系统或网络识别信息_SharedPreferencesStored",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.telephony.TelephonyManager: * getVoiceMailAlphaTag(*)>",
+        "<android.telephony.TelephonyManager: * getVoiceMailNumber(*)>"
+      ]
+    },
+    "sink": {
+      "<android.content.SharedPreferences.Editor: * putString(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.content.SharedPreferences.Editor: * putStringSet(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.content.SharedPreferences.Editor: * putInt(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.content.SharedPreferences.Editor: * putLong(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "tac_SharedPreferencesStored": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 30,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "tac_SharedPreferencesStored",
+      "detail": "存在<Tracking Area Code>[获取]相关操作写入SharedPreferences",
+      "category": "ComplianceInfo",
+      "complianceCategory": "SystemOrNetworkIdentifierInformation_SharedPreferencesStored",
+      "complianceCategoryDetail": "系统或网络识别信息_SharedPreferencesStored",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.telephony.CellIdentityLte: * getTac(*)>"
+      ]
+    },
+    "sink": {
+      "<android.content.SharedPreferences.Editor: * putString(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.content.SharedPreferences.Editor: * putStringSet(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.content.SharedPreferences.Editor: * putInt(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.content.SharedPreferences.Editor: * putLong(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "wifiStateQuery_SharedPreferencesStored": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 30,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "wifiStateQuery_SharedPreferencesStored",
+      "detail": "存在<WI-FI状态>[获取]相关操作写入SharedPreferences",
+      "category": "ComplianceInfo",
+      "complianceCategory": "SystemOrNetworkIdentifierInformation_SharedPreferencesStored",
+      "complianceCategoryDetail": "系统或网络识别信息_SharedPreferencesStored",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.net.wifi.WifiManager: boolean isWifiEnabled()>",
+        "<android.net.wifi.WifiManager: int getWifiState()>"
+      ]
+    },
+    "sink": {
+      "<android.content.SharedPreferences.Editor: * putString(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.content.SharedPreferences.Editor: * putStringSet(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.content.SharedPreferences.Editor: * putInt(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.content.SharedPreferences.Editor: * putLong(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "wifiStateSet_SharedPreferencesStored": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 30,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "wifiStateSet_SharedPreferencesStored",
+      "detail": "存在<WI-FI状态>[设置]相关操作写入SharedPreferences",
+      "category": "ComplianceInfo",
+      "complianceCategory": "SystemOrNetworkIdentifierInformation_SharedPreferencesStored",
+      "complianceCategoryDetail": "系统或网络识别信息_SharedPreferencesStored",
+      "level": "2"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.net.wifi.WifiManager: boolean setWifiEnabled(boolean)>"
+      ]
+    },
+    "sink": {
+      "<android.content.SharedPreferences.Editor: * putString(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.content.SharedPreferences.Editor: * putStringSet(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.content.SharedPreferences.Editor: * putInt(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.content.SharedPreferences.Editor: * putLong(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "blueToothStateQuery_SharedPreferencesStored": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 30,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "blueToothStateQuery_SharedPreferencesStored",
+      "detail": "存在<蓝牙状态>[获取]相关操作写入SharedPreferences",
+      "category": "ComplianceInfo",
+      "complianceCategory": "SystemOrNetworkIdentifierInformation_SharedPreferencesStored",
+      "complianceCategoryDetail": "系统或网络识别信息_SharedPreferencesStored",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.bluetooth.BluetoothAdapter: boolean isDiscovering()>",
+        "<android.bluetooth.BluetoothAdapter: int getState()>",
+        "<android.bluetooth.BluetoothAdapter: boolean isEnabled()>"
+      ]
+    },
+    "sink": {
+      "<android.content.SharedPreferences.Editor: * putString(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.content.SharedPreferences.Editor: * putStringSet(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.content.SharedPreferences.Editor: * putInt(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.content.SharedPreferences.Editor: * putLong(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "blueToothStateSet_SharedPreferencesStored": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 30,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "blueToothStateSet_SharedPreferencesStored",
+      "detail": "存在<蓝牙状态>[设置]相关操作写入SharedPreferences",
+      "category": "ComplianceInfo",
+      "complianceCategory": "SystemOrNetworkIdentifierInformation_SharedPreferencesStored",
+      "complianceCategoryDetail": "系统或网络识别信息_SharedPreferencesStored",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.bluetooth.BluetoothAdapter: boolean enable()>",
+        "<android.bluetooth.BluetoothAdapter: boolean disable()>"
+      ]
+    },
+    "sink": {
+      "<android.content.SharedPreferences.Editor: * putString(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.content.SharedPreferences.Editor: * putStringSet(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.content.SharedPreferences.Editor: * putInt(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.content.SharedPreferences.Editor: * putLong(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "IMSI_WriteFile": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 30,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "IMSI_WriteFile",
+      "detail": "存在<IMSI>[获取]相关操作写文件",
+      "category": "ComplianceInfo",
+      "complianceCategory": "SystemOrNetworkIdentifierInformation_WriteFile",
+      "complianceCategoryDetail": "系统或网络识别信息_WriteFile",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.telephony.TelephonyManager: * getSubscriberId(*)>"
+      ]
+    },
+    "sink": {
+      "<java.io.FileOutputStream: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.FileWriter: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.RandomAccessFile: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "countryIso_WriteFile": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 30,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "countryIso_WriteFile",
+      "detail": "存在<长途区号>[获取]相关操作写文件",
+      "category": "ComplianceInfo",
+      "complianceCategory": "SystemOrNetworkIdentifierInformation_WriteFile",
+      "complianceCategoryDetail": "系统或网络识别信息_WriteFile",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.telephony.TelephonyManager: * getNetworkCountryIso(*)>",
+        "<android.telephony.TelephonyManager: * getSimCountryIso(*)>"
+      ]
+    },
+    "sink": {
+      "<java.io.FileOutputStream: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.FileWriter: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.RandomAccessFile: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "dataState_WriteFile": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 30,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "dataState_WriteFile",
+      "detail": "存在<移动网络状态>[获取]相关操作写文件",
+      "category": "ComplianceInfo",
+      "complianceCategory": "SystemOrNetworkIdentifierInformation_WriteFile",
+      "complianceCategoryDetail": "系统或网络识别信息_WriteFile",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.telephony.TelephonyManager: * isDataEnabled(*)>",
+        "<android.telephony.TelephonyManager: * isDataRoamingEnabled(*)>",
+        "<android.telephony.TelephonyManager: * getDataState(*)>",
+        "<android.telephony.TelephonyManager: * getNetworkType(*)>",
+        "<android.telephony.TelephonyManager: * getDataNetworkType(*)>",
+        "<android.telephony.TelephonyManager: * isNetworkRoaming(*)>",
+        "<android.telephony.TelephonyManager: * setDataEnabled(*)>"
+      ]
+    },
+    "sink": {
+      "<java.io.FileOutputStream: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.FileWriter: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.RandomAccessFile: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "ipAddress_WriteFile": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 30,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "ipAddress_WriteFile",
+      "detail": "存在<IP地址>[获取]相关操作写文件",
+      "category": "ComplianceInfo",
+      "complianceCategory": "SystemOrNetworkIdentifierInformation_WriteFile",
+      "complianceCategoryDetail": "系统或网络识别信息_WriteFile",
+      "level": "3"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.net.wifi.WifiInfo: * getIpAddress(*)>",
+        "<java.net.InetAddress: * getHostAddress(*)>",
+        "<java.net.InetAddress: * getAddress(*)>"
+      ]
+    },
+    "sink": {
+      "<java.io.FileOutputStream: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.FileWriter: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.RandomAccessFile: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "carrier_WriteFile": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 30,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "carrier_WriteFile",
+      "detail": "存在<运营商信息>[获取]相关操作写文件",
+      "category": "ComplianceInfo",
+      "complianceCategory": "SystemOrNetworkIdentifierInformation_WriteFile",
+      "complianceCategoryDetail": "系统或网络识别信息_WriteFile",
+      "level": "3"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.telephony.TelephonyManager: * getNetworkOperator(*)>",
+        "<android.telephony.TelephonyManager: * getNetworkOperatorName(*)>",
+        "<android.telephony.TelephonyManager: * getCarrierIdFromSimMccMnc(*)>"
+      ]
+    },
+    "sink": {
+      "<java.io.FileOutputStream: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.FileWriter: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.RandomAccessFile: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "MCCMNC_WriteFile": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 30,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "MCCMNC_WriteFile",
+      "detail": "存在<移动国家码/网络码>[获取]相关操作写文件",
+      "category": "ComplianceInfo",
+      "complianceCategory": "SystemOrNetworkIdentifierInformation_WriteFile",
+      "complianceCategoryDetail": "系统或网络识别信息_WriteFile",
+      "level": "3"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.telephony.TelephonyManager: * getSimOperator(*)>",
+        "<android.telephony.TelephonyManager: * getSimOperatorName(*)>"
+      ]
+    },
+    "sink": {
+      "<java.io.FileOutputStream: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.FileWriter: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.RandomAccessFile: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "phoneType_WriteFile": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 30,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "phoneType_WriteFile",
+      "detail": "存在<手机类型>[获取]相关操作写文件",
+      "category": "ComplianceInfo",
+      "complianceCategory": "SystemOrNetworkIdentifierInformation_WriteFile",
+      "complianceCategoryDetail": "系统或网络识别信息_WriteFile",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.telephony.TelephonyManager: * getPhoneType(*)>"
+      ]
+    },
+    "sink": {
+      "<java.io.FileOutputStream: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.FileWriter: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.RandomAccessFile: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "simState_WriteFile": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 30,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "simState_WriteFile",
+      "detail": "存在<手机卡状态>[获取]相关操作写文件",
+      "category": "ComplianceInfo",
+      "complianceCategory": "SystemOrNetworkIdentifierInformation_WriteFile",
+      "complianceCategoryDetail": "系统或网络识别信息_WriteFile",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.telephony.TelephonyManager: * getSimState(*)>"
+      ]
+    },
+    "sink": {
+      "<java.io.FileOutputStream: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.FileWriter: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.RandomAccessFile: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "voiceMail_WriteFile": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 30,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "voiceMail_WriteFile",
+      "detail": "存在<手机语音邮件>[获取]相关操作写文件",
+      "category": "ComplianceInfo",
+      "complianceCategory": "SystemOrNetworkIdentifierInformation_WriteFile",
+      "complianceCategoryDetail": "系统或网络识别信息_WriteFile",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.telephony.TelephonyManager: * getVoiceMailAlphaTag(*)>",
+        "<android.telephony.TelephonyManager: * getVoiceMailNumber(*)>"
+      ]
+    },
+    "sink": {
+      "<java.io.FileOutputStream: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.FileWriter: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.RandomAccessFile: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "tac_WriteFile": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 30,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "tac_WriteFile",
+      "detail": "存在<Tracking Area Code>[获取]相关操作写文件",
+      "category": "ComplianceInfo",
+      "complianceCategory": "SystemOrNetworkIdentifierInformation_WriteFile",
+      "complianceCategoryDetail": "系统或网络识别信息_WriteFile",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.telephony.CellIdentityLte: * getTac(*)>"
+      ]
+    },
+    "sink": {
+      "<java.io.FileOutputStream: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.FileWriter: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.RandomAccessFile: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "wifiStateQuery_WriteFile": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 30,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "wifiStateQuery_WriteFile",
+      "detail": "存在<WI-FI状态>[获取]相关操作写文件",
+      "category": "ComplianceInfo",
+      "complianceCategory": "SystemOrNetworkIdentifierInformation_WriteFile",
+      "complianceCategoryDetail": "系统或网络识别信息_WriteFile",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.net.wifi.WifiManager: boolean isWifiEnabled()>",
+        "<android.net.wifi.WifiManager: int getWifiState()>"
+      ]
+    },
+    "sink": {
+      "<java.io.FileOutputStream: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.FileWriter: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.RandomAccessFile: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "wifiStateSet_WriteFile": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 30,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "wifiStateSet_WriteFile",
+      "detail": "存在<WI-FI状态>[设置]相关操作写文件",
+      "category": "ComplianceInfo",
+      "complianceCategory": "SystemOrNetworkIdentifierInformation_WriteFile",
+      "complianceCategoryDetail": "系统或网络识别信息_WriteFile",
+      "level": "2"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.net.wifi.WifiManager: boolean setWifiEnabled(boolean)>"
+      ]
+    },
+    "sink": {
+      "<java.io.FileOutputStream: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.FileWriter: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.RandomAccessFile: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "blueToothStateQuery_WriteFile": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 30,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "blueToothStateQuery_WriteFile",
+      "detail": "存在<蓝牙状态>[获取]相关操作写文件",
+      "category": "ComplianceInfo",
+      "complianceCategory": "SystemOrNetworkIdentifierInformation_WriteFile",
+      "complianceCategoryDetail": "系统或网络识别信息_WriteFile",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.bluetooth.BluetoothAdapter: boolean isDiscovering()>",
+        "<android.bluetooth.BluetoothAdapter: int getState()>",
+        "<android.bluetooth.BluetoothAdapter: boolean isEnabled()>"
+      ]
+    },
+    "sink": {
+      "<java.io.FileOutputStream: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.FileWriter: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.RandomAccessFile: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "blueToothStateSet_WriteFile": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 30,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "blueToothStateSet_WriteFile",
+      "detail": "存在<蓝牙状态>[设置]相关操作写文件",
+      "category": "ComplianceInfo",
+      "complianceCategory": "SystemOrNetworkIdentifierInformation_WriteFile",
+      "complianceCategoryDetail": "系统或网络识别信息_WriteFile",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.bluetooth.BluetoothAdapter: boolean enable()>",
+        "<android.bluetooth.BluetoothAdapter: boolean disable()>"
+      ]
+    },
+    "sink": {
+      "<java.io.FileOutputStream: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.FileWriter: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.RandomAccessFile: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  }
+}

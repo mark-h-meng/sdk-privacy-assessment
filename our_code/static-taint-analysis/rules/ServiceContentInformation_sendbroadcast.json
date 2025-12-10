@@ -1,0 +1,136 @@
+{
+  "softwareUsageRecords_Database": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 30,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "softwareUsageRecords_Database",
+      "detail": "存在<软件使用记录>[获取]相关操作写数据库",
+      "category": "ComplianceInfo",
+      "complianceCategory": "ServiceContentInformation_Database",
+      "complianceCategoryDetail": "服务内容信息_Database",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.app.usage.UsageStatsManager: * query*(*)>",
+        "<android.app.usage.UsageStatsManager: int getAppStandbyBucket()>"
+      ]
+    },
+    "sink": {
+      "<android.database.sqlite.SQLiteDatabase: * insert(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * insertOrThrow(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * insertWithOnConflict(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * update(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * updateWithOnConflict(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * execSQL(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "softwareUsageRecords_SharedPreferencesStored": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 30,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "softwareUsageRecords_SharedPreferencesStored",
+      "detail": "存在<软件使用记录>[获取]相关操作写入SharedPreferences",
+      "category": "ComplianceInfo",
+      "complianceCategory": "ServiceContentInformation_SharedPreferencesStored",
+      "complianceCategoryDetail": "服务内容信息_SharedPreferencesStored",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.app.usage.UsageStatsManager: * query*(*)>",
+        "<android.app.usage.UsageStatsManager: int getAppStandbyBucket()>"
+      ]
+    },
+    "sink": {
+      "<android.content.SharedPreferences.Editor: * putString(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.content.SharedPreferences.Editor: * putStringSet(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.content.SharedPreferences.Editor: * putInt(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.content.SharedPreferences.Editor: * putLong(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "softwareUsageRecords_WriteFile": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 30,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "softwareUsageRecords_WriteFile",
+      "detail": "存在<软件使用记录>[获取]相关操作写文件",
+      "category": "ComplianceInfo",
+      "complianceCategory": "ServiceContentInformation_WriteFile",
+      "complianceCategoryDetail": "服务内容信息_WriteFile",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.app.usage.UsageStatsManager: * query*(*)>",
+        "<android.app.usage.UsageStatsManager: int getAppStandbyBucket()>"
+      ]
+    },
+    "sink": {
+      "<java.io.FileOutputStream: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.FileWriter: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.RandomAccessFile: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  }
+}

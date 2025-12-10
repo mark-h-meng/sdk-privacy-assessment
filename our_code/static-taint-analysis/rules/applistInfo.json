@@ -1,0 +1,160 @@
+{
+  "appList_Database": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 30,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "appList_Database",
+      "detail": "存在<appList>[获取]写数据库",
+      "category": "ComplianceInfo",
+      "complianceCategory": "appList_Database",
+      "complianceCategoryDetail": "appList_Database",
+      "level": "4"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.content.pm.PackageManager: * getInstalledPackages(*)>",
+        "<android.content.pm.PackageManager: * getInstalledModules(*)>",
+        "<android.content.pm.PackageManager: * getPackagesForUid(*)>",
+        "<android.content.pm.PackageManager: * getInstalledApplications(*)>",
+        "<android.content.pm.PackageManager: * queryIntentActivities(*)>",
+        "<android.content.pm.PackageManager: * getInstalledPackagesAsUser(*)>",
+        "<android.content.pm.PackageManager: * getInstalledApplicationsAsUser(*)>",
+        "<android.app.ActivityManager: * getRecentTasks(*)>",
+        "<android.app.ActivityManager: * getRunningAppProcesses(*)>",
+        "<android.app.ActivityManager: * getRunningServices(*)>"
+      ]
+    },
+    "sink": {
+      "<android.database.sqlite.SQLiteDatabase: * insert(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * insertOrThrow(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * insertWithOnConflict(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * update(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * updateWithOnConflict(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * execSQL(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "appList_SharedPreferencesStored": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 30,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "appList_SharedPreferencesStored",
+      "detail": "存在<appList>[获取]写入SharedPreferences",
+      "category": "ComplianceInfo",
+      "complianceCategory": "appList_SharedPreferencesStored",
+      "complianceCategoryDetail": "appList_SharedPreferencesStored",
+      "level": "4"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.content.pm.PackageManager: * getInstalledPackages(*)>",
+        "<android.content.pm.PackageManager: * getInstalledModules(*)>",
+        "<android.content.pm.PackageManager: * getPackagesForUid(*)>",
+        "<android.content.pm.PackageManager: * getInstalledApplications(*)>",
+        "<android.content.pm.PackageManager: * queryIntentActivities(*)>",
+        "<android.content.pm.PackageManager: * getInstalledPackagesAsUser(*)>",
+        "<android.content.pm.PackageManager: * getInstalledApplicationsAsUser(*)>",
+        "<android.app.ActivityManager: * getRecentTasks(*)>",
+        "<android.app.ActivityManager: * getRunningAppProcesses(*)>",
+        "<android.app.ActivityManager: * getRunningServices(*)>"
+      ]
+    },
+    "sink": {
+      "<android.content.SharedPreferences.Editor: * putString(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.content.SharedPreferences.Editor: * putStringSet(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.content.SharedPreferences.Editor: * putInt(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.content.SharedPreferences.Editor: * putLong(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "appList_WriteFile": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 30,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "appList_WriteFile",
+      "detail": "存在<appList>[获取]写文件",
+      "category": "ComplianceInfo",
+      "complianceCategory": "appList_WriteFile",
+      "complianceCategoryDetail": "appList_WriteFile",
+      "level": "4"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.content.pm.PackageManager: * getInstalledPackages(*)>",
+        "<android.content.pm.PackageManager: * getInstalledModules(*)>",
+        "<android.content.pm.PackageManager: * getPackagesForUid(*)>",
+        "<android.content.pm.PackageManager: * getInstalledApplications(*)>",
+        "<android.content.pm.PackageManager: * queryIntentActivities(*)>",
+        "<android.content.pm.PackageManager: * getInstalledPackagesAsUser(*)>",
+        "<android.content.pm.PackageManager: * getInstalledApplicationsAsUser(*)>",
+        "<android.app.ActivityManager: * getRecentTasks(*)>",
+        "<android.app.ActivityManager: * getRunningAppProcesses(*)>",
+        "<android.app.ActivityManager: * getRunningServices(*)>"
+      ]
+    },
+    "sink": {
+      "<java.io.FileOutputStream: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.FileWriter: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.RandomAccessFile: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  }
+}

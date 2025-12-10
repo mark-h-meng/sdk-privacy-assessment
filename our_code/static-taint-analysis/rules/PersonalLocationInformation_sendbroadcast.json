@@ -1,0 +1,1036 @@
+{
+  "cellInformation2broadcast_Database": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 30,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "cellInformation2broadcast_Database",
+      "detail": "存在<基站信息>发送广播写数据库",
+      "category": "ComplianceInfo",
+      "complianceCategory": "cellInformation2broadcast_Database",
+      "complianceCategoryDetail": "个人位置信息_Database",
+      "level": "4"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.telephony.TelephonyManager: * getCellLocation(*)>",
+        "<android.telephony.TelephonyManager: * getAllCellInfo(*)>",
+        "<android.telephony.cdma.CdmaCellLocation: * getBaseStationId(*)>",
+        "<android.telephony.cdma.CdmaCellLocation: * getBaseStationLatitude(*)>",
+        "<android.telephony.cdma.CdmaCellLocation: * getBaseStationLongitude(*)>",
+        "<android.telephony.cdma.CdmaCellLocation: * getNetworkId(*)>",
+        "<android.telephony.cdma.CdmaCellLocation: * getSystemId(*)>",
+        "<android.telephony.gsm.GsmCellLocation: * getCid(*)>",
+        "<android.telephony.gsm.GsmCellLocation: * getLac(*)>",
+        "<android.telephony.gsm.GsmCellLocation: * getPsc(*)>",
+        "<android.telephony.PhoneStateListener: * onServiceStateChanged(*)>",
+        "<android.telephony.PhoneStateListener: * onSignalStrengthChanged(*)>",
+        "<android.telephony.PhoneStateListener: * onMessageWaitingIndicatorChanged(*)>",
+        "<android.telephony.PhoneStateListener: * onCallForwardingIndicatorChanged(*)>",
+        "<android.telephony.PhoneStateListener: * onCallStateChanged(*)>",
+        "<android.telephony.PhoneStateListener: * onDataConnectionStateChanged(*)>",
+        "<android.telephony.PhoneStateListener: * onDataActivity(*)>",
+        "<android.telephony.PhoneStateListener: * onSignalStrengthsChanged(*)>",
+        "<android.telephony.PhoneStateListener: * onCellInfoChanged(*)>",
+        "<android.telephony.PhoneStateListener: * onCellLocationChanged(*)>"
+      ]
+    },
+    "sink": {
+      "<android.database.sqlite.SQLiteDatabase: * insert(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * insertOrThrow(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * insertWithOnConflict(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * update(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * updateWithOnConflict(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * execSQL(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "latitudeAndLongitudeInformation2broadcast_Database": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 30,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "latitudeAndLongitudeInformation2broadcast_Database",
+      "detail": "存在<经纬度信息>[获取]相关操作写数据库",
+      "category": "ComplianceInfo",
+      "complianceCategory": "latitudeAndLongitudeInformation2broadcast_Database",
+      "complianceCategoryDetail": "个人位置信息_Database",
+      "level": "4"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.location.LocationManager: * getLastKnownLocation(*)>",
+        "<android.location.LocationManager: * getCurrentLocation(*)>",
+        "<android.location.LocationManager: * getGpsStatus(*)>",
+        "<android.location.LocationManager: * requestSingleUpdate(*)>",
+        "<android.location.LocationManager: * requestLocationUpdates(*)>",
+        "<android.location.LocationManager: * addGpsStatusListener(*)>",
+        "<android.location.LocationManager: * registerGnssStatusCallback(*)>",
+        "<android.location.LocationManager: * registerGnssMeasurementsCallback(*)>",
+        "<android.location.LocationManager: * registerGnssNavigationMessageCallback(*)>",
+        "<android.location.LocationManager: * addNmeaListener(*)>",
+        "<android.location.Location: * getLatitude(*)>",
+        "<android.location.Location: * getLongitude(*)>",
+        "<android.location.Location: * getAltitude(*)>",
+        "<android.location.Address: * getLatitude(*)>",
+        "<android.location.Address: * getLongitude(*)>"
+      ]
+    },
+    "sink": {
+      "<android.database.sqlite.SQLiteDatabase: * insert(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * insertOrThrow(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * insertWithOnConflict(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * update(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * updateWithOnConflict(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * execSQL(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "scanBluetooth_Database": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 30,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "scanBluetooth_Database",
+      "detail": "存在<蓝牙扫描>[扫描]相关操作写数据库",
+      "category": "ComplianceInfo",
+      "complianceCategory": "cellInformation2broadcast_Database",
+      "complianceCategoryDetail": "个人位置信息_Database",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.bluetooth.BluetoothAdapter: * startDiscovery(*)>"
+      ]
+    },
+    "sink": {
+      "<android.database.sqlite.SQLiteDatabase: * insert(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * insertOrThrow(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * insertWithOnConflict(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * update(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * updateWithOnConflict(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * execSQL(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "scanWifi_Database": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 30,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "scanWifi_Database",
+      "detail": "存在<Wi-Fi扫描>[扫描]相关操作写数据库",
+      "category": "ComplianceInfo",
+      "complianceCategory": "cellInformation2broadcast_Database",
+      "complianceCategoryDetail": "个人位置信息_Database",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.net.wifi.WifiManager: * startScan(*)>",
+        "<android.net.wifi.WifiManager: * getScanResults(*)>"
+      ]
+    },
+    "sink": {
+      "<android.database.sqlite.SQLiteDatabase: * insert(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * insertOrThrow(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * insertWithOnConflict(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * update(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * updateWithOnConflict(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * execSQL(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "systemCountryOrRegion_Database": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 30,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "systemCountryOrRegion_Database",
+      "detail": "存在<系统国家/区域信息>[获取]相关操作写数据库",
+      "category": "ComplianceInfo",
+      "complianceCategory": "cellInformation2broadcast_Database",
+      "complianceCategoryDetail": "个人位置信息_Database",
+      "level": "3"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.telephony.TelephonyManager: * getSimCountryIso(*)>",
+        "<java.util.Locale: * getCountry(*)>",
+        "<android.location.Address: * getCountryName(*)>",
+        "<android.location.Address: * getCountryCode(*)>"
+      ]
+    },
+    "sink": {
+      "<android.database.sqlite.SQLiteDatabase: * insert(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * insertOrThrow(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * insertWithOnConflict(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * update(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * updateWithOnConflict(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * execSQL(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "mediaLocationSet_Database": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 30,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "mediaLocationSet_Database",
+      "detail": "存在<媒体文件位置信息>[设置]相关操作写数据库",
+      "category": "ComplianceInfo",
+      "complianceCategory": "cellInformation2broadcast_Database",
+      "complianceCategoryDetail": "个人位置信息_Database",
+      "level": "4"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.provider.MediaStore: * setRequireOriginal(*)>"
+      ]
+    },
+    "sink": {
+      "<android.database.sqlite.SQLiteDatabase: * insert(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * insertOrThrow(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * insertWithOnConflict(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * update(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * updateWithOnConflict(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * execSQL(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "mediaLocation_Database": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 30,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "mediaLocation_Database",
+      "detail": "存在<媒体文件位置信息>[获取]相关操作写数据库",
+      "category": "ComplianceInfo",
+      "complianceCategory": "cellInformation2broadcast_Database",
+      "complianceCategoryDetail": "个人位置信息_Database",
+      "level": "4"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.media.ExifInterface: * getAltitude(*)>",
+        "<android.media.ExifInterface: * getLatLong(*)>",
+        "<android.provider.MediaStore: * getRequireOriginal(*)>"
+      ]
+    },
+    "sink": {
+      "<android.database.sqlite.SQLiteDatabase: * insert(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * insertOrThrow(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * insertWithOnConflict(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * update(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * updateWithOnConflict(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.database.sqlite.SQLiteDatabase: * execSQL(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "cellInformation2broadcast_SharedPreferencesStored": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 30,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "cellInformation2broadcast_SharedPreferencesStored",
+      "detail": "存在<基站信息>发送广播写入SharedPreferences",
+      "category": "ComplianceInfo",
+      "complianceCategory": "cellInformation2broadcast_SharedPreferencesStored",
+      "complianceCategoryDetail": "个人位置信息_SharedPreferencesStored",
+      "level": "4"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.telephony.TelephonyManager: * getCellLocation(*)>",
+        "<android.telephony.TelephonyManager: * getAllCellInfo(*)>",
+        "<android.telephony.cdma.CdmaCellLocation: * getBaseStationId(*)>",
+        "<android.telephony.cdma.CdmaCellLocation: * getBaseStationLatitude(*)>",
+        "<android.telephony.cdma.CdmaCellLocation: * getBaseStationLongitude(*)>",
+        "<android.telephony.cdma.CdmaCellLocation: * getNetworkId(*)>",
+        "<android.telephony.cdma.CdmaCellLocation: * getSystemId(*)>",
+        "<android.telephony.gsm.GsmCellLocation: * getCid(*)>",
+        "<android.telephony.gsm.GsmCellLocation: * getLac(*)>",
+        "<android.telephony.gsm.GsmCellLocation: * getPsc(*)>",
+        "<android.telephony.PhoneStateListener: * onServiceStateChanged(*)>",
+        "<android.telephony.PhoneStateListener: * onSignalStrengthChanged(*)>",
+        "<android.telephony.PhoneStateListener: * onMessageWaitingIndicatorChanged(*)>",
+        "<android.telephony.PhoneStateListener: * onCallForwardingIndicatorChanged(*)>",
+        "<android.telephony.PhoneStateListener: * onCallStateChanged(*)>",
+        "<android.telephony.PhoneStateListener: * onDataConnectionStateChanged(*)>",
+        "<android.telephony.PhoneStateListener: * onDataActivity(*)>",
+        "<android.telephony.PhoneStateListener: * onSignalStrengthsChanged(*)>",
+        "<android.telephony.PhoneStateListener: * onCellInfoChanged(*)>",
+        "<android.telephony.PhoneStateListener: * onCellLocationChanged(*)>"
+      ]
+    },
+    "sink": {
+      "<android.content.SharedPreferences.Editor: * putString(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.content.SharedPreferences.Editor: * putStringSet(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.content.SharedPreferences.Editor: * putInt(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.content.SharedPreferences.Editor: * putLong(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "latitudeAndLongitudeInformation2broadcast_SharedPreferencesStored": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 30,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "latitudeAndLongitudeInformation2broadcast_SharedPreferencesStored",
+      "detail": "存在<经纬度信息>[获取]相关操作写入SharedPreferences",
+      "category": "ComplianceInfo",
+      "complianceCategory": "latitudeAndLongitudeInformation2broadcast_SharedPreferencesStored",
+      "complianceCategoryDetail": "个人位置信息_SharedPreferencesStored",
+      "level": "4"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.location.LocationManager: * getLastKnownLocation(*)>",
+        "<android.location.LocationManager: * getCurrentLocation(*)>",
+        "<android.location.LocationManager: * getGpsStatus(*)>",
+        "<android.location.LocationManager: * requestSingleUpdate(*)>",
+        "<android.location.LocationManager: * requestLocationUpdates(*)>",
+        "<android.location.LocationManager: * addGpsStatusListener(*)>",
+        "<android.location.LocationManager: * registerGnssStatusCallback(*)>",
+        "<android.location.LocationManager: * registerGnssMeasurementsCallback(*)>",
+        "<android.location.LocationManager: * registerGnssNavigationMessageCallback(*)>",
+        "<android.location.LocationManager: * addNmeaListener(*)>",
+        "<android.location.Location: * getLatitude(*)>",
+        "<android.location.Location: * getLongitude(*)>",
+        "<android.location.Location: * getAltitude(*)>",
+        "<android.location.Address: * getLatitude(*)>",
+        "<android.location.Address: * getLongitude(*)>"
+      ]
+    },
+    "sink": {
+      "<android.content.SharedPreferences.Editor: * putString(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.content.SharedPreferences.Editor: * putStringSet(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.content.SharedPreferences.Editor: * putInt(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.content.SharedPreferences.Editor: * putLong(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "scanBluetooth_SharedPreferencesStored": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 30,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "scanBluetooth_SharedPreferencesStored",
+      "detail": "存在<蓝牙扫描>[扫描]相关操作写入SharedPreferences",
+      "category": "ComplianceInfo",
+      "complianceCategory": "cellInformation2broadcast_SharedPreferencesStored",
+      "complianceCategoryDetail": "个人位置信息_SharedPreferencesStored",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.bluetooth.BluetoothAdapter: * startDiscovery(*)>"
+      ]
+    },
+    "sink": {
+      "<android.content.SharedPreferences.Editor: * putString(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.content.SharedPreferences.Editor: * putStringSet(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.content.SharedPreferences.Editor: * putInt(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.content.SharedPreferences.Editor: * putLong(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "scanWifi_SharedPreferencesStored": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 30,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "scanWifi_SharedPreferencesStored",
+      "detail": "存在<Wi-Fi扫描>[扫描]相关操作写入SharedPreferences",
+      "category": "ComplianceInfo",
+      "complianceCategory": "cellInformation2broadcast_SharedPreferencesStored",
+      "complianceCategoryDetail": "个人位置信息_SharedPreferencesStored",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.net.wifi.WifiManager: * startScan(*)>",
+        "<android.net.wifi.WifiManager: * getScanResults(*)>"
+      ]
+    },
+    "sink": {
+      "<android.content.SharedPreferences.Editor: * putString(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.content.SharedPreferences.Editor: * putStringSet(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.content.SharedPreferences.Editor: * putInt(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.content.SharedPreferences.Editor: * putLong(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "systemCountryOrRegion_SharedPreferencesStored": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 30,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "systemCountryOrRegion_SharedPreferencesStored",
+      "detail": "存在<系统国家/区域信息>[获取]相关操作写入SharedPreferences",
+      "category": "ComplianceInfo",
+      "complianceCategory": "cellInformation2broadcast_SharedPreferencesStored",
+      "complianceCategoryDetail": "个人位置信息_SharedPreferencesStored",
+      "level": "3"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.telephony.TelephonyManager: * getSimCountryIso(*)>",
+        "<java.util.Locale: * getCountry(*)>",
+        "<android.location.Address: * getCountryName(*)>",
+        "<android.location.Address: * getCountryCode(*)>"
+      ]
+    },
+    "sink": {
+      "<android.content.SharedPreferences.Editor: * putString(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.content.SharedPreferences.Editor: * putStringSet(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.content.SharedPreferences.Editor: * putInt(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.content.SharedPreferences.Editor: * putLong(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "mediaLocationSet_SharedPreferencesStored": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 30,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "mediaLocationSet_SharedPreferencesStored",
+      "detail": "存在<媒体文件位置信息>[设置]相关操作写入SharedPreferences",
+      "category": "ComplianceInfo",
+      "complianceCategory": "cellInformation2broadcast_SharedPreferencesStored",
+      "complianceCategoryDetail": "个人位置信息_SharedPreferencesStored",
+      "level": "4"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.provider.MediaStore: * setRequireOriginal(*)>"
+      ]
+    },
+    "sink": {
+      "<android.content.SharedPreferences.Editor: * putString(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.content.SharedPreferences.Editor: * putStringSet(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.content.SharedPreferences.Editor: * putInt(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.content.SharedPreferences.Editor: * putLong(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "mediaLocation_SharedPreferencesStored": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 30,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "mediaLocation_SharedPreferencesStored",
+      "detail": "存在<媒体文件位置信息>[获取]相关操作写入SharedPreferences",
+      "category": "ComplianceInfo",
+      "complianceCategory": "cellInformation2broadcast_SharedPreferencesStored",
+      "complianceCategoryDetail": "个人位置信息_SharedPreferencesStored",
+      "level": "4"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.media.ExifInterface: * getAltitude(*)>",
+        "<android.media.ExifInterface: * getLatLong(*)>",
+        "<android.provider.MediaStore: * getRequireOriginal(*)>"
+      ]
+    },
+    "sink": {
+      "<android.content.SharedPreferences.Editor: * putString(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.content.SharedPreferences.Editor: * putStringSet(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.content.SharedPreferences.Editor: * putInt(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<android.content.SharedPreferences.Editor: * putLong(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "cellInformation2broadcast_WriteFile": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 30,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "cellInformation2broadcast_WriteFile",
+      "detail": "存在<基站信息>发送广播写文件",
+      "category": "ComplianceInfo",
+      "complianceCategory": "cellInformation2broadcast_WriteFile",
+      "complianceCategoryDetail": "个人位置信息_WriteFile",
+      "level": "4"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.telephony.TelephonyManager: * getCellLocation(*)>",
+        "<android.telephony.TelephonyManager: * getAllCellInfo(*)>",
+        "<android.telephony.cdma.CdmaCellLocation: * getBaseStationId(*)>",
+        "<android.telephony.cdma.CdmaCellLocation: * getBaseStationLatitude(*)>",
+        "<android.telephony.cdma.CdmaCellLocation: * getBaseStationLongitude(*)>",
+        "<android.telephony.cdma.CdmaCellLocation: * getNetworkId(*)>",
+        "<android.telephony.cdma.CdmaCellLocation: * getSystemId(*)>",
+        "<android.telephony.gsm.GsmCellLocation: * getCid(*)>",
+        "<android.telephony.gsm.GsmCellLocation: * getLac(*)>",
+        "<android.telephony.gsm.GsmCellLocation: * getPsc(*)>",
+        "<android.telephony.PhoneStateListener: * onServiceStateChanged(*)>",
+        "<android.telephony.PhoneStateListener: * onSignalStrengthChanged(*)>",
+        "<android.telephony.PhoneStateListener: * onMessageWaitingIndicatorChanged(*)>",
+        "<android.telephony.PhoneStateListener: * onCallForwardingIndicatorChanged(*)>",
+        "<android.telephony.PhoneStateListener: * onCallStateChanged(*)>",
+        "<android.telephony.PhoneStateListener: * onDataConnectionStateChanged(*)>",
+        "<android.telephony.PhoneStateListener: * onDataActivity(*)>",
+        "<android.telephony.PhoneStateListener: * onSignalStrengthsChanged(*)>",
+        "<android.telephony.PhoneStateListener: * onCellInfoChanged(*)>",
+        "<android.telephony.PhoneStateListener: * onCellLocationChanged(*)>"
+      ]
+    },
+    "sink": {
+      "<java.io.FileOutputStream: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.FileWriter: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.RandomAccessFile: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "latitudeAndLongitudeInformation2broadcast_WriteFile": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 30,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "latitudeAndLongitudeInformation2broadcast_WriteFile",
+      "detail": "存在<经纬度信息>[获取]相关操作写文件",
+      "category": "ComplianceInfo",
+      "complianceCategory": "latitudeAndLongitudeInformation2broadcast_WriteFile",
+      "complianceCategoryDetail": "个人位置信息_WriteFile",
+      "level": "4"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.location.LocationManager: * getLastKnownLocation(*)>",
+        "<android.location.LocationManager: * getCurrentLocation(*)>",
+        "<android.location.LocationManager: * getGpsStatus(*)>",
+        "<android.location.LocationManager: * requestSingleUpdate(*)>",
+        "<android.location.LocationManager: * requestLocationUpdates(*)>",
+        "<android.location.LocationManager: * addGpsStatusListener(*)>",
+        "<android.location.LocationManager: * registerGnssStatusCallback(*)>",
+        "<android.location.LocationManager: * registerGnssMeasurementsCallback(*)>",
+        "<android.location.LocationManager: * registerGnssNavigationMessageCallback(*)>",
+        "<android.location.LocationManager: * addNmeaListener(*)>",
+        "<android.location.Location: * getLatitude(*)>",
+        "<android.location.Location: * getLongitude(*)>",
+        "<android.location.Location: * getAltitude(*)>",
+        "<android.location.Address: * getLatitude(*)>",
+        "<android.location.Address: * getLongitude(*)>"
+      ]
+    },
+    "sink": {
+      "<java.io.FileOutputStream: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.FileWriter: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.RandomAccessFile: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "scanBluetooth_WriteFile": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 30,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "scanBluetooth_WriteFile",
+      "detail": "存在<蓝牙扫描>[扫描]相关操作写文件",
+      "category": "ComplianceInfo",
+      "complianceCategory": "cellInformation2broadcast_WriteFile",
+      "complianceCategoryDetail": "个人位置信息_WriteFile",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.bluetooth.BluetoothAdapter: * startDiscovery(*)>"
+      ]
+    },
+    "sink": {
+      "<java.io.FileOutputStream: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.FileWriter: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.RandomAccessFile: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "scanWifi_WriteFile": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 30,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "scanWifi_WriteFile",
+      "detail": "存在<Wi-Fi扫描>[扫描]相关操作写文件",
+      "category": "ComplianceInfo",
+      "complianceCategory": "cellInformation2broadcast_WriteFile",
+      "complianceCategoryDetail": "个人位置信息_WriteFile",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.net.wifi.WifiManager: * startScan(*)>",
+        "<android.net.wifi.WifiManager: * getScanResults(*)>"
+      ]
+    },
+    "sink": {
+      "<java.io.FileOutputStream: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.FileWriter: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.RandomAccessFile: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "systemCountryOrRegion_WriteFile": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 30,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "systemCountryOrRegion_WriteFile",
+      "detail": "存在<系统国家/区域信息>[获取]相关操作写文件",
+      "category": "ComplianceInfo",
+      "complianceCategory": "cellInformation2broadcast_WriteFile",
+      "complianceCategoryDetail": "个人位置信息_WriteFile",
+      "level": "3"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.telephony.TelephonyManager: * getSimCountryIso(*)>",
+        "<java.util.Locale: * getCountry(*)>",
+        "<android.location.Address: * getCountryName(*)>",
+        "<android.location.Address: * getCountryCode(*)>"
+      ]
+    },
+    "sink": {
+      "<java.io.FileOutputStream: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.FileWriter: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.RandomAccessFile: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "mediaLocationSet_WriteFile": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 30,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "mediaLocationSet_WriteFile",
+      "detail": "存在<媒体文件位置信息>[设置]相关操作写文件",
+      "category": "ComplianceInfo",
+      "complianceCategory": "cellInformation2broadcast_WriteFile",
+      "complianceCategoryDetail": "个人位置信息_WriteFile",
+      "level": "4"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.provider.MediaStore: * setRequireOriginal(*)>"
+      ]
+    },
+    "sink": {
+      "<java.io.FileOutputStream: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.FileWriter: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.RandomAccessFile: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "mediaLocation_WriteFile": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 30,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "mediaLocation_WriteFile",
+      "detail": "存在<媒体文件位置信息>[获取]相关操作写文件",
+      "category": "ComplianceInfo",
+      "complianceCategory": "cellInformation2broadcast_WriteFile",
+      "complianceCategoryDetail": "个人位置信息_WriteFile",
+      "level": "4"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.media.ExifInterface: * getAltitude(*)>",
+        "<android.media.ExifInterface: * getLatLong(*)>",
+        "<android.provider.MediaStore: * getRequireOriginal(*)>"
+      ]
+    },
+    "sink": {
+      "<java.io.FileOutputStream: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.FileWriter: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      },
+      "<java.io.RandomAccessFile: * write(*)>": {
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  }
+}

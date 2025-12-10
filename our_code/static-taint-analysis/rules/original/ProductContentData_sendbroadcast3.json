@@ -1,0 +1,177 @@
+{
+  "clipboardQuery": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 12,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "clipboardQuery",
+      "detail": "存在<剪贴板>[获取]相关操作",
+      "category": "ComplianceInfo",
+      "complianceCategory": "ProductContentData",
+      "complianceCategoryDetail": "产品内容信息",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.content.ClipboardManager: * getPrimaryClipDescription(*)>",
+        "<android.content.ClipboardManager: * getText(*)>",
+        "<android.content.ClipboardManager: * addPrimaryClipChangedListener(*)>",
+        "<android.content.ClipData$Item: * getText(*)>"
+      ]
+    },
+    "sink": {
+      "<*: * sendBroadcast*(*)>": {
+        "LibraryOnly": true,
+        "TaintParamType": [
+          "android.content.Intent",
+          "android.content.Intent[]"
+        ],
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "accessibility": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 12,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "accessibility",
+      "detail": "存在<无障碍模式>[获取]相关操作",
+      "category": "ComplianceInfo",
+      "complianceCategory": "ProductContentData",
+      "complianceCategoryDetail": "产品内容信息",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.view.accessibility.AccessibilityManager: * getEnabledAccessibilityServiceList(*)>",
+        "<android.view.accessibility.AccessibilityManager: * getInstalledAccessibilityServiceList(*)>"
+      ]
+    },
+    "sink": {
+      "<*: * sendBroadcast*(*)>": {
+        "LibraryOnly": true,
+        "TaintParamType": [
+          "android.content.Intent",
+          "android.content.Intent[]"
+        ],
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "mediaStoreQuery1": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 12,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "mediaStoreQuery",
+      "detail": "存在<多媒体文件>相关操作",
+      "category": "ComplianceInfo",
+      "complianceCategory": "ProductContentData",
+      "complianceCategoryDetail": "产品内容信息",
+      "level": "2"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.provider.MediaStore: * getDocumentUri(*)>",
+        "<android.provider.MediaStore: * getMediaScannerUri(*)>",
+        "<android.provider.MediaStore: * getMediaUri(*)>"
+      ]
+    },
+    "sink": {
+      "<*: * sendBroadcast*(*)>": {
+        "LibraryOnly": true,
+        "TaintParamType": [
+          "android.content.Intent",
+          "android.content.Intent[]"
+        ],
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "screenShot": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 12,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "screenShot",
+      "detail": "存在<屏幕截图>[获取]相关操作",
+      "category": "ComplianceInfo",
+      "complianceCategory": "ProductContentData",
+      "complianceCategoryDetail": "产品内容信息",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.view.View: * getDrawingCache(*)>",
+        "<android.view.View: * draw(*)>",
+        "<android.view.PixelCopy: * request(*)>",
+        "<android.app.UiAutomation: * takeScreenshot(*)>",
+        "<android.view.SurfaceControl: * screenshot(*)>"
+      ]
+    },
+    "sink": {
+      "<*: * sendBroadcast*(*)>": {
+        "LibraryOnly": true,
+        "TaintParamType": [
+          "android.content.Intent",
+          "android.content.Intent[]"
+        ],
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  },
+  "sensorManager": {
+    "enable": true,
+    "SliceMode": true,
+    "traceDepth": 12,
+    "PrimTypeAsTaint": true,
+    "desc": {
+      "name": "sensorManager",
+      "detail": "存在<传感器信息>[获取]相关操作",
+      "category": "ComplianceInfo",
+      "complianceCategory": "ProductContentData",
+      "complianceCategoryDetail": "产品内容信息",
+      "level": "1"
+    },
+    "entry": {},
+    "source": {
+      "Return": [
+        "<android.hardware.SensorManager: * registerListener(*)>",
+        "<android.hardware.SensorManager: * registerDynamicSensorCallback(*)>",
+        "<android.hardware.SensorManager: * requestTriggerSensor(*)>",
+        "<android.hardware.SensorManager: * getDefaultSensor(*)>",
+        "<android.hardware.SensorManager: * getDynamicSensorList(*)>",
+        "<android.hardware.SensorManager: * getSensorList(*)>"
+      ]
+    },
+    "sink": {
+      "<*: * sendBroadcast*(*)>": {
+        "LibraryOnly": true,
+        "TaintParamType": [
+          "android.content.Intent",
+          "android.content.Intent[]"
+        ],
+        "TaintCheck": [
+          "p*"
+        ]
+      }
+    }
+  }
+}

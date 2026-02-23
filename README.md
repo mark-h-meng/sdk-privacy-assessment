@@ -4,4 +4,4 @@ This repository host artifacts involved in our large-scale privacy disclosure co
 
 You can navigate to the subfolders under this directory to browse our artifacts. 
 
-We have also maintained a mirror of this repository on Zonodo: [https://doi.org/10.5281/zenodo.17857266][https://doi.org/10.5281/zenodo.17857266]
+We have also maintained a mirror of this repository on Zonodo: [https://doi.org/10.5281/zenodo.18737114][https://doi.org/10.5281/zenodo.18737114]
